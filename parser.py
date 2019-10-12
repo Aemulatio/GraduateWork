@@ -48,7 +48,11 @@ def get_data(url):  # rename later
         playedMap = element.find("div", class_="dynamic-map-name-full").text
         event = element.find("td", class_="event-col").text
         data.append([id, date, teams, score, playedMap, event])
+    return data
 
+def get_data1(url):  # reaname me 2
+    """####"""
+    data = get_data(url)
     prev = 1
     current = 0
     finalData = []
@@ -56,30 +60,49 @@ def get_data(url):  # rename later
     t2 = str()  # right team
     s1 = int()  # left team score
     s2 = int()  # right team score
-
+    event = str() # event
+    date = str() # date of match
     for match in data:
         if prev != current:
             t1 = match[2][0]  # left team
             t2 = match[2][1]  # right team
             s1 = 0  # left team score to 0
             s2 = 0  # right team score to 0
+            event = match[-1]
+            date = match[1]
+            print("if1")
 
         current = match[0]
-
         if prev == current:  # if prev id == cur id
             if t1 == match[2][0]:  # if teams doesnt switch sides in statistic
-                if match[3][0] > match[3][1]:  # if t1 > t2
+                print("if2-0")
+                if int(match[3][0]) > int(match[3][1]):  # if t1 > t2
+                    print("if2-01")
                     s1 = s1 + 1
-                else:   # if t2 > t1
+                else:  # if t2 > t1
+                    print("if2-02")
                     s2 = s2 + 1
             else:
-                if match[3][1] > match[3][0]:  # if t2 > t1
-                    s2 = s2 + 1
-                else:   # if t1 > t2
+                print("if2-1")
+                if int(match[3][1]) > int(match[3][0]):  # if t2 > t1
+                    print("if2-11")
                     s1 = s1 + 1
+                else:   # if t1 > t2
+                    print("if2-12")
+                    s2 = s2 + 1
+            
         else:
+            print("if3 - " + str([t1, s1, t2, s2, date, event]))
+            finalData.append([t1, s1, t2, s2, date, event])
+            t1 = match[2][0]  # left team
+            t2 = match[2][1]  # right team
+            s1 = 0  # left team score to 0
+            s2 = 0  # right team score to 0
+            event = match[-1]
+            date = match[1]
             prev = current
-    return data[0][3]
+
+    return finalData
     # сделать счет
     # сделать компановку по матчам
     #
@@ -94,4 +117,4 @@ def get_data(url):  # rename later
 url = "https://www.hltv.org/stats/matches?startDate=2018-10-09&endDate=2019-10-09&offset=100"
 
 # print(len(get_all_elements(url)))
-print(get_data(url))
+print(get_data1(url))
