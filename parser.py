@@ -50,9 +50,12 @@ def get_data(url):  # rename later
         data.append([id, date, teams, score, playedMap, event])
     return data
 
+
 def get_data1(url):  # reaname me 2
     """####"""
+
     data = get_data(url)
+
     prev = 1
     current = 0
     finalData = []
@@ -92,7 +95,7 @@ def get_data1(url):  # reaname me 2
                     s2 = s2 + 1
             
         else:
-            print("if3 - " + str([t1, s1, t2, s2, date, event]))
+            print("if3 - " + str([t1, s1, t2, s2, date, event])) # del
             finalData.append([t1, s1, t2, s2, date, event])
             t1 = match[2][0]  # left team
             t2 = match[2][1]  # right team
@@ -102,19 +105,39 @@ def get_data1(url):  # reaname me 2
             date = match[1]
             prev = current
 
-    return finalData
-    # сделать счет
-    # сделать компановку по матчам
-    #
-    #
-    #
+            if prev == current:  # if prev id == cur id
+             if t1 == match[2][0]:  # if teams doesnt switch sides in statistic
+                print("if2-0")
+                if int(match[3][0]) > int(match[3][1]):  # if t1 > t2
+                    print("if2-01")
+                    s1 = s1 + 1
+                else:  # if t2 > t1
+                    print("if2-02")
+                    s2 = s2 + 1
+             else:
+                print("if2-1")
+                if int(match[3][1]) > int(match[3][0]):  # if t2 > t1
+                    print("if2-11")
+                    s1 = s1 + 1
+                else:   # if t1 > t2
+                    print("if2-12")
+                    s2 = s2 + 1
 
-# def create_csv(url):
-    ###
-    ###
+    finalData.append([t1, s1, t2, s2, date, event])
+    return finalData
+    
+def create_csv(url):
+     """####"""
+     data = get_data1(url)
+
+     with open('123.csv', "w", newline='') as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for line in data:
+            writer.writerow(line)
 
 
 url = "https://www.hltv.org/stats/matches?startDate=2018-10-09&endDate=2019-10-09&offset=100"
 
 # print(len(get_all_elements(url)))
-print(get_data1(url))
+# print(get_data1(url))
+create_csv(url)
