@@ -4,11 +4,13 @@ import csv
 
 
 def get_html(url):
+    """Return html code, if 200 has been returned."""
     r = requests.get(url)
     return r.text if r.status_code == 200 else "Error"
 
 
 def get_DOM(url):
+    """Return all tr from the page."""
     html = get_html(url)
     soup = BeautifulSoup(html, 'lxml')
     # return soup.find('table', class_='stats-table')
@@ -16,6 +18,7 @@ def get_DOM(url):
 
 
 def get_all_elements(url):
+    """Write all tr in massive."""
     tbl = get_DOM(url)
     tbl.pop(0)
     elements = []
@@ -25,6 +28,7 @@ def get_all_elements(url):
 
 
 def get_data(url):  # rename later
+    """####"""
     elements = get_all_elements(url)
     data = []
     for element in elements:
@@ -38,7 +42,7 @@ def get_data(url):  # rename later
         # score = element.find_all("td", class_="score")
         playedMap = element.find("div", class_="dynamic-map-name-full").text
         event = element.find("td", class_="event-col").text
-        data.append((date, str(teams), str(score), playedMap, event))
+        data.append([date, str(teams), str(score), playedMap, event])
     return data
     # тут выделение каждого элемента из массива элементс
     # сделать компановку по матчам
