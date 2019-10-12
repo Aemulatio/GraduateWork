@@ -31,20 +31,23 @@ def get_data(url):  # rename later
     """####"""
     elements = get_all_elements(url)
     data = []
+    id = 0
     for element in elements:
+        if "first" in element["class"]:
+            id = id + 1
         teams = []
         score = []
         date = element.find("div", class_="time").text.replace('/', '-')
-        teams_ = element.find_all("td", class_="team-col")        
+        teams_ = element.find_all("td", class_="team-col")
         for t in teams_:
             teams.append(t.find("a").text)
-            score.append(t.find("span", class_ = "score").text.strip().replace(')', '').replace('(', '')) 
+            score.append(t.find("span", class_="score").text.strip().replace(
+                ')', '').replace('(', ''))
         # score = element.find_all("td", class_="score")
         playedMap = element.find("div", class_="dynamic-map-name-full").text
         event = element.find("td", class_="event-col").text
-        data.append([date, str(teams), str(score), playedMap, event])
+        data.append([date, str(teams), str(score), playedMap, event, id])
     return data
-    # тут выделение каждого элемента из массива элементс
     # сделать компановку по матчам
     #
     #
@@ -57,9 +60,5 @@ def get_data(url):  # rename later
 
 url = "https://www.hltv.org/stats/matches?startDate=2018-10-09&endDate=2019-10-09&offset=100"
 
+# print(len(get_all_elements(url)))
 print(get_data(url))
-
-
-# html_doc = urlopen('http://otus.ru').read()
-# soup = BeautifulSoup(html_doc)
-# print soup
