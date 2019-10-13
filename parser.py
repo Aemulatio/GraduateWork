@@ -13,7 +13,6 @@ def get_DOM(url):
     """Return all tr from the page."""
     html = get_html(url)
     soup = BeautifulSoup(html, 'lxml')
-    # return soup.find('table', class_='stats-table')
     return soup.find_all('tr')
 
 
@@ -25,10 +24,10 @@ def get_all_elements(url):
     for tr in tbl:
         elements.append(tr)
     return elements
+   
 
-
-def get_data(url):  # rename later
-    """####"""
+def get_inner_data(url):  
+    """Return data of each match."""
     elements = get_all_elements(url)
     data = []
     id = 0
@@ -44,17 +43,16 @@ def get_data(url):  # rename later
             teams.append(t.find("a").text)
             score.append(t.find("span", class_="score").text.strip().replace(
                 ')', '').replace('(', ''))
-        # score = element.find_all("td", class_="score")
         playedMap = element.find("div", class_="dynamic-map-name-full").text
         event = element.find("td", class_="event-col").text
         data.append([id, date, teams, score, playedMap, event])
     return data
 
 
-def get_data1(url):  # reaname me 2
-    """####"""
+def get_systemized_data(url):  
+    """Systemize data of each series."""
 
-    data = get_data(url)
+    data = get_inner_data(url)
 
     prev = 1
     current = 0
@@ -73,29 +71,21 @@ def get_data1(url):  # reaname me 2
             s2 = 0  # right team score to 0
             event = match[-1]
             date = match[1]
-            print("if1")
 
         current = match[0]
         if prev == current:  # if prev id == cur id
             if t1 == match[2][0]:  # if teams doesnt switch sides in statistic
-                print("if2-0")
                 if int(match[3][0]) > int(match[3][1]):  # if t1 > t2
-                    print("if2-01")
                     s1 = s1 + 1
                 else:  # if t2 > t1
-                    print("if2-02")
                     s2 = s2 + 1
             else:
-                print("if2-1")
                 if int(match[3][1]) > int(match[3][0]):  # if t2 > t1
-                    print("if2-11")
                     s1 = s1 + 1
                 else:   # if t1 > t2
-                    print("if2-12")
                     s2 = s2 + 1
             
         else:
-            print("if3 - " + str([t1, s1, t2, s2, date, event])) # del
             finalData.append([t1, s1, t2, s2, date, event])
             t1 = match[2][0]  # left team
             t2 = match[2][1]  # right team
@@ -107,37 +97,29 @@ def get_data1(url):  # reaname me 2
 
             if prev == current:  # if prev id == cur id
              if t1 == match[2][0]:  # if teams doesnt switch sides in statistic
-                print("if2-0")
                 if int(match[3][0]) > int(match[3][1]):  # if t1 > t2
-                    print("if2-01")
                     s1 = s1 + 1
                 else:  # if t2 > t1
-                    print("if2-02")
                     s2 = s2 + 1
              else:
-                print("if2-1")
                 if int(match[3][1]) > int(match[3][0]):  # if t2 > t1
-                    print("if2-11")
                     s1 = s1 + 1
                 else:   # if t1 > t2
-                    print("if2-12")
                     s2 = s2 + 1
 
     finalData.append([t1, s1, t2, s2, date, event])
     return finalData
     
 def create_csv(url):
-     """####"""
-     data = get_data1(url)
-
-     with open('123.csv', "w", newline='') as csv_file:
+     """Create a .csv file."""
+     data = get_systemized_data(url)
+#normal name
+     with open('123.csv', "w", newline='', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
+        writer.writerow(['Team 1', 'Score 1', 'Team 2', 'Score 2', 'Date', 'Event'])
         for line in data:
-            writer.writerow(line)
+            writer.writerow(line)            
 
+url = "https://www.hltv.org/stats/matches?startDate=2018-10-09&endDate=2019-10-09&offset=49"
 
-url = "https://www.hltv.org/stats/matches?startDate=2018-10-09&endDate=2019-10-09&offset=100"
-
-# print(len(get_all_elements(url)))
-# print(get_data1(url))
 create_csv(url)
