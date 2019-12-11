@@ -13,7 +13,7 @@ def parse(url):
     if r.status_code == 200:
         driver = webdriver.Chrome()
         driver.get(url)
-        pagesSrc = []
+        pagesSrc = list()
         while True:
             html = driver.page_source
             soup = BeautifulSoup(html, 'lxml')
@@ -25,13 +25,37 @@ def parse(url):
                 driver.quit()
                 break
             goLeft.send_keys(Keys.RETURN)
-        # pageSrc =
-        print(pagesSrc)
 
-# def get_html(url):
-#     """Return html code, if 200 has been returned."""
-#     r = requests.get(url)
-#     return r.text if r.status_code == 200 else "Error"
+        #delete later
+        print(len(pagesSrc))
+        #delete later
+
+        data = list()
+        for pageSrc in pagesSrc:
+            for tr in pageSrc.find_all('tr'):
+                """Get data about each game."""
+                teams = []
+                score = []
+                date = tr.find('div', class_='time').text.replace('/', '-')
+                teams_ = tr.find_all("td", class_="team-col")
+                for t in teams_:
+                    teams.append(t.find("a").text)
+                    score.append(t.find("span", class_="score").text.strip().replace(
+                        ')', '').replace('(', ''))
+                playedMap = tr.find("div", class_="dynamic-map-name-full").text
+                event = tr.find("td", class_="event-col").text
+                data.append([date, teams, score, playedMap, event])
+
+        #delete later
+        print(len(data))
+        #delete later
+        """Create a .csv file."""
+        with open('1234.csv', "w", newline='', encoding='utf-8') as csv_file:
+            writer = csv.writer(csv_file, delimiter=',')
+            writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event'])
+            for line in data:
+                writer.writerow(line)
+
 
 
 # def get_DOM(url):
