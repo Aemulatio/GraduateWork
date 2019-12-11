@@ -125,5 +125,5 @@ dmypy.json
 .pyre/
 
 #My test files
-123.*
+123*.*
 temp.html
