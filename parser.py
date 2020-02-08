@@ -18,18 +18,18 @@ def parse(url):
             soup = BeautifulSoup(html, 'lxml')
             pagesSrc.append(soup.find('table',
                                       class_='stats-table matches-table no-sort').find('tbody'))
-            goLeft = driver.find_element_by_class_name("pagination-prev")
+            goRight = driver.find_element_by_class_name("pagination-next")
 
             if not soup.find('div', class_='pagination-component pagination-top with-stats-table').find('a',
-                                                                                                        class_='pagination-prev').has_attr(
-                'href'):
+                                                                                                        class_='pagination-next').has_attr(
+                'href'): # if pagination-next то сначала в конец, если pagination-prev то с конца в начало
                 driver.quit()
                 break
-            goLeft.send_keys(Keys.RETURN)
+            goRight.send_keys(Keys.RETURN)
 
         data = list()
         for pageSrc in pagesSrc:
-            for tr in pageSrc.find_all('tr'):
+            for tr in pageSrc.find_all('tr'): #reversed(....) сзаду-наперед
                 """Get data about each game."""
                 teams = []
                 score = []
@@ -74,6 +74,6 @@ def parse(url):
         conn.close()
 
 
-url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31&offset=17000'
+url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31'
 
 parse(url)
