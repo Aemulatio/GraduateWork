@@ -3,6 +3,7 @@ import requests
 import csv
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import sqlite3
 
 
 def parse(url):
@@ -19,7 +20,9 @@ def parse(url):
                                       class_='stats-table matches-table no-sort').find('tbody'))
             goLeft = driver.find_element_by_class_name("pagination-prev")
 
-            if not soup.find('div', class_='pagination-component pagination-top with-stats-table').find('a', class_='pagination-prev').has_attr('href'):
+            if not soup.find('div', class_='pagination-component pagination-top with-stats-table').find('a',
+                                                                                                        class_='pagination-prev').has_attr(
+                'href'):
                 driver.quit()
                 break
             goLeft.send_keys(Keys.RETURN)
@@ -38,16 +41,39 @@ def parse(url):
                         ')', '').replace('(', ''))
                 playedMap = tr.find("div", class_="dynamic-map-name-full").text
                 event = tr.find("td", class_="event-col").text
-                data.append([date, teams, score, playedMap, event])
+                data.append((date, teams, score, playedMap, event))
 
-        """Create a .csv file."""
-        with open('1234.csv', "w", newline='', encoding='utf-8') as csv_file:
-            writer = csv.writer(csv_file, delimiter=',')
-            writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event'])
-            for line in data:
-                writer.writerow(line)
+        # """Create a .csv file."""
+        # with open('1234.csv', "w", newline='', encoding='utf-8') as csv_file:
+        #     writer = csv.writer(csv_file, delimiter=',')
+        #     writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event'])
+        #     for line in data:
+        #         writer.writerow(line)
+
+        """Insert it all in DB instead of .csv file"""
+        conn = sqlite3.connect('DataBase/DataBase.sqlite')
+        c = conn.cursor()
+
+        # Create table
+        if (c.execute('''SELECT count(*) FROM rawData''') != 0):
+            c.execute('''DELETE FROM rawData''')
+
+        c.execute('''CREATE TABLE IF NOT EXISTS rawData
+                     (date text, teams text,score text, map text,event text)''')
+
+        # Insert a row of data
+        for line in data:
+            c.execute('''INSERT INTO rawData(date, teams, score, map, event) VALUES (?,?,?,?,?)''',
+                      (str(line[0]), str(line[1]), str(line[2]), str(line[3]), str(line[4])))
+
+        # Save (commit) the changes
+        conn.commit()
+
+        # We can also close the connection if we are done with it.
+        # Just be sure any changes have been committed or they will be lost.
+        conn.close()
 
 
-url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-12-31&offset=14510'
+url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31&offset=17000'
 
 parse(url)
