@@ -37,7 +37,8 @@ printAll(local_data)  # test only
 
 refactored_data = list()
 # date, team1, win/lose, team2, win/lose, map, event
-# Думаю нужно переделать чуток парсер. Крч, надо сделать чтобы игры были обозначены по сериям игр. ВОТ!
+# TODO:Думаю нужно переделать чуток парсер. Крч, надо сделать чтобы игры были обозначены по сериям игр. ВОТ! DONE!
+# TODO: Более лучшее распределение по сериям
 for line in local_data:
     print('')
 
