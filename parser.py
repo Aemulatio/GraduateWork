@@ -28,11 +28,14 @@ def parse(url):
             go_right.send_keys(Keys.RETURN)
 
         data = list()
+        series = 0
         for pageSrc in pagesSrc:
             for tr in pageSrc.find_all('tr'):  # reversed(....) сзаду-наперед
                 """Get data about each game."""
                 teams = []
                 score = []
+                if "first" in tr["class"]:
+                    series = series + 1
                 date = tr.find('div', class_='time').text.replace('/', '-')
                 teams_ = tr.find_all("td", class_="team-col")
                 for t in teams_:
@@ -41,7 +44,7 @@ def parse(url):
                         ')', '').replace('(', ''))
                 played_map = tr.find("div", class_="dynamic-map-name-full").text
                 event = tr.find("td", class_="event-col").text
-                data.append((date, teams, score, played_map, event))
+                data.append((date, teams, score, played_map, event, series))
 
         # """Create a .csv file."""
         # with open('1234.csv', "w", newline='', encoding='utf-8') as csv_file:
@@ -60,11 +63,11 @@ def parse(url):
         if c.execute('''SELECT count(*) FROM rawData''') != 0:
             c.execute('''DELETE FROM rawData''')
         c.execute('''CREATE TABLE IF NOT EXISTS rawData
-                     (date text, teams text,score text, map text,event text)''')
+                     (series int, date text, teams text, score text, map text, event text)''')
         # Insert a row of data
         for line in data:
-            c.execute('''INSERT INTO rawData(date, teams, score, map, event) VALUES (?,?,?,?,?)''',
-                      (str(line[0]), str(line[1]), str(line[2]), str(line[3]), str(line[4])))
+            c.execute('''INSERT INTO rawData(series, date, teams, score, map, event) VALUES (?,?,?,?,?,?)''',
+                      (int(line[5]), str(line[0]), str(line[1]), str(line[2]), str(line[3]), str(line[4])))
         # Save (commit) the changes
         conn.commit()
         # We can also close the connection if we are done with it.
@@ -74,6 +77,6 @@ def parse(url):
 
 
 url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31'
-# url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-02-31' #temp line, delete later. It just for tests
+# url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-01-31'  # temp line, delete later. It just for tests
 
 parse(url)
