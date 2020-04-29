@@ -35,19 +35,134 @@ printAll(local_data)  # test only
 # ('8-2-20', ['EveryBodyDance', '1WIN'], ['12', '16'], 'Overpass', 'CIS Minor Open Qualifier 2 - ESL One Rio 2020', 23)
 
 refactored_data = list()
-matches = {}
-# date, team1, win/lose, team2, win/lose, map, event
+matches = dict()
+# series, date, team1, win/lose, team2, win/lose, map, event
 # TODO:Думаю нужно переделать чуток парсер.
 #  Крч, надо сделать чтобы игры были обозначены по сериям игр. ВОТ! DONE!
 # TODO: Более лучшее распределение по сериям
 
-for line in local_data:
-    matches[line[-1]] = {
-        'teams': line[1][0] + '-' + line[1][1],
-        'score': line[2][0] + '-' + line[2][0],
-    }  # Сюда можно засунуть игры по их сериям, т.е. номер_серии {teams: t1-t2, score:t1score-t2score}
+prev = 1
+current = 0
+t1 = str()  # left team
+t2 = str()  # right team
+s1 = str()  # left team score
+s2 = str()  # right team score
+event = str()  # event
+date = str()  # date of match
 
-printAll(matches)
+for line in local_data:
+    # matches[line[-1]] = {
+    #     'teams': str(line[1][0]) + '/' + str(line[1][1]),
+    #     'score': str(line[2][0]) + '-' + str(line[2][1]),
+    # }  # Сюда можно засунуть игры по их сериям, т.е. номер_серии {teams: t1-t2, score:t1score-t2score}
+    # if refactored_data[-1][0] == line[-1]:
+
+# ('8-2-20', ['1WIN', 'EveryBodyDance'], ['16', '5'], 'Dust2',
+#                                   'CIS Minor Open Qualifier 2 - ESL One Rio 2020', 23)
+    if prev != current:
+        t1 = line[1][0]  # left team
+        t2 = line[1][1]  # right team
+        s1 = 0  # left team score to 0
+        s2 = 0  # right team score to 0
+        event = line[-2]
+        date = line[0]
+    current = line[-1]
+    if prev == current:  # if prev id == cur id
+        if t1 == line[1][0]:  # if teams doesnt switch sides in statistic
+            if int(line[2][0]) > int(line[2][1]):  # if t1 > t2
+                s1 = 'w'
+                s2 = 'l'
+            else:  # if t2 > t1
+                s2 = 'w'
+                s1 = 'l'
+        else:
+            if int(line[2][1]) > int(line[2][0]):  # if t2 > t1
+                s1 = 'w'
+                s2 = 'l'
+            else:  # if t1 > t2
+                s2 = 'w'
+                s1 = 'l'
+        print([t1, s1, t2, s2, date, event])
+    else:
+        t1 = line[1][0]  # left team
+        t2 = line[1][1]  # right team
+        s1 = 0  # left team score to 0
+        s2 = 0  # right team score to 0
+        event = line[-2]
+        date = line[0]
+        prev = current
+        if prev == current:  # if prev id == cur id
+            if t1 == line[1][0]:  # if teams doesnt switch sides in statistic
+                if int(line[2][0]) > int(line[2][1]):  # if t1 > t2
+                    s1 = 'w'
+                    s2 = 'l'
+                else:  # if t2 > t1
+                    s2 = 'w'
+                    s1 = 'l'
+            else:
+                if int(line[2][1]) > int(line[2][0]):  # if t2 > t1
+                    s1 = 'w'
+                    s2 = 'l'
+                else:  # if t1 > t2
+                    s2 = 'w'
+                    s1 = 'l'
+
+# for match in local_data:
+#     if prev != current:
+#         t1 = match[1][0]  # left team
+#         t2 = match[1][1]  # right team
+#         s1 = 0  # left team score to 0
+#         s2 = 0  # right team score to 0
+#         event = match[-2]
+#         date = match[0]
+#     current = match[-1]
+#     if prev == current:  # if prev id == cur id
+#         if t1 == match[1][0]:  # if teams doesnt switch sides in statistic
+#             if int(match[2][0]) > int(match[2][1]):  # if t1 > t2
+#                 s1 = 'w'
+#                 s2 = 'l'
+#             else:  # if t2 > t1
+#                 s2 = 'w'
+#                 s1 = 'l'
+#         else:
+#             if int(match[2][1]) > int(match[2][0]):  # if t2 > t1
+#                 s1 = 'w'
+#                 s2 = 'l'
+#             else:  # if t1 > t2
+#                 s2 = 'w'
+#                 s1 = 'l'
+#     else:
+#         print([t1, s1, t2, s2, date, event])
+#         refactored_data.append([t1, s1, t2, s2, date, event])
+#         t1 = match[1][0]  # left team
+#         t2 = match[1][1]  # right team
+#         s1 = 0  # left team score to 0
+#         s2 = 0  # right team score to 0
+#         event = match[-2]
+#         date = match[0]
+#         prev = current
+#         if prev == current:  # if prev id == cur id
+#             if t1 == match[1][0]:  # if teams doesnt switch sides in statistic
+#                 if int(match[2][0]) > int(match[2][1]):  # if t1 > t2
+#                     s1 = 'w'
+#                     s2 = 'l'
+#                 else:  # if t2 > t1
+#                     s2 = 'w'
+#                     s1 = 'l'
+#             else:
+#                 if int(match[2][1]) > int(match[2][0]):  # if t2 > t1
+#                     s1 = 'w'
+#                     s2 = 'l'
+#                 else:  # if t1 > t2
+#                     s2 = 'w'
+#                     s1 = 'l'
+    print([t1, s1, t2, s2, date, event])
+
+# refactored_data.append([t1, s1, t2, s2, date, event])
+#     refactored_data.append((line[-1], line[0], t1,  ))
+
+# for i,v in matches.items():
+#     print(i,v)
 
 # region close_connection
 connection.commit()
