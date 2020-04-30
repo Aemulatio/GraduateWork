@@ -51,12 +51,12 @@
 
 
 .intro{
-    height: 1000px;
+    /*height: 1000px;*/
 }
 
 .intro__container{
     margin: 0 auto;
-    padding: 50px 15px;
+    padding: 60px 15px;
     overflow: hidden;
 }
 .intro__text{
@@ -66,18 +66,23 @@
 }
 
 .intro__title{
-    padding: 100px 0 0 0;
+    /*padding: 100px 0 0 0;*/
+    font-size: 40px;
     float: left;
 }
 
 .intro__theme{
     display: block;
     float: left;
+    padding: 30px 0 0 0;
 }
 
 .intro__span-about{
     display: block;
     float: left;
+    padding: 30px 0 0 0;
+
+    font-size: 20px;
 }
 
 
@@ -103,10 +108,19 @@
     height: 500px;
 }
 
+.params__container{
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
 
+.graphs{
+    background-color: #3cc665;
+    height: 500px;
+}
 
-
-
-
+.graphs__container{
+    margin: 0 auto;
+    padding: 50px 0;
+}
 
