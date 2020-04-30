@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+}
+
+.body__wrapper{
+    margin: 0 auto;
+    height: 100vh; /*temp*/
+    background-color: #3cc665;
+}
+
+.navigation{
+    /*height: 121px;*/
+    background-color: #3cb465;
+    box-shadow: 0 0 50px rgba(0,0,0,0.4);
+    display: block;
+}
+
+.navigation__container{
+    margin: 0 auto;
+    padding: 47px 0 74px 0;
+}
+
+.navigation a{
+    cursor: default;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.navigation a:hover, a:active, a:visited{
+    color: black;
+}
+
+.navigation__button{
+    padding: 0 10px 10px 10px;
+    /*float: right;*/
+    display: inline;
+
+    font-size: 24px;
+}
+
+.navigation__buttons{
+    float: right;
+    display: block;
+    /*padding: 17px 0 0 0 ;*/
+}
+
+
+.intro{
+    height: 1000px;
+}
+
+.intro__container{
+    margin: 0 auto;
+    padding: 50px 15px;
+    overflow: hidden;
+}
+.intro__text{
+    float: left;
+    max-width: 610px;
+    display: block;
+}
+
+.intro__title{
+    padding: 100px 0 0 0;
+    float: left;
+}
+
+.intro__theme{
+    display: block;
+    float: left;
+}
+
+.intro__span-about{
+    display: block;
+    float: left;
+}
+
+
+.intro__image__container{
+    display: block;
+    margin: 0 -58px 0 0;
+    float: right;
+}
+
+.intro__image{
+    display: block;
+    width: 566px;
+    height: auto;
+}
+
+
+
+
+
+
+.params{
+    background-color: #ffffff;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
