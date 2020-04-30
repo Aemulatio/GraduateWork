@@ -28,6 +28,7 @@
     cursor: default;
     text-transform: none;
     text-decoration: none;
+    color: black;
 }
 
 .navigation a:hover, a:active, a:visited{
