@@ -9,7 +9,7 @@ import datetime
 
 
 def parse(url):
-    print(datetime.datetime.now().time())
+    print("Start: " + str(datetime.datetime.now().time()))
     """DOCUMENTE THIS"""
     r = requests.get(url)
     if r.status_code == 200:
@@ -38,7 +38,8 @@ def parse(url):
             f.write(str(page))
             f.write("\n")
         f.close()
-    print(datetime.datetime.now().time())
+
+    print("Ended:" + str(datetime.datetime.now().time()))
 
 
 def parseFile():
@@ -66,7 +67,7 @@ def parseFile():
                     teams.append(t.find("a").text)
                     score.append(t.find("span", class_="score").text.strip().replace(
                         ')', '').replace('(', ''))
-                if tr.find("div", class_="dynamic-map-name-full")is None:
+                if tr.find("div", class_="dynamic-map-name-full") is None:
                     print(tr)
                     break
                 played_map = tr.find("div", class_="dynamic-map-name-full").text
@@ -110,8 +111,10 @@ def parseFile():
                 writer.writerow(line)
 
 
-url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31'
-# url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-01-31'  # temp line, delete later. It just for tests
+if __name__ == "__main__":
+    url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31'
+    # url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-01-31'
+    # temp line, delete later.    It just for tests
 
-# parse(url)
-parseFile()
+    # parse(url)
+    parseFile()
