@@ -1,4 +1,5 @@
 import sqlite3
+import csv
 
 
 def printAll(list):
@@ -166,7 +167,7 @@ for line in reversed(local_data):
 
     # Create table
 
-print(len(ref_data))
+# print(len(ref_data))
 try:
     if cursor.execute('''SELECT count(*) FROM refactoredData''') != 0:
         cursor.execute('''DELETE FROM refactoredData''')
@@ -178,7 +179,7 @@ try:
     # Insert a row of data
     for line in ref_data:
         cursor.execute(
-            '''INSERT INTO refactoredData(team1, team1_Status, team2, team2_Status,date, map, event) VALUES (?,?,?,?,?,?,?)''',
+            '''INSERT INTO refactoredData(team1, team1_Status, team2, team2_Status, date, map, event) VALUES (?,?,?,?,?,?,?)''',
             (str(line[0]), str(line[1]), str(line[2]), str(line[3]), str(line[4]), str(line[5]), str(line[6])))
         # print(line[0])
 except sqlite3.OperationalError:
@@ -196,3 +197,10 @@ connection.commit()
 cursor.close()
 connection.close()
 # endregion
+
+with open('refactoredData.csv', "w", newline='', encoding='utf-8') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    writer.writerow(['Team1', 'Team1_Status', 'Team2', 'Team2_Status', 'Date', 'Map', 'Event'])
+    for line in ref_data:
+        writer.writerow(line)
+
