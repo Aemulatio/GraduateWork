@@ -16,7 +16,7 @@ def parse(url, outPutFile, attr='a'):
         driver = webdriver.Chrome()
         driver.get(url)
         pagesSrc = list()
-        f = open(outPutFile, attr, encoding="UTF-8")
+        f = open("Data/"+outPutFile, attr, encoding="UTF-8")
         while True:
             html = driver.page_source
             soup = BeautifulSoup(html, 'lxml')
@@ -47,12 +47,12 @@ def parse(url, outPutFile, attr='a'):
         #     f.write("\n")
         # f.close()
 
-    print("Ended:" + str(datetime.datetime.now().time()))
+    print("Ended: " + str(datetime.datetime.now().time()))
 
 
 def parseFile(fileName, outPutFileName, ser=0):
     pages_src = list()
-    f = open(fileName, "r", encoding="UTF-8")
+    f = open("Data/"+fileName, "r", encoding="UTF-8")
     if f:
         soup = BeautifulSoup(f, 'lxml')
         pages_src.append(soup.find_all('tbody'))
@@ -105,7 +105,7 @@ def parseFile(fileName, outPutFileName, ser=0):
         conn.close()
 
         """Create a .csv file."""
-        with open(outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
+        with open("Data/"+outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event', 'Series'])
             for line in data:
