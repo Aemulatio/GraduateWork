@@ -204,3 +204,62 @@ with open('refactoredData.csv', "w", newline='', encoding='utf-8') as csv_file:
     for line in ref_data:
         writer.writerow(line)
 
+
+def csv_reader(path):
+    with open(path, 'r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        return [row for row in reader]
+
+
+# with open('refactoredData.csv', "w", newline='', encoding='utf-8') as csv_file:
+#     writer = csv.writer(csv_file, delimiter=',')
+#     writer.writerow(['Team1', 'Team1_Status', 'Team2', 'Team2_Status', 'Date', 'Map', 'Event'])
+#     for line in ref_data:
+#         writer.writerow(line)
+
+
+def refactor_data_from_csv(files):
+    """Преобразует данные из входных файлов в один"""
+    output_filename = 'Data/results.csv'
+    data = list()
+    for file in files:
+        data.append(csv_reader(file)[1:])
+
+    # Winner | Team1 | Team2 | Team1_Score| Team2_Score |  Map  |
+    #  Na'Vi | Na'Vi |  EG   |     16     |      0      | deDust|
+    # ['4-1-18', "['ViCi', 'New4']", "['16', '6']", 'Inferno', 'Letou Invitational', '11109']
+
+    refactored_data = list()
+    table = str.maketrans("[]", "  ")
+    for year in data:
+        for match in year:
+            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
+            teams = match[1].translate(table).replace("\"", "'").split(',')
+            # Разбиваем полученный массив на отдельные переменные убирая ' и лишние пробелы
+            team1, team2 = teams[0].strip()[1:-1], teams[1].strip()[1:-1]
+
+            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
+            score = match[2].translate(table).replace("\'", "").split(',')
+            # Разбиваем полученный массив на отдельные переменные убирая и лишние пробелы
+            team1_score, team2_score = score[0].strip(), score[1].strip()
+
+            # Получаем победителя
+            winner = str()
+            if team1_score > team2_score:
+                winner = "Team1"
+            else:
+                winner = "Team2"
+
+            # Получаем карту на которой играли
+            map = match[3]
+
+            # Добавляем данные в таком виде
+            refactored_data.append([winner, team1, team2, team1_score, team2_score, map])
+
+    return refactored_data
+
+
+if __name__ == '__main__':
+    data = refactor_data_from_csv(['Data/rawData18.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'])
+    printAll(data)
+
