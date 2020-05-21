@@ -211,6 +211,14 @@ def csv_reader(path):
         return [row for row in reader]
 
 
+def csv_writer(filename, data):
+    with open("Data/" + filename, "w", newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        writer.writerow(['Winner', 'Team1', 'Team2', 'Team1_Score', 'Team2_Score', 'Map'])
+        for line in data:
+            writer.writerow(line)
+
+
 # with open('refactoredData.csv', "w", newline='', encoding='utf-8') as csv_file:
 #     writer = csv.writer(csv_file, delimiter=',')
 #     writer.writerow(['Team1', 'Team1_Status', 'Team2', 'Team2_Status', 'Date', 'Map', 'Event'])
@@ -218,15 +226,17 @@ def csv_reader(path):
 #         writer.writerow(line)
 
 
-def refactor_data_from_csv(files):
+def refactor_data_from_csvs_to_csv(files):
     """Преобразует данные из входных файлов в один"""
-    output_filename = 'Data/results.csv'
+    output_filename = 'results.csv'
     data = list()
     for file in files:
         data.append(csv_reader(file)[1:])
 
+    # К этому виду привести
     # Winner | Team1 | Team2 | Team1_Score| Team2_Score |  Map  |
     #  Na'Vi | Na'Vi |  EG   |     16     |      0      | deDust|
+    # А так было
     # ['4-1-18', "['ViCi', 'New4']", "['16', '6']", 'Inferno', 'Letou Invitational', '11109']
 
     refactored_data = list()
@@ -256,10 +266,10 @@ def refactor_data_from_csv(files):
             # Добавляем данные в таком виде
             refactored_data.append([winner, team1, team2, team1_score, team2_score, map])
 
-    return refactored_data
+    # Пишем в файл
+    csv_writer(output_filename, refactored_data)
 
 
 if __name__ == '__main__':
-    data = refactor_data_from_csv(['Data/rawData18.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'])
-    printAll(data)
-
+    refactor_data_from_csvs_to_csv(['Data/rawData18.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'])
+    # printAll(data)
