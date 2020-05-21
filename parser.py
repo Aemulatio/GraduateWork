@@ -8,7 +8,7 @@ import time
 import datetime
 
 
-def parse(url):
+def parse(url, outPutFile, attr='a'):
     print("Start: " + str(datetime.datetime.now().time()))
     """DOCUMENTE THIS"""
     r = requests.get(url)
@@ -16,12 +16,21 @@ def parse(url):
         driver = webdriver.Chrome()
         driver.get(url)
         pagesSrc = list()
+        f = open(outPutFile, attr, encoding="UTF-8")
         while True:
             html = driver.page_source
             soup = BeautifulSoup(html, 'lxml')
             time.sleep(3)
-            pagesSrc.append(soup.find('table',
-                                      class_='stats-table matches-table no-sort').find('tbody'))
+            if soup.find('table',
+                         class_='stats-table matches-table no-sort') is not None:
+                f.write(str(soup.find('table',
+                                      class_='stats-table matches-table no-sort').find('tbody')))
+                f.write("\n")
+            else:
+                f.write(str(driver.current_url))
+
+                # pagesSrc.append(soup.find('table',
+                #                           class_='stats-table matches-table no-sort').find('tbody'))
             # time.sleep(3)
 
             go_right = driver.find_element_by_class_name("pagination-next")
@@ -32,25 +41,24 @@ def parse(url):
                 driver.quit()
                 break
             go_right.send_keys(Keys.RETURN)
-
-        f = open("parsedPaged.html", "w", encoding="UTF-8")
-        for page in pagesSrc:
-            f.write(str(page))
-            f.write("\n")
         f.close()
+        # for page in pagesSrc:
+        #     f.write(str(page))
+        #     f.write("\n")
+        # f.close()
 
     print("Ended:" + str(datetime.datetime.now().time()))
 
 
-def parseFile():
+def parseFile(fileName, outPutFileName, ser=0):
     pages_src = list()
-    f = open("parsedPaged.html", "r", encoding="UTF-8")
+    f = open(fileName, "r", encoding="UTF-8")
     if f:
         soup = BeautifulSoup(f, 'lxml')
         pages_src.append(soup.find_all('tbody'))
         # print(len(soup.find_all('tbody')))
         data = list()
-        series = 0
+        series = ser
         for pageSrc in soup.find_all('tbody'):
             # print(str(pageSrc) + "\n")
             for tr in pageSrc.find_all('tr'):  # reversed(....) сзаду-наперед
@@ -73,13 +81,6 @@ def parseFile():
                 played_map = tr.find("div", class_="dynamic-map-name-full").text
                 event = tr.find("td", class_="event-col").text
                 data.append((date, teams, score, played_map, event, series))
-
-        # """Create a .csv file."""
-        # with open('1234.csv', "w", newline='', encoding='utf-8') as csv_file:
-        #     writer = csv.writer(csv_file, delimiter=',')
-        #     writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event'])
-        #     for line in data:
-        #         writer.writerow(line)
 
         data = list(reversed(data))  # reverse data, from old to new, instead of new-old
 
@@ -104,17 +105,21 @@ def parseFile():
         conn.close()
 
         """Create a .csv file."""
-        with open('rawData.csv', "w", newline='', encoding='utf-8') as csv_file:
+        with open(outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event', 'Series'])
             for line in data:
                 writer.writerow(line)
+        print(fileName + " done!")
+        return series
 
 
 if __name__ == "__main__":
-    url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2020-12-31'
+    url = 'https://www.hltv.org/stats/matches?startDate=2020-01-01&endDate=2020-12-31'
     # url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-01-31'
     # temp line, delete later.    It just for tests
 
-    # parse(url)
-    parseFile()
+    # parse(url, "pages20.html")
+    ser = parseFile("pages18-19.html", 'rawData18.csv')
+    ser = parseFile("pages19-20.html", 'rawData19.csv', ser)
+    parseFile("pages20.html", 'rawData20.csv', ser)
