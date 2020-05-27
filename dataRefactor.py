@@ -209,15 +209,17 @@ def refactor_data_from_csvs_to_csv(files, newFileName):
 from itertools import groupby
 import numpy as np
 
+
 def team_by_team_csv(list, ids, name):
-    try:
-        with open("Data/Teams/" + name + ".csv", "w", newline='', encoding='utf-8') as csv_file:
+    try:            # Менять в зависимости от нужды либо море либо тимс
+        with open("Data/More/" + name + ".csv", "w", newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(['Winner', 'Team1', 'Team2', 'Team1_Score', 'Team2_Score', 'Map'])
             for id in ids:
                 writer.writerow(list[id])
     except:
         print("Nu ok", name)
+
 
 def split_by_teams(files):
     """Разбивает данные по командам"""
@@ -285,10 +287,14 @@ def split_by_teams(files):
         if team in rd:
             # for id in np.where(rd[:, 1] == team)[0]:
             #     print(rd[id])
-            team_by_team_csv(rd, np.where(rd[:, 1] == team)[0], team)
+            if len(np.where(rd[:, 1] == team)[0]) > 10: # Пишем только те команды в которых больше 10 игр за 19-20 года
+                team_by_team_csv(rd, np.where(rd[:, 1] == team)[0], team)
+
+
 #
 # # Пишем в файл
 # csv_writer(output_filename, refactored_data)
+
 
 if __name__ == '__main__':
     refactor_data_from_csvs_to_csv(['Data/rawData19.csv', 'Data/rawData20.csv'], 'results2.csv')

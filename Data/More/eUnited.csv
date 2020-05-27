@@ -1,0 +1,102 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,eUnited,ATK,6,16,Inferno
+Team1,eUnited,ATK,8,16,Dust2
+Team1,eUnited,Bad News Bears,16,13,Nuke
+Team1,eUnited,Bad News Bears,6,16,Inferno
+Team1,eUnited,Bushido Boyz,16,13,Overpass
+Team1,eUnited,Chaos,10,16,Mirage
+Team1,eUnited,Chaos,16,11,Vertigo
+Team1,eUnited,Chaos,9,16,Dust2
+Team1,eUnited,Cloud9,14,16,Nuke
+Team1,eUnited,Cloud9,16,12,Overpass
+Team1,eUnited,Complexity,10,16,Inferno
+Team1,eUnited,Complexity,13,16,Overpass
+Team1,eUnited,Complexity,6,16,Mirage
+Team1,eUnited,Complexity,6,16,Overpass
+Team1,eUnited,Denial,16,10,Nuke
+Team1,eUnited,Denial,16,11,Inferno
+Team1,eUnited,Denial,16,11,Mirage
+Team1,eUnited,Denial,16,13,Cache
+Team1,eUnited,Envy,14,16,Nuke
+Team1,eUnited,Envy,16,8,Overpass
+Team1,eUnited,Envy,8,16,Inferno
+Team1,eUnited,Envy,9,16,Mirage
+Team1,eUnited,Evil Geniuses,9,16,Dust2
+Team1,eUnited,FURIA,12,16,Overpass
+Team1,eUnited,FURIA,9,16,Nuke
+Team1,eUnited,Gen.G,16,9,Nuke
+Team1,eUnited,Ghost,16,14,Overpass
+Team1,eUnited,Ghost,19,17,Cache
+Team1,eUnited,Hentai Heroes,16,1,Nuke
+Team1,eUnited,INTZ,16,11,Overpass
+Team1,eUnited,INTZ,16,12,Train
+Team1,eUnited,INTZ,16,13,Mirage
+Team1,eUnited,INTZ,16,13,Vertigo
+Team1,eUnited,INTZ,16,14,Overpass
+Team1,eUnited,INTZ,16,8,Overpass
+Team1,eUnited,Infinity,16,0,Dust2
+Team1,eUnited,Infinity,16,10,Train
+Team1,eUnited,Infinity,16,11,Nuke
+Team1,eUnited,Isurus,16,8,Nuke
+Team1,eUnited,Just For Fun,9,16,Dust2
+Team1,eUnited,LiViD,16,13,Overpass
+Team1,eUnited,LiViD,16,8,Train
+Team1,eUnited,Liquid,16,11,Overpass
+Team1,eUnited,Liquid,3,16,Mirage
+Team1,eUnited,MIBR,14,16,Inferno
+Team1,eUnited,MIBR,6,16,Inferno
+Team1,eUnited,MVP PK,17,19,Overpass
+Team1,eUnited,MVP PK,9,16,Train
+Team1,eUnited,Monstars,16,6,Overpass
+Team1,eUnited,Mythic,13,16,Dust2
+Team1,eUnited,Mythic,8,16,Vertigo
+Team1,eUnited,NRG,13,16,Nuke
+Team1,eUnited,NRG,16,12,Vertigo
+Team1,eUnited,RBG,16,1,Overpass
+Team1,eUnited,RBG,16,12,Inferno
+Team1,eUnited,RBG,16,4,Train
+Team1,eUnited,Rap Gang,16,12,Overpass
+Team1,eUnited,Rap Gang,22,20,Mirage
+Team1,eUnited,Recon 5,16,10,Vertigo
+Team1,eUnited,Recon 5,16,14,Nuke
+Team1,eUnited,Sharks,16,13,Nuke
+Team1,eUnited,Sharks,19,17,Dust2
+Team1,eUnited,Sharks,2,16,Train
+Team1,eUnited,Singularity,1,16,Overpass
+Team1,eUnited,Singularity,16,14,Inferno
+Team1,eUnited,Swole Patrol,16,14,Dust2
+Team1,eUnited,Swole Patrol,16,8,Inferno
+Team1,eUnited,TeamOne,13,16,Mirage
+Team1,eUnited,Triumph,16,14,Overpass
+Team1,eUnited,Ze Pug Godz,22,19,Vertigo
+Team2,eUnited,ATK,16,8,Overpass
+Team2,eUnited,Bad News Bears,12,16,Nuke
+Team2,eUnited,Bad News Bears,16,8,Overpass
+Team2,eUnited,Bushido Boyz,16,6,Dust2
+Team2,eUnited,Chaos,16,3,Inferno
+Team2,eUnited,Cloud9,16,8,Inferno
+Team2,eUnited,Cyclone,16,3,Mirage
+Team2,eUnited,Divine,16,6,Vertigo
+Team2,eUnited,Envy,15,19,Inferno
+Team2,eUnited,Gen.G,16,8,Mirage
+Team2,eUnited,Ghost,11,16,Inferno
+Team2,eUnited,Hentai Heroes,16,6,Mirage
+Team2,eUnited,INTZ,13,16,Mirage
+Team2,eUnited,INTZ,13,16,Train
+Team2,eUnited,INTZ,14,16,Cache
+Team2,eUnited,INTZ,16,4,Inferno
+Team2,eUnited,INTZ,19,22,Mirage
+Team2,eUnited,Isurus,16,9,Overpass
+Team2,eUnited,Liquid,13,16,Nuke
+Team2,eUnited,Luminosity,11,16,Dust2
+Team2,eUnited,Luminosity,16,6,Inferno
+Team2,eUnited,Monstars,16,3,Nuke
+Team2,eUnited,NRG,16,5,Overpass
+Team2,eUnited,New England Whalers,15,19,Nuke
+Team2,eUnited,RBG,16,3,Overpass
+Team2,eUnited,Recon 5,16,8,Vertigo
+Team2,eUnited,Sharks,16,3,Vertigo
+Team2,eUnited,Singularity,14,16,Nuke
+Team2,eUnited,TeamOne,16,6,Dust2
+Team2,eUnited,Triumph,16,7,Mirage
+Team2,eUnited,Ze Pug Godz,10,16,Inferno
