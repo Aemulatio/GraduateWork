@@ -3,6 +3,10 @@ import collections
 import pandas as pd
 from IPython.display import display
 import numpy as np
+import os
+import time
+import category_encoders as ce
+from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
 
 
 def csv_reader(path):
@@ -12,97 +16,50 @@ def csv_reader(path):
 
 
 if __name__ == "__main__":
-    data = pd.read_csv("Data/results2.csv")
+
+    # files = os.listdir("Data/More/")
+    # print(files)
+    # for file in files:
+    #     print(pd.read_csv("Data/More/"+file))
+    data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
     display(data.head())
     # Получаем все команды
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
-    # UT = pd.Series(UniqueTeams, index=(range(1, len(UniqueTeams) + 1)))
-    # print(UniqueTeams)
-    # # Тоже самое только долгим путем
-    # Team1 = data['Team1']
-    # Team2 = data['Team2']
-    # Team1_unique = Team1.unique()  # , name='Team1'
-    # Team2_unique = Team2.unique()  # , name='Team2'
-    # T = np.concatenate((Team1_unique, Team2_unique))
-    # T1 = np.unique(T)
-    # data
-    # temp = data
+    print(pd.Index(UniqueTeams).get_loc('LDLC'))
+    # print(UniqueTeams.get("LDLC"))
+    # print(pd.g)
+
+    # Получаем все карты, на которых играли команды
+    UniqueMaps = pd.Series(np.unique(data['Map'].unique()))
+
+    # Создаем энкодер
+    enc_map = OrdinalEncoder()
+    # Кодируем названия Карт
+    Map = pd.DataFrame(data['Map'])
+    Map = enc_map.fit_transform(Map)
+    data = data.drop(['Map'], 1)
+    data.insert(5, "Map", Map, True)
+
     for id, team in UniqueTeams.items():
         data = data.replace(team, id)
 
-    print("DATA:")
-    print(data)
-
-    # Total number of matches.
-    # n_matches = data.shape[0]
-
-    # matches = {}
-    # for team in UniqueTeams:
-    #     matches[team] = \
-    #         {
-    #             'Wins': len(data[data.Winner == team]),
-    #             'Matches': len(data[data.Team1 == team]) + len(data[data.Team2 == team]),
-    #             # 'Maps': [].append(data[data.Map])
-    #             # 'PlayedMaps': [].append(data[data['Map']])
-    #         }
-
-    # df = pd.DataFrame(matches).T
-    # print(df.Matches > 5)
-
-    # print(type(UniqueTeams[0]))
-    # TTTT = pd.DataFrame(index=UniqueTeams)
-    # print(TTTT)
-    # print(UT)
-    # for id, team in UT.items():
-    # TTTT[team].append("123")
-    # print(id)
-    # print(data.any(axis='columns'))
-    # matches1[str(id)] = {
-    #     id: data[data['Team1'].str.contains(team)],
-    # }
-    # pass
-
-    # print("Matches:")
-    # print(matches)
-
-    # Calculate number of features. -1 because we are saving one as the target variable (win/lose/draw)
-    # n_features = data.shape[1] - 1
-    # # Calculate matches won by home team.
-    # n_homewins = len(data[data.Winner == 'Team2'])
-    # # Calculate win rate for home team.
-    # win_rate = (float(n_homewins) / (n_matches)) * 100
-    # print(n_matches)
-    # print(n_features)
-    # print(n_homewins)
-    # print(win_rate)
+    data = data.drop(['Team1_Score', 'Team2_Score'], 1)
 
     X_all = data.drop(['Winner'], 1)
     y_all = data['Winner']
-
-    display(X_all.head())
-    print("\n")
-    display(y_all.head())
-    # print(X_all)
-    # print(y_all)
 
     # Standardising the data.
     from sklearn.preprocessing import scale
 
     # # Center to the mean and component wise scale to unit variance.
-    cols = [['Team1', 'Team2', 'Team1_Score', 'Team2_Score']]
-    for col in cols:
-        X_all[col] = scale(X_all[col])
+    # cols = [['Team1', 'Team2', 'Team1_Score', 'Team2_Score']]
+    # cols = [['Team1', 'Team2', 'Team1_Score', 'Team2_Score', 'Map']]
+    cols = [['Team1', 'Team2', 'Map']]
 
 
-    # last 3 wins for both sides
-    # X_all.HM1 = X_all.HM1.astype('str')
-    # X_all.HM2 = X_all.HM2.astype('str')
-    # X_all.HM3 = X_all.HM3.astype('str')
-    # X_all.AM1 = X_all.AM1.astype('str')
-    # X_all.AM2 = X_all.AM2.astype('str')
-    # X_all.AM3 = X_all.AM3.astype('str')
+    # for col in cols:
+    #     X_all[col] = scale(X_all[col])
 
-    # we want continous vars that are integers for our input data, so lets remove any categorical vars
     def preprocess_features(X):
         ''' Preprocesses the football data and converts catagorical variables into dummy variables. '''
 
@@ -122,18 +79,15 @@ if __name__ == "__main__":
         return output
 
 
+    X_all = preprocess_features(X_all)
+
     from sklearn.model_selection import train_test_split
 
     # Shuffle and split the dataset into training and testing set.
     X_train, X_test, y_train, y_test = train_test_split(X_all, y_all,
-                                                        test_size=50,
-                                                        random_state=2, )
-    # stratify = y_all)
-
-    print(X_train)
-    print(X_test)
-    print(y_train)
-    print(y_test)
+                                                        test_size=0.28,  # ПОЧИТАТЬ
+                                                        random_state=42, )
+    # stratify=y_all)
 
     from time import time
     from sklearn.metrics import f1_score
@@ -162,6 +116,9 @@ if __name__ == "__main__":
         # Print and return results
         print("Made predictions in {:.4f} seconds.".format(end - start))
 
+        # return f1_score(target, y_pred, average="macro"), sum(target == y_pred) / float(len(y_pred))
+        # return f1_score(target, y_pred, average="micro"), sum(target == y_pred) / float(len(y_pred))
+        # return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
         return f1_score(target, y_pred, pos_label='Team1'), sum(target == y_pred) / float(len(y_pred))
 
 
@@ -196,12 +153,14 @@ if __name__ == "__main__":
     from sklearn.svm import SVC
 
     # Initialize the three models (XGBoost is initialized later)
-    clf_A = LogisticRegression(random_state=42)
+    clf_A = LogisticRegression(random_state=42, penalty='l2')
     clf_B = SVC(random_state=912, kernel='rbf')
 
     train_predict(clf_A, X_train, y_train, X_test, y_test)
     print()
-    clf_A.predict(X_test[2])
+    print(type(X_test))
+    # print(clf_A.predict([["London", 'PACT', 'Mirage']]))
+    # print(clf_A.predict(X_test[1, :]))
 
     print()
     train_predict(clf_B, X_train, y_train, X_test, y_test)
@@ -221,64 +180,64 @@ if __name__ == "__main__":
                   'scale_pos_weight': [1],
                   'reg_alpha': [1e-5]
                   }
-
+    # ['C', 'class_weight', 'dual', 'fit_intercept', 'intercept_scaling', 'l1_ratio', 'max_iter', 'multi_class',
+    # 'n_jobs', 'penalty', 'random_state', 'solver', 'tol', 'verbose', 'warm_start']
     # TODO: Initialize the classifier
     clf = LogisticRegression(random_state=42)
-    print(clf.get_params().keys())
-    # print(clf.estimator.get_params().keys())
-    # TODO: Make an f1 scoring function using 'make_scorer'
-    f1_scorer = make_scorer(f1_score, pos_label='Team1')
-    print(f1_scorer)
+    from sklearn import ensemble
 
-    # TODO: Perform grid search on the classifier using the f1_scorer as the scoring method
-    grid_obj = GridSearchCV(clf,
-                            scoring=f1_scorer,
-                            param_grid=parameters,
-                            cv=5)
+    # ------------------------
+    rf = ensemble.RandomForestClassifier(n_estimators=1000, random_state=11)
+    rf.fit(X_train, y_train)
 
-    # TODO: Fit the grid search object to the training data and find the optimal parameters
-    grid_obj = grid_obj.fit(X_train, y_train)
+    err_train = np.mean(y_train != rf.predict(X_train))
+    err_test = np.mean(y_test != rf.predict(X_test))
+    print(err_train, err_test)
+    print(type(X_test))
+    # TEST = pd.DataFrame({
+    #     "Team1": ["SKADE"],
+    #     "Team2": ["Brute"],
+    #     "Map": ["Dust2"]
+    # })
+    TEST = pd.DataFrame({
+        "Team1": 1,
+        "Team2": 257,
+        "Map": 3  # t2
+    }, index=[0])
+    TEST1 = pd.DataFrame({
+        "Team1": 30,
+        "Team2": 84,
+        "Map": 5
+    }, index=[0])
+    print("Введите название команды")
+    t1 = input()
+    print("Введите название команды")
+    t2 = input()
+    print(UniqueMaps)
+    print("Введите название карты")
+    m = input()
+    print(pd.Index(UniqueTeams).get_loc(t1))
+    print(pd.Index(UniqueTeams).get_loc(t2))
+    print(pd.Index(UniqueMaps).get_loc(m))
 
-    # Get the estimator
-    clf = grid_obj.best_estimator_
+    vvod = pd.DataFrame({
+        "Team1": pd.Index(UniqueTeams).get_loc(t1),
+        "Team2": pd.Index(UniqueTeams).get_loc(t2),
+        "Map": pd.Index(UniqueMaps).get_loc(m),
+    }, index=[0])
+    print("ВВЕДЕННЫЕ: ")
+    print(vvod)
 
-    # Report the final F1 score for training and testing after parameter tuning
-    f1, acc = predict_labels(clf, X_train, y_train)
-    print("F1 score and accuracy score for training set: {:.4f} , {:.4f}.".format(f1, acc))
+    print(rf.predict(vvod))
+    print(clf_A.predict(vvod))
+    print(clf_B.predict(vvod))
 
-    f1, acc = predict_labels(clf, X_test, y_test)
-    print("F1 score and accuracy score for test set: {:.4f} , {:.4f}.".format(f1, acc))
 
-    # data = csv_reader('refactoredData.csv')[1:]
-    #
-    # # region test
-    # wins = collections.defaultdict(int)
-    # matches = collections.defaultdict(int)
-    # maps = collections.defaultdict(int)
-    # tt = collections.defaultdict(list)
-    # index = round(len(data) / 5)
-    # # print(index)
-    # # ['KOVA', 'l', 'LDLC', 'w', '11-5-20 ', 'Dust2', 'Home Sweet Home Cup 5 Closed Qualifier']
-    #
-    # for row in data[:index]:
-    #     # for t1 in [*row]:
-    #     #     print(t1)
-    #     tt[row[0].strip()].append((row[5].strip(), row[2].strip(), row[1].strip()))
-    #     matches[row[0].strip()] += 1
-    #     matches[row[2].strip()] += 1
-    #     maps[row[-2].strip()] += 1
-    #     if row[1].strip() == 'l':
-    #         wins[row[2].strip()] += 1
-    #     else:
-    #         wins[row[0].strip()] += 1
-    #
-    # # print(row)
-    # # print(data[0])
-    # # for team, m in matches.items():
-    # #     print(team, m)
-    # print(matches)
-    # # print(wins['KOVA'])
-    # print(wins)
-    # print(maps)
-    # print(tt)
-    # # endregion
+    print(TEST)
+    print(rf.predict(TEST))
+    print(rf.predict(TEST1))
+
+    print(clf_A.predict(TEST))
+    print(clf_A.predict(TEST1))
+    print(clf_B.predict(TEST))
+    print(clf_B.predict(TEST1))

@@ -161,6 +161,10 @@ def csv_writer(filename, data):
             writer.writerow(line)
 
 
+import pandas as pd
+from IPython.display import display
+
+
 def refactor_data_from_csvs_to_csv(files, newFileName):
     """Преобразует данные из входных файлов в один"""
     output_filename = newFileName
@@ -192,9 +196,9 @@ def refactor_data_from_csvs_to_csv(files, newFileName):
             # Получаем победителя
             winner = str()
             if team1_score > team2_score:
-                winner = 'Team1'
+                winner = "Team1"
             else:
-                winner = 'Team2'
+                winner = "Team2"
 
             # Получаем карту на которой играли
             map = match[3]
@@ -211,7 +215,7 @@ import numpy as np
 
 
 def team_by_team_csv(list, ids, name):
-    try:            # Менять в зависимости от нужды либо море либо тимс
+    try:  # Менять в зависимости от нужды либо море либо тимс
         with open("Data/More/" + name + ".csv", "w", newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(['Winner', 'Team1', 'Team2', 'Team1_Score', 'Team2_Score', 'Map'])
@@ -257,7 +261,6 @@ def split_by_teams(files):
 
     rd = list()
     pt1, pt2 = refactored_data[0][1:3]
-    # print(refactored_data[:2])
     for row in refactored_data:
         if pt1 in row and pt2 in row:
             if row[1] == pt1 and row[2] == pt2:
@@ -277,27 +280,40 @@ def split_by_teams(files):
     rd = sorted(rd)
     del (rd[:3])
     UniqueTeams = np.unique(np.concatenate((np.array(rd)[:, 1], np.array(rd)[:, 2])))
-    # printAll(UniqueTeams)
-    print(len(UniqueTeams))
-    rd = np.array(rd)
 
+    rd = np.array(rd)
     UniqueTeams = np.delete(UniqueTeams, 0)
 
     for team in UniqueTeams:
         if team in rd:
-            # for id in np.where(rd[:, 1] == team)[0]:
-            #     print(rd[id])
-            if len(np.where(rd[:, 1] == team)[0]) > 10: # Пишем только те команды в которых больше 10 игр за 19-20 года
+            if len(np.where(rd[:, 1] == team)[0]) > 10:  # Пишем только те команды в которых больше 10 игр за 19-20 года
                 team_by_team_csv(rd, np.where(rd[:, 1] == team)[0], team)
 
 
-#
-# # Пишем в файл
-# csv_writer(output_filename, refactored_data)
+def delete_garbage(filename, matches_count, output):
+    data = pd.read_csv(filename)
+    display(data.head())
+    UniqueTeams = np.unique(np.concatenate((np.array(data)[:, 1], np.array(data)[:, 2])))
+
+    for team in UniqueTeams:
+        if team in data.values:
+            # Пишем только те команды в которых больше 10 игр за 19-20 года
+            if data.eq(team).values.sum() < matches_count + 1:
+                for row in data.index[data['Team1'] == team]:
+                    data = data.drop(row)
+                for row in data.index[data['Team2'] == team]:
+                    data = data.drop(row)
+
+    # display(data.head())
+    # printAll(data)
+    data.to_csv('Data/' + output, index=False)
+    # csv_writer(output, data)
 
 
 if __name__ == '__main__':
-    refactor_data_from_csvs_to_csv(['Data/rawData19.csv', 'Data/rawData20.csv'], 'results2.csv')
-    split_by_teams(['Data/rawData19.csv', 'Data/rawData20.csv'])
+    refactor_data_from_csvs_to_csv(['Data/rawData20.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'],
+                                   'results5_NoTN.csv')
+    delete_garbage('Data/results5_NoTN.csv', 10, 'results1_wo_garbage_NTN.csv')
+    # split_by_teams(['Data/rawData19.csv', 'Data/rawData20.csv'])
     # printAll(data)
 # 'Data/rawData18.csv',
