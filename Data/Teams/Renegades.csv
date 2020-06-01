@@ -1,0 +1,87 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,Renegades,AVANT,16,12,Inferno
+Team1,Renegades,Airborne,16,10,Overpass
+Team1,Renegades,Airborne,16,11,Inferno
+Team1,Renegades,Astralis,2,16,Inferno
+Team1,Renegades,Astralis,8,16,Inferno
+Team1,Renegades,BIG,5,16,Mirage
+Team1,Renegades,BIG,8,16,Nuke
+Team1,Renegades,Chiefs,16,11,Mirage
+Team1,Renegades,Cloud9,16,10,Overpass
+Team1,Renegades,Cloud9,16,12,Dust2
+Team1,Renegades,Complexity,16,8,Mirage
+Team1,Renegades,ENCE,16,14,Mirage
+Team1,Renegades,ENCE,16,14,Train
+Team1,Renegades,Evil Geniuses,12,16,Mirage
+Team1,Renegades,Evil Geniuses,5,16,Inferno
+Team1,Renegades,FURIA,12,16,Mirage
+Team1,Renegades,FURIA,9,16,Nuke
+Team1,Renegades,FaZe,16,14,Vertigo
+Team1,Renegades,G2,16,11,Vertigo
+Team1,Renegades,G2,16,9,Inferno
+Team1,Renegades,Grayhound,16,13,Cache
+Team1,Renegades,Grayhound,16,14,Cache
+Team1,Renegades,Grayhound,19,17,Mirage
+Team1,Renegades,Ground Zero,19,15,Dust2
+Team1,Renegades,Liquid,11,16,Dust2
+Team1,Renegades,Liquid,8,16,Nuke
+Team1,Renegades,MIBR,22,20,Mirage
+Team1,Renegades,MIBR,8,16,Cache
+Team1,Renegades,NRG,16,3,Inferno
+Team1,Renegades,NRG,8,16,Train
+Team1,Renegades,Natus Vincere,4,16,Train
+Team1,Renegades,NiP,12,16,Mirage
+Team1,Renegades,NiP,16,11,Mirage
+Team1,Renegades,NiP,16,13,Mirage
+Team1,Renegades,NiP,16,5,Dust2
+Team1,Renegades,NiP,4,16,Nuke
+Team1,Renegades,ORDER,16,11,Train
+Team1,Renegades,ORDER,16,12,Inferno
+Team1,Renegades,ORDER,16,14,Train
+Team1,Renegades,ORDER,16,9,Nuke
+Team1,Renegades,ORDER,16,9,Nuke
+Team1,Renegades,ORDER,22,20,Inferno
+Team1,Renegades,ORDER,7,16,Train
+Team1,Renegades,Paradox,16,9,Inferno
+Team1,Renegades,ROCK CANDY,16,0,Overpass
+Team1,Renegades,Sharks,16,12,Nuke
+Team1,Renegades,Singularity,16,10,Inferno
+Team1,Renegades,Singularity,16,10,Mirage
+Team1,Renegades,ViCi,16,7,Train
+Team1,Renegades,Vitality,16,12,Nuke
+Team1,Renegades,catman,16,9,Inferno
+Team1,Renegades,eUnited,6,16,Overpass
+Team1,Renegades,eUnited,9,16,Mirage
+Team1,Renegades,ex-Genuine,16,12,Dust2
+Team1,Renegades,ex-Genuine,16,12,Inferno
+Team1,Renegades,fnatic,16,14,Mirage
+Team1,Renegades,fnatic,9,16,Train
+Team1,Renegades,mousesports,7,16,Inferno
+Team1,Renegades,mousesports,7,16,Inferno
+Team2,Renegades,AVANGAR,13,16,Vertigo
+Team2,Renegades,AVANGAR,16,8,Train
+Team2,Renegades,AVANT,16,19,Train
+Team2,Renegades,Aequus,16,7,Inferno
+Team2,Renegades,BIG,12,16,Dust2
+Team2,Renegades,Chiefs,16,3,Train
+Team2,Renegades,Cloud9,16,7,Inferno
+Team2,Renegades,Complexity,12,16,Dust2
+Team2,Renegades,Complexity,16,4,Nuke
+Team2,Renegades,ENCE,16,7,Nuke
+Team2,Renegades,FaZe,14,16,Train
+Team2,Renegades,G2,11,16,Dust2
+Team2,Renegades,Ghost,13,16,Inferno
+Team2,Renegades,Ground Zero,16,6,Mirage
+Team2,Renegades,Liquid,11,16,Vertigo
+Team2,Renegades,MAD Lions,16,6,Nuke
+Team2,Renegades,MIBR,14,16,Mirage
+Team2,Renegades,MIBR,16,4,Train
+Team2,Renegades,MIBR,16,9,Mirage
+Team2,Renegades,ORDER,14,16,Train
+Team2,Renegades,Paradox,16,3,Dust2
+Team2,Renegades,Vitality,16,2,Mirage
+Team2,Renegades,catman,16,4,Dust2
+Team2,Renegades,ex-Bizarre,16,6,Inferno
+Team2,Renegades,ex-Genuine,14,16,Train
+Team2,Renegades,fnatic,16,4,Inferno
+Team2,Renegades,mousesports,12,16,Train

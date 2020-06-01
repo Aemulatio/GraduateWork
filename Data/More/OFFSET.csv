@@ -1,0 +1,70 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,OFFSET,AGO,4,16,Train
+Team1,OFFSET,AGO,7,16,Dust2
+Team1,OFFSET,ALTERNATE aTTaX,16,14,Overpass
+Team1,OFFSET,ALTERNATE aTTaX,8,16,Cache
+Team1,OFFSET,ASP,16,7,Train
+Team1,OFFSET,AVEZ,16,11,Inferno
+Team1,OFFSET,Baecon,11,16,Train
+Team1,OFFSET,Defusekids,16,10,Inferno
+Team1,OFFSET,Defusekids,16,11,Train
+Team1,OFFSET,Defusekids,4,16,Overpass
+Team1,OFFSET,DreamEaters,12,16,Overpass
+Team1,OFFSET,DreamEaters,19,17,Dust2
+Team1,OFFSET,Endpoint,16,12,Inferno
+Team1,OFFSET,Espada,13,16,Inferno
+Team1,OFFSET,Espada,2,16,Dust2
+Team1,OFFSET,FTW,16,1,Inferno
+Team1,OFFSET,GamerLegion,16,12,Dust2
+Team1,OFFSET,GamerLegion,16,19,Inferno
+Team1,OFFSET,Giants,19,16,Nuke
+Team1,OFFSET,Giants,8,16,Nuke
+Team1,OFFSET,Giants,8,16,Train
+Team1,OFFSET,HSL,16,11,Dust2
+Team1,OFFSET,HSL,16,7,Inferno
+Team1,OFFSET,Izako Boars,13,16,Vertigo
+Team1,OFFSET,KPI,11,16,Nuke
+Team1,OFFSET,Movistar Riders,16,11,Inferno
+Team1,OFFSET,Movistar Riders,3,16,Overpass
+Team1,OFFSET,The Final Tribe,6,16,Inferno
+Team1,OFFSET,The Final Tribe,9,16,Dust2
+Team1,OFFSET,Unique,14,16,Dust2
+Team1,OFFSET,Unique,9,16,Nuke
+Team1,OFFSET,Virtus.pro,9,16,Overpass
+Team1,OFFSET,VodkaJuniors,14,16,Inferno
+Team1,OFFSET,eXploit,12,16,Train
+Team1,OFFSET,eXploit,16,10,Nuke
+Team1,OFFSET,eXploit,16,11,Inferno
+Team1,OFFSET,eXploit,16,13,Dust2
+Team1,OFFSET,eXploit,16,14,Dust2
+Team1,OFFSET,eXploit,16,14,Dust2
+Team1,OFFSET,eXploit,16,14,Inferno
+Team1,OFFSET,eXploit,16,19,Vertigo
+Team1,OFFSET,eXploit,19,17,Nuke
+Team1,OFFSET,eXploit,8,16,Dust2
+Team1,OFFSET,k1ck,16,10,Mirage
+Team1,OFFSET,k1ck,16,11,Inferno
+Team1,OFFSET,x6tence,16,12,Dust2
+Team1,OFFSET,x6tence,16,13,Overpass
+Team2,OFFSET,ALTERNATE aTTaX,16,4,Dust2
+Team2,OFFSET,ASP,16,3,Inferno
+Team2,OFFSET,Baecon,16,8,Vertigo
+Team2,OFFSET,Defusekids,10,16,Train
+Team2,OFFSET,Endpoint,16,19,Nuke
+Team2,OFFSET,Endpoint,16,8,Overpass
+Team2,OFFSET,FTW,16,3,Dust2
+Team2,OFFSET,Giants,11,16,Dust2
+Team2,OFFSET,Izako Boars,19,22,Inferno
+Team2,OFFSET,KPI,13,16,Dust2
+Team2,OFFSET,Sprout,16,7,Inferno
+Team2,OFFSET,The Final Tribe,16,8,Overpass
+Team2,OFFSET,VodkaJuniors,16,6,Overpass
+Team2,OFFSET,VodkaJuniors,16,8,Train
+Team2,OFFSET,VodkaJuniors,16,9,Nuke
+Team2,OFFSET,eXploit,14,16,Nuke
+Team2,OFFSET,eXploit,14,16,Train
+Team2,OFFSET,eXploit,16,19,Nuke
+Team2,OFFSET,eXploit,16,3,Dust2
+Team2,OFFSET,eXploit,16,4,Dust2
+Team2,OFFSET,eXploit,16,5,Dust2
+Team2,OFFSET,eXploit,16,7,Train

@@ -3,6 +3,7 @@ import csv
 
 
 def printAll(list):
+    print(list.__class__.__name__)
     for i in list:
         print(i)
 
@@ -160,9 +161,13 @@ def csv_writer(filename, data):
             writer.writerow(line)
 
 
-def refactor_data_from_csvs_to_csv(files):
+import pandas as pd
+from IPython.display import display
+
+
+def refactor_data_from_csvs_to_csv(files, newFileName):
     """Преобразует данные из входных файлов в один"""
-    output_filename = 'results.csv'
+    output_filename = newFileName
     data = list()
     for file in files:
         data.append(csv_reader(file)[1:])
@@ -205,6 +210,110 @@ def refactor_data_from_csvs_to_csv(files):
     csv_writer(output_filename, refactored_data)
 
 
-if __name__ == '__main__':
-    refactor_data_from_csvs_to_csv(['Data/rawData18.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'])
+from itertools import groupby
+import numpy as np
+
+
+def team_by_team_csv(list, ids, name):
+    try:  # Менять в зависимости от нужды либо море либо тимс
+        with open("Data/More/" + name + ".csv", "w", newline='', encoding='utf-8') as csv_file:
+            writer = csv.writer(csv_file, delimiter=',')
+            writer.writerow(['Winner', 'Team1', 'Team2', 'Team1_Score', 'Team2_Score', 'Map'])
+            for id in ids:
+                writer.writerow(list[id])
+    except:
+        print("Nu ok", name)
+
+
+def split_by_teams(files):
+    """Разбивает данные по командам"""
+    output_filename = ""
+    data = list()
+    for file in files:
+        data.append(csv_reader(file)[1:])
+
+    refactored_data = list()
+    table = str.maketrans("[]", "  ")
+    for year in data:
+        for match in year:
+            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
+            teams = match[1].translate(table).replace("\"", "'").split(',')
+            # Разбиваем полученный массив на отдельные переменные убирая ' и лишние пробелы
+            team1, team2 = teams[0].strip()[1:-1], teams[1].strip()[1:-1]
+
+            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
+            score = match[2].translate(table).replace("\'", "").split(',')
+            # Разбиваем полученный массив на отдельные переменные убирая и лишние пробелы
+            team1_score, team2_score = score[0].strip(), score[1].strip()
+
+            # Получаем победителя
+            winner = str()
+            if team1_score > team2_score:
+                winner = 'Team1'
+            else:
+                winner = 'Team2'
+
+            # Получаем карту на которой играли
+            map = match[3]
+
+            # Добавляем данные в таком виде
+            refactored_data.append([winner, team1, team2, team1_score, team2_score, map])
+
+    rd = list()
+    pt1, pt2 = refactored_data[0][1:3]
+    for row in refactored_data:
+        if pt1 in row and pt2 in row:
+            if row[1] == pt1 and row[2] == pt2:
+                rd.append(row)
+            else:
+                if row[3] > row[4]:
+                    rd.append([row[0], row[2], row[1], row[4], row[3], row[5]])
+                else:
+                    if row[0] == 'Team1':
+                        rd.append(["Team2", row[2], row[1], row[4], row[3], row[5]])
+                    else:
+                        rd.append(["Team1", row[2], row[1], row[4], row[3], row[5]])
+        else:
+            rd.append(row)
+        pt1, pt2 = row[1:3]
+
+    rd = sorted(rd)
+    del (rd[:3])
+    UniqueTeams = np.unique(np.concatenate((np.array(rd)[:, 1], np.array(rd)[:, 2])))
+
+    rd = np.array(rd)
+    UniqueTeams = np.delete(UniqueTeams, 0)
+
+    for team in UniqueTeams:
+        if team in rd:
+            if len(np.where(rd[:, 1] == team)[0]) > 10:  # Пишем только те команды в которых больше 10 игр за 19-20 года
+                team_by_team_csv(rd, np.where(rd[:, 1] == team)[0], team)
+
+
+def delete_garbage(filename, matches_count, output):
+    data = pd.read_csv(filename)
+    display(data.head())
+    UniqueTeams = np.unique(np.concatenate((np.array(data)[:, 1], np.array(data)[:, 2])))
+
+    for team in UniqueTeams:
+        if team in data.values:
+            # Пишем только те команды в которых больше 10 игр за 19-20 года
+            if data.eq(team).values.sum() < matches_count + 1:
+                for row in data.index[data['Team1'] == team]:
+                    data = data.drop(row)
+                for row in data.index[data['Team2'] == team]:
+                    data = data.drop(row)
+
+    # display(data.head())
     # printAll(data)
+    data.to_csv('Data/' + output, index=False)
+    # csv_writer(output, data)
+
+
+if __name__ == '__main__':
+    refactor_data_from_csvs_to_csv(['Data/rawData20.csv', 'Data/rawData19.csv', 'Data/rawData20.csv'],
+                                   'results5_NoTN.csv')
+    delete_garbage('Data/results5_NoTN.csv', 10, 'results1_wo_garbage_NTN.csv')
+    # split_by_teams(['Data/rawData19.csv', 'Data/rawData20.csv'])
+    # printAll(data)
+# 'Data/rawData18.csv',

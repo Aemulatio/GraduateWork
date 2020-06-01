@@ -1,0 +1,107 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,ENCE,100 Thieves,13,16,Train
+Team1,ENCE,100 Thieves,3,16,Inferno
+Team1,ENCE,100 Thieves,7,16,Nuke
+Team1,ENCE,100 Thieves,9,16,Inferno
+Team1,ENCE,AGO,12,16,Mirage
+Team1,ENCE,AGO,16,1,Inferno
+Team1,ENCE,AVANGAR,16,12,Mirage
+Team1,ENCE,AVANGAR,16,7,Train
+Team1,ENCE,Apeks,16,11,Mirage
+Team1,ENCE,Apeks,16,13,Nuke
+Team1,ENCE,Apeks,16,8,Dust2
+Team1,ENCE,Astralis,11,16,Inferno
+Team1,ENCE,Astralis,16,13,Train
+Team1,ENCE,BIG,16,14,Train
+Team1,ENCE,BIG,5,16,Dust2
+Team1,ENCE,Complexity,16,10,Train
+Team1,ENCE,Complexity,8,16,Nuke
+Team1,ENCE,Copenhagen Flames,16,5,Train
+Team1,ENCE,Copenhagen Flames,22,20,Inferno
+Team1,ENCE,Dignitas,16,12,Train
+Team1,ENCE,FURIA,11,16,Train
+Team1,ENCE,FURIA,9,16,Train
+Team1,ENCE,G2,14,16,Nuke
+Team1,ENCE,G2,16,10,Mirage
+Team1,ENCE,G2,16,11,Nuke
+Team1,ENCE,G2,19,17,Dust2
+Team1,ENCE,GODSENT,16,10,Dust2
+Team1,ENCE,GODSENT,4,16,Dust2
+Team1,ENCE,Giants,16,14,Overpass
+Team1,ENCE,HAVU,16,14,Dust2
+Team1,ENCE,HAVU,16,2,Train
+Team1,ENCE,Heretics,5,16,Nuke
+Team1,ENCE,Heretics,6,16,Inferno
+Team1,ENCE,Heroic,16,12,Overpass
+Team1,ENCE,Heroic,16,14,Nuke
+Team1,ENCE,Illuminar,16,14,Nuke
+Team1,ENCE,Illuminar,6,16,Overpass
+Team1,ENCE,Izako Boars,9,16,Cache
+Team1,ENCE,KOVA,16,13,Mirage
+Team1,ENCE,KOVA,16,9,Train
+Team1,ENCE,Liquid,19,17,Overpass
+Team1,ENCE,Liquid,2,16,Overpass
+Team1,ENCE,Liquid,3,16,Dust2
+Team1,ENCE,Liquid,3,16,Nuke
+Team1,ENCE,Liquid,8,16,Mirage
+Team1,ENCE,MAD Lions,10,16,Mirage
+Team1,ENCE,MAD Lions,7,16,Overpass
+Team1,ENCE,MIBR,11,16,Overpass
+Team1,ENCE,MIBR,16,11,Mirage
+Team1,ENCE,MIBR,16,5,Train
+Team1,ENCE,MIBR,9,16,Mirage
+Team1,ENCE,NRG,3,16,Overpass
+Team1,ENCE,Natus Vincere,16,14,Mirage
+Team1,ENCE,NiP,16,8,Inferno
+Team1,ENCE,NiP,5,16,Inferno
+Team1,ENCE,Renegades,12,16,Nuke
+Team1,ENCE,Renegades,16,12,Mirage
+Team1,ENCE,Renegades,16,14,Train
+Team1,ENCE,Renegades,5,16,Mirage
+Team1,ENCE,SJ,16,13,Mirage
+Team1,ENCE,Spirit,14,16,Train
+Team1,ENCE,Spirit,2,16,Inferno
+Team1,ENCE,Valiance,16,9,Train
+Team1,ENCE,ViCi,16,13,Train
+Team1,ENCE,ViCi,16,13,Train
+Team1,ENCE,Vitality,16,11,Nuke
+Team1,ENCE,Vitality,16,12,Nuke
+Team1,ENCE,Vitality,7,16,Overpass
+Team1,ENCE,Vitality,9,16,Overpass
+Team1,ENCE,Winstrike,16,11,Dust2
+Team1,ENCE,Winstrike,7,16,Mirage
+Team1,ENCE,eUnited,16,10,Train
+Team1,ENCE,eUnited,16,12,Overpass
+Team1,ENCE,mousesports,16,11,Dust2
+Team2,ENCE,AVANGAR,13,16,Dust2
+Team2,ENCE,AVANGAR,16,5,Overpass
+Team2,ENCE,Astralis,10,16,Overpass
+Team2,ENCE,Astralis,14,16,Dust2
+Team2,ENCE,Astralis,16,9,Nuke
+Team2,ENCE,Dignitas,14,16,Nuke
+Team2,ENCE,FURIA,13,16,Mirage
+Team2,ENCE,FURIA,16,9,Overpass
+Team2,ENCE,FaZe,12,16,Nuke
+Team2,ENCE,G2,16,6,Nuke
+Team2,ENCE,G2,16,6,Overpass
+Team2,ENCE,G2,17,19,Dust2
+Team2,ENCE,G2,17,19,Dust2
+Team2,ENCE,Gen.G,14,16,Nuke
+Team2,ENCE,HellRaisers,12,16,Dust2
+Team2,ENCE,Isurus,16,4,Inferno
+Team2,ENCE,Liquid,13,16,Inferno
+Team2,ENCE,Liquid,15,15,Overpass
+Team2,ENCE,MIBR,14,16,Train
+Team2,ENCE,MIBR,16,9,Train
+Team2,ENCE,Movistar Riders,10,16,Overpass
+Team2,ENCE,Natus Vincere,16,4,Mirage
+Team2,ENCE,Renegades,13,16,Inferno
+Team2,ENCE,Renegades,16,7,Inferno
+Team2,ENCE,SJ,16,2,Overpass
+Team2,ENCE,Sprout,14,16,Dust2
+Team2,ENCE,ViCi,13,16,Inferno
+Team2,ENCE,ViCi,16,3,Overpass
+Team2,ENCE,Vitality,14,16,Dust2
+Team2,ENCE,Vitality,14,16,Inferno
+Team2,ENCE,Vitality,15,19,Inferno
+Team2,ENCE,Vitality,16,6,Nuke

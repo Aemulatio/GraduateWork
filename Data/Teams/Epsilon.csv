@@ -1,0 +1,105 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,Epsilon,AGO,16,11,Mirage
+Team1,Epsilon,ALTERNATE aTTaX,16,10,Inferno
+Team1,Epsilon,AVANGAR,11,16,Train
+Team1,Epsilon,AVANGAR,8,16,Dust2
+Team1,Epsilon,AVEZ,16,14,Train
+Team1,Epsilon,BLUEJAYS,16,13,Mirage
+Team1,Epsilon,BLUEJAYS,8,16,Nuke
+Team1,Epsilon,Chaos,14,16,Overpass
+Team1,Epsilon,Chaos,16,3,Cache
+Team1,Epsilon,Copenhagen Flames,16,12,Overpass
+Team1,Epsilon,Copenhagen Flames,16,14,Inferno
+Team1,Epsilon,Denzaaaa,16,10,Mirage
+Team1,Epsilon,Game Fist,16,11,Mirage
+Team1,Epsilon,Game Fist,16,5,Inferno
+Team1,Epsilon,GamerLegion,12,16,Overpass
+Team1,Epsilon,GamerLegion,8,16,Inferno
+Team1,Epsilon,HAVU,16,13,Dust2
+Team1,Epsilon,HAVU,22,19,Mirage
+Team1,Epsilon,HAVU,7,16,Train
+Team1,Epsilon,Heretics,16,14,Inferno
+Team1,Epsilon,Heretics,16,14,Overpass
+Team1,Epsilon,Movistar Riders,10,16,Overpass
+Team1,Epsilon,Movistar Riders,16,10,Overpass
+Team1,Epsilon,Movistar Riders,16,11,Mirage
+Team1,Epsilon,Movistar Riders,16,14,Inferno
+Team1,Epsilon,Movistar Riders,16,8,Mirage
+Team1,Epsilon,Nemiga,16,11,Cache
+Team1,Epsilon,Nemiga,16,12,Dust2
+Team1,Epsilon,Nemiga,19,16,Overpass
+Team1,Epsilon,NiP,12,16,Inferno
+Team1,Epsilon,NiP,5,16,Train
+Team1,Epsilon,PACT,16,8,Mirage
+Team1,Epsilon,PACT,8,16,Inferno
+Team1,Epsilon,Red Reserve,8,16,Overpass
+Team1,Epsilon,SJ,16,10,Inferno
+Team1,Epsilon,SJ,19,17,Dust2
+Team1,Epsilon,Spirit,16,14,Dust2
+Team1,Epsilon,Spirit,16,7,Cache
+Team1,Epsilon,Sprout,0,16,Train
+Team1,Epsilon,Sprout,10,16,Mirage
+Team1,Epsilon,Sprout,16,14,Nuke
+Team1,Epsilon,Sprout,8,16,Inferno
+Team1,Epsilon,Tricked,13,16,Overpass
+Team1,Epsilon,Tricked,16,4,Cache
+Team1,Epsilon,Unicorns of Love,6,16,Inferno
+Team1,Epsilon,Unique,16,0,Train
+Team1,Epsilon,Unique,16,11,Train
+Team1,Epsilon,Virtus.pro,16,12,Mirage
+Team1,Epsilon,Virtus.pro,16,12,Train
+Team1,Epsilon,Virtus.pro,16,13,Mirage
+Team1,Epsilon,Vitality,16,8,Train
+Team1,Epsilon,Vitality,6,16,Nuke
+Team1,Epsilon,Windigo,2,16,Inferno
+Team1,Epsilon,Winstrike,9,16,Overpass
+Team1,Epsilon,Youngsters,16,13,Mirage
+Team1,Epsilon,average25iqbutheadshots,16,11,Mirage
+Team1,Epsilon,average25iqbutheadshots,16,12,Mirage
+Team1,Epsilon,average25iqbutheadshots,16,5,Inferno
+Team1,Epsilon,x-kom,16,14,Dust2
+Team1,Epsilon,x-kom,9,16,Inferno
+Team1,Epsilon,x-kom,9,16,Vertigo
+Team1,Epsilon,x6tence Galaxy,16,11,Cache
+Team1,Epsilon,x6tence Galaxy,16,11,Mirage
+Team2,Epsilon,AGO,16,2,Overpass
+Team2,Epsilon,AGO,16,9,Overpass
+Team2,Epsilon,AVEZ,16,7,Mirage
+Team2,Epsilon,Ambush,16,2,Mirage
+Team2,Epsilon,Ambush,16,4,Overpass
+Team2,Epsilon,Ambush,16,8,Train
+Team2,Epsilon,Chaos,10,16,Dust2
+Team2,Epsilon,Chaos,14,16,Mirage
+Team2,Epsilon,Chaos,16,19,Mirage
+Team2,Epsilon,Chaos,16,8,Mirage
+Team2,Epsilon,Copenhagen Flames,16,7,Overpass
+Team2,Epsilon,GamerLegion,14,16,Mirage
+Team2,Epsilon,GamerLegion,17,19,Dust2
+Team2,Epsilon,Heroic,10,16,Mirage
+Team2,Epsilon,Izako Boars,16,3,Mirage
+Team2,Epsilon,Izako Boars,16,4,Cache
+Team2,Epsilon,LDLC,16,7,Mirage
+Team2,Epsilon,MegaWonsz9,16,7,Train
+Team2,Epsilon,Nemiga,16,5,Inferno
+Team2,Epsilon,Nemiga,16,6,Inferno
+Team2,Epsilon,Nemiga,17,19,Overpass
+Team2,Epsilon,Spirit,16,8,Inferno
+Team2,Epsilon,Sprout,12,16,Overpass
+Team2,Epsilon,Tricked,16,4,Train
+Team2,Epsilon,Tricked,16,7,Nuke
+Team2,Epsilon,Unicorns of Love,11,16,Overpass
+Team2,Epsilon,Unicorns of Love,16,3,Mirage
+Team2,Epsilon,Unicorns of Love,16,9,Dust2
+Team2,Epsilon,Valiance,16,9,Train
+Team2,Epsilon,Virtus.pro,10,16,Inferno
+Team2,Epsilon,Virtus.pro,12,16,Inferno
+Team2,Epsilon,Virtus.pro,15,19,Nuke
+Team2,Epsilon,Virtus.pro,16,9,Dust2
+Team2,Epsilon,Vitality,10,16,Dust2
+Team2,Epsilon,Youngsters,16,2,Nuke
+Team2,Epsilon,ex-3DMAX,14,16,Dust2
+Team2,Epsilon,expert,16,7,Inferno
+Team2,Epsilon,expert,16,8,Overpass
+Team2,Epsilon,forZe,11,16,Inferno
+Team2,Epsilon,pro100,16,7,Dust2
+Team2,Epsilon,x6tence Galaxy,12,16,Overpass

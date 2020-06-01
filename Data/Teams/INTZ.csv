@@ -1,0 +1,117 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,INTZ,ATK,4,16,Mirage
+Team1,INTZ,ATK,9,16,Dust2
+Team1,INTZ,AVANGAR,8,16,Mirage
+Team1,INTZ,Ascent,16,10,Mirage
+Team1,INTZ,Ben's Anime Team,16,5,Mirage
+Team1,INTZ,Ben's Anime Team,19,17,Nuke
+Team1,INTZ,Bravado,16,12,Mirage
+Team1,INTZ,Cloud9,16,12,Overpass
+Team1,INTZ,Cloud9,19,16,Train
+Team1,INTZ,Complexity,10,16,Mirage
+Team1,INTZ,Denial,16,10,Train
+Team1,INTZ,Denial,19,17,Nuke
+Team1,INTZ,DreamEaters,19,15,Mirage
+Team1,INTZ,DreamEaters,6,16,Overpass
+Team1,INTZ,Envy,11,16,Mirage
+Team1,INTZ,Envy,16,11,Train
+Team1,INTZ,Envy,16,12,Dust2
+Team1,INTZ,Envy,16,14,Mirage
+Team1,INTZ,Envy,19,16,Nuke
+Team1,INTZ,Envy,2,16,Dust2
+Team1,INTZ,FURIA,16,11,Mirage
+Team1,INTZ,FURIA,3,16,Nuke
+Team1,INTZ,FURIA,4,16,Train
+Team1,INTZ,FURIA,6,16,Mirage
+Team1,INTZ,FURIA,7,16,Inferno
+Team1,INTZ,Grayhound,7,16,Dust2
+Team1,INTZ,Imperial,8,16,Inferno
+Team1,INTZ,Inflames,16,7,Train
+Team1,INTZ,Isurus,16,9,Dust2
+Team1,INTZ,Luminosity,11,16,Train
+Team1,INTZ,Luminosity,16,14,Mirage
+Team1,INTZ,Luminosity,20,22,Train
+Team1,INTZ,Luminosity,3,16,Train
+Team1,INTZ,MAC-51,16,10,Vertigo
+Team1,INTZ,MIBR,16,14,Vertigo
+Team1,INTZ,MVP PK,16,12,Vertigo
+Team1,INTZ,MVP PK,16,13,Train
+Team1,INTZ,NRG,3,16,Mirage
+Team1,INTZ,New England Whalers,16,6,Train
+Team1,INTZ,New Identity,13,16,Mirage
+Team1,INTZ,ORDER,16,8,Mirage
+Team1,INTZ,Old Guys Club,16,6,Cache
+Team1,INTZ,Peeker's Advantage,16,11,Mirage
+Team1,INTZ,Polar Ace,16,11,Nuke
+Team1,INTZ,Rap Gang,16,10,Overpass
+Team1,INTZ,Reapers,16,14,Dust2
+Team1,INTZ,Renegades,9,16,Dust2
+Team1,INTZ,Riot Squad,12,16,Mirage
+Team1,INTZ,Riot Squad,19,17,Train
+Team1,INTZ,Riot Squad,7,16,Inferno
+Team1,INTZ,Russian Street Party,16,5,Mirage
+Team1,INTZ,Sharks,7,16,Mirage
+Team1,INTZ,Sharks,9,16,Nuke
+Team1,INTZ,Singularity,13,16,Train
+Team1,INTZ,Singularity,16,10,Inferno
+Team1,INTZ,Singularity,16,5,Cache
+Team1,INTZ,Singularity,3,16,Nuke
+Team1,INTZ,Swole Patrol,9,16,Mirage
+Team1,INTZ,TeamOne,16,12,Nuke
+Team1,INTZ,TeamOne,9,16,Overpass
+Team1,INTZ,Triumph,16,7,Mirage
+Team1,INTZ,Virtus.pro,16,10,Mirage
+Team1,INTZ,Virtus.pro,8,16,Dust2
+Team1,INTZ,eUnited,14,16,Mirage
+Team1,INTZ,eUnited,16,11,Dust2
+Team1,INTZ,eUnited,9,16,Nuke
+Team1,INTZ,forZe,16,7,Vertigo
+Team1,INTZ,iNTACT,16,11,Cache
+Team2,INTZ,Big Frames,16,3,Train
+Team2,INTZ,Black,16,4,Train
+Team2,INTZ,Bravado,12,16,Train
+Team2,INTZ,Bravado,16,3,Inferno
+Team2,INTZ,Chaos,16,6,Nuke
+Team2,INTZ,Envy,14,16,Nuke
+Team2,INTZ,Evidence,16,9,Mirage
+Team2,INTZ,Front,16,3,Train
+Team2,INTZ,Grizzlys,16,9,Mirage
+Team2,INTZ,Imperial,16,9,Overpass
+Team2,INTZ,Inflames,16,9,Dust2
+Team2,INTZ,Isurus,16,8,Train
+Team2,INTZ,Just Swing,16,6,Train
+Team2,INTZ,LiViD,16,3,Overpass
+Team2,INTZ,Liquid,11,16,Mirage
+Team2,INTZ,Liquid,12,16,Dust2
+Team2,INTZ,Luminosity,13,16,Cache
+Team2,INTZ,Luminosity,16,19,Overpass
+Team2,INTZ,Luminosity,16,7,Dust2
+Team2,INTZ,MAC-51,16,5,Mirage
+Team2,INTZ,MIBR,10,16,Train
+Team2,INTZ,MIBR,13,16,Vertigo
+Team2,INTZ,MIBR,16,7,Mirage
+Team2,INTZ,Mythic,16,3,Train
+Team2,INTZ,NRG,10,16,Train
+Team2,INTZ,New England Whalers,16,8,Inferno
+Team2,INTZ,New Identity,17,19,Overpass
+Team2,INTZ,ORDER,16,6,Inferno
+Team2,INTZ,Oceanus,16,2,Vertigo
+Team2,INTZ,Oceanus,16,5,Mirage
+Team2,INTZ,Peeker's Advantage,16,3,Train
+Team2,INTZ,Polar Ace,16,6,Inferno
+Team2,INTZ,Rap Gang,16,5,Mirage
+Team2,INTZ,Reapers,16,5,Train
+Team2,INTZ,Renegades,13,16,Mirage
+Team2,INTZ,Rugratz,16,7,Mirage
+Team2,INTZ,Russian Street Party,12,16,Inferno
+Team2,INTZ,Sharks,12,16,Train
+Team2,INTZ,Sharks,12,16,Vertigo
+Team2,INTZ,Singularity,11,16,Inferno
+Team2,INTZ,Swole Patrol,14,16,Dust2
+Team2,INTZ,TeamOne,16,19,Inferno
+Team2,INTZ,TeamOne,16,3,Train
+Team2,INTZ,Triumph,16,3,Vertigo
+Team2,INTZ,Virtus.pro,11,16,Train
+Team2,INTZ,eUnited,11,16,Overpass
+Team2,INTZ,forZe,13,16,Nuke
+Team2,INTZ,iNTACT,16,7,Nuke
