@@ -3,12 +3,13 @@ import numpy as np
 import pandas as pd
 import sklearn
 import os
+from collections import Counter
 
 if __name__ == '__main__':
-    files = os.listdir("Models/pickle/")
-    lr = pickle.load(open("Models/pickle/" + files[0], 'rb'))
-    rf = pickle.load(open("Models/pickle/" + files[1], 'rb'))
-    svc = pickle.load(open("Models/pickle/" + files[2], 'rb'))
+    files = os.listdir("Models/")
+    lr = pickle.load(open("Models/" + files[0], 'rb'))
+    rf = pickle.load(open("Models/" + files[1], 'rb'))
+    svc = pickle.load(open("Models/" + files[2], 'rb'))
 
     vvod = pd.DataFrame({
         "Team1": 25,
@@ -16,6 +17,15 @@ if __name__ == '__main__':
         "Map": 5,
     }, index=[0])
 
-    print(lr.predict(vvod))
-    print(rf.predict(vvod))
-    print(svc.predict(vvod))
+    otvet = []
+    otvet.append(str(lr.predict(vvod))[2:-2])
+    otvet.append(str(rf.predict(vvod))[2:-2])
+    otvet.append(str(svc.predict(vvod))[2:-2])
+    c = Counter(otvet)
+    ret = c.most_common(1)[0][0]
+
+    print(ret)
+
+    # print(lr.predict(vvod))
+    # print(rf.predict(vvod))
+    # print(svc.predict(vvod))
