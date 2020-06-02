@@ -55,10 +55,10 @@ def predict(t1, t2, map):
 @app.route('/', methods=['post', 'get'])
 def hello_world():
     files = os.listdir("Models/")
-    print(files)
+    lr = pickle.load(open("Models/" + files[0], 'rb'))
+
 
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
-    print(data)
     if request.method == 'POST':
         # print(str(request.form.get('team1')))
         t1 = request.form.get('team1')
