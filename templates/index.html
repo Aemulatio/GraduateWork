@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ВКР</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
 <div class="body__wrapper">
@@ -55,18 +55,42 @@
     <div class="params">
         <a href="" name="params"></a>
         <div class="params__container container">
-            <form action="">
-                <label for="team1">Команда 1</label><input type="text" id="team1" name="team1">
-                <label for="team2">Команда 2</label><input type="text" id="team2" name="team2">
-                <label for="map">Карта</label><input type="text" id="map" name="map">
+            <form action="" method="post" name="prediction_form">
+                <p>
+                    <label for="team1">Команда 1</label>
+                    <select name="team1" id="team1">
+                        {%for team in teams%}
+                        <option value="{{team}}}">{{team}}</option>
+                        {%endfor%}
+                    </select>
+                </p>
+                <p>
+                    <label for="team2">Команда 2</label>
+                    <select name="team2" id="team2">
+                        {%for team in teams%}
+                        <option value="{{team}}}">{{team}}</option>
+                        {%endfor%}
+                    </select>
+                </p>
+                <p>
+                    <label for="map">Карта</label>
+                    <select name="map" id="map">
+                        {%for map in maps%}
+                        <option value="{{map}}}">{{map}}</option>
+                        {%endfor%}
+                    </select>
+                </p>
                 <input type="submit">
-
             </form>
 
         </div>
+        {%if winner%}
+        <p>{{winner}}</p>
+        {%endif%}
+
     </div>
     <div class="graphs">
-        <a href="" name="graphs"></a>
+        <a href="#" name="graphs"></a>
         <div class="graphs__container container">
 
         </div>
