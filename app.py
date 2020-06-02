@@ -61,7 +61,7 @@ def hello_world():
         map = request.form.get('map')
 
         return render_template('index.html',
-                               winner=predict(t1[:-1], t2[:-1], map[:-1]),
+                               winner=predict(t1, t2, map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique())
                                )
