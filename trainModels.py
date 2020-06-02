@@ -1,6 +1,5 @@
 import csv
 import pandas as pd
-from IPython.display import display
 import numpy as np
 import time
 from time import time
@@ -13,7 +12,6 @@ import pickle
 
 if __name__ == "__main__":
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
-    display(data.head())
     # Получаем все команды
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
     # Получаем все карты, на которых играли команды
