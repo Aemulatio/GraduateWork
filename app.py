@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 def predict(t1, t2, map):
     files = os.listdir("Models/")
+    print(files)
     lr = pickle.load(open("Models/" + files[0], 'rb'))
     rf = pickle.load(open("Models/" + files[1], 'rb'))
     svc = pickle.load(open("Models/" + files[2], 'rb'))
