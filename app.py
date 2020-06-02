@@ -47,17 +47,13 @@ def predict(t1, t2, map):
     # print(svc.predict(vvod))
 
 
-# @app.errorhandler(500)
-# def error_500(error):
-#     return ("Error: " + "123")
+@app.errorhandler(500)
+def error_500(error):
+    return (error)
 
 
 @app.route('/', methods=['post', 'get'])
 def hello_world():
-    files = os.listdir("Models/")
-    lr = pickle.load(open("Models/" + files[0], 'rb'))
-
-
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
     if request.method == 'POST':
         # print(str(request.form.get('team1')))
