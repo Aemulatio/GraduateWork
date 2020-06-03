@@ -7,6 +7,7 @@ import pandas as pd
 import sklearn
 import os
 from collections import Counter
+from joblib import load
 
 app = Flask(__name__)
 
@@ -14,9 +15,10 @@ app = Flask(__name__)
 def predict(t1, t2, map):
     files = os.listdir("Models/")
     print(files)
-    lr = pickle.load(open("Models/" + files[0], 'rb'))
-    rf = pickle.load(open("Models/" + files[1], 'rb'))
-    svc = pickle.load(open("Models/" + files[2], 'rb'))
+    lr = pickle.load(open("Models/Logistic_regression_model.sav", 'rb'))
+    # rf = pickle.load(open("Models/" + files[1], 'rb'))
+    rf = load("Random_forest.joblib")
+    svc = pickle.load(open("Models/SVM_model.sav", 'rb'))
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
 
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
@@ -71,7 +73,6 @@ def hello_world():
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique())
                                )
-
 
 
 if __name__ == '__main__':
