@@ -132,7 +132,7 @@ if __name__ == "__main__":
     # 'n_jobs', 'penalty', 'random_state', 'solver', 'tol', 'verbose', 'warm_start']
 
     # ------------------------
-    rf = ensemble.RandomForestClassifier(n_estimators=1000, random_state=11)
+    rf = ensemble.RandomForestClassifier(n_estimators=170, random_state=11)
     rf.fit(X_train, y_train)
 
     err_train = np.mean(y_train != rf.predict(X_train))
@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
     LR = 'Logistic_regression_model.sav'
     SVM_model = 'SVM_model.sav'
-    RF = 'Random_forest_model.sav'
+    RF = 'Random_forest.sav'
     pickle.dump(clf_A, open("Models/" + LR, 'wb'))
     pickle.dump(clf_B, open("Models/" + SVM_model, 'wb'))
     pickle.dump(rf, open("Models/" + RF, 'wb'))
