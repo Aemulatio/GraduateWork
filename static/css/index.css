@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: white;
 }
 .container{
     width: 1170px;
@@ -9,102 +10,10 @@
 .body__wrapper{
     margin: 0 auto;
     height: 100vh; /*temp*/
-    background-color: #3cc665;
+    background-color: #1B1B1B;
 }
-
-.navigation{
-    /*height: 121px;*/
-    background-color: #3cb465;
-    box-shadow: 0 0 50px rgba(0,0,0,0.4);
-    display: block;
-}
-
-.navigation__container{
-    margin: 0 auto;
-    padding: 47px 0 74px 0;
-}
-
-.navigation a{
-    cursor: default;
-    text-transform: none;
-    text-decoration: none;
-    color: black;
-}
-
-.navigation a:hover, a:active, a:visited{
-    color: black;
-}
-
-.navigation__button{
-    padding: 0 10px 10px 10px;
-    /*float: right;*/
-    display: inline;
-
-    font-size: 24px;
-}
-
-.navigation__buttons{
-    float: right;
-    display: block;
-    /*padding: 17px 0 0 0 ;*/
-}
-
-
-.intro{
-    /*height: 1000px;*/
-}
-
-.intro__container{
-    margin: 0 auto;
-    padding: 60px 15px;
-    overflow: hidden;
-}
-.intro__text{
-    float: left;
-    max-width: 610px;
-    display: block;
-}
-
-.intro__title{
-    /*padding: 100px 0 0 0;*/
-    font-size: 40px;
-    float: left;
-}
-
-.intro__theme{
-    display: block;
-    float: left;
-    padding: 30px 0 0 0;
-}
-
-.intro__span-about{
-    display: block;
-    float: left;
-    padding: 30px 0 0 0;
-
-    font-size: 20px;
-}
-
-
-.intro__image__container{
-    display: block;
-    margin: 0 -58px 0 0;
-    float: right;
-}
-
-.intro__image{
-    display: block;
-    width: 566px;
-    height: auto;
-}
-
-
-
-
-
 
 .params{
-    background-color: #ffffff;
     height: 500px;
 }
 
@@ -113,9 +22,17 @@
     padding: 50px 0;
 }
 
+.params__select{
+    color: black;
+}
+
+
+
+.params input{
+    color: black;
+}
 
 .graphs{
-    background-color: #3cc665;
     height: 500px;
 }
 

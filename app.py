@@ -13,12 +13,13 @@ app = Flask(__name__)
 
 
 def predict(t1, t2, map):
-    # lr = pickle.load(open("Models/Logistic_regression_model.sav", 'rb'))
-    # # rf = pickle.load(open("Models/" + files[1], 'rb'))
-    # rf = load("Random_forest.joblib")
-    # rf = load("gbt.joblib")
-    # knn = pickle.load(open("Models/knn.sav", 'rb'))
-    svc = pickle.load(open("Models/SVM_model.sav", 'rb'))
+
+    if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
+        model = pickle.load(open("Models/SVM_model.sav", 'rb'))
+        print("SVM")
+    else:
+        model = pickle.load(open("Models/RANDOM_FOREST.pickle", 'rb'))
+        print("RF")
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
 
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
@@ -39,16 +40,13 @@ def predict(t1, t2, map):
     # c = Counter(otvet)
     # ret = c.most_common(1)[0][0]
     # print(ret)
-    ret = svc.predict(vvod)
+    ret = model.predict(vvod)
     if ret == 'Team1':
         ret = t1
     else:
         ret = t2
 
     return ret
-    # print(lr.predict(vvod))
-    # print(rf.predict(vvod))
-    # print(svc.predict(vvod))
 
 
 @app.errorhandler(500)
@@ -56,9 +54,37 @@ def error_500(error):
     return (error)
 
 
+
+from sklearn.model_selection import train_test_split
+from sklearn import ensemble
+
+
 @app.route('/', methods=['post', 'get'])
 def hello_world():
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
+    if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
+        UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
+        # Получаем все карты, на которых играли команды
+        UniqueMaps = pd.Series(np.unique(data['Map'].unique()))
+
+        data = data.drop(['Team1_Score', 'Team2_Score'], 1)
+
+        X_all = data.drop(['Winner'], 1)
+        y_all = data['Winner']
+
+        for id, team in UniqueTeams.items():
+            X_all = X_all.replace(team, id)
+        for id, map in UniqueMaps.items():
+            X_all = X_all.replace(map, id)
+
+        X_train, X_test, y_train, y_test = train_test_split(X_all, y_all,
+                                                            test_size=0.28,
+                                                            random_state=42, )
+
+        rf = ensemble.RandomForestClassifier(n_estimators=170, random_state=11)
+        rf.fit(X_train, y_train)
+        pickle.dump(rf, open("Models/RANDOM_FOREST.pickle", 'wb'))
+
     if request.method == 'POST':
         # print(str(request.form.get('team1')))
         t1 = request.form.get('team1')

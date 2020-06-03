@@ -13,25 +13,25 @@
             <form action="" method="post" name="prediction_form">
                 <p>
                     <label for="team1">Команда 1</label>
-                    <select name="team1" id="team1">
+                    <select name="team1" id="team1" class="params__select">
                         {%for team in teams%}
-                        <option value="{{team}}">{{team}}</option>
+                        <option value="{{team}}" class="params__select">{{team}}</option>
                         {%endfor%}
                     </select>
                 </p>
                 <p>
                     <label for="team2">Команда 2</label>
-                    <select name="team2" id="team2">
+                    <select name="team2" id="team2" class="params__select">
                         {%for team in teams%}
-                        <option value="{{team}}">{{team}}</option>
+                        <option value="{{team}}" class="params__select">{{team}}</option>
                         {%endfor%}
                     </select>
                 </p>
                 <p>
                     <label for="map">Карта</label>
-                    <select name="map" id="map">
+                    <select name="map" id="map" class="params__select">
                         {%for map in maps%}
-                        <option value="{{map}}">{{map}}</option>
+                        <option value="{{map}}" class="params__select">{{map}}</option>
                         {%endfor%}
                     </select>
                 </p>
