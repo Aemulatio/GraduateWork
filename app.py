@@ -18,7 +18,8 @@ def predict(t1, t2, map):
     lr = pickle.load(open("Models/Logistic_regression_model.sav", 'rb'))
     # # rf = pickle.load(open("Models/" + files[1], 'rb'))
     # rf = load("Random_forest.joblib")
-    rf = load("gbt.joblib")
+    # rf = load("gbt.joblib")
+    knn = pickle.load(open("Models/knn.sav", 'rb'))
     svc = pickle.load(open("Models/SVM_model.sav", 'rb'))
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
 
@@ -34,7 +35,7 @@ def predict(t1, t2, map):
 
     otvet = []
     otvet.append(str(lr.predict(vvod))[2:-2])
-    otvet.append(str(rf.predict(vvod))[2:-2])
+    otvet.append(str(knn.predict(vvod))[2:-2])
     otvet.append(str(svc.predict(vvod))[2:-2])
     print(otvet)
     c = Counter(otvet)
