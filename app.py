@@ -13,9 +13,7 @@ app = Flask(__name__)
 
 
 def predict(t1, t2, map):
-    files = os.listdir("Models/")
-    # print(files)
-    lr = pickle.load(open("Models/Logistic_regression_model.sav", 'rb'))
+    # lr = pickle.load(open("Models/Logistic_regression_model.sav", 'rb'))
     # # rf = pickle.load(open("Models/" + files[1], 'rb'))
     # rf = load("Random_forest.joblib")
     # rf = load("gbt.joblib")
@@ -33,15 +31,15 @@ def predict(t1, t2, map):
         "Map": pd.Index(UniqueMaps).get_loc(map),
     }, index=[0])
 
-    otvet = []
-    otvet.append(str(lr.predict(vvod))[2:-2])
+    # otvet = []
+    # otvet.append(str(lr.predict(vvod))[2:-2])
     # otvet.append(str(knn.predict(vvod))[2:-2])
-    otvet.append(str(svc.predict(vvod))[2:-2])
-    print(otvet)
-    c = Counter(otvet)
-    ret = c.most_common(1)[0][0]
-    print(ret)
-    # ret = lr.predict(vvod)
+    # otvet.append(str(svc.predict(vvod))[2:-2])
+    # print(otvet)
+    # c = Counter(otvet)
+    # ret = c.most_common(1)[0][0]
+    # print(ret)
+    ret = svc.predict(vvod)
     if ret == 'Team1':
         ret = t1
     else:
