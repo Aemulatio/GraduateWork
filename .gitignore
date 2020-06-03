@@ -127,3 +127,13 @@ dmypy.json
 #My test files
 123*.*
 temp.html
+
+
+
+#That site doesnt need at all
+Data/
+dataRefactor.py
+predict.py
+trainModels.py
+Random_forest.joblib
+
