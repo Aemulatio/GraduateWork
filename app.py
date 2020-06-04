@@ -13,13 +13,10 @@ app = Flask(__name__)
 
 
 def predict(t1, t2, map):
-
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         model = pickle.load(open("Models/SVM_model.sav", 'rb'))
-        print("SVM")
     else:
         model = pickle.load(open("Models/RANDOM_FOREST.pickle", 'rb'))
-        print("RF")
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
 
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
@@ -32,14 +29,6 @@ def predict(t1, t2, map):
         "Map": pd.Index(UniqueMaps).get_loc(map),
     }, index=[0])
 
-    # otvet = []
-    # otvet.append(str(lr.predict(vvod))[2:-2])
-    # otvet.append(str(knn.predict(vvod))[2:-2])
-    # otvet.append(str(svc.predict(vvod))[2:-2])
-    # print(otvet)
-    # c = Counter(otvet)
-    # ret = c.most_common(1)[0][0]
-    # print(ret)
     ret = model.predict(vvod)
     if ret == 'Team1':
         ret = t1
@@ -66,7 +55,6 @@ def hello_world():
         UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
         # Получаем все карты, на которых играли команды
         UniqueMaps = pd.Series(np.unique(data['Map'].unique()))
-
         data = data.drop(['Team1_Score', 'Team2_Score'], 1)
 
         X_all = data.drop(['Winner'], 1)
@@ -93,12 +81,12 @@ def hello_world():
 
         return render_template('index.html',
                                winner=predict(t1, t2, map),
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
+                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique())))[1:],
                                maps=np.unique(data['Map'].unique())
                                )
     else:
         return render_template('index.html',
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
+                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique())))[1:],
                                maps=np.unique(data['Map'].unique())
                                )
 

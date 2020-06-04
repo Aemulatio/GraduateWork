@@ -7,51 +7,70 @@
     <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
 </head>
 <body>
-<div class="body__wrapper">
-    <div class="params">
-        <a href="" name="params"></a>
-        <div class="params__container container">
-            <form action="" method="post" name="prediction_form">
-                <p>
-                    <label for="team1">Команда 1</label>
-                    <select name="team1" id="team1" class="params__select">
+<div class="predict">
+    <div class="predict__container container clearfix">
+        <div class="predict__content">
+            <form action="" method="post" class="predict__form" name="prediction_form">
+
+                <div class="predict__element">
+                    <h2>
+                        <label for="team1">Команда 1</label>
+                    </h2>
+                    <select name="team1" id="team1" class="predict__select" required>
+                        <option value="" class="predict__select">Выберите команду</option>
                         {%for team in teams%}
-                        <option value="{{team}}" class="params__select">{{team}}</option>
+                        <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
-                </p>
-                <p>
-                    <label for="team2">Команда 2</label>
-                    <select name="team2" id="team2" class="params__select">
+                </div>
+                <div class="predict__element">
+                    <h2>
+                        <label for="team2">Команда 2</label>
+                    </h2>
+                    <select name="team2" id="team2" class="predict__select" required>
+                        <option value="" class="predict__select">Выберите команду</option>
+
                         {%for team in teams%}
-                        <option value="{{team}}" class="params__select">{{team}}</option>
+                        <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
-                </p>
-                <p>
-                    <label for="map">Карта</label>
-                    <select name="map" id="map" class="params__select">
+                </div>
+                <div class="predict__element">
+                    <h2>
+                        <label for="map">Карта</label>
+                    </h2>
+                    <select name="map" id="map" class="predict__select" required>
+                        <option value="" class="predict__select">Выберите карту</option>
+
                         {%for map in maps%}
-                        <option value="{{map}}" class="params__select">{{map}}</option>
+                        <option value="{{map}}" class="predict__select">{{map}}</option>
                         {%endfor%}
                     </select>
+                </div>
+                <p>
+                    <input type="submit">
                 </p>
-                <input type="submit">
             </form>
-
-        </div>
-        {%if winner%}
-        <p>{{winner}}</p>
-        {%endif%}
-
-    </div>
-    <div class="graphs">
-        <a href="#" name="graphs"></a>
-        <div class="graphs__container container">
-
         </div>
     </div>
-
 </div>
+
+<div class="result">
+    <div class="result__container">
+        <div class="result__content">
+            {%if winner%}
+            <p>{{winner}}</p>
+            {%endif%}
+        </div>
+    </div>
+</div>
+
+
+<div class="graphs">
+    <div class="graphs__container container">
+
+    </div>
+</div>
+
 </body>
 </html>
