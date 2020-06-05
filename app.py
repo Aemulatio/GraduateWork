@@ -73,7 +73,7 @@ def train_forest():
     rf = ensemble.RandomForestClassifier(n_estimators=170, random_state=11)
     rf.fit(X_train, y_train)
     pickle.dump(rf, open("Models/RANDOM_FOREST.pickle", 'wb'))
-    del rf, X_test, X_train, y_train, y_test
+    del rf, X_test, X_train, y_train, y_test, data
 
 
 @app.route('/', methods=['post', 'get'])
