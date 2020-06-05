@@ -49,6 +49,10 @@
     background-color: whitesmoke;
 }
 
+.predict__team-logo{
+    width: 50px;
+}
+
 .result__container {
     margin: 0 auto;
 }
