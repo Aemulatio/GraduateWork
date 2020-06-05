@@ -3,21 +3,21 @@
     padding: 0;
     color: white;
     background-color: #1B1B1B;
-
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .container {
     width: 1170px;
 }
 
-.body__wrapper {
-    margin: 0 auto;
-    height: 100vh; /*temp*/
-    background-color: #1B1B1B;
-}
-
 .predict {
-    height: 500px;
+    /*height: 500px;*/
 }
 
 .predict__container {
@@ -34,7 +34,7 @@
     float: left;
 }
 
-.predict__element{
+.predict__element {
     padding: 5px 0;
 }
 
@@ -48,6 +48,18 @@
     color: black;
     background-color: whitesmoke;
 }
+
+.result__container {
+    margin: 0 auto;
+}
+
+.result__content {
+    padding: 50px 0;
+
+    margin: 0 auto;
+    width: 30%;
+}
+
 
 .graphs {
     height: 500px;

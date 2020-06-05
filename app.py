@@ -43,13 +43,12 @@ def error_500(error):
     return (error)
 
 
-
 from sklearn.model_selection import train_test_split
 from sklearn import ensemble
 
 
 @app.route('/', methods=['post', 'get'])
-def hello_world():
+def main():
     data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
@@ -82,7 +81,10 @@ def hello_world():
         return render_template('index.html',
                                winner=predict(t1, t2, map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique())))[1:],
-                               maps=np.unique(data['Map'].unique())
+                               maps=np.unique(data['Map'].unique()),
+                               team1=t1,
+                               team2=t2,
+                               map=map
                                )
     else:
         return render_template('index.html',
