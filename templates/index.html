@@ -7,11 +7,11 @@
     <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
 </head>
 <body>
-<div class="predict">
+<div class="predict clearfix">
     <div class="predict__container container clearfix">
-        <div class="predict__content">
+        <div class="predict__content ">
             <form action="" method="post" class="predict__form" name="prediction_form">
-
+                <!--КОМАНДА-1-->
                 <div class="predict__element">
                     <h2>
                         <label for="team1">Команда 1</label>
@@ -22,7 +22,9 @@
                         <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
+                    <img src="" alt="1" class="predict__team1-logo predict__team-logo">
                 </div>
+                <!--КОМАНДА-2-->
                 <div class="predict__element">
                     <h2>
                         <label for="team2">Команда 2</label>
@@ -34,19 +36,21 @@
                         <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
+                    <img src="" alt="2" class="predict__team2-logo predict__team-logo">
                 </div>
+                <!--КАРТА-->
                 <div class="predict__element">
                     <h2>
                         <label for="map">Карта</label>
                     </h2>
                     <select name="map" id="map" class="predict__select" required>
                         <option value="" class="predict__select">Выберите карту</option>
-
                         {%for map in maps%}
                         <option value="{{map}}" class="predict__select">{{map}}</option>
                         {%endfor%}
                     </select>
                 </div>
+                <!--SUBMIT-->
                 <p>
                     <input type="submit">
                 </p>
@@ -56,10 +60,11 @@
 </div>
 
 <div class="result">
-    <div class="result__container">
+    <div class="result__container container">
         <div class="result__content">
             {%if winner%}
-            <p>{{winner}}</p>
+            <h3>{{winner}}</h3>
+            <img src="../static/imgs/logos/{{winner}}.jpg" alt="{{winner}}" class="predict__team1-logo predict__team-logo">
             {%endif%}
         </div>
     </div>
