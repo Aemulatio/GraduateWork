@@ -4,10 +4,9 @@ from flask import request
 import pickle
 import numpy as np
 import pandas as pd
-import sklearn
 import os
-from collections import Counter
-from joblib import load
+from sklearn.model_selection import train_test_split
+from sklearn import ensemble
 
 app = Flask(__name__)
 
@@ -35,20 +34,13 @@ def predict(t1, t2, map):
     else:
         ret = t2
 
-    del vvod
-    del UniqueTeams
-    del UniqueMaps
-    del model
+    del vvod, UniqueTeams, UniqueMaps, model
     return ret
 
 
 @app.errorhandler(500)
 def error_500(error):
     return (error)
-
-
-from sklearn.model_selection import train_test_split
-from sklearn import ensemble
 
 
 def train_forest():
