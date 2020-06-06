@@ -1,0 +1,26 @@
+{
+  "Overpass": {
+    "wins": 8,
+    "matches": 10
+  },
+  "Train": {
+    "wins": 6,
+    "matches": 14
+  },
+  "Inferno": {
+    "wins": 6,
+    "matches": 8
+  },
+  "Nuke": {
+    "wins": 6,
+    "matches": 10
+  },
+  "Dust2": {
+    "wins": 4,
+    "matches": 10
+  },
+  "Mirage": {
+    "wins": 6,
+    "matches": 8
+  }
+}
