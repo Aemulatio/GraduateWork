@@ -15,10 +15,10 @@ for team in UniqueTeams:
             matches[row[-1]] += 1
             if team == row[0]:
                 wins[row[-1]] += 1
-    result = {}
-    for k, v in wins.items():
-        result[k] = {'wins': v,
-                     'matches': matches[k]}
+    # result = {}
+    # for k, v in wins.items():
+    #     result[k] = [{'wins': v,
+    #                   'matches': matches[k]}]
     # for k, v in matches.items():
     #     result[k] += {'matches': v}
     # print(k, v)
@@ -26,8 +26,10 @@ for team in UniqueTeams:
     # print(result)
     if '\\t' in team:
         team = team.replace('\\t', '')
-    with open("../jsons/" + team.strip() + ".json", "w") as write_file:
-        json.dump(result, write_file)
+    with open("../static/jsons/" + team.strip() + "_wins.json", "w") as write_file:
+        json.dump(wins, write_file)
+    with open("../static/jsons/" + team.strip() + "_matches.json", "w") as write_file:
+        json.dump(matches, write_file)
     # print(json.dumps(result))
     # print(matches)
     # print(wins)
