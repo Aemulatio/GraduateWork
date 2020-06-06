@@ -5,6 +5,9 @@
     <title>ВКР</title>
     <link rel="stylesheet" href="../static/css/index.css">
     <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
+    <!--    <script src="../static/js/d3.min.js"></script>-->
+    <script src="../static/js/Chart.min.js"></script>
+    <!--    <script href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>-->
 </head>
 <body>
 <div class="predict clearfix">
@@ -81,7 +84,14 @@
 
 <div class="graphs">
     <div class="graphs__container container">
+        <div class="graphs__content">
+            <div class="graphs__team1">
+                <canvas id="team1__graph"></canvas>
+            </div>
+            <div class="graphs__team2">
 
+            </div>
+        </div>
     </div>
 </div>
 
@@ -105,9 +115,84 @@
         team2Image.setAttribute('title', team2.options[team2.selectedIndex].value)
 
     }
+</script>
+<script type="text/javascript">
+    // import(json)
+    let path_matches = '../static/jsons/{{team1}}_matches.json';
+    let path__wins = '../static/jsons/{{team1}}_wins.json';
+    let request_m = new XMLHttpRequest();
 
-    var csv = require('https://github.com/typeiii/jquery-csv/');
-    console.log(csv)
+    request_m.open('GET', path_matches);
+    request_m.responseType = 'json';
+    request_m.send();
+    request_m.onload = function () {
+        let request_w = new XMLHttpRequest();
+        request_w.open('GET', path__wins);
+        request_w.responseType = 'json';
+        request_w.send();
+        request_w.onload = function () {
+            let matchesJSON_unordered = request_m.response;
+            let winsJSON_unordered = request_w.response;
+
+            //матчи
+            const matchesJSON = {};
+            Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
+                matchesJSON[key] = matchesJSON_unordered[key];
+            });
+            //победы
+            const winsJSON = {};
+            Object.keys(winsJSON_unordered).sort().forEach(function (key) {
+                winsJSON[key] = winsJSON_unordered[key];
+            });
+
+
+            console.log(matchesJSON);
+            console.log(winsJSON);
+
+            let matches = Object.values(matchesJSON);
+            let wins = Object.values(winsJSON);
+
+            var ctx = document.getElementById('team1__graph').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(matchesJSON),
+                    datasets: [
+                        {
+                            label: 'Количество побед команды {{team1}}',
+                            backgroundColor: 'rgba(255, 99, 68, 0.2)',
+                            data: wins,
+                        },
+                        {
+                            label: 'Количество матчей команды {{team1}}',
+                            backgroundColor: 'rgba(255, 99, 132, 1)',
+                            data: matches,
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            stacked: false
+                        }],
+                        yAxes: [{
+                            stacked: false,
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    }
+    // var height = 500,
+    //     width = 500,
+    //     margin = 30,
+    //     data = 0
+    // d3.json("../static/jsons/{{team1}}.json", function (data) {
+    //     console.log(data);
+    // });
 
 </script>
 </body>
