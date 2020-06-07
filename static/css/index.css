@@ -3,6 +3,8 @@
     padding: 0;
     color: white;
     background-color: #1B1B1B;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .clearfix:after {
@@ -27,20 +29,35 @@
 .predict__content {
     padding: 50px 0;
     margin: 0 auto;
-    width: 30%;
+    /*width: 30%;*/
+    display: flex;
 }
 
 .predict__form {
     float: left;
+    display: inline-flex;
+    margin: 0 auto;
+    position: relative;
 }
 
 .predict__element {
-    padding: 5px 0;
+    padding: 5px 10px;
+    display: block;
+    float: left;
+    height: 230px;
 }
+
+.predict__element h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
 
 .predict__select {
     color: black;
     background-color: white;
+    width: 100%;
+    margin: 0 0 10px;
 }
 
 
@@ -49,9 +66,36 @@
     background-color: whitesmoke;
 }
 
-.predict__team-logo{
-    width: 50px;
+.predict__selected-team-logo {
+    align-content: center;
+    display: flex;
 }
+
+.predict__selected-map-logo {
+    align-content: center;
+    display: flex;
+}
+
+.predict__map-logo {
+    float: left;
+    position: relative;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.predict__team-logo {
+    float: left;
+    position: relative;
+    width: 140px;
+    margin: 0 auto;
+}
+
+.predict__submit {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
 
 .result__container {
     margin: 0 auto;
@@ -64,6 +108,10 @@
     width: 50%;
 }
 
+
+.result__team-logo {
+    width: 100px;
+}
 
 .graphs {
     height: 500px;

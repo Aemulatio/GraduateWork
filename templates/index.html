@@ -5,18 +5,19 @@
     <title>ВКР</title>
     <link rel="stylesheet" href="../static/css/index.css">
     <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
-    <!--    <script src="../static/js/d3.min.js"></script>-->
     <script src="../static/js/Chart.min.js"></script>
-    <!--    <script href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+
 </head>
 <body>
 <div class="predict clearfix">
     <div class="predict__container container clearfix">
         <div class="predict__content ">
-            <form action="" method="post" class="predict__form" name="prediction_form">
+            <form action="" method="post" class="predict__form clearfix" name="prediction__form">
                 <!--КОМАНДА-1-->
-                <div class="predict__element">
-                    <h2>
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
                         <label for="team1">Команда 1</label>
                     </h2>
                     <select name="team1" id="team1" class="predict__select" onchange="teamOne()" required>
@@ -25,11 +26,13 @@
                         <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
-                    <img src="" alt="" class="predict__team1-logo predict__team-logo">
+                    <div class="predict__selected-team-logo">
+                        <img src="" alt="" class="predict__team1-logo predict__team-logo">
+                    </div>
                 </div>
                 <!--КОМАНДА-2-->
-                <div class="predict__element">
-                    <h2>
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
                         <label for="team2">Команда 2</label>
                     </h2>
                     <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
@@ -38,24 +41,27 @@
                         <option value="{{team}}" class="predict__select">{{team}}</option>
                         {%endfor%}
                     </select>
-                    <img src="" alt="" class="predict__team2-logo predict__team-logo">
+                    <div class="predict__selected-team-logo">
+                        <img src="" alt="" class="predict__team2-logo predict__team-logo">
+                    </div>
                 </div>
                 <!--КАРТА-->
-                <div class="predict__element">
-                    <h2>
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
                         <label for="map">Карта</label>
                     </h2>
-                    <select name="map" id="map" class="predict__select" required>
+                    <select name="map" id="map" class="predict__select" onchange="map_logo()" required>
                         <option value="" class="predict__select">Выберите карту</option>
                         {%for map in maps%}
                         <option value="{{map}}" class="predict__select">{{map}}</option>
                         {%endfor%}
                     </select>
+                    <div class="predict__selected-map-logo">
+                        <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
+                    </div>
                 </div>
                 <!--SUBMIT-->
-                <p>
-                    <input type="submit">
-                </p>
+                <input type="submit" class="predict__submit">
             </form>
         </div>
     </div>
@@ -65,11 +71,17 @@
 <div class="result">
     <div class="result__container container">
         <div class="result__content">
-            <div class="result__team1">
-
-            </div>
-            <div class="result__team2">
-
+            <div class="result__entered-data">
+                <h2 class="result__entered-data-title">Вы ввели:</h2>
+                <div class="result__team1">
+                    <h3>{{team1}}</h3>
+                </div>
+                <div class="result__team2">
+                    <h3>{{team2}}</h3>
+                </div>
+                <div class="result__map">
+                    <h3>{{map}}</h3>
+                </div>
             </div>
             <div class="result__winner">
                 <h3>{{winner}}</h3>
@@ -80,13 +92,17 @@
     </div>
 </div>
 
-<form action="">
-    <label for="stacked">Вложеная гистограмма</label>
-    <input type="radio" id="stacked" name="radio" onchange="change()">
-    <label for="common">Обычный вид</label>
-    <input type="radio" id="common" name="radio" checked onchange="change()">
-</form>
+<div class="choose-graph-style">
+    <div class="choose-graph-style__container container">
+        <form action="" class="choose-graph-style__form">
+            <label for="stacked">Вложеная гистограмма</label>
+            <input type="radio" id="stacked" name="radio" onchange="change()">
+            <label for="common">Обычный вид</label>
+            <input type="radio" id="common" name="radio" checked onchange="change()">
+        </form>
 
+    </div>
+</div>
 
 <div class="graphs">
     <div class="graphs__container container">
@@ -107,22 +123,31 @@
 
 
 <script type="text/javascript">
-    function teamOne() {
-        team1 = document.getElementById('team1')
-        team1Image = document.querySelector('.predict__team1-logo')
+    function teamOne() { // TODO:Добавить проверку на существование картинки
+        let team1 = document.getElementById('team1')
+        let team1Image = document.querySelector('.predict__team1-logo')
         team1Image.setAttribute('src', '../static/imgs/logos/' + team1.options[team1.selectedIndex].value + '.png')
         team1Image.setAttribute('alt', team1.options[team1.selectedIndex].value)
         team1Image.setAttribute('title', team1.options[team1.selectedIndex].value)
     }
 
     function teamTwo() {
-        team2 = document.getElementById('team2')
-        team2Image = document.querySelector('.predict__team2-logo')
+        let team2 = document.getElementById('team2')
+        let team2Image = document.querySelector('.predict__team2-logo')
         team2Image.setAttribute('src', '../static/imgs/logos/' + team2.options[team2.selectedIndex].value + '.png')
         team2Image.setAttribute('alt', team2.options[team2.selectedIndex].value)
         team2Image.setAttribute('title', team2.options[team2.selectedIndex].value)
-
     }
+
+    function map_logo() {
+        let map_name = document.getElementById('map');
+        let mapImage = document.querySelector('#predict__map-logo');
+        mapImage.setAttribute('src', '../static/imgs/map_logos/' + map_name.options[map_name.selectedIndex].value + '.png')
+        mapImage.setAttribute('alt', map_name.options[map_name.selectedIndex].value)
+        mapImage.setAttribute('title', map_name.options[map_name.selectedIndex].value)
+    }
+
+
 </script>
 
 <script type="text/javascript">
