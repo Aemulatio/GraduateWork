@@ -1,8 +1,0 @@
-Winner,Team1,Team2,Team1_Score,Team2_Score,Map
-Team1,Flow,Endpoint,16,10,Inferno
-Team1,Flow,cats,11,16,Inferno
-Team1,Flow,cats,16,12,Cache
-Team1,Flow,unknown,13,16,Cache
-Team2,Flow,Chaos,16,7,Train
-Team2,Flow,Endpoint,11,16,Mirage
-Team2,Flow,unknown,13,16,Train
