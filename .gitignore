@@ -139,3 +139,5 @@ pythonScripts/Random_forest.joblib
 
 Models/
 
+!Data/results6_wo_garbage_NTN.csv
+
