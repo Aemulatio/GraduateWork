@@ -60,11 +60,11 @@
         </div>
     </div>
 </div>
+{%if winner%}
 
 <div class="result">
     <div class="result__container container">
         <div class="result__content">
-            {%if winner%}
             <div class="result__team1">
 
             </div>
@@ -76,10 +76,16 @@
                 <img src="../static/imgs/logos/{{winner}}.png" alt="{{winner}}"
                      class="result__team-logo" title="{{winner}}">
             </div>
-            {%endif%}
         </div>
     </div>
 </div>
+
+<form action="">
+    <label for="stacked">Вложеная гистограмма</label>
+    <input type="radio" id="stacked" name="radio" onchange="change()">
+    <label for="common">Обычный вид</label>
+    <input type="radio" id="common" name="radio" checked onchange="change()">
+</form>
 
 
 <div class="graphs">
@@ -89,11 +95,13 @@
                 <canvas id="team1__graph"></canvas>
             </div>
             <div class="graphs__team2">
+                <canvas id="team2__graph"></canvas>
 
             </div>
         </div>
     </div>
 </div>
+{%endif%}
 
 <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
 
@@ -116,84 +124,100 @@
 
     }
 </script>
+
 <script type="text/javascript">
-    // import(json)
-    let path_matches = '../static/jsons/{{team1}}_matches.json';
-    let path__wins = '../static/jsons/{{team1}}_wins.json';
-    let request_m = new XMLHttpRequest();
 
-    request_m.open('GET', path_matches);
-    request_m.responseType = 'json';
-    request_m.send();
-    request_m.onload = function () {
-        let request_w = new XMLHttpRequest();
-        request_w.open('GET', path__wins);
-        request_w.responseType = 'json';
-        request_w.send();
-        request_w.onload = function () {
-            let matchesJSON_unordered = request_m.response;
-            let winsJSON_unordered = request_w.response;
+    function build(team, canvasID) {
 
-            //матчи
-            const matchesJSON = {};
-            Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
-                matchesJSON[key] = matchesJSON_unordered[key];
-            });
-            //победы
-            const winsJSON = {};
-            Object.keys(winsJSON_unordered).sort().forEach(function (key) {
-                winsJSON[key] = winsJSON_unordered[key];
-            });
+        //TEAM1
+        let path_matches = '../static/jsons/' + team + '_matches.json';
+        let path__wins = '../static/jsons/' + team + '_wins.json';
+        let request_m = new XMLHttpRequest();
 
+        request_m.open('GET', path_matches);
+        request_m.responseType = 'json';
+        request_m.send();
+        request_m.onload = function () {
+            let request_w = new XMLHttpRequest();
+            request_w.open('GET', path__wins);
+            request_w.responseType = 'json';
+            request_w.send();
+            request_w.onload = function () {
+                let matchesJSON_unordered = request_m.response;
+                let winsJSON_unordered = request_w.response;
 
-            console.log(matchesJSON);
-            console.log(winsJSON);
+                //матчи
+                const matchesJSON = {};
+                Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
+                    matchesJSON[key] = matchesJSON_unordered[key];
+                });
+                //победы
+                const winsJSON = {};
+                Object.keys(winsJSON_unordered).sort().forEach(function (key) {
+                    winsJSON[key] = winsJSON_unordered[key];
+                });
 
-            let matches = Object.values(matchesJSON);
-            let wins = Object.values(winsJSON);
+                console.log(matchesJSON);
+                console.log(winsJSON);
 
-            var ctx = document.getElementById('team1__graph').getContext('2d');
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(matchesJSON),
-                    datasets: [
-                        {
-                            label: 'Количество побед команды {{team1}}',
-                            backgroundColor: 'rgba(255, 99, 68, 0.2)',
-                            data: wins,
-                        },
-                        {
-                            label: 'Количество матчей команды {{team1}}',
-                            backgroundColor: 'rgba(255, 99, 132, 1)',
-                            data: matches,
+                let matches = Object.values(matchesJSON);
+                let wins = Object.values(winsJSON);
+
+                let stacked = document.getElementById('stacked').checked
+
+                var ctx = document.getElementById(canvasID).getContext('2d');
+                console.log(document.getElementById(canvasID));
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(matchesJSON),
+                        datasets: [
+                            {
+                                label: 'Количество побед команды {{team1}}',
+                                backgroundColor: 'rgba(65, 105, 225, 1)',
+                                data: wins,
+                            },
+                            {
+                                label: 'Количество матчей команды {{team1}}',
+                                backgroundColor: 'rgba(255, 99, 132, 1)',
+                                data: matches,
+                            },
+
+                        ]
+                    },
+                    options: {
+                        scales: {
+                            xAxes: [{
+                                stacked: stacked
+                            }],
+                            yAxes: [{
+                                stacked: false,
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
                         }
-                    ]
-                },
-                options: {
-                    scales: {
-                        xAxes: [{
-                            stacked: false
-                        }],
-                        yAxes: [{
-                            stacked: false,
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
                     }
-                }
-            });
+                });
+            }
         }
     }
-    // var height = 500,
-    //     width = 500,
-    //     margin = 30,
-    //     data = 0
-    // d3.json("../static/jsons/{{team1}}.json", function (data) {
-    //     console.log(data);
-    // });
 
+
+    function change() {
+        $('#team1__graph').remove();
+        $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+
+        $('#team2__graph').remove();
+        $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+
+
+        build('{{team1}}', 'team1__graph');
+        build('{{team2}}', 'team2__graph');
+    }
+
+    build('{{team1}}', 'team1__graph');
+    build('{{team2}}', 'team2__graph');
 </script>
 </body>
 </html>
