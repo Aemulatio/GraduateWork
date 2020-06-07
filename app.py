@@ -16,7 +16,7 @@ def predict(t1, t2, map):
         model = pickle.load(open("Models/SVM_model.sav", 'rb'))
     else:
         model = pickle.load(open("Models/RANDOM_FOREST.pickle", 'rb'))
-    data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
+    data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
 
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
     # Получаем все карты, на которых играли команды
@@ -44,12 +44,12 @@ def error_500(error):
 
 
 def train_forest():
-    data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
+    data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
     # Получаем все карты, на которых играли команды
     UniqueMaps = pd.Series(np.unique(data['Map'].unique()))
     data = data.drop(['Team1_Score', 'Team2_Score'], 1)
-
+    print("TRAIN")
     X_all = data.drop(['Winner'], 1)
     y_all = data['Winner']
 
@@ -70,7 +70,7 @@ def train_forest():
 
 @app.route('/', methods=['post', 'get'])
 def main():
-    data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
+    data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         train_forest()
     if request.method == 'POST':

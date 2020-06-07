@@ -15,15 +15,12 @@ for team in UniqueTeams:
             matches[row[-1]] += 1
             if team == row[0]:
                 wins[row[-1]] += 1
-    # result = {}
-    # for k, v in wins.items():
-    #     result[k] = [{'wins': v,
-    #                   'matches': matches[k]}]
-    # for k, v in matches.items():
-    #     result[k] += {'matches': v}
-    # print(k, v)
-    # print(team, ':')
-    # print(result)
+    for map in UniqueMaps:
+        if map not in matches.keys():
+            matches[map] = 0
+        if map not in wins.keys():
+            wins[map] = 0
+
     if '\\t' in team:
         team = team.replace('\\t', '')
     with open("../static/jsons/" + team.strip() + "_wins.json", "w") as write_file:
