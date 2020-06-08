@@ -151,12 +151,19 @@
     text-align: center;
 }
 
+.result__winner-title{
+    padding-top: 20px;
+}
+
 
 .result__winner {
 
 
 
 
+}
+.result__winner h3{
+    text-align: center;
 }
 
 
