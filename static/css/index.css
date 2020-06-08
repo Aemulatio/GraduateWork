@@ -93,7 +93,7 @@
 .predict__submit {
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 45%;
 }
 
 
@@ -105,12 +105,65 @@
     padding: 50px 0;
 
     margin: 0 auto;
+    /*width: 50%;*/
+}
+
+.result__entered-data-title {
+    text-align: center;
+    padding: 0 0 20px 0;
+
+}
+
+.result__entered-data {
     width: 50%;
+    margin: 0 auto;
+}
+
+.result__entered-data-teams{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.result__map {
+    padding: 15px 0;
+}
+
+.result__map h3{
+    text-align: center;
+}
+
+
+.result__block {
+    padding: 0 10px;
+}
+
+.result__team1 {
+    float: left;
+}
+
+.result__team2 {
+    padding-top: 50px;
+    float: right;
+}
+.result__block h3 {
+    text-align: center;
+}
+
+
+.result__winner {
+
+
+
+
 }
 
 
 .result__team-logo {
-    width: 100px;
+    display: flex;
+    width: 130px;
+    margin: 0 auto;
 }
 
 .graphs {
