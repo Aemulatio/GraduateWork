@@ -71,8 +71,8 @@
 <div class="result">
     <div class="result__container container">
         <div class="result__content">
+            <h2 class="result__entered-data-title">Вы ввели:</h2>
             <div class="result__entered-data">
-                <h2 class="result__entered-data-title">Вы ввели:</h2>
                 <div class="result__team1">
                     <h3>{{team1}}</h3>
                 </div>
@@ -198,12 +198,12 @@
                         labels: Object.keys(matchesJSON),
                         datasets: [
                             {
-                                label: 'Количество побед команды {{team1}}',
+                                label: 'Количество побед команды ' + team,
                                 backgroundColor: 'rgba(65, 105, 225, 1)',
                                 data: wins,
                             },
                             {
-                                label: 'Количество матчей команды {{team1}}',
+                                label: 'Количество матчей команды ' + team,
                                 backgroundColor: 'rgba(255, 99, 132, 1)',
                                 data: matches,
                             },
