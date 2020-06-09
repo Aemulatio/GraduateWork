@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: #1B1B1B;
+    color: #eeeeee;
+    background-color: #333333;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -19,7 +19,7 @@
 }
 
 .predict {
-    /*height: 500px;*/
+
 }
 
 .predict__container {
@@ -86,7 +86,8 @@
 .predict__team-logo {
     float: left;
     position: relative;
-    width: 140px;
+    max-width: 140px;
+    max-height: 140px;
     margin: 0 auto;
 }
 
@@ -132,6 +133,7 @@
 
 .result__map h3 {
     text-align: center;
+    padding: 10px 0 0;
 }
 
 
@@ -143,7 +145,7 @@
     float: left;
 }
 
-.result__line{
+.result__line {
     transform: rotate(30deg);
     /*width: 1px;*/
     border-right: 4px solid red;
@@ -193,18 +195,17 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 0 0 10px  0;
+    padding: 0 0 10px 0;
 }
 
-.choose-graph-style__type input{
+.choose-graph-style__type input {
     display: block;
     margin: 3px 5px 3px 10px;
 }
 
 
-
 .graphs {
-    height: 500px;
+
 }
 
 .graphs__container {
@@ -212,7 +213,7 @@
     padding: 50px 0;
 }
 
-.graphs__content{
+.graphs__content {
     width: 50%;
     margin: 0 auto;
 }

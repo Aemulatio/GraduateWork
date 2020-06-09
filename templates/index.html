@@ -134,12 +134,14 @@
 
 
 <script type="text/javascript">
+
     function teamOne() { // TODO:Добавить проверку на существование картинки
         let team1 = document.getElementById('team1')
         let team1Image = document.querySelector('.predict__team1-logo')
         team1Image.setAttribute('src', '../static/imgs/logos/' + team1.options[team1.selectedIndex].value + '.png')
         team1Image.setAttribute('alt', team1.options[team1.selectedIndex].value)
         team1Image.setAttribute('title', team1.options[team1.selectedIndex].value)
+
     }
 
     function teamTwo() {
@@ -148,6 +150,7 @@
         team2Image.setAttribute('src', '../static/imgs/logos/' + team2.options[team2.selectedIndex].value + '.png')
         team2Image.setAttribute('alt', team2.options[team2.selectedIndex].value)
         team2Image.setAttribute('title', team2.options[team2.selectedIndex].value)
+
     }
 
     function map_logo() {
@@ -161,7 +164,7 @@
 
 </script>
 
-<script type="text/javascript">
+<script title="Graphs" type="text/javascript">
 
     function build(team, canvasID) {
 
@@ -245,8 +248,8 @@
 
                             }],
                         },
-                        legend:{
-                            labels:{
+                        legend: {
+                            labels: {
                                 fontColor: '#ffffff'
                             }
                         }
@@ -256,14 +259,14 @@
         }
     }
 
-
     function change() {
+        // $('#team1__graph').attr('id', 'team1__graph1')
         $('#team1__graph').remove();
         $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
 
+        // $('#team2__graph').attr('id', 'team2__graph2')
         $('#team2__graph').remove();
         $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
-
 
         build('{{team1}}', 'team1__graph');
         build('{{team2}}', 'team2__graph');
