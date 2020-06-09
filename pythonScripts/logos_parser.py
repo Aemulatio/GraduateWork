@@ -1,27 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
-import csv
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
 import pandas as pd
 import numpy as np
 import re
-import urllib.request
 import shutil
 
 
-# from urllib import request
-
-
-def csv_reader(path):
-    with open(path, 'r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        return [row for row in reader]
-
-
 def lets_parse(files):
-    data = pd.read_csv("Data/results1_wo_garbage_NTN.csv")
+    data = pd.read_csv("../Data/results6_wo_garbage_NTN.csv")
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
     del data
     html = ''
@@ -53,7 +39,7 @@ def lets_parse(files):
                         if img.attrs['alt'] == team:
                             print(img.attrs['src'])
                             resp = requests.get(img.attrs['src'], stream=True)
-                            local_file = open('static/imgs/logos/' + team + '.jpg', 'wb')
+                            local_file = open('../static/imgs/logos1/' + team + '.png', 'wb')
                             resp.raw.decode_content = True
                             shutil.copyfileobj(resp.raw, local_file)
                             del resp
@@ -64,7 +50,7 @@ def lets_parse(files):
                     if img.attrs['alt'] == team:
                         print(img.attrs['src'])
                         resp = requests.get(img.attrs['src'], stream=True)
-                        local_file = open('static/imgs/logos/' + team + '.jpg', 'wb')
+                        local_file = open('../static/imgs/logos1/' + team + '.png', 'wb')
                         resp.raw.decode_content = True
                         shutil.copyfileobj(resp.raw, local_file)
                         del resp
@@ -83,6 +69,4 @@ def lets_parse(files):
 
 
 if __name__ == '__main__':
-    lets_parse(['Data/pages19-20.html', 'Data/pages20.html'])
-
-    pass
+    lets_parse(['../Data/pages19-20.html', '../Data/pages20.html'])
