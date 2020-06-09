@@ -78,6 +78,7 @@
                         <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
                         <h3>{{team1}}</h3>
                     </div>
+                    <div class="result__line"></div>
                     <div class="result__team2 result__block">
                         <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
                         <h3>{{team2}}</h3>
@@ -102,15 +103,18 @@
 
 <div class="choose-graph-style">
     <div class="choose-graph-style__container container">
-        <form action="" class="choose-graph-style__form">
-            <label for="stacked">Вложеная гистограмма</label>
-            <input type="radio" id="stacked" name="radio" onchange="change()">
+        <h2>Выберите вид гистограммы:</h2>
+        <div class="choose-graph-style__type">
             <label for="common">Обычный вид</label>
             <input type="radio" id="common" name="radio" checked onchange="change()">
-        </form>
-
+        </div>
+        <div class="choose-graph-style__type">
+            <label for="stacked">Вложеная гистограмма</label>
+            <input type="radio" id="stacked" name="radio" onchange="change()">
+        </div>
     </div>
 </div>
+
 
 <div class="graphs">
     <div class="graphs__container container">
@@ -220,14 +224,31 @@
                     options: {
                         scales: {
                             xAxes: [{
-                                stacked: stacked
+                                stacked: stacked,
+                                gridLines: {
+                                    color: '#fffff0',
+                                    // zeroLineColor: '#fffff0'
+                                },
+                                ticks: {
+                                    fontColor: '#ffffff'
+                                }
                             }],
                             yAxes: [{
                                 stacked: false,
                                 ticks: {
-                                    beginAtZero: true
-                                }
-                            }]
+                                    fontColor: '#ffffff'
+                                },
+                                gridLines: {
+                                    color: '#fffff0',
+                                    // zeroLineColor: '#fffff0'
+                                },
+
+                            }],
+                        },
+                        legend:{
+                            labels:{
+                                fontColor: '#ffffff'
+                            }
                         }
                     }
                 });
