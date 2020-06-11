@@ -141,7 +141,6 @@
 }
 
 
-
 .result__block {
     padding: 0 10px;
 }
@@ -176,11 +175,11 @@
 }
 
 
-
 .result__map h3 {
     text-align: center;
     padding: 20px 0 0;
 }
+
 .result__winner h3 {
     text-align: center;
     padding-top: 20px;
@@ -193,26 +192,119 @@
     margin: 0 auto;
 }
 
+
 .choose-graph-style__container {
     margin: 0 auto;
 }
 
 .choose-graph-style__container h2 {
     text-align: center;
-    padding: 0 0 10px;
+    /*padding: 0 0 15px;*/
 }
 
-.choose-graph-style__type {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 0 0 10px 0;
+.choose-graph-style__box {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #2c3e50;
+    border: 1px solid #2c3e50;
+    border-radius: 3px;
+    text-align: left;
 }
 
-.choose-graph-style__type input {
+
+/*****
+ *
+ * Radio checked style related
+ * the fun part starts here
+ *
+ */
+input[type=radio] {
+    display: none;
+}
+
+/**
+ * How it should look when hovered
+ */
+.active-label, label:focus, label:hover, label:active, input:checked + label {
+    color: #80B4E8;
+}
+
+.active-label:before, label:focus:before, label:hover:before, label:active:before, input:checked + label:before {
+    background: #eeeeee;
+    border-color: #80B4E8;
+
+}
+
+/**
+ * Make those labels sexy
+ */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
     display: block;
-    margin: 3px 5px 3px 10px;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #2c3e50;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    /**
+     * This is the radio fake dot basically
+     */
 }
+
+label:first-of-type {
+    border: 0;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: .2rem solid #ccc;
+}
+
+
+/**
+ * How it should look when checked
+ */
+input:checked + label:before {
+    border-color: white;
+    border: none;
+    background: #80B4E8;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+/*.chooser-graph-style__block {*/
+/*    height: 3em;*/
+/*}*/
+
+
+/*.choose-graph-style__type {*/
+/*    display: flex;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    padding: 10px 0 15px 0;*/
+/*}*/
+
+/*.choose-graph-style__type input {*/
+/*    display: block;*/
+/*    margin: 3px 5px 3px 10px;*/
+/*    float: left;*/
+/*}*/
 
 .graphs__container {
     margin: 0 auto;
@@ -257,7 +349,7 @@ select::-ms-expand {
 
 select {
     flex: 1;
-    padding: 0 .5em;
+    padding: 0 1.5em;
     color: #fff;
     cursor: pointer;
 }

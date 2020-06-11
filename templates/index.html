@@ -20,7 +20,7 @@
                 <!--КОМАНДА-1-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <label for="team1">Команда 1</label>
+                        <span for="team1">Команда 1</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="team1" id="team1" class="predict__select" onchange="teamOne()"
@@ -39,7 +39,7 @@
                 <!--КОМАНДА-2-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <label for="team2">Команда 2</label>
+                        <span for="team2">Команда 2</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
@@ -56,7 +56,7 @@
                 <!--КАРТА-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <label for="map">Карта</label>
+                        <span for="map">Карта</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="map" id="map" class="predict__select " onchange="map_logo()" required>
@@ -114,13 +114,12 @@
 <div class="choose-graph-style">
     <div class="choose-graph-style__container container">
         <h2>Выберите вид гистограммы:</h2>
-        <div class="choose-graph-style__type">
-            <label for="common">Обычный вид</label>
+        <div class="choose-graph-style__box">
             <input type="radio" id="common" name="radio" checked onchange="change()">
-        </div>
-        <div class="choose-graph-style__type">
-            <label for="stacked">Вложеная гистограмма</label>
+            <label for="common">Обычный вид</label>
+
             <input type="radio" id="stacked" name="radio" onchange="change()">
+            <label for="stacked">Вложеная гистограмма</label>
         </div>
     </div>
 </div>
