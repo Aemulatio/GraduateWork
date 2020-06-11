@@ -140,10 +140,6 @@
     padding: 15px 0;
 }
 
-.result__map h3 {
-    text-align: center;
-    padding: 10px 0 0;
-}
 
 
 .result__block {
@@ -171,6 +167,7 @@
 }
 
 .result__block h3 {
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -179,12 +176,14 @@
 }
 
 
-.result__winner {
 
+.result__map h3 {
+    text-align: center;
+    padding: 20px 0 0;
 }
-
 .result__winner h3 {
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -213,11 +212,6 @@
 .choose-graph-style__type input {
     display: block;
     margin: 3px 5px 3px 10px;
-}
-
-
-.graphs {
-
 }
 
 .graphs__container {
