@@ -25,7 +25,8 @@
                     <div class="predict__selector">
                         <select name="team1" id="team1" class="predict__select" onchange="teamOne()"
                                 required>
-                            <option selected disabled><!-- class="predict__select" -->Выберите команду</option>
+                            <option selected disabled value="-1"><!-- class="predict__select" -->Выберите команду
+                            </option>
                             {%for team in teams%}
                             <option value="{{team}}"><!-- class="predict__select" -->{{team}}</option>
                             {%endfor%}
@@ -42,7 +43,7 @@
                     </h2>
                     <div class="predict__selector">
                         <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
-                            <option selected disabled>Выберите команду</option>
+                            <option selected disabled value="-1">Выберите команду</option>
                             {%for team in teams%}
                             <option value="{{team}}">{{team}}</option>
                             {%endfor%}
@@ -59,7 +60,7 @@
                     </h2>
                     <div class="predict__selector">
                         <select name="map" id="map" class="predict__select " onchange="map_logo()" required>
-                            <option selected disabled>Выберите карту</option>
+                            <option selected disabled value="-1">Выберите карту</option>
                             {%for map in maps%}
                             <option value="{{map}}" class="predict__select">{{map}}</option>
                             {%endfor%}
@@ -280,6 +281,12 @@
     $('#predict__form').submit(function () {
         let team1 = document.getElementById('team1')
         let team2 = document.getElementById('team2')
+        let map_name = document.getElementById('map');
+
+        if (team1.options[team1.selectedIndex].value === '-1' || team2.options[team2.selectedIndex].value === '-1' || map_name.options[map_name.selectedIndex].value === '-1') {
+            alert('Выберите пожалуйста команды и карту.');
+            return false;
+        }
 
         if (team1.options[team1.selectedIndex].value !== team2.options[team2.selectedIndex].value)
             return true;
@@ -287,6 +294,8 @@
             alert('Выберите разные команды!');
             return false;
         }
+
+
     });
 
 
