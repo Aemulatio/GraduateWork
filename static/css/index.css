@@ -154,7 +154,7 @@
 .result__line {
     transform: rotate(30deg);
     /*width: 1px;*/
-    border-right: 4px solid red;
+    border-right: 6px solid #cc0000;
     border-radius: 5px;
 }
 
