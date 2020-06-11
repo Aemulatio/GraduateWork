@@ -152,6 +152,8 @@
 
 .result__team1 {
     float: left;
+    margin-left: -65px;
+    margin-right: 65px;
 }
 
 .result__line {
@@ -165,6 +167,7 @@
 .result__team2 {
     padding-top: 50px;
     float: right;
+    margin-left: 65px;
 }
 
 .result__block h3 {
