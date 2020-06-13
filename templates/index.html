@@ -9,13 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
     <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
-
 </head>
 <body>
-<div class="loader__container">
-    <div class="loader"></div>
-</div>
-
 <div class="predict clearfix">
     <div class="predict__container container clearfix">
         <div class="predict__content ">
@@ -80,7 +75,6 @@
     </div>
 </div>
 {%if winner%}
-
 <div class="result">
     <div class="result__container container">
         <div class="result__content clearfix">
@@ -126,7 +120,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="graphs">
     <div class="graphs__container container">
@@ -264,8 +257,6 @@
     build('{{team2}}', 'team2__graph');
 </script>
 {%endif%}
-
-
 <script type="text/javascript">
 
     function teamOne() {
@@ -316,125 +307,5 @@
 
 
 </script>
-
-<script src="../static/js/anime.min.js"></script>
-
-<script type="text/javascript">
-
-        window.addEventListener("load", function (event) {
-            document.querySelector('.loader__container').style.display = 'none';
-        });
-
-</script>
-
-<script>
-    // const staggerVisualizerEl = document.querySelector('.loader');
-    // const fragment = document.createDocumentFragment();
-    // const grid = [17, 17];
-    // const col = grid[0];
-    // const row = grid[1];
-    // const numberOfElements = col * row;
-    //
-    // for (let i = 0; i < numberOfElements; i++) {
-    //     fragment.appendChild(document.createElement('div'));
-    // }
-    //
-    // staggerVisualizerEl.appendChild(fragment);
-    //
-    // const staggersAnimation = anime.timeline({
-    //     targets: '.loader div',
-    //     easing: 'easeInOutSine',
-    //     delay: anime.stagger(50),
-    //     loop: true,
-    //     autoplay: false
-    // })
-    //     .add({
-    //         translateX: [
-    //             {value: anime.stagger('-.1rem', {grid: grid, from: 'center', axis: 'x'})},
-    //             {value: anime.stagger('.1rem', {grid: grid, from: 'center', axis: 'x'})}
-    //         ],
-    //         translateY: [
-    //             {value: anime.stagger('-.1rem', {grid: grid, from: 'center', axis: 'y'})},
-    //             {value: anime.stagger('.1rem', {grid: grid, from: 'center', axis: 'y'})}
-    //         ],
-    //         duration: 1000,
-    //         scale: .5,
-    //         delay: anime.stagger(100, {grid: grid, from: 'center'})
-    //     })
-    //     .add({
-    //         translateX: () => anime.random(-10, 10),
-    //         translateY: () => anime.random(-10, 10),
-    //         delay: anime.stagger(8, {from: 'last'})
-    //     })
-    //     .add({
-    //         translateX: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'x'}),
-    //         translateY: anime.stagger('.25rem', {grid: grid, from: 'center', axis: 'y'}),
-    //         rotate: 0,
-    //         scaleX: 2.5,
-    //         scaleY: .25,
-    //         delay: anime.stagger(4, {from: 'center'})
-    //     })
-    //     .add({
-    //         rotate: anime.stagger([90, 0], {grid: grid, from: 'center'}),
-    //         delay: anime.stagger(50, {grid: grid, from: 'center'})
-    //     })
-    //     .add({
-    //         translateX: 0,
-    //         translateY: 0,
-    //         scale: .5,
-    //         scaleX: 1,
-    //         rotate: 180,
-    //         duration: 1000,
-    //         delay: anime.stagger(100, {grid: grid, from: 'center'})
-    //     })
-    //     .add({
-    //         scaleY: 1,
-    //         scale: 1,
-    //         delay: anime.stagger(20, {grid: grid, from: 'center'})
-    //     })
-    //
-    // staggersAnimation.play();
-    const wrapperEl = document.querySelector('.loader');
-    const numberOfEls = 90;
-    const duration = 6000;
-    const delay = duration / numberOfEls;
-
-    let tl = anime.timeline({
-        duration: delay,
-        complete: function () {
-            tl.restart();
-        }
-    });
-
-    function createEl(i) {
-        let el = document.createElement('div');
-        const rotate = (360 / numberOfEls) * i;
-        const translateY = -50;
-        const hue = Math.round(360 / numberOfEls * i);
-        el.classList.add('el');
-        el.style.backgroundColor = 'hsl(' + hue + ', 40%, 60%)';
-        el.style.transform = 'rotate(' + rotate + 'deg) translateY(' + translateY + '%)';
-        tl.add({
-            begin: function () {
-                anime({
-                    targets: el,
-                    backgroundColor: ['hsl(' + hue + ', 40%, 60%)', 'hsl(' + hue + ', 60%, 80%)'],
-                    rotate: [rotate + 'deg', rotate + 10 + 'deg'],
-                    translateY: [translateY + '%', translateY + 10 + '%'],
-                    scale: [1, 1.25],
-                    easing: 'easeInOutSine',
-                    direction: 'alternate',
-                    duration: duration * .1
-                });
-            }
-        });
-        wrapperEl.appendChild(el);
-    };
-
-    for (let i = 0; i < numberOfEls; i++) createEl(i);
-
-</script>
-
-
 </body>
 </html>
