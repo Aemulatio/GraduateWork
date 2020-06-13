@@ -16,7 +16,7 @@ def parse(url, outPutFile, attr='a'):
         driver = webdriver.Chrome()
         driver.get(url)
         pagesSrc = list()
-        f = open("Data/"+outPutFile, attr, encoding="UTF-8")
+        f = open("../Data/"+outPutFile, attr, encoding="UTF-8")
         while True:
             html = driver.page_source
             soup = BeautifulSoup(html, 'lxml')
@@ -52,7 +52,7 @@ def parse(url, outPutFile, attr='a'):
 
 def parseFile(fileName, outPutFileName, ser=0):
     pages_src = list()
-    f = open("Data/"+fileName, "r", encoding="UTF-8")
+    f = open("../Data/"+fileName, "r", encoding="UTF-8")
     if f:
         soup = BeautifulSoup(f, 'lxml')
         pages_src.append(soup.find_all('tbody'))
@@ -85,7 +85,7 @@ def parseFile(fileName, outPutFileName, ser=0):
         data = list(reversed(data))  # reverse data, from old to new, instead of new-old
 
         """Insert it all in DB instead of .csv file"""
-        conn = sqlite3.connect('DataBase/DataBase.sqlite')
+        conn = sqlite3.connect('../DataBase/DataBase.sqlite')
         c = conn.cursor()
 
         # Create table
@@ -105,7 +105,7 @@ def parseFile(fileName, outPutFileName, ser=0):
         conn.close()
 
         """Create a .csv file."""
-        with open("Data/"+outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
+        with open("../Data/"+outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file, delimiter=',')
             writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event', 'Series'])
             for line in data:
