@@ -14,19 +14,18 @@
 <div class="predict clearfix">
     <div class="predict__container container clearfix">
         <div class="predict__content ">
-            <form action="" method="post" class="predict__form clearfix" id="predict__form" name="prediction__form">
+            <form action="/" method="post" class="predict__form clearfix" id="predict__form" name="prediction__form">
                 <!--КОМАНДА-1-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <span for="team1">Команда 1</span>
+                        <span>Команда 1</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="team1" id="team1" class="predict__select" onchange="teamOne()"
                                 required>
-                            <option selected disabled value="-1"><!-- class="predict__select" -->Выберите команду
-                            </option>
+                            <option selected disabled value="">Выберите команду</option>
                             {%for team in teams%}
-                            <option value="{{team}}"><!-- class="predict__select" -->{{team}}</option>
+                            <option value="{{team}}">{{team}}</option>
                             {%endfor%}
                         </select>
                     </div>
@@ -37,11 +36,11 @@
                 <!--КОМАНДА-2-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <span for="team2">Команда 2</span>
+                        <span >Команда 2</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
-                            <option selected disabled value="-1">Выберите команду</option>
+                            <option selected disabled value="">Выберите команду</option>
                             {%for team in teams%}
                             <option value="{{team}}">{{team}}</option>
                             {%endfor%}
@@ -54,11 +53,11 @@
                 <!--КАРТА-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <span for="map">Карта</span>
+                        <span >Карта</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="map" id="map" class="predict__select " onchange="map_logo()" required>
-                            <option selected disabled value="-1">Выберите карту</option>
+                            <option selected disabled value="">Выберите карту</option>
                             {%for map in maps%}
                             <option value="{{map}}" class="predict__select">{{map}}</option>
                             {%endfor%}
@@ -137,12 +136,9 @@
 <script title="Graphs" type="text/javascript">
 
     function build(team, canvasID) {
-
-        //TEAM1
         let path_matches = '../static/jsons/' + team + '_matches.json';
         let path__wins = '../static/jsons/' + team + '_wins.json';
         let request_m = new XMLHttpRequest();
-
         request_m.open('GET', path_matches);
         request_m.responseType = 'json';
         request_m.send();
@@ -154,7 +150,6 @@
             request_w.onload = function () {
                 let matchesJSON_unordered = request_m.response;
                 let winsJSON_unordered = request_w.response;
-
                 //матчи
                 const matchesJSON = {};
                 Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
@@ -165,11 +160,8 @@
                 Object.keys(winsJSON_unordered).sort().forEach(function (key) {
                     winsJSON[key] = winsJSON_unordered[key];
                 });
-
-
                 let matches = Object.values(matchesJSON);
                 let wins = Object.values(winsJSON);
-
                 let stacked = document.getElementById('stacked').checked
 
                 var ctx = document.getElementById(canvasID).getContext('2d');
@@ -187,9 +179,7 @@
                                 label: 'Количество матчей команды ' + team,
                                 backgroundColor: 'rgba(255, 99, 132, 1)',
                                 data: matches,
-                            },
-
-                        ]
+                            },]
                     },
                     options: {
                         scales: {
@@ -197,7 +187,6 @@
                                 stacked: stacked,
                                 gridLines: {
                                     color: '#fffff0',
-                                    // zeroLineColor: '#fffff0'
                                 },
                                 ticks: {
                                     fontColor: '#ffffff'
@@ -210,7 +199,6 @@
                                 },
                                 gridLines: {
                                     color: '#fffff0',
-                                    // zeroLineColor: '#fffff0'
                                 },
 
                             }],
@@ -251,7 +239,6 @@
         build('{{team1}}', 'team1__graph');
         build('{{team2}}', 'team2__graph');
     };
-
 
     build('{{team1}}', 'team1__graph');
     build('{{team2}}', 'team2__graph');
