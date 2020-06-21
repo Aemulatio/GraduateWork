@@ -11,6 +11,17 @@
     <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
+<div class="banner off">
+    <div class="banner__container">
+        <div class="banner__content">
+            <h2 class="banner__title">ВНИМАНИЕ!</h2>
+            <p class="banner__body">Названия команд должны отличаться!</p>
+            <button class="banner__button">ОК</button>
+        </div>
+    </div>
+</div>
+
+
 <div class="predict clearfix">
     <div class="predict__container container clearfix">
         <div class="predict__content ">
@@ -36,7 +47,7 @@
                 <!--КОМАНДА-2-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <span >Команда 2</span>
+                        <span>Команда 2</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
@@ -53,7 +64,7 @@
                 <!--КАРТА-->
                 <div class="predict__element clearfix">
                     <h2 class="clearfix">
-                        <span >Карта</span>
+                        <span>Карта</span>
                     </h2>
                     <div class="predict__selector">
                         <select name="map" id="map" class="predict__select " onchange="map_logo()" required>
@@ -275,22 +286,23 @@
     $('#predict__form').submit(function () {
         let team1 = document.getElementById('team1')
         let team2 = document.getElementById('team2')
-        let map_name = document.getElementById('map');
 
-        if (team1.options[team1.selectedIndex].value === '-1' || team2.options[team2.selectedIndex].value === '-1' || map_name.options[map_name.selectedIndex].value === '-1') {
-            alert('Выберите пожалуйста команды и карту.');
-            return false;
-        }
 
         if (team1.options[team1.selectedIndex].value !== team2.options[team2.selectedIndex].value)
             return true;
         else {
-            alert('Выберите разные команды!');
+            document.querySelector('.banner').classList.toggle('on');
+            document.querySelector('.banner').classList.toggle('off');
+
             return false;
         }
-
-
     });
+
+    let button = document.querySelector('.banner__button');
+    button.onclick = function () {
+        document.querySelector('.banner').classList.toggle('on');
+        document.querySelector('.banner').classList.toggle('off');
+    }
 
 
 </script>

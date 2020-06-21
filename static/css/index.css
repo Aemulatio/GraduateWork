@@ -13,6 +13,74 @@
     clear: both;
 }
 
+.banner {
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.banner__content {
+    padding: 20px;
+    display: block;
+    border: 1px solid #34495e;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.banner__title {
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    background-color: #34495e;
+
+}
+
+.banner__body {
+    background-color: #34495e;
+    padding: 10px 0;
+    font-size: 18px;
+
+}
+
+.banner__button {
+    position: relative;
+    margin: 30px auto 0;
+
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 18px;
+
+}
+
+.banner__button:active {
+    color: #f39c12;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
 
 .container {
     width: 1170px;
