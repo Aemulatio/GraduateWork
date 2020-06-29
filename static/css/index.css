@@ -266,6 +266,9 @@
     margin: 0 auto;
 }
 
+.choose-graph-style{
+    min-height: 160px;
+}
 
 .choose-graph-style__container {
     margin: 0 auto;
@@ -379,6 +382,11 @@ input:checked + label:before {
 /*    margin: 3px 5px 3px 10px;*/
 /*    float: left;*/
 /*}*/
+
+.graphs{
+    min-height: 684px;
+
+}
 
 .graphs__container {
     margin: 0 auto;
