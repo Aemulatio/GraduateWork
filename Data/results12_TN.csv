@@ -1,0 +1,5316 @@
+Winner,Team1,Team2,Team1_Score,Team2_Score,Map
+Team1,Rocketlauncher$,Ambush,16,14,Overpass
+Team2,Ambush,Rocketlauncher$,16,7,Inferno
+Team1,Rocketlauncher$,Ambush,8,16,Dust2
+Team1,SKADE,Brute,16,10,Inferno
+Team1,SKADE,Brute,16,14,Nuke
+Team1,SKADE,Ambush,22,20,Inferno
+Team2,Ambush,SKADE,13,16,Train
+Team1,Brute,Rocketlauncher$,8,16,Mirage
+Team1,Rocketlauncher$,Brute,7,16,Inferno
+Team1,Brute,Rocketlauncher$,16,14,Dust2
+Team1,Brute,Ambush,16,13,Dust2
+Team1,Ambush,Brute,16,12,Inferno
+Team2,Brute,Ambush,16,9,Mirage
+Team2,SKADE,FATE,13,16,Inferno
+Team2,FATE,SKADE,12,16,Overpass
+Team1,SKADE,FATE,16,11,Train
+Team2,Brute,Phoenix,10,16,Dust2
+Team2,Phoenix,Brute,16,8,Mirage
+Team2,SKADE,Heroic,13,16,Inferno
+Team2,Heroic,SKADE,16,7,Nuke
+Team1,Big Frames,Rugratz,4,16,Nuke
+Team2,Rugratz,Big Frames,16,7,Mirage
+Team2,eUnited,RBG,16,3,Overpass
+Team1,RBG,eUnited,4,16,Train
+Team2,Divine,Oceanus,16,9,Dust2
+Team1,Oceanus,Divine,8,16,Train
+Team2,New England Whalers,Just For Fun,12,16,Inferno
+Team1,New England Whalers,Just For Fun,5,16,Mirage
+Team2,ex-iNTACT,Monstars,14,16,Mirage
+Team1,Monstars,ex-iNTACT,16,10,Inferno
+Team2,Singularity,Infinity,16,3,Overpass
+Team2,Infinity,Singularity,12,16,Mirage
+Team2,LiViD,Recon 5,13,16,Mirage
+Team2,Recon 5,LiViD,11,16,Nuke
+Team2,LiViD,Recon 5,16,7,Inferno
+Team2,Rap Gang,Bushido Boyz,14,16,Inferno
+Team2,Rap Gang,Bushido Boyz,16,4,Mirage
+Team1,Rap Gang,Bushido Boyz,16,13,Overpass
+Team2,Rugratz,Monstars,16,3,Mirage
+Team1,Monstars,Rugratz,9,16,Nuke
+Team2,Just For Fun,Divine,10,16,Inferno
+Team2,Just For Fun,Divine,16,8,Overpass
+Team1,Divine,Just For Fun,9,16,Mirage
+Team1,Singularity,LiViD,19,16,Train
+Team1,Singularity,LiViD,19,15,Nuke
+Team1,eUnited,Rap Gang,16,12,Overpass
+Team1,eUnited,Rap Gang,22,20,Mirage
+Team1,Phoenix,Gambit Youngsters,16,11,Overpass
+Team2,Gambit Youngsters,Phoenix,10,16,Mirage
+Team1,Phoenix,Heroic,8,16,Vertigo
+Team2,Heroic,Phoenix,16,5,Mirage
+Team1,Heroic,Phoenix,16,10,Overpass
+Team1,Singularity,Rugratz,16,14,Overpass
+Team1,Rugratz,Singularity,19,16,Nuke
+Team1,Rugratz,Singularity,16,12,Mirage
+Team2,Just For Fun,eUnited,11,16,Nuke
+Team2,eUnited,Just For Fun,10,16,Mirage
+Team2,Just For Fun,eUnited,16,9,Dust2
+Team1,Rugratz,Just For Fun,5,16,Mirage
+Team2,Rugratz,Just For Fun,16,19,Train
+Team2,ViCi,Alpha Red,16,3,Overpass
+Team1,Bren,R-Stars,19,15,Train
+Team2,R-Stars,Bren,16,7,Inferno
+Team2,TYLOO,Mazaalai,16,9,Mirage
+Team2,TYLOO,Mazaalai,10,16,Inferno
+Team2,Alpha Red,ViCi,10,16,Mirage
+Team1,Bren,R-Stars,16,10,Dust2
+Team2,TYLOO,Mazaalai,16,7,Overpass
+Team1,AUGUST,OneThree,16,11,Inferno
+Team2,OneThree,AUGUST,16,8,Nuke
+Team1,OneThree,AUGUST,8,16,Dust2
+Team2,Alpha Red,OneThree,10,16,Mirage
+Team2,OneThree,Alpha Red,13,16,Inferno
+Team2,Alpha Red,OneThree,14,16,Dust2
+Team2,AUGUST,ViCi,16,19,Nuke
+Team1,ViCi,AUGUST,9,16,Train
+Team2,AUGUST,ViCi,10,16,Inferno
+Team2,R-Stars,Mazaalai,16,8,Dust2
+Team2,R-Stars,Mazaalai,16,7,Inferno
+Team2,TYLOO,Bren,18,22,Inferno
+Team1,Bren,TYLOO,7,16,Mirage
+Team2,TYLOO,Bren,11,16,Train
+Team2,ARCY,HAVU,10,16,Train
+Team2,HAVU,ARCY,16,6,Nuke
+Team2,SKADE,OG,13,16,Train
+Team1,MAD Lions,Winstrike,16,13,Train
+Team2,Sinners,AGO,13,16,Dust2
+Team1,Apeks,GamerLegion,16,12,Mirage
+Team1,sAw,Gambit Youngsters,6,16,Vertigo
+Team2,water gamers,Secret,16,4,Mirage
+Team2,Cloud9,Riot Squad,16,7,Dust2
+Team1,Riot Squad,Cloud9,4,16,Overpass
+Team2,MIBR,INTZ,16,4,Mirage
+Team2,INTZ,MIBR,16,8,Train
+Team1,INTZ,MIBR,16,14,Vertigo
+Team2,FURIA,Chaos,14,16,Train
+Team1,Chaos,FURIA,16,14,Mirage
+Team1,Complexity,Gen.G,16,10,Train
+Team2,Gen.G,Complexity,15,19,Mirage
+Team2,MELBET,Hard Legion,15,19,Overpass
+Team1,North,Nemiga,16,12,Mirage
+Team2,FURIA,Gen.G,13,16,Train
+Team2,Gen.G,FURIA,16,9,Inferno
+Team2,Cloud9,INTZ,16,6,Vertigo
+Team1,INTZ,Cloud9,7,16,Inferno
+Team1,Chaos,Complexity,4,16,Dust2
+Team2,Chaos,Complexity,11,16,Nuke
+Team1,MIBR,Riot Squad,16,12,Inferno
+Team1,Riot Squad,MIBR,16,13,Mirage
+Team2,Riot Squad,MIBR,10,16,Train
+Team1,ViCi,Bren,7,16,Inferno
+Team2,TYLOO,OneThree,16,8,Train
+Team2,OneThree,TYLOO,12,16,Mirage
+Team2,AUGUST,R-Stars,12,16,Dust2
+Team1,R-Stars,AUGUST,16,11,Train
+Team2,Bren,ViCi,12,16,Overpass
+Team2,Bren,ViCi,10,16,Nuke
+Team1,TYLOO,R-Stars,16,11,Train
+Team1,R-Stars,TYLOO,4,16,Mirage
+Team2,HAVU,GODSENT,10,16,Inferno
+Team2,HAVU,GODSENT,10,16,Train
+Team1,water gamers,Hard Legion,6,16,Inferno
+Team2,OG,AGO,10,16,Inferno
+Team2,AGO,Hard Legion,16,5,Inferno
+Team1,AGO,Hard Legion,16,10,Dust2
+Team2,MAD Lions,Apeks,16,4,Overpass
+Team2,North,Gambit Youngsters,16,8,Mirage
+Team1,North,MAD Lions,8,16,Overpass
+Team2,MAD Lions,North,16,4,Mirage
+Team2,MIBR,Chaos,16,5,Mirage
+Team1,Chaos,MIBR,8,16,Inferno
+Team2,Gen.G,INTZ,14,16,Vertigo
+Team1,INTZ,Gen.G,16,10,Dust2
+Team1,Cloud9,Complexity,8,16,Dust2
+Team2,Complexity,Cloud9,14,16,Inferno
+Team2,Cloud9,Complexity,16,3,Nuke
+Team2,INTZ,MIBR,13,16,Vertigo
+Team2,INTZ,MIBR,16,7,Mirage
+Team2,INTZ,MIBR,10,16,Train
+Team2,TYLOO,Bren,16,5,Inferno
+Team1,Bren,TYLOO,5,16,Mirage
+Team2,TYLOO,ViCi,12,16,Mirage
+Team1,TYLOO,ViCi,7,16,Overpass
+Team1,Heroic,MAD Lions,7,16,Train
+Team1,MAD Lions,Heroic,16,13,Nuke
+Team1,G2,AGO,16,12,Mirage
+Team1,AGO,G2,16,14,Vertigo
+Team1,G2,AGO,16,10,Dust2
+Team1,FaZe,ARCY,16,14,Nuke
+Team2,ARCY,FaZe,12,16,Dust2
+Team1,ENCE,Illuminar,16,14,Nuke
+Team2,Illuminar,ENCE,16,6,Overpass
+Team2,ENCE,Illuminar,16,7,Train
+Team1,FaZe,ENCE,16,10,Mirage
+Team1,ENCE,FaZe,16,12,Dust2
+Team2,ENCE,FaZe,12,16,Nuke
+Team1,Illuminar,ARCY,16,11,Train
+Team2,ARCY,Illuminar,12,16,Nuke
+Team2,G2,MAD Lions,20,22,Train
+Team2,MAD Lions,G2,14,16,Dust2
+Team2,MAD Lions,G2,13,16,Nuke
+Team1,Heroic,AGO,3,16,Train
+Team2,AGO,Heroic,10,16,Nuke
+Team2,AGO,Heroic,16,5,Vertigo
+Team2,MIBR,Complexity,16,7,Mirage
+Team2,Complexity,MIBR,25,28,Inferno
+Team2,Infinity,Hadouken,16,8,Inferno
+Team1,Infinity,Hadouken,16,1,Mirage
+Team2,Cloud9,MIBR,13,16,Train
+Team1,MIBR,Cloud9,4,16,Overpass
+Team1,Cloud9,MIBR,16,12,Inferno
+Team1,Infamous,Supremacy,8,16,Nuke
+Team2,Infamous,Supremacy,12,16,Inferno
+Team1,ENCE,AGO,16,1,Inferno
+Team1,AGO,ENCE,16,12,Mirage
+Team2,ENCE,AGO,16,5,Dust2
+Team1,MAD Lions,Illuminar,16,12,Nuke
+Team1,Illuminar,MAD Lions,16,10,Overpass
+Team1,MAD Lions,Illuminar,19,17,Train
+Team1,ENCE,MAD Lions,7,16,Overpass
+Team1,MAD Lions,ENCE,16,10,Mirage
+Team1,Defusekids,hREDS,16,10,Inferno
+Team1,Apeks,Tenerife Titans,2,16,Mirage
+Team2,Avengers,SKADE,13,16,Inferno
+Team2,Project X,KOVA,17,19,Nuke
+Team1,AVEZ,Unique,22,18,Train
+Team1,Secret,Juggernauts,16,12,Mirage
+Team1,Infinity,Supremacy,16,10,Mirage
+Team2,Infinity,Supremacy,16,4,Train
+Team1,Copenhagen Flames,Gambit Youngsters,7,16,Mirage
+Team2,NAVI Junior,Winstrike,20,22,Dust2
+Team2,Infamous,Tecsysnet,16,3,Inferno
+Team2,GMCC,A Point,16,4,Overpass
+Team1,GTV.Revolution,Impunity,16,14,Dust2
+Team1,BOOM,Darkhorse,16,14,Inferno
+Team2,MiTH.Maple,Entity,16,8,Overpass
+Team1,Bren,GMCC,19,17,Nuke
+Team2,ex-Genuine,BOOM,11,16,Mirage
+Team1,A Point,GTV.Revolution,4,16,Inferno
+Team1,Darkhorse,Entity,16,13,Dust2
+Team2,ex-Genuine,Entity,16,7,Train
+Team2,Impunity,Bren,11,16,Dust2
+Team2,MiTH.Maple,Darkhorse,16,8,Overpass
+Team1,GMCC,GTV.Revolution,7,16,Dust2
+Team2,Bren,A Point,16,6,Inferno
+Team2,MiTH.Maple,BOOM,16,8,Train
+Team2,Darkhorse,ex-Genuine,10,16,Dust2
+Team1,Impunity,A Point,16,10,Mirage
+Team2,Bren,GTV.Revolution,16,5,Inferno
+Team1,Entity,BOOM,9,16,Dust2
+Team1,MiTH.Maple,ex-Genuine,16,13,Vertigo
+Team2,GMCC,Impunity,12,16,Mirage
+Team1,Gambit Youngsters,Winstrike,16,11,Dust2
+Team1,Secret,KOVA,16,12,Nuke
+Team2,KOVA,Secret,22,25,Mirage
+Team2,Winstrike,Gambit Youngsters,10,16,Overpass
+Team1,Defusekids,Tenerife Titans,16,10,Mirage
+Team1,Tenerife Titans,Defusekids,6,16,Inferno
+Team1,SKADE,AVEZ,8,16,Nuke
+Team2,AVEZ,SKADE,14,16,Overpass
+Team2,SKADE,AVEZ,16,6,Mirage
+Team2,TeamOne,UP,16,6,Dust2
+Team1,UP,TeamOne,9,16,Train
+Team1,Alma,W7M,5,16,Inferno
+Team1,W7M,Alma,16,10,Vertigo
+Team1,Yeah,RUFUS,19,17,Nuke
+Team2,Yeah,RUFUS,16,9,Train
+Team1,paiN,F4K3,16,11,Dust2
+Team2,paiN,F4K3,16,4,Overpass
+Team2,Triumph,Saskatoon Warriors,16,9,Nuke
+Team1,Saskatoon Warriors,Triumph,3,16,Inferno
+Team1,Gen.G,Divine,19,16,Mirage
+Team1,Divine,Gen.G,9,16,Vertigo
+Team2,Chaos,New England Whalers,16,4,Nuke
+Team1,New England Whalers,Chaos,3,16,Inferno
+Team2,INTZ,Russian Street Party,12,16,Inferno
+Team1,Russian Street Party,INTZ,5,16,Mirage
+Team2,INTZ,Russian Street Party,16,7,Train
+Team1,Infamous,Loto,16,10,Inferno
+Team2,Infamous,Loto,16,8,Mirage
+Team1,Supremacy,Infamous,16,14,Train
+Team1,Infamous,Supremacy,16,12,Inferno
+Team1,Supremacy,Infamous,16,10,Mirage
+Team1,BOOM,Bren,7,16,Train
+Team1,Bren,BOOM,16,10,Nuke
+Team1,MiTH.Maple,GTV.Revolution,9,16,Inferno
+Team1,GTV.Revolution,MiTH.Maple,8,16,Mirage
+Team2,GTV.Revolution,MiTH.Maple,11,16,Train
+Team1,Bren,MiTH.Maple,16,10,Overpass
+Team2,MiTH.Maple,Bren,11,16,Inferno
+Team2,BOOM,GTV.Revolution,16,7,Inferno
+Team1,GTV.Revolution,BOOM,7,16,Train
+Team2,Heroic,Secret,11,16,Mirage
+Team2,Secret,Heroic,12,16,Nuke
+Team1,Heroic,Secret,16,11,Inferno
+Team1,Heretics,Gambit Youngsters,16,14,Dust2
+Team1,Gambit Youngsters,Heretics,16,14,Inferno
+Team2,Heretics,Gambit Youngsters,23,25,Overpass
+Team1,CR4ZY,Defusekids,16,14,Train
+Team1,Defusekids,CR4ZY,16,13,Inferno
+Team2,CR4ZY,Defusekids,13,16,Dust2
+Team1,MAD Lions,SKADE,7,16,Dust2
+Team2,SKADE,MAD Lions,10,16,Nuke
+Team1,MAD Lions,SKADE,16,14,Train
+Team2,MAD Lions,Defusekids,16,7,Dust2
+Team2,Defusekids,MAD Lions,12,16,Vertigo
+Team1,Heroic,Gambit Youngsters,16,11,Train
+Team2,Gambit Youngsters,Heroic,10,16,Overpass
+Team1,Singularity,Complexity,6,16,Mirage
+Team2,Complexity,Singularity,16,5,Overpass
+Team2,Triumph,Cloud9,10,16,Dust2
+Team2,Triumph,Cloud9,11,16,Overpass
+Team2,eUnited,Chaos,16,3,Inferno
+Team2,Chaos,eUnited,11,16,Vertigo
+Team1,Gen.G,INTZ,16,11,Vertigo
+Team2,INTZ,Gen.G,15,19,Overpass
+Team1,MeAndTheBoys,Unique,16,14,Train
+Team2,Unique,MeAndTheBoys,16,8,Mirage
+Team2,Unique,MeAndTheBoys,14,16,Dust2
+Team2,Imperial,TeamOne,14,16,Nuke
+Team1,Imperial,TeamOne,2,16,Mirage
+Team1,W7M,RED Canids,16,12,Train
+Team2,RED Canids,W7M,16,9,Vertigo
+Team2,W7M,RED Canids,11,16,Mirage
+Team2,paiN,Redemption POA,16,2,Nuke
+Team2,Redemption POA,paiN,14,16,Inferno
+Team1,Yeah,DETONA,25,23,Dust2
+Team2,DETONA,Yeah,14,16,Train
+Team2,Complexity,Cloud9,14,16,Dust2
+Team2,Complexity,Cloud9,14,16,Inferno
+Team2,eUnited,Gen.G,16,8,Mirage
+Team1,Gen.G,eUnited,9,16,Nuke
+Team1,BIG Academy,Tenerife Titans,16,10,Nuke
+Team1,Tenerife Titans,BIG Academy,9,16,Mirage
+Team1,paiN,Yeah,7,16,Mirage
+Team2,Yeah,paiN,14,16,Overpass
+Team2,paiN,Yeah,16,7,Inferno
+Team2,TeamOne,RED Canids,25,28,Mirage
+Team2,TeamOne,RED Canids,16,7,Nuke
+Team2,TeamOne,RED Canids,11,16,Train
+Team1,Cloud9,eUnited,19,16,Overpass
+Team2,eUnited,Cloud9,10,16,Inferno
+Team1,Infinity,Supremacy,16,12,Mirage
+Team2,Infinity,Supremacy,16,3,Inferno
+Team1,Paradox,Ground Zero,9,16,Mirage
+Team2,Renegades,ex-Bizarre,16,6,Inferno
+Team2,PC419,Incept,16,6,Mirage
+Team2,BIG,Sprout,11,16,Dust2
+Team1,Sprout,BIG,22,20,Vertigo
+Team1,Defusekids,Nemiga,4,16,Nuke
+Team2,Nemiga,Defusekids,16,8,Dust2
+Team2,Riot Squad,Rugratz,16,9,Nuke
+Team2,Rugratz,Riot Squad,10,16,Dust2
+Team1,Mythic,eUnited,16,14,Mirage
+Team2,eUnited,Mythic,16,4,Inferno
+Team1,Mythic,eUnited,16,13,Dust2
+Team1,ORDER,ex-Genuine,16,11,Train
+Team1,ex-Genuine,ORDER,6,16,Inferno
+Team1,Renegades,Airborne,16,10,Overpass
+Team2,Airborne,Renegades,11,16,Inferno
+Team2,Ground Zero,Paradox,16,19,Dust2
+Team1,Paradox,Ground Zero,9,16,Mirage
+Team1,Paradox,Ground Zero,16,13,Inferno
+Team2,PC419,AVANT,10,16,Train
+Team1,AVANT,PC419,16,12,Mirage
+Team1,PC419,ex-Genuine,4,16,Vertigo
+Team2,ex-Genuine,PC419,16,3,Mirage
+Team2,ORDER,AVANT,16,5,Dust2
+Team1,AVANT,ORDER,7,16,Train
+Team2,Renegades,Paradox,16,3,Dust2
+Team1,Paradox,Renegades,9,16,Inferno
+Team2,Ground Zero,Airborne,12,16,Overpass
+Team1,Airborne,Ground Zero,16,11,Mirage
+Team2,GODSENT,Spirit,11,16,Mirage
+Team2,Spirit,GODSENT,16,6,Inferno
+Team1,Spirit,GODSENT,16,13,Train
+Team2,ARCY,Copenhagen Flames,10,16,Overpass
+Team1,Copenhagen Flames,ARCY,16,11,Vertigo
+Team1,OFFSET,Espada,2,16,Dust2
+Team1,Espada,OFFSET,16,13,Inferno
+Team1,NAVI Junior,Copenhagen Flames,5,16,Overpass
+Team2,Copenhagen Flames,NAVI Junior,16,6,Mirage
+Team2,Juggernauts,KOVA,11,16,Overpass
+Team1,KOVA,Juggernauts,16,10,Mirage
+Team2,Nexus,SKADE,13,16,Overpass
+Team1,SKADE,Nexus,8,16,Mirage
+Team2,Nexus,SKADE,14,16,Inferno
+Team1,Chaos,New England Whalers,16,13,Inferno
+Team2,New England Whalers,Chaos,10,16,Dust2
+Team2,7Sins,Triumph,12,16,Overpass
+Team2,Triumph,7Sins,16,9,Mirage
+Team2,Swole Patrol,ex-iNTACT,12,16,Inferno
+Team1,Swole Patrol,ex-iNTACT,16,13,Dust2
+Team2,ex-iNTACT,Swole Patrol,16,19,Mirage
+Team1,Divine,INTZ,5,16,Vertigo
+Team2,INTZ,Divine,16,4,Overpass
+Team1,Renegades,ORDER,16,14,Train
+Team1,ORDER,Renegades,9,16,Nuke
+Team1,Paradox,ex-Genuine,16,10,Vertigo
+Team1,ex-Genuine,Paradox,16,10,Mirage
+Team2,ex-Genuine,Paradox,16,5,Train
+Team2,AVANT,Airborne,14,16,Inferno
+Team2,Airborne,AVANT,12,16,Dust2
+Team1,AVANT,Airborne,16,13,Mirage
+Team1,madlikewizards,Esper,16,1,Mirage
+Team2,madlikewizards,ROCK CANDY,16,2,Mirage
+Team1,AVANT,ex-Genuine,8,16,Train
+Team1,ex-Genuine,AVANT,8,16,Dust2
+Team1,AVANT,ex-Genuine,6,16,Inferno
+Team1,Renegades,ROCK CANDY,16,0,Overpass
+Team1,HellRaisers,Axis,16,10,Mirage
+Team2,Axis,HellRaisers,11,16,Overpass
+Team1,DreamEaters,EXTREMUM,3,16,Nuke
+Team2,EXTREMUM,DreamEaters,16,8,Train
+Team1,Illuminar,HAVU,16,13,Overpass
+Team2,Illuminar,HAVU,16,19,Train
+Team2,Illuminar,HAVU,14,16,Nuke
+Team1,Avengers,Budapest Five,2,16,Dust2
+Team1,Budapest Five,Avengers,6,16,Inferno
+Team1,Avengers,Budapest Five,9,16,Train
+Team1,eL'quvet,Hard Legion,7,16,Train
+Team2,eL'quvet,Hard Legion,14,16,Dust2
+Team1,Apeks,No Problem!,19,16,Train
+Team2,No Problem!,Apeks,12,16,Mirage
+Team1,Singularity,Rap Gang,16,10,Train
+Team1,Rap Gang,Singularity,9,16,Inferno
+Team2,Alpha Red,Armory,16,6,Mirage
+Team1,Armory,Alpha Red,8,16,Inferno
+Team1,ORDER,ex-Genuine,16,14,Train
+Team1,ex-Genuine,ORDER,16,11,Inferno
+Team1,ORDER,ex-Genuine,6,16,Nuke
+Team2,Maple,Astro,16,5,Mirage
+Team1,Astro,Maple,16,10,Train
+Team1,Astro,Maple,7,16,Overpass
+Team2,Renegades,ex-Genuine,14,16,Train
+Team1,Renegades,ex-Genuine,16,12,Dust2
+Team1,Renegades,ex-Genuine,16,12,Inferno
+Team1,Formidable,FURY,16,12,Inferno
+Team2,MC,Incept,16,7,Dust2
+Team1,PC419,TRIDENT,9,16,Mirage
+Team1,Armory,Astro,4,16,Mirage
+Team2,Astro,Armory,13,16,Nuke
+Team2,Armory,Astro,13,16,Overpass
+Team1,Skin Ogres,DreamEaters,6,16,Inferno
+Team2,DreamEaters,Skin Ogres,16,2,Dust2
+Team2,Gambit Youngsters,spray'n'pray,16,2,Dust2
+Team2,Gambit Youngsters,spray'n'pray,16,5,Mirage
+Team2,SKADE,MeAndTheBoys,16,6,Dust2
+Team1,MeAndTheBoys,SKADE,16,10,Inferno
+Team2,SKADE,MeAndTheBoys,16,6,Train
+Team1,Wisla Krakow,Nemiga,16,12,Mirage
+Team1,Wisla Krakow,Nemiga,16,13,Inferno
+Team2,eL'quvet,DreamEaters,16,9,Mirage
+Team2,DreamEaters,eL'quvet,16,5,Nuke
+Team2,eL'quvet,DreamEaters,14,16,Dust2
+Team1,Riot Squad,Mythic,16,11,Mirage
+Team2,Mythic,Riot Squad,10,16,Inferno
+Team2,Swole Patrol,Station7,16,4,Inferno
+Team2,Swole Patrol,Station7,16,5,Dust2
+Team1,Nemiga,Skin Ogres,19,17,Mirage
+Team1,Skin Ogres,Nemiga,16,13,Inferno
+Team2,Nemiga,Skin Ogres,10,16,Dust2
+Team1,Espada,Akatsuki,8,16,Overpass
+Team1,Akatsuki,Espada,16,13,Dust2
+Team2,Syman,cisbots,10,16,Mirage
+Team2,MELBET,HAVU,13,16,Nuke
+Team2,Lucid Dream,HZ,10,16,Dust2
+Team2,HZ,Lucid Dream,14,16,Inferno
+Team1,HZ,Lucid Dream,6,16,Nuke
+Team1,Maple,Bren,19,15,Inferno
+Team1,Bren,Maple,16,12,Mirage
+Team2,Bren,Maple,10,16,Train
+Team1,x6tence,BIG,9,16,Inferno
+Team2,S2V,Spirit,14,16,Nuke
+Team2,Gambit Youngsters,SKADE,12,16,Train
+Team1,Winstrike,Illuminar,16,12,Overpass
+Team2,AVEZ,Movistar Riders,16,8,Nuke
+Team1,cisbots,SKADE,9,16,Inferno
+Team2,SKADE,cisbots,16,9,Mirage
+Team2,Spirit,HAVU,16,7,Nuke
+Team2,HAVU,Spirit,16,6,Mirage
+Team2,HAVU,Spirit,16,8,Dust2
+Team2,AVEZ,BIG,16,19,Vertigo
+Team1,AVEZ,BIG,16,12,Dust2
+Team1,BIG,AVEZ,7,16,Nuke
+Team1,Se7en,Absolute,8,16,Dust2
+Team1,Absolute,Se7en,19,16,Train
+Team2,pro100,Winstrike,14,16,Dust2
+Team1,Winstrike,pro100,16,12,Train
+Team1,Astro,Hard4U,8,16,Mirage
+Team1,Hard4U,Astro,16,12,Dust2
+Team2,Nemiga,Budapest Five,11,16,Mirage
+Team2,Budapest Five,Nemiga,10,16,Inferno
+Team2,Nemiga,Budapest Five,16,8,Dust2
+Team2,INTZ,Oceanus,16,5,Mirage
+Team2,INTZ,Oceanus,16,2,Vertigo
+Team2,Riot Squad,Saskatoon Warriors,16,5,Overpass
+Team1,Saskatoon Warriors,Riot Squad,6,16,Dust2
+Team2,Triumph,Just For Fun,16,6,Mirage
+Team1,Just For Fun,Triumph,7,16,Nuke
+Team1,Chaos,New England Whalers,16,11,Inferno
+Team1,New England Whalers,Chaos,16,14,Dust2
+Team1,Chaos,New England Whalers,16,12,Nuke
+Team1,Triumph,INTZ,4,16,Vertigo
+Team2,INTZ,Triumph,16,9,Dust2
+Team1,Agarthas,Jokers,6,16,Mirage
+Team1,Agarthas,Jokers,5,16,Inferno
+Team1,Cephei,RSC19,7,16,Inferno
+Team1,Cephei,RSC19,9,16,Dust2
+Team2,Bren,HZ,10,16,Dust2
+Team1,HZ,Bren,16,12,Train
+Team2,Maple,Lucid Dream,16,7,Nuke
+Team1,Lucid Dream,Maple,9,16,Train
+Team2,ex-Bizarre,Formidable,16,5,Overpass
+Team1,Astro,Se7en,3,16,Inferno
+Team2,Se7en,Astro,16,4,Dust2
+Team2,Heroic,AVEZ,16,5,Train
+Team1,AVEZ,Heroic,3,16,Overpass
+Team1,HAVU,GODSENT,8,16,Train
+Team1,HAVU,GODSENT,9,16,Inferno
+Team2,forZe,Winstrike,16,9,Dust2
+Team1,Winstrike,forZe,19,17,Nuke
+Team2,Winstrike,forZe,14,16,Train
+Team1,CR4ZY,SKADE,8,16,Inferno
+Team1,SKADE,CR4ZY,8,16,Train
+Team2,SKADE,CR4ZY,15,19,Nuke
+Team1,Hard4U,Absolute,16,11,Dust2
+Team2,Absolute,Hard4U,23,25,Overpass
+Team1,Heroic,GODSENT,5,16,Vertigo
+Team1,GODSENT,Heroic,8,16,Nuke
+Team2,GODSENT,Heroic,14,16,Overpass
+Team1,forZe,CR4ZY,16,10,Dust2
+Team2,CR4ZY,forZe,10,16,Inferno
+Team1,Espada,BIG Academy,8,16,Mirage
+Team1,BIG Academy,Espada,4,16,Dust2
+Team2,Espada,BIG Academy,16,7,Inferno
+Team2,lapw,Cerberus,16,5,Overpass
+Team1,Cerberus,lapw,9,16,Mirage
+Team2,eUnited,Triumph,16,7,Mirage
+Team2,Triumph,eUnited,14,16,Overpass
+Team2,Gen.G,Chaos,16,8,Train
+Team2,Chaos,Gen.G,16,9,Mirage
+Team2,Gen.G,Chaos,16,5,Inferno
+Team1,Singularity,Riot Squad,8,16,Dust2
+Team2,Riot Squad,Singularity,14,16,Mirage
+Team2,Riot Squad,Singularity,16,7,Inferno
+Team1,Complexity,INTZ,16,11,Train
+Team1,INTZ,Complexity,16,10,Overpass
+Team1,Complexity,INTZ,16,10,Mirage
+Team1,Heroic,forZe,9,16,Inferno
+Team2,forZe,Heroic,16,4,Nuke
+Team2,Gen.G,Riot Squad,16,6,Dust2
+Team2,Riot Squad,Gen.G,12,16,Train
+Team1,eUnited,Complexity,6,16,Mirage
+Team1,Complexity,eUnited,16,13,Overpass
+Team1,Supremacy,Incubus,16,10,Overpass
+Team2,Supremacy,Incubus,16,4,Mirage
+Team2,RSC19,Jokers,16,8,Nuke
+Team1,RSC19,Jokers,16,11,Inferno
+Team1,FreeStyle,Infinity,4,16,Overpass
+Team2,FreeStyle,Infinity,0,16,Inferno
+Team2,Infinity,Supremacy,13,16,Inferno
+Team2,Infinity,Supremacy,13,16,Train
+Team1,Absolute,Se7en,16,10,Inferno
+Team1,Se7en,Absolute,16,10,Dust2
+Team1,Se7en,Absolute,16,10,Mirage
+Team2,HZ,Lucid Dream,16,7,Overpass
+Team2,Lucid Dream,HZ,16,6,Dust2
+Team2,Lucid Dream,HZ,14,16,Mirage
+Team2,ORDER,FURY,16,2,Inferno
+Team1,ORDER,Paradox,16,11,Dust2
+Team1,forZe,Hard Legion,16,12,Inferno
+Team1,Hard Legion,forZe,6,16,Train
+Team2,Singularity,Chaos,16,7,Nuke
+Team1,Chaos,Singularity,9,16,Overpass
+Team1,Se7en,Maple,16,12,Train
+Team1,Maple,Se7en,16,10,Inferno
+Team2,Se7en,Maple,13,16,Mirage
+Team2,HZ,Hard4U,13,16,Mirage
+Team1,Hard4U,HZ,16,14,Dust2
+Team2,TRIDENT,ex-Bizarre,11,16,Mirage
+Team2,Tricked,SKADE,12,16,Inferno
+Team1,Tricked,SKADE,16,12,Nuke
+Team1,Tricked,SKADE,16,14,Train
+Team1,HZ,Se7en,19,17,Inferno
+Team1,Se7en,HZ,16,12,Mirage
+Team1,Se7en,HZ,9,16,Dust2
+Team2,NAVI Junior,Axis,10,16,Mirage
+Team2,NAVI Junior,Axis,16,7,Vertigo
+Team1,NAVI Junior,Axis,9,16,Dust2
+Team1,ALTERNATE aTTaX,GamerLegion,7,16,Overpass
+Team2,GamerLegion,ALTERNATE aTTaX,16,7,Train
+Team2,Espada,spray'n'pray,16,8,Inferno
+Team1,spray'n'pray,Espada,6,16,Train
+Team2,SMASH,HAVU,16,4,Mirage
+Team2,HAVU,SMASH,16,9,Nuke
+Team1,SMASH,HAVU,6,16,Dust2
+Team2,Copenhagen Flames,HellRaisers,14,16,Vertigo
+Team2,HellRaisers,Copenhagen Flames,16,5,Overpass
+Team2,KOVA,Apeks,16,9,Mirage
+Team2,Apeks,KOVA,14,16,Nuke
+Team1,Hard4U,Maple,7,16,Mirage
+Team2,Maple,Hard4U,16,9,Inferno
+Team2,Hard4U,HZ,11,16,Dust2
+Team1,HZ,Hard4U,16,13,Mirage
+Team1,Esper,ex-Genuine,4,16,Mirage
+Team2,Ground Zero,Esper,16,6,Mirage
+Team2,PC419,FURY,16,6,Dust2
+Team2,madlikewizards,Paradox,16,9,Mirage
+Team1,HZ,Maple,16,14,Overpass
+Team2,Maple,HZ,10,16,Mirage
+Team1,Formidable,madlikewizards,3,16,Inferno
+Team2,Ground Zero,Incept,16,9,Inferno
+Team2,SKADE,ALTERNATE aTTaX,16,3,Train
+Team2,ALTERNATE aTTaX,SKADE,11,16,Inferno
+Team2,Copenhagen Flames,Axis,14,16,Mirage
+Team1,Axis,Copenhagen Flames,16,14,Nuke
+Team2,AUGUST,NAVI Junior,11,16,Train
+Team2,NAVI Junior,AUGUST,14,16,Dust2
+Team2,AUGUST,NAVI Junior,16,6,Mirage
+Team1,SKADE,Nemiga,8,16,Nuke
+Team2,Nemiga,SKADE,16,8,Mirage
+Team1,HAVU,Sprout,9,16,Inferno
+Team1,HAVU,Sprout,16,12,Nuke
+Team1,Sprout,HAVU,19,15,Dust2
+Team2,EXTREMUM,Hard Legion,16,8,Mirage
+Team1,EXTREMUM,Hard Legion,4,16,Inferno
+Team1,EXTREMUM,Hard Legion,9,16,Dust2
+Team2,Espada,KOVA,16,8,Mirage
+Team1,KOVA,Espada,16,14,Dust2
+Team2,KOVA,Espada,10,16,Overpass
+Team2,Tricked,GamerLegion,16,6,Mirage
+Team2,GamerLegion,Tricked,16,4,Nuke
+Team1,Tricked,GamerLegion,6,16,Inferno
+Team1,Axis,HellRaisers,7,16,Overpass
+Team2,HellRaisers,Axis,16,9,Dust2
+Team2,Singularity,Swole Patrol,16,6,Inferno
+Team1,Swole Patrol,Singularity,16,11,Overpass
+Team1,Swole Patrol,Singularity,16,12,Mirage
+Team1,FURY,Airborne,16,13,Inferno
+Team2,Formidable,ROCK CANDY,10,16,Overpass
+Team2,ex-Genuine,TRIDENT,11,16,Mirage
+Team1,ROCK CANDY,ex-Bizarre,4,16,Mirage
+Team2,HAVU,AUGUST,16,6,Nuke
+Team1,HAVU,AUGUST,7,16,Inferno
+Team1,AUGUST,HAVU,4,16,Train
+Team1,Wisla Krakow,DreamEaters,16,13,Dust2
+Team2,Wisla Krakow,DreamEaters,14,16,Mirage
+Team1,DreamEaters,Wisla Krakow,5,16,Inferno
+Team2,SKADE,Tricked,14,16,Inferno
+Team1,Tricked,SKADE,16,14,Nuke
+Team2,Copenhagen Flames,forZe,14,16,Inferno
+Team2,forZe,Copenhagen Flames,13,16,Overpass
+Team2,forZe,Copenhagen Flames,20,22,Nuke
+Team2,Riot Squad,INTZ,14,16,Mirage
+Team1,INTZ,Riot Squad,16,11,Inferno
+Team1,Virtus.pro,BIG,8,16,Inferno
+Team2,SMASH,NAVI Junior,16,8,Nuke
+Team1,SMASH,NAVI Junior,3,16,Dust2
+Team2,SMASH,NAVI Junior,14,16,Overpass
+Team1,Sprout,North,4,16,Dust2
+Team1,Renegades,Cloud9,16,10,Overpass
+Team2,Heroic,MAD Lions,10,16,Dust2
+Team1,NAVI Junior,AUGUST,16,10,Dust2
+Team2,AUGUST,NAVI Junior,11,16,Mirage
+Team1,Espada,Nemiga,16,13,Nuke
+Team2,Nemiga,Espada,14,16,Overpass
+Team1,Renegades,BIG,8,16,Nuke
+Team2,North,MAD Lions,10,16,Mirage
+Team2,Swole Patrol,INTZ,14,16,Vertigo
+Team2,INTZ,Swole Patrol,16,8,Overpass
+Team1,Virtus.pro,Cloud9,4,16,Overpass
+Team2,Cloud9,Virtus.pro,16,7,Dust2
+Team1,GamerLegion,NAVI Junior,16,10,Overpass
+Team2,NAVI Junior,GamerLegion,15,19,Dust2
+Team2,Gambit Youngsters,Akatsuki,13,16,Dust2
+Team2,Akatsuki,Gambit Youngsters,12,16,Train
+Team2,Gambit Youngsters,Akatsuki,16,9,Inferno
+Team2,Heroic,Sprout,16,6,Inferno
+Team2,Sprout,Heroic,13,16,Nuke
+Team2,Renegades,Cloud9,16,7,Inferno
+Team2,Cloud9,Renegades,12,16,Dust2
+Team2,Divine Vendetta,Yalla,12,16,Mirage
+Team2,Divine Vendetta,Yalla,12,16,Inferno
+Team1,Copenhagen Flames,AGF,16,13,Train
+Team2,AGF,Copenhagen Flames,16,8,Nuke
+Team2,Copenhagen Flames,AGF,16,8,Overpass
+Team1,North,Heroic,16,10,Nuke
+Team1,Heroic,North,22,19,Overpass
+Team2,Heroic,North,16,2,Train
+Team2,Lyngby Vikings,Sigma,16,19,Inferno
+Team2,AGF,Sigma,16,8,Overpass
+Team2,Copenhagen Flames,AGF,16,2,Train
+Team1,AGF,Copenhagen Flames,5,16,Inferno
+Team2,MAD Lions,Renegades,11,16,Dust2
+Team2,Renegades,MAD Lions,11,16,Train
+Team2,Renegades,MAD Lions,16,6,Nuke
+Team2,GamerLegion,HAVU,16,8,Nuke
+Team2,HAVU,GamerLegion,14,16,Mirage
+Team1,Heroic,BIG,9,16,Overpass
+Team2,Heroic,BIG,12,16,Inferno
+Team2,EXTREMUM,DreamEaters,16,6,Nuke
+Team2,EXTREMUM,DreamEaters,12,16,Mirage
+Team1,EXTREMUM,DreamEaters,16,10,Inferno
+Team1,NAVI Junior,Tricked,22,20,Train
+Team2,NAVI Junior,Tricked,16,5,Vertigo
+Team2,Zorka,97club,16,7,Inferno
+Team1,97club,Zorka,16,11,Train
+Team2,Zorka,97club,16,5,Overpass
+Team1,Renegades,BIG,5,16,Mirage
+Team2,Renegades,BIG,12,16,Dust2
+Team2,Airborne,ORDER,10,16,Inferno
+Team2,DreamEaters,Skin Ogres,16,19,Overpass
+Team1,Skin Ogres,DreamEaters,16,13,Dust2
+Team1,Gambit Youngsters,EXTREMUM,28,24,Mirage
+Team1,Gambit Youngsters,EXTREMUM,16,14,Inferno
+Team2,Paradox,TRIDENT,16,8,Dust2
+Team2,Formidable,MC,13,16,Inferno
+Team1,ORDER,Incept,16,10,Mirage
+Team2,HAVU,NAVI Junior,16,7,Vertigo
+Team2,HAVU,NAVI Junior,14,16,Dust2
+Team1,HAVU,NAVI Junior,19,15,Mirage
+Team1,Espada,Akatsuki,16,11,Nuke
+Team1,Espada,Akatsuki,16,10,Overpass
+Team2,GamerLegion,HAVU,13,16,Train
+Team1,GamerLegion,HAVU,16,12,Overpass
+Team1,GamerLegion,HAVU,16,11,Nuke
+Team2,Formidable,ex-Genuine,1,16,Train
+Team1,Esper,ROCK CANDY,9,16,Mirage
+Team2,MC,Skyfire,14,16,Mirage
+Team1,MC,Paradox,16,13,Dust2
+Team2,madlikewizards,PC419,12,16,Mirage
+Team1,Incept,Airborne,7,16,Inferno
+Team1,Espada,Hard Legion,22,18,Train
+Team2,Espada,Hard Legion,16,8,Mirage
+Team2,Wisla Krakow,Skin Ogres,16,5,Dust2
+Team2,Skin Ogres,Wisla Krakow,10,16,Inferno
+Team2,Sprout,Copenhagen Flames,13,16,Nuke
+Team2,Copenhagen Flames,Sprout,12,16,Mirage
+Team2,Sprout,Copenhagen Flames,12,16,Inferno
+Team2,Esper,Airborne,12,16,Overpass
+Team1,ex-Genuine,MC,16,13,Inferno
+Team1,MC,Airborne,16,12,Inferno
+Team1,Skin Ogres,NAVI Junior,3,16,Dust2
+Team1,NAVI Junior,Skin Ogres,7,16,Overpass
+Team2,NAVI Junior,Skin Ogres,16,8,Inferno
+Team2,Copenhagen Flames,DreamEaters,16,4,Inferno
+Team1,DreamEaters,Copenhagen Flames,4,16,Overpass
+Team1,Gambit Youngsters,Espada,16,12,Inferno
+Team2,Espada,Gambit Youngsters,16,6,Mirage
+Team2,Espada,Gambit Youngsters,1,16,Dust2
+Team2,FaZe,NiP,16,7,Overpass
+Team1,NiP,FaZe,8,16,Mirage
+Team1,Liquid,MIBR,22,19,Vertigo
+Team1,MIBR,Liquid,9,16,Inferno
+Team2,GamerLegion,Apeks,16,9,Nuke
+Team1,SJ,AGO,6,16,Dust2
+Team1,FATE,BIG,5,16,Inferno
+Team1,AVEZ,Dignitas,9,16,Nuke
+Team2,Complexity,Apologis,16,6,Dust2
+Team2,Lyngby Vikings,Secret,20,22,Inferno
+Team1,Japaleno,Sprout,7,16,Mirage
+Team2,FiveG,SKADE,12,16,Dust2
+Team2,Ground Zero,Paradox,14,16,Dust2
+Team1,Paradox,Ground Zero,8,16,Mirage
+Team2,Ground Zero,Paradox,16,7,Overpass
+Team1,Faint,Station7,16,1,Nuke
+Team2,Rugratz,ex-iNTACT,16,3,Nuke
+Team2,Asuna's Anime Aimers,Envy,12,16,Mirage
+Team1,Infinity,Ze Pug Godz,16,10,Inferno
+Team1,Invictus,OneThree,2,16,Inferno
+Team2,OneThree,Invictus,12,16,Train
+Team1,Invictus,OneThree,8,16,Mirage
+Team2,EHOME,Aster,16,6,Inferno
+Team2,Aster,EHOME,12,16,Overpass
+Team1,OG,ENCE,19,17,Train
+Team2,OG,ENCE,16,7,Overpass
+Team2,Blank,DivisionX,11,16,Inferno
+Team2,DivisionX,Blank,12,16,Overpass
+Team2,DivisionX,Blank,12,16,Train
+Team1,Astro,Paper Rex,8,16,Nuke
+Team1,Astro,Paper Rex,6,16,Dust2
+Team1,Heroic,Virtus.pro,8,16,Overpass
+Team1,Virtus.pro,Heroic,16,14,Vertigo
+Team1,Sinners,Seven.Modula,16,12,Mirage
+Team2,Seven.Modula,Sinners,1,16,Nuke
+Team2,Smoke Criminals,High Coast,16,9,Mirage
+Team1,High Coast,Smoke Criminals,2,16,Overpass
+Team1,Prima,Moops,16,14,Mirage
+Team2,Prima,Moops,16,4,Vertigo
+Team2,Pompa,Fragbox,17,19,Vertigo
+Team2,Pompa,Fragbox,16,7,Nuke
+Team2,Fragbox,Pompa,16,9,Overpass
+Team1,ttc,Brute,8,16,Dust2
+Team2,Brute,ttc,16,5,Nuke
+Team2,savage,Vikingekrig,16,8,Mirage
+Team2,savage,Vikingekrig,16,3,Inferno
+Team1,SILENT,Vexed,4,16,Dust2
+Team2,SILENT,Vexed,12,16,Train
+Team2,Genesis,Falkn,12,16,Inferno
+Team2,Genesis,Falkn,12,16,Train
+Team2,MAD Lions,mousesports,15,19,Mirage
+Team1,mousesports,MAD Lions,16,11,Dust2
+Team1,NiP,MIBR,9,16,Train
+Team1,NiP,MIBR,16,12,Vertigo
+Team2,NiP,MIBR,16,9,Inferno
+Team1,AGO,Sprout,8,16,Mirage
+Team2,GamerLegion,Dignitas,21,25,Nuke
+Team1,Vexed,Prima,16,12,Dust2
+Team2,Vexed,Prima,16,6,Inferno
+Team1,Smoke Criminals,Falkn,16,11,Dust2
+Team2,Smoke Criminals,Falkn,16,8,Inferno
+Team1,Sinners,Brute,19,15,Nuke
+Team2,Brute,Sinners,10,16,Overpass
+Team1,savage,Fragbox,16,1,Dust2
+Team2,savage,Fragbox,16,7,Overpass
+Team1,GODSENT,Natus Vincere,7,16,Nuke
+Team2,Natus Vincere,GODSENT,12,16,Dust2
+Team2,GODSENT,Natus Vincere,13,16,Train
+Team1,Dignitas,Sprout,7,16,Mirage
+Team2,Sprout,Dignitas,11,16,Inferno
+Team1,Dignitas,Sprout,16,10,Vertigo
+Team2,BIG,Secret,16,9,Nuke
+Team2,SKADE,Complexity,12,16,Dust2
+Team2,savage,Smoke Criminals,16,7,Mirage
+Team1,savage,Smoke Criminals,16,12,Inferno
+Team2,Liquid,FaZe,12,16,Dust2
+Team2,FaZe,Liquid,16,5,Inferno
+Team1,Complexity,BIG,16,10,Mirage
+Team1,Complexity,BIG,7,16,Inferno
+Team2,BIG,Complexity,16,9,Dust2
+Team2,Envy,Faint,16,4,Nuke
+Team1,Faint,Envy,8,16,Mirage
+Team2,Rugratz,Infinity,16,6,Inferno
+Team1,Infinity,Rugratz,3,16,Nuke
+Team1,FURY,ex-Genuine,5,16,Inferno
+Team1,Vexed,Sinners,22,18,Overpass
+Team2,Sinners,Vexed,16,8,Nuke
+Team2,Sinners,Vexed,16,7,Mirage
+Team2,mousesports,Virtus.pro,16,9,Vertigo
+Team2,Virtus.pro,mousesports,14,16,Train
+Team2,ClownS,Maple,15,19,Mirage
+Team2,Maple,ClownS,16,6,Train
+Team1,SGINDOMIX,HZ,6,16,Dust2
+Team1,HZ,SGINDOMIX,16,13,Inferno
+Team2,Natus Vincere,OG,16,6,Dust2
+Team2,Natus Vincere,OG,16,8,Mirage
+Team2,savage,Sinners,11,16,Dust2
+Team2,Sinners,savage,16,7,Inferno
+Team1,MAD Lions,Heroic,16,13,Mirage
+Team1,Heroic,MAD Lions,7,16,Nuke
+Team1,Liquid,NiP,16,10,Vertigo
+Team2,NiP,Liquid,17,19,Mirage
+Team2,GODSENT,ENCE,16,7,Nuke
+Team1,ENCE,GODSENT,4,16,Inferno
+Team2,FaZe,Liquid,16,9,Mirage
+Team1,Liquid,FaZe,2,16,Dust2
+Team1,Unique,Se7en,16,13,Train
+Team1,BlinkDagger,Space Jam,5,16,Train
+Team2,DreamEaters,Espada,11,16,Inferno
+Team2,SG.pro,Nemiga,1,16,Vertigo
+Team1,W7M,Keyd,19,16,Nuke
+Team2,TeamOne,Imperial,11,16,Overpass
+Team1,RED Canids,Bravos,16,14,Nuke
+Team2,GamerLegion,Wisla Krakow,10,16,Nuke
+Team1,Nemiga,Unique,16,11,Nuke
+Team2,Nemiga,Unique,16,6,Inferno
+Team2,Illuminar,Wisla Krakow,16,4,Nuke
+Team1,Unicorns of Love,Demolition Crew,5,16,Inferno
+Team2,Espada,Space Jam,10,16,Train
+Team1,Space Jam,Espada,8,16,Inferno
+Team1,Espada,Space Jam,16,10,Mirage
+Team2,W7M,RED Canids,16,9,Dust2
+Team2,RED Canids,W7M,16,7,Train
+Team1,W7M,RED Canids,16,1,Nuke
+Team2,paiN,Alma,16,8,Inferno
+Team1,paiN,Imperial,16,11,Train
+Team2,Imperial,paiN,11,16,Inferno
+Team2,Rugratz,Asuna's Anime Aimers,16,5,Nuke
+Team1,Incept,AVANT,16,10,Mirage
+Team1,Skyfire,madlikewizards,6,16,Inferno
+Team2,PC419,Paradox,16,19,Dust2
+Team2,OG,MAD Lions,12,16,Nuke
+Team1,MAD Lions,OG,16,12,Train
+Team1,Virtus.pro,GODSENT,9,16,Dust2
+Team1,GODSENT,Virtus.pro,16,13,Vertigo
+Team2,Complexity,PACT,10,16,Inferno
+Team1,AGF,AVEZ,9,16,Train
+Team1,FiveG,Copenhagen Flames,7,16,Inferno
+Team2,Juggernauts,ad hoc,16,6,Nuke
+Team1,ex-Virtus.pro,Endpoint,16,12,Train
+Team1,Sprout,Secret,16,10,Inferno
+Team1,FATE,Nordavind,8,16,Inferno
+Team2,HAVU,AGO,20,22,Dust2
+Team2,Asuna's Anime Aimers,Prospects,12,16,Train
+Team2,ImPerium,Monstars,10,16,Inferno
+Team1,LiViD,Faint,16,13,Nuke
+Team1,Station7,RBG,22,20,Overpass
+Team1,Ze Pug Godz,New England Whalers,16,10,Inferno
+Team2,Divine,Russian Street Party,16,4,Overpass
+Team2,Mythic,Big Frames,16,7,Mirage
+Team1,Polar Ace,ex-iNTACT,16,14,Inferno
+Team2,Ze Pug Godz,Prospects,16,3,Mirage
+Team1,Mythic,LiViD,7,16,Train
+Team2,Divine,Station7,16,7,Mirage
+Team2,Monstars,Polar Ace,12,16,Inferno
+Team2,ORDER,Skyfire,16,5,Inferno
+Team2,Esper,FURY,10,16,Train
+Team1,Airborne,Formidable,16,14,Dust2
+Team2,AVANT,PC419,16,9,Dust2
+Team2,ROCK CANDY,PC419,13,16,Mirage
+Team1,AVANT,MC,16,14,Dust2
+Team2,mousesports,MAD Lions,13,16,Vertigo
+Team2,mousesports,MAD Lions,16,4,Dust2
+Team1,mousesports,MAD Lions,16,12,Nuke
+Team2,Natus Vincere,GODSENT,16,7,Overpass
+Team1,Natus Vincere,GODSENT,16,13,Train
+Team2,Hard Legion,EXTREMUM,16,8,Mirage
+Team1,Hard Legion,EXTREMUM,16,13,Inferno
+Team1,ex-Virtus.pro,Nordavind,8,16,Nuke
+Team1,PACT,Copenhagen Flames,16,14,Train
+Team2,Nordavind,PACT,11,16,Vertigo
+Team2,Nordavind,PACT,16,9,Overpass
+Team2,Nordavind,PACT,16,8,Nuke
+Team1,AGO,Juggernauts,16,11,Train
+Team1,Sprout,AVEZ,16,12,Inferno
+Team1,Sprout,AGO,16,10,Inferno
+Team2,AGO,Sprout,14,16,Mirage
+Team1,Divine,Ze Pug Godz,7,16,Inferno
+Team2,Divine,Ze Pug Godz,13,16,Dust2
+Team2,LiViD,Polar Ace,16,9,Inferno
+Team1,Polar Ace,LiViD,7,16,Nuke
+Team2,Ground Zero,TRIDENT,17,19,Dust2
+Team1,madlikewizards,Airborne,19,17,Inferno
+Team1,ORDER,MC,16,13,Nuke
+Team1,TRIDENT,Formidable,16,11,Dust2
+Team1,mousesports,Natus Vincere,16,14,Dust2
+Team1,Natus Vincere,mousesports,8,16,Inferno
+Team1,Natus Vincere,mousesports,16,11,Train
+Team2,mousesports,Natus Vincere,16,9,Nuke
+Team1,Nemiga,Singularity,9,16,Nuke
+Team1,Unicorns of Love,Movistar Riders,4,16,Nuke
+Team1,GamerLegion,Demolition Crew,16,12,Dust2
+Team2,Moscow Five Academy,100pinggods,15,19,Vertigo
+Team1,1WIN,SG.pro,16,13,Overpass
+Team2,Ha MaSSe,EveryBodyDance,13,16,Dust2
+Team1,Unique,UnlukoExpress,16,14,Mirage
+Team1,Revolt,Spirit,4,16,Dust2
+Team2,Spirit,Revolt,16,4,Train
+Team2,Copenhagen Flames,NAVI Junior,16,4,Vertigo
+Team2,NAVI Junior,Copenhagen Flames,12,16,Inferno
+Team1,Unique,100pinggods,16,14,Inferno
+Team1,100pinggods,Unique,16,13,Train
+Team2,100pinggods,Unique,11,16,Mirage
+Team2,Movistar Riders,GamerLegion,13,16,Mirage
+Team2,Natus Vincere,Vitality,12,16,Inferno
+Team2,Vitality,Natus Vincere,16,9,Dust2
+Team2,AGO,Unicorns of Love,19,22,Vertigo
+Team2,1WIN,EveryBodyDance,16,5,Dust2
+Team2,EveryBodyDance,1WIN,16,9,Train
+Team2,EveryBodyDance,1WIN,12,16,Overpass
+Team2,Astralis,Complexity,11,16,Dust2
+Team2,Astralis,Complexity,12,16,Vertigo
+Team2,DivisionX,SHIFT,16,5,Vertigo
+Team2,SHIFT,DivisionX,11,16,Inferno
+Team1,Paradox,Airborne,16,12,Dust2
+Team2,MC,madlikewizards,16,5,Dust2
+Team2,Ground Zero,Formidable,16,4,Dust2
+Team2,Skyfire,catman,26,28,Mirage
+Team1,1820HT,Akatsuki,16,12,Mirage
+Team2,Akatsuki,1820HT,16,9,Dust2
+Team1,1820HT,Akatsuki,8,16,Inferno
+Team1,Ground Zero,Paradox,4,16,Train
+Team2,Paradox,Ground Zero,14,16,Mirage
+Team2,Paradox,Ground Zero,14,16,Inferno
+Team2,MC,catman,10,16,Dust2
+Team2,catman,MC,14,16,Inferno
+Team2,catman,MC,16,6,Train
+Team1,1820HT,SHIFT,6,16,Inferno
+Team1,SHIFT,1820HT,16,10,Mirage
+Team1,SG.pro,Gambit Youngsters,7,16,Train
+Team1,Gambit Youngsters,SG.pro,19,16,Dust2
+Team2,Astralis,Natus Vincere,16,6,Train
+Team2,Natus Vincere,Astralis,16,9,Nuke
+Team2,Astralis,Natus Vincere,14,16,Inferno
+Team2,Vitality,Complexity,10,16,Mirage
+Team2,Complexity,Vitality,16,5,Inferno
+Team1,KOVA,Japaleno,16,14,Dust2
+Team1,Lyngby Vikings,Secret,16,11,Nuke
+Team1,sAw,AGO,8,16,Dust2
+Team2,Demolition Crew,SKADE,12,16,Inferno
+Team1,9INE,Endpoint,7,16,Dust2
+Team2,Pompa,Unluckers,16,6,Nuke
+Team2,GamerLegion,fakemaquinas,17,19,Inferno
+Team1,Apeks,SMASH,19,16,Mirage
+Team2,Orgless,Recon 5,12,16,Inferno
+Team1,Mythic,Faint,16,14,Mirage
+Team1,Infinity,Divine,6,16,Dust2
+Team1,Hot Ass,Rap Gang,3,16,Nuke
+Team1,Akatsuki,DivisionX,8,16,Dust2
+Team2,DivisionX,Akatsuki,16,7,Train
+Team2,TRIDENT,Ferox,14,16,Overpass
+Team2,Skyfire,Incept,16,8,Overpass
+Team2,madlikewizards,FURY,16,3,Inferno
+Team1,Paradox,MC,16,14,Mirage
+Team1,Akatsuki,SHIFT,6,16,Train
+Team1,SHIFT,Akatsuki,16,10,Dust2
+Team1,madlikewizards,Ferox,16,13,Nuke
+Team1,Ferox,madlikewizards,8,16,Mirage
+Team1,Skyfire,Paradox,16,11,Vertigo
+Team2,Paradox,Skyfire,11,16,Overpass
+Team2,EXTREMUM,Unique,11,16,Nuke
+Team2,EXTREMUM,Unique,11,16,Inferno
+Team1,SHIFT,DivisionX,16,14,Inferno
+Team1,DivisionX,SHIFT,8,16,Train
+Team1,Natus Vincere,Vitality,16,12,Inferno
+Team1,Vitality,Natus Vincere,6,16,Dust2
+Team1,KOVA,SKADE,16,13,Train
+Team1,Endpoint,fakemaquinas,22,19,Mirage
+Team2,Endpoint,KOVA,14,16,Vertigo
+Team1,KOVA,Endpoint,16,11,Dust2
+Team2,Lyngby Vikings,Apeks,11,16,Nuke
+Team1,Pompa,AGO,22,20,Train
+Team2,Complexity,Natus Vincere,10,16,Train
+Team2,Natus Vincere,Complexity,16,9,Mirage
+Team2,Apeks,Pompa,16,19,Vertigo
+Team2,Pompa,Apeks,19,22,Overpass
+Team1,Apeks,Pompa,16,10,Mirage
+Team2,Divine,Rap Gang,16,8,Dust2
+Team2,Divine,Rap Gang,12,16,Overpass
+Team2,Divine,Rap Gang,16,6,Inferno
+Team1,Recon 5,Mythic,16,11,Dust2
+Team1,Mythic,Recon 5,16,12,Vertigo
+Team1,ORDER,TRIDENT,16,11,Train
+Team1,Revolt,SG.pro,16,12,Nuke
+Team2,SG.pro,Revolt,10,16,Overpass
+Team1,pro100,Espada,16,12,Mirage
+Team2,Espada,pro100,22,25,Train
+Team2,Demolition Crew,HAVU,10,16,Dust2
+Team2,Spirit,Gambit Youngsters,12,16,Overpass
+Team1,Gambit Youngsters,Spirit,4,16,Mirage
+Team2,Gambit Youngsters,Spirit,14,16,Dust2
+Team1,fbg,lapw,19,17,Mirage
+Team2,ne parsya,maslomaslo,16,3,Nuke
+Team2,Se7en,Revolt,10,16,Inferno
+Team2,Project X,eL'quvet,17,19,Overpass
+Team1,Mythic,Monstars,28,25,Inferno
+Team1,Skyfire,FURY,4,16,Overpass
+Team1,Chiefs,Incept,16,12,Inferno
+Team2,TRIDENT,ROCK CANDY,16,3,Mirage
+Team2,pro100,Unique,16,7,Inferno
+Team2,Unique,pro100,10,16,Mirage
+Team1,EXTREMUM,Espada,3,16,Nuke
+Team2,Espada,EXTREMUM,11,16,Train
+Team1,EXTREMUM,Espada,9,16,Inferno
+Team2,ne parsya,fbg,10,16,Dust2
+Team2,fbg,ne parsya,16,9,Inferno
+Team1,Wisla Krakow,Movistar Riders,16,11,Train
+Team1,Nemiga,Unicorns of Love,16,14,Nuke
+Team2,Revolt,eL'quvet,13,16,Dust2
+Team1,eL'quvet,Revolt,16,12,Inferno
+Team1,eUnited,Mythic,8,16,Vertigo
+Team1,Riot Squad,Rugratz,16,12,Mirage
+Team1,Monstars,Station7,9,16,Mirage
+Team2,PC419,Esper,16,6,Nuke
+Team2,Airborne,Skyfire,14,16,Overpass
+Team1,Esper,Paradox,4,16,Train
+Team2,Espada,Gambit Youngsters,14,16,Overpass
+Team1,Gambit Youngsters,Espada,16,13,Mirage
+Team1,Spirit,pro100,16,14,Train
+Team1,pro100,Spirit,16,12,Dust2
+Team2,pro100,Spirit,12,16,Inferno
+Team1,BIG,Nemiga,16,13,Inferno
+Team1,Movistar Riders,HellRaisers,7,16,Inferno
+Team2,Nordavind,HellRaisers,14,16,Mirage
+Team1,Unique,Revolt,16,11,Dust2
+Team2,Revolt,Unique,16,19,Nuke
+Team2,RED Canids,Keyd,14,16,Vertigo
+Team1,Keyd,RED Canids,2,16,Train
+Team2,PACT,Illuminar,14,16,Train
+Team2,Singularity,SJ,16,9,Vertigo
+Team2,Yoink,Copenhagen Flames,14,16,Inferno
+Team2,Sinners,Endpoint,16,3,Mirage
+Team2,HAVU,FATE,16,7,Train
+Team2,Complexity,AVEZ,16,9,Inferno
+Team1,AGO,SMASH,9,16,Mirage
+Team1,SKADE,TheDabers,16,10,Overpass
+Team2,Alma,Isurus,12,16,Overpass
+Team2,Isurus,Alma,16,5,Train
+Team2,Recon 5,Oceanus,16,8,Vertigo
+Team2,Rap Gang,Asuna's Anime Aimers,13,16,Mirage
+Team2,New England Whalers,Orgless,13,16,Nuke
+Team2,Big Frames,GameAgents,16,6,Mirage
+Team2,Infinity,Brazen,14,16,Dust2
+Team1,ETHEREAL,Polar Ace,6,16,Inferno
+Team2,Yeah,Russian Street Party,16,4,Inferno
+Team2,Faint,Polar Ace South,16,7,Nuke
+Team2,Station7,Chaos,0,16,Nuke
+Team2,Asuna's Anime Aimers,Big Frames,10,16,Dust2
+Team1,Recon 5,Polar Ace,16,11,Dust2
+Team2,Orgless,Faint,16,5,Train
+Team1,Formidable,ORDER,2,16,Vertigo
+Team1,Paradox,Chiefs,5,16,Inferno
+Team1,Ground Zero,Airborne,16,1,Nuke
+Team1,TRIDENT,MC,22,18,Dust2
+Team1,Ground Zero,Chiefs,5,16,Nuke
+Team2,Incept,FURY,16,6,Dust2
+Team2,Gambit Youngsters,Unique,16,8,Train
+Team2,Gambit Youngsters,Unique,16,5,Overpass
+Team2,Gambit Youngsters,pro100,14,16,Inferno
+Team2,pro100,Gambit Youngsters,11,16,Train
+Team1,Gambit Youngsters,pro100,16,14,Dust2
+Team1,Copenhagen Flames,HAVU,16,13,Nuke
+Team2,Illuminar,SKADE,16,3,Overpass
+Team2,Singularity,Nordavind,13,16,Overpass
+Team2,Movistar Riders,Nemiga,16,8,Inferno
+Team1,Illuminar,Copenhagen Flames,9,16,Nuke
+Team1,Copenhagen Flames,Illuminar,19,16,Overpass
+Team1,Sinners,Complexity,7,16,Mirage
+Team2,Singularity,SMASH,11,16,Dust2
+Team1,Complexity,SMASH,8,16,Overpass
+Team2,SMASH,Complexity,14,16,Mirage
+Team2,Complexity,SMASH,14,16,Inferno
+Team2,DETONA,Soberano,16,3,Nuke
+Team2,DETONA,Soberano,16,4,Train
+Team1,Orgless,Big Frames,16,10,Nuke
+Team2,Big Frames,Orgless,11,16,Inferno
+Team1,Bravos,W7M,4,16,Inferno
+Team1,W7M,Bravos,16,12,Nuke
+Team2,Big Frames,LiViD,16,8,Mirage
+Team1,Yeah,Recon 5,16,13,Inferno
+Team1,Recon 5,Yeah,16,14,Train
+Team1,Recon 5,Yeah,5,16,Dust2
+Team2,Gambit Youngsters,Spirit,12,16,Inferno
+Team2,Spirit,Gambit Youngsters,14,16,Mirage
+Team1,Gambit Youngsters,Spirit,6,16,Dust2
+Team2,100 Thieves,G2,13,16,Dust2
+Team2,100 Thieves,G2,12,16,Vertigo
+Team2,Secret,Copenhagen Flames,10,16,Mirage
+Team1,Secret,Copenhagen Flames,7,16,Overpass
+Team1,Ekaterinburg,Spirit,3,16,Dust2
+Team1,Ekaterinburg,Spirit,7,16,Train
+Team2,Syman,Salamander,20,22,Nuke
+Team1,Salamander,Syman,16,11,Mirage
+Team1,Heretics,GamerLegion,16,12,Nuke
+Team2,GamerLegion,Heretics,10,16,Inferno
+Team2,Sinners,Juggernauts,13,16,Nuke
+Team1,Sinners,Juggernauts,16,14,Inferno
+Team1,Sinners,Juggernauts,16,12,Mirage
+Team2,Gambit Youngsters,sAw,16,19,Dust2
+Team1,Gambit Youngsters,sAw,16,10,Inferno
+Team1,Gambit Youngsters,sAw,4,16,Train
+Team1,SKADE,Singularity,16,14,Inferno
+Team2,SKADE,Singularity,11,16,Nuke
+Team1,SKADE,Singularity,16,11,Overpass
+Team1,Illuminar,1WIN,7,16,Overpass
+Team2,Illuminar,1WIN,16,8,Inferno
+Team1,1WIN,Illuminar,19,17,Nuke
+Team2,Cream,Movistar Riders,20,22,Overpass
+Team1,Cream,Movistar Riders,16,10,Train
+Team2,Movistar Riders,Cream,16,6,Inferno
+Team1,NLG,ex-Virtus.pro,22,18,Vertigo
+Team2,NLG,ex-Virtus.pro,10,16,Mirage
+Team1,NLG,ex-Virtus.pro,6,16,Inferno
+Team1,AVEZ,HellRaisers,16,10,Overpass
+Team1,HellRaisers,AVEZ,19,17,Vertigo
+Team1,AVEZ,HellRaisers,16,10,Inferno
+Team1,AGO,Tricked,16,10,Vertigo
+Team1,Tricked,AGO,16,11,Nuke
+Team2,AGO,Tricked,20,22,Train
+Team2,Endpoint,Winstrike,20,22,Train
+Team1,Endpoint,Winstrike,16,13,Vertigo
+Team2,Endpoint,Winstrike,10,16,Overpass
+Team2,Nexus,HAVU,14,16,Mirage
+Team1,Nexus,HAVU,16,14,Dust2
+Team1,Nexus,HAVU,8,16,Overpass
+Team1,Hard Legion,Unique,16,10,Mirage
+Team2,Hard Legion,Unique,16,8,Overpass
+Team1,pro100,SMASH,16,14,Train
+Team2,SMASH,pro100,10,16,Overpass
+Team1,RED Canids,Rysix,16,14,Mirage
+Team2,RED Canids,Rysix,16,4,Nuke
+Team1,W7M,Soberano,16,12,Mirage
+Team2,W7M,Soberano,16,4,Nuke
+Team1,Bravos,Keyd,16,14,Vertigo
+Team1,Bravos,Keyd,16,14,Nuke
+Team1,Copenhagen Flames,Hard Legion,16,11,Inferno
+Team1,Copenhagen Flames,Hard Legion,16,11,Mirage
+Team1,Evil Geniuses,OG,16,14,Inferno
+Team1,OG,Evil Geniuses,16,14,Nuke
+Team1,OG,Evil Geniuses,19,17,Dust2
+Team2,Unique,Secret,16,9,Mirage
+Team1,Secret,Unique,7,16,Nuke
+Team1,Sinners,Spirit,4,16,Nuke
+Team1,Sinners,Spirit,6,16,Vertigo
+Team2,Juggernauts,Ekaterinburg,17,19,Nuke
+Team1,Juggernauts,Ekaterinburg,19,17,Overpass
+Team2,Juggernauts,Ekaterinburg,16,5,Inferno
+Team1,HAVU,1WIN,16,1,Dust2
+Team2,HAVU,1WIN,16,8,Train
+Team1,Nexus,Illuminar,16,11,Train
+Team2,Illuminar,Nexus,11,16,Inferno
+Team1,SKADE,pro100,16,13,Inferno
+Team2,pro100,SKADE,16,4,Dust2
+Team2,pro100,SKADE,14,16,Overpass
+Team1,SMASH,Singularity,9,16,Dust2
+Team2,Singularity,SMASH,12,16,Nuke
+Team2,SMASH,Singularity,14,16,Overpass
+Team2,Heretics,Movistar Riders,11,16,Inferno
+Team1,Heretics,Movistar Riders,16,10,Overpass
+Team2,Movistar Riders,Heretics,10,16,Nuke
+Team1,HellRaisers,Syman,9,16,Inferno
+Team1,HellRaisers,Syman,7,16,Mirage
+Team2,GamerLegion,Cream,16,7,Mirage
+Team2,Cream,GamerLegion,23,25,Train
+Team2,AVEZ,Salamander,14,16,Train
+Team1,Salamander,AVEZ,8,16,Nuke
+Team2,Salamander,AVEZ,13,16,Overpass
+Team2,sAw,Tricked,16,5,Inferno
+Team2,sAw,Tricked,16,3,Vertigo
+Team1,AGO,Gambit Youngsters,3,16,Vertigo
+Team2,AGO,Gambit Youngsters,13,16,Train
+Team1,ex-skullz,Redemption POA,7,16,Nuke
+Team1,ex-skullz,Redemption POA,9,16,Inferno
+Team2,Endpoint,NLG,17,19,Train
+Team1,NLG,Endpoint,8,16,Vertigo
+Team1,Endpoint,NLG,16,11,Mirage
+Team2,Moscow Five Academy,100pinggods,16,8,Mirage
+Team1,ex-Virtus.pro,Winstrike,7,16,Train
+Team2,ex-Virtus.pro,Winstrike,13,16,Vertigo
+Team1,Alma,DETONA,9,16,Vertigo
+Team1,DETONA,Alma,16,13,Inferno
+Team1,Isurus,Neverest,22,19,Nuke
+Team1,Isurus,Neverest,16,13,Inferno
+Team2,Se7en,Atlants,16,5,Train
+Team2,SG.pro,dopeclvb,16,6,Mirage
+Team2,SpeedRunners,lapw,16,2,Nuke
+Team2,Recon 5,Rugratz,13,16,Overpass
+Team2,Rugratz,Recon 5,14,16,Vertigo
+Team1,Recon 5,Rugratz,25,22,Inferno
+Team2,Bad News Bears,Big Frames,16,2,Inferno
+Team1,Bad News Bears,Big Frames,16,1,Mirage
+Team1,Asuna's Anime Aimers,Ze Pug Godz,16,13,Dust2
+Team1,Ze Pug Godz,Asuna's Anime Aimers,9,16,Train
+Team1,Rysix,Neverest,16,11,Nuke
+Team1,Rysix,Neverest,16,11,Overpass
+Team2,New England Whalers,Swole Identity,12,16,Vertigo
+Team2,Swole Identity,New England Whalers,16,8,Mirage
+Team2,Mythic,Yeah,17,19,Mirage
+Team2,Mythic,Yeah,14,16,Train
+Team2,Triumph,Prospects,16,9,Nuke
+Team2,Triumph,Prospects,16,9,Overpass
+Team2,Orgless,Chaos,13,16,Overpass
+Team1,Orgless,Chaos,19,16,Inferno
+Team2,Orgless,Chaos,23,25,Nuke
+Team1,eUnited,RBG,16,1,Overpass
+Team1,eUnited,RBG,16,12,Inferno
+Team1,Soberano,Alma,5,16,Overpass
+Team2,Soberano,Alma,16,19,Dust2
+Team2,RED Canids,Bravos,16,6,Dust2
+Team1,INTZ.Academy,Imperial,16,14,Inferno
+Team2,Ze Pug Godz,Mythic,16,4,Inferno
+Team1,Ze Pug Godz,Mythic,19,16,Overpass
+Team2,Prospects,Big Frames,12,16,Overpass
+Team1,Prospects,Big Frames,16,13,Nuke
+Team1,Big Frames,Prospects,16,14,Inferno
+Team1,Rensga,TeamOne,4,16,Nuke
+Team1,RBG,Rugratz,7,16,Inferno
+Team1,RBG,Rugratz,16,14,Nuke
+Team2,Rugratz,RBG,16,5,Train
+Team1,Evidence,2K,16,14,Inferno
+Team1,Orgless,New England Whalers,16,11,Dust2
+Team1,New England Whalers,Orgless,7,16,Mirage
+Team1,D13,Updraft,16,13,Dust2
+Team2,Updraft,D13,10,16,Vertigo
+Team2,1337HUANIA,AllTheRage,15,19,Dust2
+Team1,AllTheRage,1337HUANIA,19,15,Mirage
+Team2,Ignis,Aim4R,16,5,Train
+Team2,Aim4R,Ignis,10,16,Nuke
+Team1,Akatsuki,TimeChasers,16,10,Train
+Team1,TimeChasers,Akatsuki,5,16,Mirage
+Team1,Unique,Salamander,9,16,Train
+Team2,Salamander,Unique,16,8,Nuke
+Team1,ex-Virtus.pro,GamerLegion,5,16,Mirage
+Team1,ex-Virtus.pro,GamerLegion,7,16,Inferno
+Team2,Sinners,Nexus,13,16,Mirage
+Team1,Nexus,Sinners,16,10,Inferno
+Team2,1WIN,Juggernauts,11,16,Train
+Team1,1WIN,Juggernauts,16,12,Nuke
+Team2,Juggernauts,1WIN,16,3,Inferno
+Team2,Endpoint,Movistar Riders,12,16,Train
+Team2,Movistar Riders,Endpoint,10,16,Inferno
+Team2,Endpoint,Movistar Riders,11,16,Mirage
+Team2,Singularity,Tricked,16,9,Dust2
+Team1,Tricked,Singularity,19,16,Inferno
+Team2,Singularity,Tricked,14,16,Nuke
+Team2,pro100,Gambit Youngsters,10,16,Inferno
+Team2,pro100,Gambit Youngsters,14,16,Mirage
+Team1,Hard Legion,Syman,7,16,Overpass
+Team1,Syman,Hard Legion,19,17,Inferno
+Team2,Viboras,Aequus,1,16,Mirage
+Team2,Viboras,Aequus,13,16,Dust2
+Team1,Finest,shinelikedemons,16,13,Mirage
+Team2,Finest,shinelikedemons,16,5,Dust2
+Team2,SpeedRunners,Moscow Five Academy,16,5,Inferno
+Team2,Moscow Five Academy,SpeedRunners,12,16,Overpass
+Team2,Evil Geniuses,100 Thieves,16,4,Train
+Team2,100 Thieves,Evil Geniuses,16,19,Nuke
+Team2,Akatsuki,AllTheRage,16,8,Inferno
+Team2,AllTheRage,Akatsuki,13,16,Nuke
+Team2,AVEZ,HAVU,16,6,Vertigo
+Team2,HAVU,AVEZ,10,16,Train
+Team2,sAw,Winstrike,11,16,Nuke
+Team1,sAw,Winstrike,9,16,Overpass
+Team2,Spirit,Copenhagen Flames,12,16,Inferno
+Team2,Copenhagen Flames,Spirit,14,16,Mirage
+Team1,Copenhagen Flames,Spirit,16,10,Train
+Team1,SKADE,Heretics,16,10,Train
+Team1,Heretics,SKADE,19,17,Nuke
+Team1,Heretics,SKADE,9,16,Inferno
+Team2,Juggernauts,Salamander,16,7,Mirage
+Team1,Salamander,Juggernauts,16,14,Nuke
+Team1,Juggernauts,Salamander,19,17,Train
+Team1,Nexus,Syman,22,20,Vertigo
+Team1,Nexus,Syman,9,16,Overpass
+Team1,Syman,Nexus,16,11,Inferno
+Team1,Gambit Youngsters,Movistar Riders,19,17,Inferno
+Team1,Movistar Riders,Gambit Youngsters,25,23,Mirage
+Team1,Gambit Youngsters,Movistar Riders,16,10,Train
+Team1,Tricked,GamerLegion,8,16,Mirage
+Team2,Tricked,GamerLegion,13,16,Train
+Team1,Reapers,Redemption POA,7,16,Dust2
+Team2,Reapers,Redemption POA,10,16,Train
+Team2,Se7en,SG.pro,13,16,Overpass
+Team1,SG.pro,Se7en,16,13,Mirage
+Team2,RED Canids,Isurus,12,16,Overpass
+Team2,Isurus,RED Canids,16,19,Mirage
+Team1,RED Canids,Isurus,5,16,Dust2
+Team1,DETONA,W7M,16,14,Nuke
+Team1,DETONA,W7M,7,16,Dust2
+Team2,W7M,DETONA,13,16,Inferno
+Team1,Dynasty,Bravos,3,16,Dust2
+Team2,Bravos,Dynasty,16,6,Nuke
+Team2,G2,OG,16,8,Nuke
+Team1,OG,G2,6,16,Dust2
+Team2,Juggernauts,Spirit,16,9,Train
+Team2,Juggernauts,Spirit,14,16,Dust2
+Team1,Spirit,Juggernauts,16,11,Mirage
+Team1,GamerLegion,Heretics,16,13,Mirage
+Team2,Heretics,GamerLegion,12,16,Nuke
+Team2,Syman,HAVU,11,16,Nuke
+Team2,Syman,HAVU,20,22,Mirage
+Team2,Swole Identity,Chaos,16,9,Nuke
+Team1,Triumph,Bad News Bears,9,16,Nuke
+Team1,Asuna's Anime Aimers,Yeah,16,11,Mirage
+Team2,Bad News Bears,Triumph,16,6,Dust2
+Team1,Rysix,Reapers,16,14,Nuke
+Team2,Reapers,Rysix,10,16,Mirage
+Team1,Swole Identity,Chaos,6,16,Mirage
+Team2,Chaos,Swole Identity,16,4,Dust2
+Team2,Asuna's Anime Aimers,Yeah,13,16,Dust2
+Team1,Asuna's Anime Aimers,Yeah,5,16,Train
+Team1,Gambit Youngsters,sAw,16,11,Vertigo
+Team2,Gambit Youngsters,sAw,14,16,Overpass
+Team2,Gambit Youngsters,sAw,16,9,Dust2
+Team2,Alma,Dynasty,16,4,Overpass
+Team2,Alma,Dynasty,16,5,Inferno
+Team1,eUnited,Recon 5,16,14,Nuke
+Team2,eUnited,Recon 5,16,8,Vertigo
+Team1,INTZ.Academy,RED Canids,6,16,Train
+Team1,RED Canids,INTZ.Academy,9,16,Dust2
+Team2,RED Canids,INTZ.Academy,16,5,Overpass
+Team2,Keyd,W7M,12,16,Overpass
+Team1,W7M,Keyd,16,11,Mirage
+Team2,Bravos,Redemption POA,14,16,Dust2
+Team1,Redemption POA,Bravos,16,12,Nuke
+Team1,Triumph,Orgless,6,16,Train
+Team1,Orgless,Triumph,16,14,Nuke
+Team2,Ze Pug Godz,Recon 5,16,3,Inferno
+Team1,Ze Pug Godz,Recon 5,4,16,Nuke
+Team1,Recon 5,Ze Pug Godz,16,13,Dust2
+Team2,Alma,Rysix,16,5,Train
+Team1,Rysix,Alma,16,14,Mirage
+Team1,Alma,Rysix,4,16,Overpass
+Team1,ex-skullz,W7M,8,16,Inferno
+Team2,W7M,ex-skullz,16,8,Nuke
+Team1,Isurus,DETONA,16,11,Nuke
+Team1,DETONA,Isurus,16,13,Train
+Team2,Isurus,DETONA,16,8,Inferno
+Team2,Swole Identity,Big Frames,16,9,Mirage
+Team2,Swole Identity,Big Frames,16,9,Vertigo
+Team2,Rugratz,Asuna's Anime Aimers,10,16,Mirage
+Team2,Rugratz,Asuna's Anime Aimers,16,4,Nuke
+Team2,Asuna's Anime Aimers,Rugratz,16,8,Train
+Team1,Recon 5,Orgless,9,16,Mirage
+Team1,Recon 5,Orgless,6,16,Inferno
+Team2,Yeah,Chaos,13,16,Nuke
+Team1,Chaos,Yeah,16,12,Inferno
+Team1,eUnited,Bad News Bears,6,16,Inferno
+Team2,eUnited,Bad News Bears,16,8,Overpass
+Team2,Bad News Bears,eUnited,13,16,Nuke
+Team2,Swole Identity,Asuna's Anime Aimers,16,19,Dust2
+Team1,Asuna's Anime Aimers,Swole Identity,9,16,Nuke
+Team2,Swole Identity,Asuna's Anime Aimers,16,8,Inferno
+Team2,ikarus,Born in Mongolia,18,22,Inferno
+Team2,ikarus,Born in Mongolia,11,16,Mirage
+Team1,Aim4R,Updraft,16,14,Dust2
+Team1,Updraft,Aim4R,8,16,Inferno
+Team2,Aster,Wubbalubbadubdub,16,6,Inferno
+Team1,Aster,Wubbalubbadubdub,4,16,Dust2
+Team1,Wubbalubbadubdub,Aster,16,10,Mirage
+Team2,Invictus,JiJieHao,21,25,Mirage
+Team2,JiJieHao,Invictus,12,16,Overpass
+Team1,Invictus,JiJieHao,5,16,Dust2
+Team1,Camel Riders,IGEN,16,10,Mirage
+Team1,IGEN,Camel Riders,8,16,Dust2
+Team2,GamerLegion,Spirit,12,16,Mirage
+Team2,GamerLegion,Spirit,16,9,Nuke
+Team2,GamerLegion,Spirit,10,16,Inferno
+Team2,Winstrike,AVEZ,16,5,Dust2
+Team2,AVEZ,Winstrike,16,6,Train
+Team1,AVEZ,Winstrike,16,13,Vertigo
+Team1,Gaming Hub,ATK,7,16,Mirage
+Team2,ATK,Gaming Hub,16,9,Train
+Team1,Gambit Youngsters,HAVU,9,16,Dust2
+Team2,HAVU,Gambit Youngsters,13,16,Vertigo
+Team2,Gambit Youngsters,HAVU,16,4,Train
+Team2,Copenhagen Flames,SKADE,14,16,Inferno
+Team2,Copenhagen Flames,SKADE,19,22,Nuke
+Team2,Evil Geniuses,OG,16,4,Train
+Team2,OG,Evil Geniuses,16,3,Mirage
+Team1,OG,Evil Geniuses,16,14,Inferno
+Team2,Copenhagen Flames,Spirit,16,19,Nuke
+Team2,Spirit,Copenhagen Flames,16,4,Mirage
+Team2,Gambit Youngsters,Winstrike,12,16,Overpass
+Team2,Winstrike,Gambit Youngsters,18,22,Mirage
+Team2,Gambit Youngsters,Winstrike,16,9,Dust2
+Team2,DETONA,Rysix,16,5,Nuke
+Team1,Rysix,DETONA,3,16,Vertigo
+Team2,Isurus,Redemption POA,12,16,Overpass
+Team1,Isurus,Redemption POA,16,14,Inferno
+Team2,Isurus,Redemption POA,16,7,Dust2
+Team2,W7M,Bravos,16,19,Overpass
+Team1,Bravos,W7M,6,16,Inferno
+Team1,Bravos,W7M,8,16,Dust2
+Team2,G2,OG,16,7,Inferno
+Team2,OG,G2,16,5,Dust2
+Team1,G2,OG,16,14,Nuke
+Team1,AVEZ,SKADE,8,16,Inferno
+Team2,AVEZ,SKADE,16,9,Nuke
+Team2,AVEZ,SKADE,16,9,Train
+Team1,Swole Identity,Bad News Bears,8,16,Inferno
+Team2,Yeah,Orgless,13,16,Mirage
+Team2,Chaos,eUnited,16,8,Dust2
+Team2,eUnited,Chaos,11,16,Overpass
+Team1,Orgless,Yeah,7,16,Inferno
+Team2,Orgless,Yeah,16,6,Nuke
+Team2,Bad News Bears,Swole Identity,14,16,Nuke
+Team2,Swole Identity,Bad News Bears,16,8,Mirage
+Team1,Spirit,Gambit Youngsters,16,13,Train
+Team1,Spirit,Gambit Youngsters,16,14,Mirage
+Team2,DETONA,W7M,17,19,Train
+Team2,W7M,DETONA,14,16,Nuke
+Team1,DETONA,W7M,19,15,Dust2
+Team1,Orgless,Swole Identity,16,11,Train
+Team2,Swole Identity,Orgless,10,16,Nuke
+Team2,DETONA,Redemption POA,16,6,Nuke
+Team1,Redemption POA,DETONA,16,12,Vertigo
+Team2,Redemption POA,DETONA,16,2,Inferno
+Team1,Orgless,eUnited,5,16,Train
+Team1,Orgless,eUnited,16,13,Overpass
+Team2,eUnited,Orgless,14,16,Nuke
+Team1,TRIDENT,AVANT,6,16,Train
+Team2,madlikewizards,Ground Zero,16,7,Overpass
+Team2,Demolition Crew,pro100,11,16,Inferno
+Team1,Hard Legion,Nemiga,7,16,Overpass
+Team2,Nemiga,Hard Legion,13,16,Inferno
+Team2,Hard Legion,Nemiga,12,16,Dust2
+Team1,Japaleno,Unicorns of Love,19,17,Inferno
+Team1,SKADE,Spirit,16,10,Overpass
+Team1,SKADE,Spirit,16,14,Nuke
+Team1,AGO,Gambit Youngsters,8,16,Dust2
+Team1,Gambit Youngsters,AGO,5,16,Mirage
+Team2,Gambit Youngsters,AGO,11,16,Train
+Team1,Soberano,W7M,5,16,Nuke
+Team2,Soberano,W7M,10,16,Dust2
+Team1,Keyd,Bravos,6,16,Vertigo
+Team1,Keyd,Bravos,16,10,Overpass
+Team2,Swole Identity,Recon 5,12,16,Vertigo
+Team2,Rugratz,Chaos,16,19,Overpass
+Team1,Big Frames,Thunder Logic,16,13,Mirage
+Team2,AVANT,Formidable,16,3,Dust2
+Team2,Skyfire,Incept,16,3,Train
+Team2,NAVI Junior,Skin Ogres,16,8,Mirage
+Team1,NAVI Junior,Skin Ogres,16,12,Dust2
+Team1,Copenhagen Flames,Wisla Krakow,16,10,Mirage
+Team2,Wisla Krakow,Copenhagen Flames,12,16,Overpass
+Team1,Sprout,Nemiga,16,14,Vertigo
+Team2,Singularity,Demolition Crew,10,16,Dust2
+Team2,Movistar Riders,Nordavind,16,8,Mirage
+Team2,Unicorns of Love,Sprout,0,16,Inferno
+Team1,BIG,HAVU,16,11,Nuke
+Team1,Demolition Crew,Movistar Riders,16,13,Train
+Team1,FATE,PACT,16,12,Overpass
+Team2,Japaleno,Nemiga,20,22,Inferno
+Team2,PACT,FATE,14,16,Inferno
+Team1,BIG,Singularity,16,13,Nuke
+Team2,Demolition Crew,Copenhagen Flames,16,19,Nuke
+Team1,Copenhagen Flames,Demolition Crew,16,10,Mirage
+Team2,Fearow,Hawks,16,8,Inferno
+Team2,Rysix,Rejected,14,16,Nuke
+Team2,CPTL,fakeDOSPRO,13,16,Dust2
+Team2,Neverest,UP,11,16,Vertigo
+Team2,Rejected,fakeDOSPRO,12,16,Inferno
+Team1,CPTL,Rysix,7,16,Nuke
+Team1,Rysix,CPTL,16,13,Dust2
+Team2,UP,Fearow,16,6,Train
+Team2,UP,fakeDOSPRO,16,8,Vertigo
+Team2,Bad News Bears,Divine,16,4,Inferno
+Team1,FURY,Ground Zero,6,16,Inferno
+Team1,GamerLegion,HellRaisers,16,11,Mirage
+Team1,Nemiga,PACT,9,16,Nuke
+Team1,pro100,HAVU,16,10,Mirage
+Team1,kinetic,AGF,5,16,Train
+Team2,AGF,kinetic,14,16,Inferno
+Team2,kinetic,AGF,13,16,Mirage
+Team2,PACT,HellRaisers,16,5,Vertigo
+Team1,Nemiga,Demolition Crew,16,12,Inferno
+Team1,Sprout,GamerLegion,16,13,Nuke
+Team2,Hard Legion,Gambit Youngsters,15,19,Train
+Team2,Gambit Youngsters,Hard Legion,16,7,Dust2
+Team1,Wisla Krakow,Spirit,9,16,Train
+Team1,Unicorns of Love,Nordavind,6,16,Inferno
+Team1,Singularity,Spirit,16,14,Vertigo
+Team2,Japaleno,Movistar Riders,16,5,Inferno
+Team2,Sigma,Stepback,16,4,Inferno
+Team2,Stepback,Sigma,16,7,Train
+Team1,Stepback,Sigma,7,16,Overpass
+Team2,PACT,Demolition Crew,12,16,Dust2
+Team1,Demolition Crew,PACT,16,10,Overpass
+Team2,DETONA,Alma,16,6,Inferno
+Team1,Alma,DETONA,19,17,Train
+Team2,Isurus,RED Canids,19,22,Mirage
+Team1,RED Canids,Isurus,16,10,Dust2
+Team1,Station7,TeamOne,16,10,Mirage
+Team2,Mythic,Big Frames,16,8,Overpass
+Team1,Divine,Thunder Logic,16,11,Mirage
+Team1,Formidable,Paradox,3,16,Dust2
+Team2,PC419,Skyfire,12,16,Mirage
+Team2,Chiefs,ORDER,16,19,Train
+Team1,TRIDENT,Esper,16,11,Mirage
+Team1,REHTI,FATE,8,16,Overpass
+Team2,SJ,hREDS,16,9,Inferno
+Team1,REHTI,hREDS,7,16,Mirage
+Team1,REHTI,hREDS,9,16,Nuke
+Team1,BIG,HellRaisers,16,11,Mirage
+Team2,GamerLegion,Spirit,14,16,Mirage
+Team1,HellRaisers,Japaleno,9,16,Dust2
+Team2,BIG,Spirit,10,16,Mirage
+Team2,HAVU,KYNYNIEKAT,11,16,Train
+Team2,Singularity,GamerLegion,12,16,Nuke
+Team1,LDLC,KOVA,16,13,Dust2
+Team2,Nemiga,AGO,12,16,Mirage
+Team2,Nemiga,AGO,13,16,Nuke
+Team1,PACT,Singularity,16,10,Nuke
+Team1,Nordavind,BIG,9,16,Inferno
+Team2,Unicorns of Love,pro100,14,16,Inferno
+Team1,KOVA,HAVU,6,16,Nuke
+Team2,HAVU,KOVA,13,16,Vertigo
+Team2,HAVU,KOVA,16,4,Train
+Team1,AGF,Sigma,7,16,Train
+Team1,AGF,Sigma,22,18,Inferno
+Team1,Sigma,AGF,4,16,Overpass
+Team1,FATE,Copenhagen Flames,8,16,Vertigo
+Team2,FATE,Copenhagen Flames,13,16,Inferno
+Team2,Neverest,Rejected,16,3,Nuke
+Team2,Rejected,Neverest,17,19,Inferno
+Team2,Neverest,Rysix,16,4,Nuke
+Team1,Neverest,Rysix,16,10,Inferno
+Team1,Infinity,Swole Identity,5,16,Train
+Team2,New England Whalers,Mythic,12,16,Overpass
+Team1,Station7,Oceanus,9,16,Nuke
+Team1,Dignitas fe,Carnage fe,16,14,Inferno
+Team2,Assassins,INTZ fe,16,9,Inferno
+Team1,FATE,SJ,16,14,Train
+Team1,LDLC,KYNYNIEKAT,16,13,Dust2
+Team1,Dignitas fe,Assassins,6,16,Vertigo
+Team1,Assassins,Dignitas fe,16,14,Overpass
+Team1,Nemiga,GamerLegion,7,16,Inferno
+Team1,SJ,hREDS,16,12,Nuke
+Team2,SJ,hREDS,16,4,Train
+Team1,Unicorns of Love,GamerLegion,8,16,Overpass
+Team2,Gambit Youngsters,FATE,16,6,Dust2
+Team2,Gambit Youngsters,FATE,13,16,Train
+Team1,FATE,Gambit Youngsters,8,16,Overpass
+Team2,KYNYNIEKAT,HAVU,11,16,Nuke
+Team1,HAVU,KYNYNIEKAT,16,12,Dust2
+Team1,Endpoint,FURIA,6,16,Inferno
+Team1,Nemiga,Demolition Crew,19,17,Mirage
+Team2,Nemiga,Demolition Crew,10,16,Inferno
+Team2,Nemiga,Demolition Crew,16,6,Overpass
+Team2,ENCE,Gen.G,14,16,Nuke
+Team2,fakeDOSPRO,Neverest,16,6,Nuke
+Team1,Neverest,fakeDOSPRO,16,14,Inferno
+Team1,fakeDOSPRO,Neverest,19,15,Vertigo
+Team2,Carnage fe,INTZ fe,14,16,Dust2
+Team2,INTZ fe,Carnage fe,13,16,Overpass
+Team1,Carnage fe,INTZ fe,7,16,Inferno
+Team2,North,forZe,16,8,Nuke
+Team1,Complexity,MIBR,16,11,Dust2
+Team2,fakeDOSPRO,UP,10,16,Dust2
+Team1,UP,fakeDOSPRO,16,11,Overpass
+Team2,FURIA,North,16,3,Overpass
+Team2,Complexity,Gen.G,13,16,Inferno
+Team2,LDLC,SJ,16,8,Train
+Team2,SJ,LDLC,13,16,Inferno
+Team2,INTZ fe,Dignitas fe,11,16,Inferno
+Team1,FATE,HAVU,3,16,Dust2
+Team2,HAVU,FATE,16,4,Vertigo
+Team2,Assassins,Dignitas fe,12,16,Inferno
+Team1,Assassins,Dignitas fe,16,13,Overpass
+Team1,Assassins,Dignitas fe,16,14,Dust2
+Team1,Gambit Youngsters,Nemiga,16,12,Vertigo
+Team2,Nemiga,Gambit Youngsters,10,16,Dust2
+Team1,LDLC,HAVU,9,16,Train
+Team1,HAVU,LDLC,16,13,Dust2
+Team2,forZe,Endpoint,26,28,Vertigo
+Team2,Endpoint,forZe,12,16,Inferno
+Team2,Endpoint,forZe,16,7,Train
+Team2,Copenhagen Flames,AGO,16,3,Nuke
+Team1,AGO,Copenhagen Flames,8,16,Mirage
+Team2,MIBR,ENCE,16,8,Nuke
+Team1,ENCE,MIBR,19,15,Train
+Team1,MIBR,ENCE,16,11,Overpass
+Team2,North,Endpoint,16,7,Vertigo
+Team2,Endpoint,North,17,19,Dust2
+Team2,Complexity,MIBR,16,2,Nuke
+Team1,MIBR,Complexity,9,16,Dust2
+Team2,Updraft,ikarus,16,5,Nuke
+Team2,ikarus,Updraft,22,25,Mirage
+Team1,Electrify,HaBzz,4,16,Dust2
+Team2,HaBzz,Electrify,16,9,Overpass
+Team2,Skinlordz,Titan,14,16,Inferno
+Team1,Titan,Skinlordz,19,16,Dust2
+Team1,Medieval,Synergy,8,16,Mirage
+Team1,Synergy,Medieval,7,16,Dust2
+Team2,Medieval,Synergy,16,8,Train
+Team2,Titan,Medieval,12,16,Mirage
+Team2,Medieval,Titan,11,16,Nuke
+Team2,Medieval,Titan,10,16,Dust2
+Team1,AGO,Gambit Youngsters,16,12,Train
+Team1,Gambit Youngsters,AGO,16,13,Vertigo
+Team2,Gambit Youngsters,AGO,17,19,Dust2
+Team2,BIG,Wisla Krakow,16,2,Nuke
+Team2,North,Gen.G,13,16,Dust2
+Team2,North,Gen.G,14,16,Mirage
+Team2,AGO,Copenhagen Flames,16,8,Train
+Team2,AGO,Copenhagen Flames,13,16,Nuke
+Team2,AGO,Copenhagen Flames,16,8,Vertigo
+Team2,FURIA,Complexity,11,16,Mirage
+Team2,Complexity,FURIA,11,16,Overpass
+Team2,Complexity,FURIA,14,16,Nuke
+Team2,Gen.G,FURIA,16,7,Nuke
+Team2,FURIA,Gen.G,15,19,Inferno
+Team2,TGS,RAIJIN,10,16,Nuke
+Team2,TGS,RAIJIN,14,16,Dust2
+Team1,Thunder Logic,Monstars,4,16,Train
+Team2,madlikewizards,ORDER,0,16,Nuke
+Team2,AVANT,Esper,16,4,Mirage
+Team1,AVANT,ORDER,16,1,Nuke
+Team2,Astralis,Cloud9,16,7,Overpass
+Team2,Cloud9,Astralis,12,16,Train
+Team1,Vitality,NiP,16,12,Vertigo
+Team2,NiP,Vitality,10,16,Nuke
+Team2,fnatic,Renegades,16,4,Dust2
+Team2,Renegades,fnatic,14,16,Inferno
+Team1,Natus Vincere,FaZe,9,16,Nuke
+Team2,FaZe,Natus Vincere,14,16,Dust2
+Team2,FaZe,Natus Vincere,10,16,Overpass
+Team2,BIG,pro100,13,16,Mirage
+Team2,mousesports,TYLOO,16,5,Inferno
+Team2,TYLOO,mousesports,10,16,Dust2
+Team1,pro100,Nordavind,22,19,Dust2
+Team2,G2,100 Thieves,16,3,Mirage
+Team2,G2,100 Thieves,16,2,Dust2
+Team2,Oceanus,Monstars,14,16,Mirage
+Team2,Big Frames,Monstars,16,5,Mirage
+Team2,FURY,AVANT,11,16,Inferno
+Team1,Formidable,Esper,16,14,Mirage
+Team2,Skyfire,Paradox,14,16,Inferno
+Team2,Incept,TRIDENT,13,16,Dust2
+Team1,Liquid,Virtus.pro,19,16,Vertigo
+Team1,Virtus.pro,Liquid,9,16,Mirage
+Team1,MAD Lions,Evil Geniuses,7,16,Vertigo
+Team1,MAD Lions,Evil Geniuses,16,14,Dust2
+Team2,Evil Geniuses,MAD Lions,16,5,Nuke
+Team2,NiP,Cloud9,16,2,Overpass
+Team1,Cloud9,NiP,9,16,Vertigo
+Team2,Astralis,Vitality,16,9,Overpass
+Team2,Vitality,Astralis,19,22,Vertigo
+Team1,FaZe,Renegades,16,12,Inferno
+Team2,Renegades,FaZe,10,16,Mirage
+Team1,Demolition Crew,PACT,5,16,Overpass
+Team1,AGO,HellRaisers,16,13,Mirage
+Team1,Wisla Krakow,Demolition Crew,19,16,Inferno
+Team2,pro100,Movistar Riders,10,16,Overpass
+Team2,fnatic,Natus Vincere,16,7,Dust2
+Team1,Natus Vincere,fnatic,16,14,Inferno
+Team2,Natus Vincere,fnatic,12,16,Mirage
+Team1,HellRaisers,Sprout,9,16,Dust2
+Team1,pro100,Japaleno,16,10,Dust2
+Team2,Mythic,Chaos,12,16,Dust2
+Team1,Swole Identity,Station7,16,1,Nuke
+Team2,Oceanus,Thunder Logic,16,9,Nuke
+Team1,Recon 5,Bad News Bears,8,16,Nuke
+Team1,eUnited,Infinity,16,10,Train
+Team1,Divine,New England Whalers,16,14,Mirage
+Team1,Mythic,Thunder Logic,16,13,Dust2
+Team1,Swole Identity,LiViD,19,16,Mirage
+Team2,PC419,MC,11,16,Inferno
+Team2,madlikewizards,AVANT,11,16,Overpass
+Team2,ORDER,PC419,16,3,Dust2
+Team1,Airborne,Paradox,5,16,Dust2
+Team1,Formidable,Incept,9,16,Dust2
+Team2,100 Thieves,TYLOO,16,9,Inferno
+Team2,TYLOO,100 Thieves,10,16,Vertigo
+Team2,Virtus.pro,MAD Lions,14,16,Overpass
+Team2,Virtus.pro,MAD Lions,16,7,Vertigo
+Team1,MAD Lions,Virtus.pro,16,13,Dust2
+Team2,Chiefs,Airborne,16,7,Inferno
+Team2,Natus Vincere,NiP,16,3,Mirage
+Team2,NiP,Natus Vincere,10,16,Train
+Team1,mousesports,G2,16,13,Dust2
+Team2,G2,mousesports,16,6,Inferno
+Team1,mousesports,G2,7,16,Nuke
+Team1,Nemiga,pro100,16,12,Vertigo
+Team1,Vitality,FaZe,16,14,Mirage
+Team1,FaZe,Vitality,16,11,Nuke
+Team2,Vitality,FaZe,10,16,Inferno
+Team1,Demolition Crew,Nordavind,8,16,Inferno
+Team1,Japaleno,Sprout,4,16,Train
+Team2,Movistar Riders,PACT,16,5,Nuke
+Team1,HellRaisers,HAVU,9,16,Dust2
+Team2,PACT,HAVU,12,16,Train
+Team1,Evil Geniuses,Liquid,7,16,Overpass
+Team2,Liquid,Evil Geniuses,15,19,Nuke
+Team2,Evil Geniuses,Liquid,10,16,Inferno
+Team1,FREEROX,Sinisters,16,10,Mirage
+Team2,9z,Duck Nutz,19,22,Inferno
+Team1,Nocturns,Rejected,16,11,Mirage
+Team1,Oceanus,Mythic,8,16,Vertigo
+Team2,Rysix,LND,16,3,Vertigo
+Team1,Under 21,Chaos,16,10,Nuke
+Team2,Mythic,Infinity,16,9,Dust2
+Team2,Recon 5,Rugratz,16,8,Nuke
+Team1,Divine,Oceanus,16,11,Dust2
+Team1,Station7,Thunder Logic,2,16,Overpass
+Team1,Airborne,4 and a half men,16,11,Mirage
+Team2,4 and a half men,Airborne,16,9,Overpass
+Team1,4 and a half men,Airborne,16,14,Dust2
+Team2,ORDER,Esper,16,2,Inferno
+Team2,Ground Zero,MC,16,5,Mirage
+Team2,FURY,madlikewizards,13,16,Nuke
+Team2,PC419,Ground Zero,10,16,Mirage
+Team1,AVANT,Chiefs,16,10,Inferno
+Team2,mousesports,MAD Lions,16,8,Train
+Team1,MAD Lions,mousesports,4,16,Dust2
+Team1,Evil Geniuses,100 Thieves,16,12,Inferno
+Team1,100 Thieves,Evil Geniuses,16,12,Nuke
+Team1,100 Thieves,Evil Geniuses,16,12,Dust2
+Team2,MC,Corvidae,16,7,Mirage
+Team1,Corvidae,MC,2,16,Vertigo
+Team2,Astralis,fnatic,16,9,Overpass
+Team1,fnatic,Astralis,8,16,Vertigo
+Team2,NAVI Junior,HellRaisers,11,16,Dust2
+Team1,NAVI Junior,HellRaisers,6,16,Overpass
+Team1,Natus Vincere,FaZe,8,16,Nuke
+Team1,FaZe,Natus Vincere,6,16,Dust2
+Team1,Natus Vincere,FaZe,16,14,Inferno
+Team1,G2,Liquid,16,11,Dust2
+Team1,G2,Liquid,16,10,Vertigo
+Team1,Japaleno,Singularity,7,16,Overpass
+Team2,Movistar Riders,AGO,11,16,Vertigo
+Team1,Japaleno,Demolition Crew,16,10,Dust2
+Team1,AGO,Sprout,8,16,Nuke
+Team1,mousesports,100 Thieves,16,10,Inferno
+Team2,100 Thieves,mousesports,16,8,Dust2
+Team2,mousesports,100 Thieves,14,16,Nuke
+Team1,Rysix,FREEROX,16,11,Overpass
+Team1,Rejected,9z,2,16,Inferno
+Team2,Sinisters,LND,16,5,Dust2
+Team1,Duck Nutz,Nocturns,16,13,Overpass
+Team2,Oceanus,Infinity,16,9,Train
+Team1,Rugratz,Swole Identity,28,26,Vertigo
+Team1,Monstars,LiViD,16,11,Overpass
+Team2,Divine,Chaos,11,16,Overpass
+Team1,Oceanus,Asuna's Anime Aimers,16,13,Nuke
+Team1,Under 21,Swole Identity,16,11,Nuke
+Team2,HAVU,hREDS,16,9,Overpass
+Team2,hREDS,HAVU,10,16,Train
+Team1,fnatic,100 Thieves,19,16,Inferno
+Team2,100 Thieves,fnatic,16,19,Mirage
+Team2,Sprout,Singularity,11,16,Dust2
+Team2,KOVA,SJ,11,16,Vertigo
+Team1,KOVA,SJ,8,16,Train
+Team1,Sprout,Demolition Crew,16,11,Nuke
+Team2,Liquid,Natus Vincere,11,16,Dust2
+Team1,Natus Vincere,Liquid,16,13,Mirage
+Team1,FREEROX,Sinisters,3,16,Mirage
+Team1,Sinisters,FREEROX,19,16,Nuke
+Team1,9z,Nocturns,19,15,Dust2
+Team2,Nocturns,9z,11,16,Mirage
+Team1,madlikewizards,Eimi Fukada FC,19,17,Overpass
+Team1,Eimi Fukada FC,madlikewizards,9,16,Inferno
+Team1,MC,Eimi Fukada FC,5,16,Dust2
+Team1,Eimi Fukada FC,MC,16,10,Nuke
+Team2,madlikewizards,Eimi Fukada FC,16,3,Mirage
+Team1,forZe,Spirit,16,12,Mirage
+Team2,forZe,Spirit,12,16,Inferno
+Team1,forZe,Spirit,9,16,Nuke
+Team1,KOVA,hREDS,16,14,Train
+Team1,hREDS,KOVA,16,12,Nuke
+Team1,hREDS,KOVA,7,16,Dust2
+Team1,G2,fnatic,16,12,Inferno
+Team1,fnatic,G2,16,11,Dust2
+Team1,G2,fnatic,16,12,Train
+Team2,HAVU,SJ,16,19,Train
+Team1,SJ,HAVU,4,16,Dust2
+Team1,HAVU,SJ,16,11,Nuke
+Team1,Duck Nutz,Sinisters,22,18,Dust2
+Team1,Sinisters,Duck Nutz,19,17,Nuke
+Team2,Duck Nutz,Sinisters,12,16,Mirage
+Team1,Astralis,Natus Vincere,5,16,Dust2
+Team2,Natus Vincere,Astralis,16,5,Nuke
+Team2,9z,Rysix,19,22,Inferno
+Team1,9z,Rysix,19,17,Overpass
+Team1,Rysix,9z,5,16,Dust2
+Team2,Wings,LevelZero,16,3,Overpass
+Team1,Paradox,Lucid,9,16,Mirage
+Team2,Lucid,Paradox,10,16,Train
+Team2,Lucid,Paradox,11,16,Inferno
+Team2,Umumba,Global,13,16,Inferno
+Team2,LevelZero,Umumba,16,19,Nuke
+Team1,Skyfire,Lucid,16,13,Inferno
+Team2,Lucid,Skyfire,14,16,Vertigo
+Team2,Rooster,Incept,16,3,Overpass
+Team1,Wings,Global,25,23,Train
+Team2,Paradox,Skyfire,16,8,Dust2
+Team2,Umumba,Global,13,16,Inferno
+Team1,Wings,Global,16,13,Dust2
+Team1,Wings,Global,9,16,Train
+Team1,Wings,Global,16,10,Inferno
+Team2,Natus Vincere,G2,16,4,Nuke
+Team2,G2,Natus Vincere,13,16,Dust2
+Team2,Natus Vincere,G2,16,2,Mirage
+Team1,Hard Legion,HellRaisers,9,16,Inferno
+Team2,Hard Legion,HellRaisers,16,9,Mirage
+Team2,HellRaisers,Hard Legion,16,6,Dust2
+Team1,Sinisters,9z,3,16,Nuke
+Team1,9z,Sinisters,16,10,Inferno
+Team1,Chaos,Bad News Bears,9,16,Dust2
+Team1,Infinity,Bad News Bears,5,16,Overpass
+Team2,Swole Identity,Oceanus,16,6,Dust2
+Team2,Ground Zero,AVANT,11,16,Nuke
+Team2,Airborne,TRIDENT,12,16,Dust2
+Team1,Illuminar,HellRaisers,5,16,Inferno
+Team2,Demolition Crew,AGO,16,6,Dust2
+Team2,Unicorns of Love,Illuminar,16,7,Inferno
+Team2,Bad News Bears,In The Lab,16,3,Train
+Team1,Triumph,Mythic,16,13,Overpass
+Team1,In The Lab,LiViD,4,16,Nuke
+Team2,Triumph,Oceanus,16,8,Nuke
+Team2,ORDER,Skyfire,16,7,Vertigo
+Team1,Skyfire,ORDER,16,14,Inferno
+Team1,ORDER,Skyfire,25,23,Train
+Team1,Ground Zero,Rooster,16,10,Inferno
+Team1,Ground Zero,Rooster,16,14,Vertigo
+Team2,GamerLegion,Nordavind,16,8,Overpass
+Team1,PACT,Illuminar,16,12,Overpass
+Team2,Japaleno,AGO,13,16,Mirage
+Team1,DETONA,BIG,16,11,Dust2
+Team1,Illuminar,Movistar Riders,6,16,Inferno
+Team2,AGO,Spirit,16,4,Mirage
+Team1,Orgless,AVEZ,16,14,Nuke
+Team1,RED Canids,W7M,16,14,Dust2
+Team1,W7M,RED Canids,5,16,Train
+Team2,BOOM,TeamOne,16,19,Nuke
+Team1,TeamOne,BOOM,16,14,Train
+Team1,Sharks,Imperial,7,16,Dust2
+Team1,Imperial,Sharks,3,16,Nuke
+Team1,Sharks,Imperial,9,16,Train
+Team2,paiN,Isurus,16,9,Dust2
+Team1,Isurus,paiN,16,11,Inferno
+Team1,paiN,Isurus,4,16,Overpass
+Team1,Redemption POA,Copenhagen Flames,7,16,Train
+Team2,Chaos,HAVU,26,28,Overpass
+Team1,Mythic,Rugratz,3,16,Vertigo
+Team2,TeamOne,RED Canids,16,19,Mirage
+Team1,RED Canids,TeamOne,16,10,Nuke
+Team1,W7M,BOOM,3,16,Mirage
+Team1,BOOM,W7M,16,10,Nuke
+Team2,Mythic,Bad News Bears,12,16,Overpass
+Team1,eUnited,Recon 5,16,10,Vertigo
+Team1,Sharks,paiN,9,16,Dust2
+Team2,paiN,Sharks,16,6,Nuke
+Team1,Isurus,Imperial,16,10,Dust2
+Team1,Imperial,Isurus,6,16,Overpass
+Team1,DETONA,Orgless,4,16,Train
+Team1,Orgless,DETONA,16,12,Dust2
+Team2,Triumph,Divine,16,7,Overpass
+Team1,Under 21,Monstars,19,15,Inferno
+Team2,LiViD,Oceanus,17,19,Nuke
+Team1,Recon 5,Infinity,16,12,Train
+Team2,Monstars,In The Lab,16,19,Train
+Team1,HAVU,Copenhagen Flames,2,16,Overpass
+Team2,Copenhagen Flames,HAVU,11,16,Train
+Team2,Copenhagen Flames,HAVU,13,16,Nuke
+Team1,Eimi Fukada FC,Chiefs,7,16,Dust2
+Team1,Eimi Fukada FC,Chiefs,8,16,Train
+Team1,Ignis,Aim4R,16,0,Nuke
+Team2,Ignis,Aim4R,16,4,Train
+Team1,Updraft,Mazaalai,6,16,Dust2
+Team2,Updraft,Mazaalai,11,16,Overpass
+Team1,MVP PK,D13,5,16,Train
+Team1,MVP PK,D13,9,16,Inferno
+Team2,Skyfire,Esper,16,6,Overpass
+Team2,Ground Zero,Formidable,16,9,Nuke
+Team2,AVANT,Paradox,16,4,Dust2
+Team2,Paradox,AVANT,12,16,Mirage
+Team2,Esper,Incept,13,16,Vertigo
+Team1,Aim4R,Updraft,4,16,Nuke
+Team2,Updraft,Aim4R,14,16,Mirage
+Team1,Aim4R,Updraft,6,16,Inferno
+Team1,TIGER,D13,16,10,Vertigo
+Team2,TIGER,D13,16,9,Nuke
+Team2,Mazaalai,Ignis,16,7,Nuke
+Team2,Ignis,Mazaalai,12,16,Dust2
+Team2,Wisla Krakow,Unicorns of Love,14,16,Nuke
+Team2,Sprout,Spirit,12,16,Nuke
+Team1,PACT,Japaleno,8,16,Overpass
+Team2,Singularity,Illuminar,14,16,Mirage
+Team2,AVEZ,BIG,11,16,Inferno
+Team2,AVEZ,BIG,14,16,Vertigo
+Team1,PACT,AGO,9,16,Inferno
+Team1,Spirit,Japaleno,19,16,Dust2
+Team1,Singularity,Wisla Krakow,16,12,Nuke
+Team2,Redemption POA,Chaos,11,16,Overpass
+Team2,Chaos,Redemption POA,16,5,Inferno
+Team2,RED Canids,Isurus,16,3,Train
+Team1,RED Canids,Isurus,16,10,Overpass
+Team1,DETONA,BIG,8,16,Inferno
+Team2,DETONA,BIG,10,16,Mirage
+Team1,paiN,TeamOne,7,16,Nuke
+Team2,BOOM,Imperial,13,16,Dust2
+Team2,BOOM,Imperial,16,9,Mirage
+Team2,BOOM,Imperial,16,7,Nuke
+Team2,TeamOne,paiN,16,7,Dust2
+Team2,Divine,Mythic,15,19,Overpass
+Team1,Big Frames,Infinity,16,12,Mirage
+Team2,LiViD,Station7,10,16,Mirage
+Team1,Triumph,Rugratz,16,12,Inferno
+Team2,eUnited,Bad News Bears,12,16,Nuke
+Team2,Swole Identity,In The Lab,13,16,Train
+Team2,Copenhagen Flames,Chaos,10,16,Mirage
+Team2,Chaos,Copenhagen Flames,12,16,Nuke
+Team1,Copenhagen Flames,Chaos,2,16,Inferno
+Team2,Recon 5,New England Whalers,16,5,Nuke
+Team2,LiViD,Infinity,16,7,Train
+Team1,In The Lab,Mythic,9,16,Nuke
+Team1,Under 21,Station7,16,10,Inferno
+Team1,Triumph,Swole Identity,16,11,Inferno
+Team1,LiViD,New England Whalers,16,10,Nuke
+Team1,Recon 5,Triumph,16,14,Nuke
+Team1,Skyfire,Rooster,7,16,Vertigo
+Team2,Skyfire,Rooster,10,16,Mirage
+Team2,Paradox,MARKandLARRY,16,8,Overpass
+Team1,MARKandLARRY,Paradox,19,17,Dust2
+Team1,MARKandLARRY,Paradox,7,16,Mirage
+Team1,D13,Updraft,16,11,Nuke
+Team1,Updraft,D13,8,16,Vertigo
+Team2,Ignis,MVP PK,16,19,Inferno
+Team1,MVP PK,Ignis,16,14,Dust2
+Team2,EHOME,Invictus,16,4,Mirage
+Team1,EHOME,Invictus,16,14,Nuke
+Team2,AVANT,Airborne,16,4,Inferno
+Team1,FURY,i sleep,19,17,Vertigo
+Team1,Eimi Fukada FC,Paradox,25,22,Train
+Team1,Paradox,Eimi Fukada FC,16,11,Dust2
+Team1,Paradox,Eimi Fukada FC,16,13,Inferno
+Team2,PC419,Rooster,1,16,Inferno
+Team2,Rooster,PC419,16,3,Mirage
+Team2,TIGER,Mazaalai,17,19,Mirage
+Team2,Mazaalai,TIGER,16,4,Nuke
+Team2,GamerLegion,Illuminar,16,6,Mirage
+Team1,Camel Riders,Aequus,16,11,Inferno
+Team1,Camel Riders,Aequus,6,16,Overpass
+Team1,Camel Riders,Aequus,16,10,Train
+Team2,ATK,Yalla,16,6,Inferno
+Team2,Yalla,ATK,16,9,Overpass
+Team1,Yalla,ATK,16,14,Nuke
+Team1,Goliath,NASR,16,12,Overpass
+Team1,NASR,Goliath,16,11,Inferno
+Team2,Goliath,NASR,16,6,Mirage
+Team1,JustPassingBy,Finest,16,12,Vertigo
+Team1,Finest,JustPassingBy,16,14,Train
+Team2,JustPassingBy,Finest,10,16,Dust2
+Team2,Wisla Krakow,Sprout,14,16,Train
+Team2,forZe,SpeedRunners,16,3,Nuke
+Team2,SpeedRunners,forZe,12,16,Inferno
+Team1,Nemiga,1WIN,7,16,Nuke
+Team2,1WIN,Nemiga,16,6,Inferno
+Team2,Gambit Youngsters,eL'quvet,16,7,Mirage
+Team2,eL'quvet,Gambit Youngsters,16,19,Train
+Team1,Spirit,SG.pro,16,13,Vertigo
+Team1,SG.pro,Spirit,5,16,Nuke
+Team2,Winstrike,HellRaisers,16,6,Train
+Team1,Winstrike,HellRaisers,19,17,Overpass
+Team1,Syman,fbg,22,20,Dust2
+Team2,fbg,Syman,12,16,Inferno
+Team2,Hard Legion,Unique,12,16,Dust2
+Team2,Unique,Hard Legion,12,16,Train
+Team2,Unique,Hard Legion,11,16,Mirage
+Team2,Espada,pro100,16,8,Train
+Team1,pro100,Espada,19,17,Overpass
+Team2,pro100,Espada,11,16,Mirage
+Team2,GamerLegion,PACT,16,4,Train
+Team2,Japaleno,Illuminar,16,4,Overpass
+Team1,PACT,Unicorns of Love,9,16,Vertigo
+Team2,HAVU,BIG,12,16,Mirage
+Team2,HAVU,BIG,13,16,Dust2
+Team2,Singularity,Movistar Riders,12,16,Mirage
+Team2,Gambit Youngsters,1WIN,16,6,Dust2
+Team1,1WIN,Gambit Youngsters,9,16,Mirage
+Team1,Winstrike,forZe,16,14,Vertigo
+Team1,Winstrike,forZe,16,13,Mirage
+Team1,Hard Legion,Syman,16,11,Overpass
+Team2,Syman,Hard Legion,16,7,Mirage
+Team2,Hard Legion,Syman,14,16,Inferno
+Team1,ATK,NASR,16,10,Inferno
+Team2,NASR,ATK,16,4,Train
+Team2,ATK,NASR,16,6,Mirage
+Team2,Goliath,Yalla,17,19,Train
+Team2,Yalla,Goliath,16,4,Inferno
+Team1,Spirit,Espada,16,14,Mirage
+Team2,Espada,Spirit,14,16,Nuke
+Team2,AGO,Singularity,16,8,Mirage
+Team2,Finest,Camel Riders,16,7,Inferno
+Team2,Camel Riders,Finest,16,8,Nuke
+Team2,Finest,Camel Riders,14,16,Mirage
+Team1,JustPassingBy,Aequus,16,10,Inferno
+Team1,Aequus,JustPassingBy,16,13,Dust2
+Team2,Aequus,JustPassingBy,16,9,Nuke
+Team2,Orgless,Chaos,16,6,Overpass
+Team1,Chaos,Orgless,16,12,Nuke
+Team1,Orgless,Chaos,16,11,Inferno
+Team1,BOOM,TeamOne,16,1,Inferno
+Team1,TeamOne,BOOM,9,16,Mirage
+Team2,BOOM,Isurus,16,4,Overpass
+Team2,Isurus,BOOM,17,19,Mirage
+Team1,Infinity,Rugratz,4,16,Overpass
+Team2,eUnited,Divine,16,6,Vertigo
+Team2,Infinity,Monstars,16,7,Dust2
+Team2,New England Whalers,Swole Identity,12,16,Mirage
+Team1,Triumph,LiViD,19,17,Inferno
+Team2,Monstars,Swole Identity,14,16,Train
+Team2,Under 21,LiViD,16,9,Inferno
+Team2,Big Frames,Triumph,20,22,Nuke
+Team2,Triumph,New England Whalers,16,2,Overpass
+Team2,Oceanus,Big Frames,11,16,Dust2
+Team2,MVP PK,D13,12,16,Train
+Team1,D13,MVP PK,16,11,Mirage
+Team1,TIGER,D13,19,17,Inferno
+Team1,D13,TIGER,16,10,Nuke
+Team1,TIGER,D13,19,15,Dust2
+Team1,Goliath,Aequus,4,16,Mirage
+Team1,Goliath,Aequus,2,16,Vertigo
+Team1,ATK,Finest,19,16,Dust2
+Team2,Finest,ATK,16,4,Inferno
+Team2,ATK,Finest,14,16,Mirage
+Team2,PACT,Wisla Krakow,16,4,Train
+Team1,eL'quvet,Nemiga,6,16,Dust2
+Team1,eL'quvet,Nemiga,5,16,Nuke
+Team1,fbg,Unique,9,16,Train
+Team1,Unique,fbg,16,11,Mirage
+Team1,pro100,SG.pro,16,14,Dust2
+Team2,pro100,SG.pro,17,19,Vertigo
+Team2,pro100,SG.pro,16,2,Mirage
+Team2,HellRaisers,SpeedRunners,10,16,Train
+Team1,SpeedRunners,HellRaisers,8,16,Inferno
+Team2,SpeedRunners,HellRaisers,10,16,Dust2
+Team2,Yalla,Camel Riders,16,4,Mirage
+Team2,Camel Riders,Yalla,16,4,Nuke
+Team1,Camel Riders,Yalla,19,17,Train
+Team1,GamerLegion,AGO,6,16,Inferno
+Team2,Nemiga,Hard Legion,14,16,Vertigo
+Team1,Nemiga,Hard Legion,8,16,Overpass
+Team2,1WIN,Unique,14,16,Train
+Team2,Unique,1WIN,15,19,Nuke
+Team1,Unique,1WIN,16,13,Dust2
+Team2,Espada,HellRaisers,16,9,Mirage
+Team2,HellRaisers,Espada,12,16,Dust2
+Team2,Wisla Krakow,AGO,14,16,Mirage
+Team1,forZe,pro100,19,15,Dust2
+Team2,pro100,forZe,13,16,Inferno
+Team1,EGOBOYZ,Gorillaz Pride,4,16,Vertigo
+Team2,EGOBOYZ,Gorillaz Pride,16,5,Mirage
+Team1,EGOBOYZ,Gorillaz Pride,16,10,Inferno
+Team2,Renegades,catman,16,4,Dust2
+Team1,catman,Renegades,9,16,Inferno
+Team1,AVANT,Ground Zero,16,11,Inferno
+Team1,Ground Zero,AVANT,9,16,Overpass
+Team1,Chiefs,Rooster,16,14,Mirage
+Team2,Rooster,Chiefs,16,9,Train
+Team1,Rooster,Chiefs,16,12,Inferno
+Team1,ORDER,Skyfire,22,20,Mirage
+Team1,Skyfire,ORDER,7,16,Vertigo
+Team1,Triumph,Infinity,16,10,Dust2
+Team2,Under 21,Divine,16,3,Mirage
+Team2,Station7,Triumph,12,16,Overpass
+Team1,Recon 5,Divine,16,1,Inferno
+Team2,Under 21,In The Lab,16,5,Mirage
+Team1,Infamous,Supremacy,7,16,Mirage
+Team2,Supremacy,Infamous,16,7,Train
+Team1,Ground Zero,catman,16,12,Mirage
+Team1,catman,Ground Zero,7,16,Nuke
+Team2,Renegades,AVANT,16,19,Train
+Team2,AVANT,Renegades,12,16,Inferno
+Team2,Renegades,AVANT,16,6,Nuke
+Team2,TYLOO,Wubbalubbadubdub,16,6,Dust2
+Team1,Wubbalubbadubdub,TYLOO,5,16,Train
+Team2,EHOME,OneThree,16,5,Nuke
+Team2,OneThree,EHOME,10,16,Train
+Team2,Lucid Dream,Paper Rex,16,8,Overpass
+Team1,Lucid Dream,Paper Rex,16,13,Nuke
+Team1,BTRG,Blank,19,17,Overpass
+Team2,Blank,BTRG,10,16,Inferno
+Team1,Bren,Beyond,4,16,Overpass
+Team2,Beyond,Bren,11,16,Nuke
+Team2,Bren,Beyond,12,16,Inferno
+Team1,Maple,HZ,6,16,Inferno
+Team1,HZ,Maple,25,23,Nuke
+Team2,R-Stars,Lynn Vision,10,16,Dust2
+Team1,R-Stars,Lynn Vision,5,16,Train
+Team2,JiJieHao,ViCi,16,2,Mirage
+Team2,JiJieHao,ViCi,13,16,Nuke
+Team1,JiJieHao,ViCi,4,16,Train
+Team1,Chiefs,Skyfire,2,16,Inferno
+Team2,Skyfire,Chiefs,11,16,Nuke
+Team1,Chiefs,Skyfire,19,17,Train
+Team2,ORDER,Rooster,16,8,Mirage
+Team1,Rooster,ORDER,8,16,Nuke
+Team1,TYLOO,Lynn Vision,16,10,Vertigo
+Team1,Lynn Vision,TYLOO,8,16,Overpass
+Team2,R-Stars,Wubbalubbadubdub,16,9,Dust2
+Team1,Wubbalubbadubdub,R-Stars,7,16,Mirage
+Team1,OneThree,JiJieHao,16,14,Mirage
+Team1,JiJieHao,OneThree,19,16,Nuke
+Team1,JiJieHao,OneThree,16,11,Train
+Team1,EHOME,ViCi,19,16,Mirage
+Team2,EHOME,ViCi,17,19,Nuke
+Team1,EHOME,ViCi,8,16,Overpass
+Team2,Renegades,ORDER,14,16,Train
+Team1,ORDER,Renegades,9,16,Nuke
+Team1,ORDER,Renegades,7,16,Dust2
+Team2,Maple,Paper Rex,13,16,Nuke
+Team2,Paper Rex,Maple,10,16,Overpass
+Team2,Paper Rex,Maple,12,16,Train
+Team1,Lucid Dream,HZ,16,14,Dust2
+Team1,HZ,Lucid Dream,16,14,Train
+Team1,Lucid Dream,HZ,16,10,Inferno
+Team1,Aequus,Finest,19,16,Inferno
+Team2,Finest,Aequus,10,16,Mirage
+Team2,Bren,Blank,16,2,Dust2
+Team2,Blank,Bren,11,16,Inferno
+Team2,BTRG,Beyond,13,16,Overpass
+Team2,Beyond,BTRG,16,9,Train
+Team2,fnatic,SMASH,16,7,Mirage
+Team1,SMASH,fnatic,6,16,Inferno
+Team1,OG,Heretics,9,16,Dust2
+Team2,Heretics,OG,16,9,Mirage
+Team1,Heroic,KOVA,16,10,Vertigo
+Team2,KOVA,Heroic,16,19,Nuke
+Team1,Dignitas,Movistar Riders,16,10,Overpass
+Team2,Movistar Riders,Dignitas,14,16,Nuke
+Team2,Ignis,Entry,16,7,Mirage
+Team1,Entry,Ignis,6,16,Inferno
+Team1,Yalla,Aequus,8,16,Mirage
+Team2,Aequus,Yalla,16,8,Inferno
+Team2,Lucid Dream,Beyond,16,3,Overpass
+Team2,Beyond,Lucid Dream,19,22,Mirage
+Team1,TYLOO,ViCi,8,16,Vertigo
+Team1,TYLOO,ViCi,16,13,Mirage
+Team1,TYLOO,ViCi,9,16,Train
+Team2,Bren,HZ,10,16,Mirage
+Team2,HZ,Bren,20,22,Nuke
+Team1,HZ,Bren,16,11,Dust2
+Team2,Maple,BTRG,16,6,Nuke
+Team1,BTRG,Maple,25,22,Mirage
+Team1,Maple,BTRG,5,16,Overpass
+Team2,BIG,Nordavind,16,6,Mirage
+Team1,Nordavind,BIG,3,16,Inferno
+Team2,NiP,Apeks,12,16,Overpass
+Team1,Apeks,NiP,5,16,Inferno
+Team1,NiP,Apeks,16,14,Vertigo
+Team1,Camel Riders,Aequus,6,16,Vertigo
+Team2,Complexity,Sprout,16,9,Inferno
+Team1,Sprout,Complexity,6,16,Overpass
+Team2,Camel Riders,Aequus,16,5,Dust2
+Team1,Camel Riders,Aequus,8,16,Inferno
+Team1,GODSENT,Copenhagen Flames,19,17,Nuke
+Team1,GODSENT,Copenhagen Flames,16,13,Vertigo
+Team2,Heroic,Heretics,13,16,Dust2
+Team1,Heretics,Heroic,16,13,Inferno
+Team2,Bad News Bears,Rugratz,10,16,Mirage
+Team2,Rugratz,Bad News Bears,11,16,Inferno
+Team1,Bad News Bears,Rugratz,16,1,Nuke
+Team1,FURIA,Triumph,16,14,Overpass
+Team2,Triumph,FURIA,11,16,Inferno
+Team2,eUnited,Ze Pug Godz,10,16,Inferno
+Team2,Ze Pug Godz,eUnited,19,22,Vertigo
+Team2,eUnited,Ze Pug Godz,14,16,Overpass
+Team2,Swole Identity,Envy,12,16,Mirage
+Team1,Swole Identity,Envy,16,11,Overpass
+Team2,Swole Identity,Envy,14,16,Train
+Team2,fnatic,Dignitas,18,22,Vertigo
+Team2,Dignitas,fnatic,15,19,Inferno
+Team2,fnatic,Dignitas,16,3,Overpass
+Team2,Cloud9,LiViD,16,5,Train
+Team2,LiViD,Cloud9,11,16,Overpass
+Team1,Complexity,GODSENT,16,11,Inferno
+Team2,GODSENT,Complexity,11,16,Dust2
+Team1,NiP,BIG,16,10,Inferno
+Team2,BIG,NiP,11,16,Vertigo
+Team2,Gen.G,Divine,16,4,Mirage
+Team1,Divine,Gen.G,7,16,Nuke
+Team1,Chaos,Mythic,7,16,Overpass
+Team2,Mythic,Chaos,11,16,Nuke
+Team1,Chaos,Mythic,7,16,Mirage
+Team2,Orgless,Yeah,16,9,Dust2
+Team1,Yeah,Orgless,16,11,Nuke
+Team2,Yeah,Orgless,10,16,Train
+Team1,FURIA,Envy,16,11,Mirage
+Team1,Envy,FURIA,7,16,Nuke
+Team2,Ze Pug Godz,Bad News Bears,13,16,Inferno
+Team1,Ze Pug Godz,Bad News Bears,9,16,Dust2
+Team1,Cloud9,Mythic,16,14,Vertigo
+Team2,Mythic,Cloud9,10,16,Inferno
+Team2,AVANT,Chiefs,11,16,Dust2
+Team2,AVANT,Chiefs,12,16,Nuke
+Team2,Ground Zero,Rooster,16,9,Mirage
+Team2,Rooster,Ground Zero,16,6,Inferno
+Team1,Ground Zero,Rooster,16,12,Vertigo
+Team2,Gen.G,Orgless,16,7,Mirage
+Team1,Orgless,Gen.G,7,16,Inferno
+Team2,Lynn Vision,JiJieHao,33,37,Mirage
+Team1,JiJieHao,Lynn Vision,7,16,Inferno
+Team1,JiJieHao,Lynn Vision,16,11,Dust2
+Team2,HZ,BTRG,10,16,Train
+Team2,HZ,BTRG,14,16,Nuke
+Team2,Chiefs,Ground Zero,16,7,Mirage
+Team1,Ground Zero,Chiefs,16,12,Nuke
+Team1,Ground Zero,Chiefs,9,16,Inferno
+Team2,BTRG,Beyond,16,6,Overpass
+Team2,Beyond,BTRG,16,4,Inferno
+Team1,Beyond,BTRG,16,10,Train
+Team1,ORDER,Chiefs,16,1,Nuke
+Team2,Chiefs,ORDER,13,16,Train
+Team1,EHOME,JiJieHao,25,22,Mirage
+Team1,JiJieHao,EHOME,16,14,Nuke
+Team2,JiJieHao,EHOME,10,16,Train
+Team1,Copenhagen Flames,Sprout,4,16,Mirage
+Team2,Sprout,Copenhagen Flames,12,16,Nuke
+Team1,Copenhagen Flames,Sprout,16,11,Train
+Team2,Movistar Riders,SMASH,14,16,Train
+Team1,SMASH,Movistar Riders,7,16,Nuke
+Team1,Movistar Riders,SMASH,16,12,Inferno
+Team1,Lucid Dream,Beyond,16,12,Inferno
+Team1,Beyond,Lucid Dream,9,16,Nuke
+Team2,OG,KOVA,16,4,Dust2
+Team2,KOVA,OG,14,16,Inferno
+Team1,Apeks,Nordavind,8,16,Vertigo
+Team1,Apeks,Nordavind,19,15,Nuke
+Team2,Apeks,Nordavind,13,16,Mirage
+Team2,TYLOO,EHOME,16,7,Mirage
+Team1,TYLOO,EHOME,16,12,Dust2
+Team1,ex-eUnited,Rugratz,16,13,Vertigo
+Team2,Rugratz,ex-eUnited,14,16,Overpass
+Team2,Swole Identity,Triumph,13,16,Overpass
+Team2,Triumph,Swole Identity,16,5,Vertigo
+Team2,Heroic,Copenhagen Flames,13,16,Train
+Team1,Copenhagen Flames,Heroic,16,14,Inferno
+Team1,Movistar Riders,BIG,22,20,Overpass
+Team2,Movistar Riders,BIG,11,16,Mirage
+Team2,Movistar Riders,BIG,16,4,Inferno
+Team2,Yeah,Divine,16,2,Inferno
+Team1,Divine,Yeah,6,16,Nuke
+Team2,Chaos,LiViD,16,8,Overpass
+Team2,LiViD,Chaos,11,16,Nuke
+Team1,Nordavind,Dignitas,16,12,Dust2
+Team2,Nordavind,Dignitas,13,16,Nuke
+Team2,Dignitas,Nordavind,16,8,Inferno
+Team2,GODSENT,OG,16,3,Train
+Team1,OG,GODSENT,22,20,Dust2
+Team2,OG,GODSENT,14,16,Nuke
+Team2,ex-eUnited,Orgless,16,3,Nuke
+Team1,Orgless,ex-eUnited,16,11,Overpass
+Team2,ex-eUnited,Orgless,12,16,Inferno
+Team2,Mythic,Triumph,12,16,Inferno
+Team2,Triumph,Mythic,14,16,Mirage
+Team2,Mythic,Triumph,14,16,Overpass
+Team1,New England Whalers,Infinity,7,16,Inferno
+Team2,Recon 5,Monstars,16,9,Inferno
+Team2,Yeah,Ze Pug Godz,10,16,Inferno
+Team2,Ze Pug Godz,Yeah,10,16,Nuke
+Team1,Yeah,Ze Pug Godz,16,13,Mirage
+Team2,Monstars,TeamOne,16,6,Mirage
+Team1,Station7,Infinity,16,13,Inferno
+Team1,Chaos,Envy,22,18,Mirage
+Team2,Chaos,Envy,16,19,Dust2
+Team2,Chaos,Envy,10,16,Overpass
+Team1,Recon 5,Thunder Logic,16,12,Nuke
+Team2,Big Frames,New England Whalers,17,19,Nuke
+Team1,ORDER,Ground Zero,16,10,Mirage
+Team1,Ground Zero,ORDER,3,16,Vertigo
+Team1,Rooster,i sleep,16,13,Inferno
+Team2,AVANT,Chiefs,13,16,Nuke
+Team1,AVANT,Chiefs,16,12,Dust2
+Team1,AVANT,Chiefs,16,12,Train
+Team1,FURY,Paradox,8,16,Inferno
+Team1,GamerLegion,BIG,16,11,Mirage
+Team1,Wisla Krakow,Nordavind,9,16,Mirage
+Team1,AGO,Illuminar,6,16,Train
+Team2,Nemiga,Wisla Krakow,16,6,Inferno
+Team2,BIG,Unicorns of Love,16,9,Nuke
+Team1,pro100,Wisla Krakow,16,10,Dust2
+Team2,Illuminar,Nordavind,11,16,Mirage
+Team2,AGO,BIG,16,6,Dust2
+Team1,Alma,W7M,7,16,Dust2
+Team2,Alma,W7M,14,16,Mirage
+Team1,Orgless,Triumph,16,11,Nuke
+Team1,Triumph,Orgless,16,12,Dust2
+Team2,Orgless,Triumph,14,16,Inferno
+Team1,TeamOne,ex-eUnited,8,16,Train
+Team1,DETONA,RED Canids,9,16,Train
+Team1,RED Canids,DETONA,16,14,Nuke
+Team2,Rugratz,Under 21,1,16,Dust2
+Team2,ex-eUnited,Thunder Logic,16,3,Nuke
+Team1,In The Lab,Recon 5,7,16,Train
+Team1,Oceanus,New England Whalers,16,13,Nuke
+Team2,Rugratz,Monstars,16,4,Mirage
+Team1,Big Frames,Bad News Bears,6,16,Nuke
+Team1,Divine,Infinity,16,14,Mirage
+Team2,In The Lab,Station7,11,16,Mirage
+Team2,Swole Identity,TeamOne,11,16,Overpass
+Team1,Chaos,ex-eUnited,16,13,Nuke
+Team1,Envy,Yeah,16,11,Inferno
+Team2,Yeah,Envy,12,16,Overpass
+Team1,Oceanus,Under 21,2,16,Nuke
+Team2,Bad News Bears,Thunder Logic,16,6,Inferno
+Team1,Monstars,Divine,25,23,Inferno
+Team1,TeamOne,Infinity,16,14,Train
+Team2,Station7,Recon 5,13,16,Inferno
+Team1,New England Whalers,In The Lab,16,12,Inferno
+Team2,Chiefs,Rooster,16,8,Inferno
+Team2,Rooster,Chiefs,38,40,Mirage
+Team2,AVANT,Paradox,16,9,Train
+Team2,AVANT,Skyfire,16,8,Mirage
+Team2,Airborne,PC419,16,7,Nuke
+Team2,Incept,Formidable,16,9,Dust2
+Team1,PC419,Chiefs,5,16,Inferno
+Team1,Ground Zero,Paradox,19,15,Inferno
+Team2,Paradox,Ground Zero,16,9,Mirage
+Team2,Ground Zero,Paradox,15,19,Overpass
+Team1,PACT,BIG,7,16,Dust2
+Team1,HellRaisers,Nemiga,16,13,Inferno
+Team2,Spirit,PACT,16,3,Inferno
+Team1,Sprout,BIG,16,14,Mirage
+Team1,HellRaisers,Demolition Crew,16,12,Mirage
+Team1,Spirit,Movistar Riders,16,13,Nuke
+Team2,Japaleno,GamerLegion,14,16,Overpass
+Team2,Nordavind,AGO,16,7,Mirage
+Team2,Demolition Crew,Illuminar,16,6,Nuke
+Team1,AGO,pro100,19,15,Train
+Team1,Paquetá,Neverest,16,10,Nuke
+Team1,NOORG,FURIA Inagame,5,16,Inferno
+Team1,Station7,Rugratz,7,16,Overpass
+Team2,Imperial,No2B,16,4,Overpass
+Team2,In The Lab,Divine,16,7,Inferno
+Team2,ex-eUnited,Station7,16,4,Overpass
+Team1,Reapers,ex-UP,16,10,Nuke
+Team2,Triumph,Thunder Logic,16,7,Overpass
+Team2,New England Whalers,Monstars,11,16,Overpass
+Team2,Big Frames,Rugratz,14,16,Nuke
+Team2,Under 21,Infinity,16,7,Mirage
+Team1,LiViD,Recon 5,9,16,Train
+Team2,Triumph,TeamOne,17,19,Dust2
+Team1,Monstars,Bad News Bears,16,13,Inferno
+Team2,Under 21,New England Whalers,12,16,Nuke
+Team2,Recon 5,Big Frames,16,6,Nuke
+Team2,LiViD,TeamOne,12,16,Nuke
+Team2,Recon 5,TeamOne,11,16,Nuke
+Team2,Chiefs,Paradox,20,22,Mirage
+Team2,Paradox,Chiefs,14,16,Inferno
+Team2,Chiefs,Paradox,13,16,Dust2
+Team2,PC419,Formidable,16,8,Nuke
+Team2,i sleep,Esper,16,7,Inferno
+Team1,TRIDENT,FURY,22,20,Vertigo
+Team2,ORDER,AVANT,13,16,Inferno
+Team2,AVANT,ORDER,14,16,Train
+Team2,AVANT,ORDER,16,9,Dust2
+Team2,Nordavind,PACT,16,2,Overpass
+Team1,Sprout,PACT,16,11,Train
+Team2,Spirit,HellRaisers,10,16,Vertigo
+Team2,pro100,GamerLegion,14,16,Mirage
+Team2,BIG,Illuminar,16,7,Mirage
+Team2,Nemiga,Nordavind,16,6,Nuke
+Team1,Unicorns of Love,Spirit,6,16,Inferno
+Team1,Sprout,Movistar Riders,16,12,Nuke
+Team1,Japaleno,Wisla Krakow,19,17,Dust2
+Team1,Demolition Crew,BIG,7,16,Mirage
+Team1,pro100,HellRaisers,16,13,Vertigo
+Team1,Nordavind,Japaleno,6,16,Dust2
+Team1,AGO,Nemiga,16,10,Vertigo
+Team2,Illuminar,Nemiga,13,16,Nuke
+Team1,Keyd,Isurus,7,16,Inferno
+Team2,Isurus,Keyd,12,16,Nuke
+Team2,Rugratz,Oceanus,16,4,Mirage
+Team2,Swole Patrol,In The Lab,16,3,Overpass
+Team1,Infinity,Chaos,8,16,Dust2
+Team2,Swole Identity,Divine,12,16,Overpass
+Team2,Soberano,Bravos,16,9,Nuke
+Team1,Soberano,Bravos,22,20,Dust2
+Team2,Swole Patrol,Triumph,16,5,Vertigo
+Team1,Infinity,In The Lab,16,13,Mirage
+Team2,Bad News Bears,TeamOne,12,16,Nuke
+Team2,Divine,Rugratz,14,16,Mirage
+Team2,Chaos,Swole Identity,14,16,Dust2
+Team2,Big Frames,Station7,16,3,Overpass
+Team1,Recon 5,Mythic,16,14,Vertigo
+Team1,Under 21,Triumph,16,11,Inferno
+Team2,TeamOne,Oceanus,16,9,Dust2
+Team2,Bad News Bears,New England Whalers,13,16,Inferno
+Team1,Chaos,District 7,16,13,Mirage
+Team2,Big Frames,In The Lab,10,16,Mirage
+Team2,Divine,TeamOne,14,16,Dust2
+Team2,Under 21,Recon 5,16,8,Nuke
+Team1,District 7,Thunder Logic,16,14,Mirage
+Team2,Station7,New England Whalers,11,16,Inferno
+Team1,TRIDENT,Rooster,9,16,Mirage
+Team1,Chiefs,Skyfire,22,20,Inferno
+Team1,i sleep,VERTEX,6,16,Inferno
+Team2,VERTEX,i sleep,16,2,Dust2
+Team2,Paradox,Incept,16,7,Dust2
+Team2,Ground Zero,ORDER,14,16,Inferno
+Team1,Paradox,Rooster,9,16,Mirage
+Team2,Rooster,Paradox,11,16,Train
+Team1,Rooster,Paradox,16,13,Inferno
+Team1,Skyfire,Ground Zero,16,12,Mirage
+Team1,HellRaisers,Wisla Krakow,16,12,Dust2
+Team2,Spirit,Nordavind,16,5,Inferno
+Team2,HellRaisers,Unicorns of Love,16,6,Dust2
+Team2,PACT,pro100,11,16,Inferno
+Team2,Nemiga,Spirit,16,8,Inferno
+Team1,Nordavind,Sprout,16,14,Dust2
+Team2,Japaleno,BIG,11,16,Inferno
+Team1,HellRaisers,Singularity,16,12,Dust2
+Team2,Illuminar,Spirit,10,16,Train
+Team2,Reapers,Paquetá,12,16,Nuke
+Team1,No2B,NOORG,19,17,Vertigo
+Team2,FURIA Inagame,Imperial,10,16,Train
+Team2,Triumph,Monstars,16,4,Overpass
+Team2,Bad News Bears,Swole Identity,16,9,Dust2
+Team2,District 7,Swole Patrol,12,16,Nuke
+Team1,Chaos,New England Whalers,16,10,Nuke
+Team1,Station7,Divine,16,13,Mirage
+Team1,Under 21,Mythic,22,19,Mirage
+Team1,Neverest,ex-UP,16,11,Vertigo
+Team2,Bad News Bears,Oceanus,16,4,Mirage
+Team1,In The Lab,Triumph,7,16,Inferno
+Team1,Rugratz,Thunder Logic,16,11,Mirage
+Team1,Under 21,Swole Patrol,8,16,Nuke
+Team2,Big Frames,Swole Identity,22,25,Inferno
+Team1,District 7,Divine,22,20,Mirage
+Team2,Mythic,TeamOne,16,4,Overpass
+Team1,Chaos,Thunder Logic,16,12,Nuke
+Team2,TeamOne,New England Whalers,12,16,Nuke
+Team2,Mythic,District 7,11,16,Mirage
+Team2,Big Frames,Divine,11,16,Overpass
+Team1,Swole Patrol,Oceanus,16,10,Nuke
+Team2,TeamOne,In The Lab,16,5,Dust2
+Team2,Spirit,pro100,16,8,Mirage
+Team1,Unicorns of Love,Singularity,7,16,Nuke
+Team1,Demolition Crew,Spirit,9,16,Nuke
+Team1,pro100,Sprout,16,12,Train
+Team2,MAD Lions,HAVU,13,16,Nuke
+Team2,HAVU,MAD Lions,12,16,Mirage
+Team2,MAD Lions,HAVU,10,16,Train
+Team1,Neverest,Reapers,19,17,Vertigo
+Team2,Neverest,Reapers,10,16,Mirage
+Team1,Reapers,Neverest,16,10,Inferno
+Team1,c0ntact,Copenhagen Flames,19,16,Nuke
+Team1,Copenhagen Flames,c0ntact,5,16,Mirage
+Team1,Rugratz,TeamOne,16,11,Overpass
+Team1,Infamous,EGOBOYZ,22,18,Mirage
+Team1,Infamous,EGOBOYZ,9,16,Inferno
+Team2,Infamous,EGOBOYZ,16,8,Overpass
+Team1,TeamOne,Chaos,3,16,Inferno
+Team2,Triumph,Bad News Bears,10,16,Inferno
+Team2,ORDER,Paradox,16,19,Inferno
+Team2,ORDER,Paradox,16,6,Vertigo
+Team1,Paradox,ORDER,4,16,Mirage
+Team1,No2B,FURIA Inagame,16,14,Nuke
+Team2,No2B,FURIA Inagame,15,19,Inferno
+Team2,FURIA Inagame,No2B,16,9,Train
+Team2,Triumph,Chaos,16,8,Nuke
+Team2,Bad News Bears,Under 21,18,22,Dust2
+Team1,AVANT,ORDER,16,12,Train
+Team2,ORDER,AVANT,15,19,Inferno
+Team1,Supremacy,Infamous,16,1,Dust2
+Team2,Infamous,Supremacy,12,16,Mirage
+Team1,Gen.G,Envy,19,17,Train
+Team1,Envy,Gen.G,16,13,Inferno
+Team2,Gen.G,Envy,16,9,Mirage
+Team1,Imperial,Reapers,16,10,Train
+Team2,Reapers,Imperial,11,16,Mirage
+Team2,Chaos,MIBR,16,6,Train
+Team2,MIBR,Chaos,14,16,Nuke
+Team2,EthereaL,FiRENATiON,16,7,Train
+Team1,Station7,Mythic,16,14,Dust2
+Team1,i sleep,Airborne,9,16,Overpass
+Team1,Airborne,i sleep,16,10,Nuke
+Team1,Swole Identity,Mythic,9,16,Dust2
+Team1,FURIA Inagame,Paquetá,16,14,Mirage
+Team2,Paquetá,FURIA Inagame,16,7,Vertigo
+Team1,Paquetá,FURIA Inagame,16,11,Overpass
+Team1,Thunder Logic,Swole Identity,19,16,Overpass
+Team2,Chaos,Oceanus,16,8,Dust2
+Team2,TeamOne,Big Frames,16,5,Nuke
+Team2,i sleep,Incept,16,6,Dust2
+Team2,i sleep,Incept,16,8,Vertigo
+Team1,Chaos,Big Frames,16,13,Overpass
+Team2,In The Lab,Thunder Logic,14,16,Mirage
+Team2,Airborne,i sleep,13,16,Inferno
+Team2,Airborne,i sleep,11,16,Vertigo
+Team1,S2V,EthereaL,16,14,Nuke
+Team1,EthereaL,S2V,3,16,Train
+Team2,Tricked,Endpoint,13,16,Dust2
+Team2,Endpoint,Tricked,14,16,Train
+Team1,Endpoint,Tricked,6,16,Mirage
+Team1,Dignitas,Orgless,8,16,Train
+Team2,Orgless,Dignitas,10,16,Nuke
+Team2,Orgless,Dignitas,12,16,Inferno
+Team1,Paquetá,Imperial,5,16,Train
+Team2,Imperial,Paquetá,16,7,Nuke
+Team2,Cloud9,FunPlus Phoenix,10,16,Nuke
+Team2,FunPlus Phoenix,Cloud9,20,22,Train
+Team2,Cloud9,FunPlus Phoenix,16,3,Inferno
+Team1,Thunder Logic,TeamOne,5,16,Mirage
+Team1,Chaos,Monstars,16,12,Inferno
+Team1,Station7,Bad News Bears,8,16,Inferno
+Team2,New England Whalers,Rugratz,10,16,Mirage
+Team2,Thunder Logic,Infinity,14,16,Dust2
+Team2,Recon 5,Oceanus,16,5,Nuke
+Team1,Chaos,In The Lab,16,1,Dust2
+Team1,District 7,Rugratz,9,16,Mirage
+Team2,Under 21,TeamOne,12,16,Nuke
+Team1,Thunder Logic,New England Whalers,16,13,Nuke
+Team2,Bad News Bears,District 7,16,7,Vertigo
+Team2,Thunder Logic,Under 21,11,16,Nuke
+Team1,ENCE,Spirit,2,16,Inferno
+Team1,Spirit,ENCE,16,14,Train
+Team2,Espada,Singularity,11,16,Nuke
+Team2,Singularity,Espada,11,16,Mirage
+Team2,Espada,Singularity,16,9,Dust2
+Team1,Vitality,GODSENT,16,14,Vertigo
+Team1,GODSENT,Vitality,8,16,Nuke
+Team1,Astralis,NiP,6,16,Vertigo
+Team2,NiP,Astralis,16,8,Overpass
+Team1,District 7,New England Whalers,7,16,Nuke
+Team2,Station7,AA,16,5,Mirage
+Team1,Paradox,Airborne,19,16,Nuke
+Team2,Airborne,Paradox,16,9,Mirage
+Team2,Paradox,Airborne,10,16,Inferno
+Team1,Rooster,Skyfire,16,13,Inferno
+Team2,Skyfire,Rooster,1,16,Overpass
+Team1,Complexity,forZe,9,16,Dust2
+Team2,Complexity,forZe,16,9,Train
+Team1,forZe,Complexity,19,17,Mirage
+Team2,Tricked,Espada,10,16,Dust2
+Team1,Espada,Tricked,16,10,Nuke
+Team2,Natus Vincere,North,10,16,Nuke
+Team2,Natus Vincere,North,10,16,Dust2
+Team1,Endpoint,Singularity,16,13,Overpass
+Team2,Singularity,Endpoint,11,16,Vertigo
+Team2,AGO,HellRaisers,16,5,Inferno
+Team1,HellRaisers,AGO,5,16,Train
+Team1,Nordavind,GamerLegion,9,16,Vertigo
+Team2,Nordavind,GamerLegion,16,9,Mirage
+Team1,Nordavind,GamerLegion,16,14,Nuke
+Team2,Sprout,Movistar Riders,16,7,Inferno
+Team2,Movistar Riders,Sprout,10,16,Mirage
+Team1,pro100,Japaleno,8,16,Inferno
+Team1,Japaleno,pro100,16,14,Dust2
+Team1,fnatic,BIG,7,16,Inferno
+Team1,BIG,fnatic,7,16,Overpass
+Team2,fnatic,BIG,12,16,Mirage
+Team2,New England Whalers,Station7,12,16,Inferno
+Team2,Bad News Bears,Rugratz,16,8,Vertigo
+Team2,Bad News Bears,Rugratz,16,7,Inferno
+Team1,TeamOne,Recon 5,16,0,Dust2
+Team1,TeamOne,Recon 5,16,13,Inferno
+Team1,Triumph,Chaos,19,16,Inferno
+Team1,Chaos,Triumph,7,16,Overpass
+Team1,Mythic,Under 21,16,11,Vertigo
+Team2,Mythic,Under 21,14,16,Mirage
+Team1,Under 21,Mythic,16,12,Dust2
+Team1,AA,District 7,16,12,Train
+Team1,District 7,AA,16,14,Overpass
+Team1,District 7,AA,3,16,Mirage
+Team1,Ground Zero,Eimi Fukada FC,16,11,Mirage
+Team2,Eimi Fukada FC,Ground Zero,13,16,Inferno
+Team2,Chiefs,i sleep,16,5,Vertigo
+Team2,i sleep,Chiefs,20,22,Nuke
+Team1,NiP,Spirit,16,14,Mirage
+Team1,Spirit,NiP,5,16,Vertigo
+Team2,pro100,Movistar Riders,14,16,Overpass
+Team1,Movistar Riders,pro100,16,14,Mirage
+Team1,Sprout,Japaleno,19,16,Inferno
+Team2,Japaleno,Sprout,13,16,Mirage
+Team1,GamerLegion,HellRaisers,16,12,Inferno
+Team2,HellRaisers,GamerLegion,16,5,Train
+Team1,HellRaisers,GamerLegion,16,13,Overpass
+Team2,AGO,Nordavind,12,16,Mirage
+Team2,Nordavind,AGO,11,16,Inferno
+Team2,Nordavind,AGO,15,19,Dust2
+Team2,Astralis,GODSENT,16,5,Vertigo
+Team1,GODSENT,Astralis,7,16,Inferno
+Team2,Endpoint,Tricked,10,16,Dust2
+Team2,Endpoint,Tricked,11,16,Train
+Team2,Japaleno,HellRaisers,10,16,Inferno
+Team2,HellRaisers,Japaleno,13,16,Overpass
+Team1,Japaleno,HellRaisers,19,16,Dust2
+Team1,Vitality,ENCE,16,10,Mirage
+Team2,ENCE,Vitality,16,8,Inferno
+Team2,ENCE,Vitality,14,16,Dust2
+Team1,Nordavind,Movistar Riders,16,12,Overpass
+Team2,Movistar Riders,Nordavind,12,16,Mirage
+Team2,Recon 5,Rugratz,12,16,Overpass
+Team2,Rugratz,Recon 5,16,6,Train
+Team1,Chaos,Mythic,16,13,Overpass
+Team1,Mythic,Chaos,9,16,Inferno
+Team1,Bad News Bears,TeamOne,16,12,Dust2
+Team2,TeamOne,Bad News Bears,10,16,Inferno
+Team2,Triumph,Under 21,17,19,Vertigo
+Team1,Triumph,Under 21,16,14,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team1,Triumph,Under 21,19,17,Inferno
+Team1,AA,New England Whalers,16,11,Inferno
+Team1,New England Whalers,AA,3,16,Mirage
+Team2,Chaos,TeamOne,13,16,Nuke
+Team2,TeamOne,Chaos,17,19,Mirage
+Team1,TeamOne,Chaos,16,13,Overpass
+Team1,Under 21,Rugratz,22,19,Train
+Team1,Rugratz,Under 21,6,16,Inferno
+Team1,Paradox,Skyfire,19,16,Overpass
+Team2,Skyfire,Paradox,15,19,Mirage
+Team2,Shidiots,MARKandLARRY,16,2,Inferno
+Team1,MARKandLARRY,Shidiots,5,16,Mirage
+Team2,Eimi Fukada FC,i sleep,12,16,Nuke
+Team2,i sleep,Eimi Fukada FC,20,22,Dust2
+Team2,i sleep,Eimi Fukada FC,12,16,Inferno
+Team2,North,forZe,10,16,Train
+Team1,forZe,North,16,12,Nuke
+Team2,HellRaisers,SKADE,16,7,Train
+Team1,SKADE,HellRaisers,16,12,Dust2
+Team2,HellRaisers,SKADE,13,16,Inferno
+Team2,FATE,Turkey5,16,7,Dust2
+Team1,Turkey5,FATE,3,16,Train
+Team1,Natus Vincere,BIG,7,16,Nuke
+Team2,Natus Vincere,BIG,20,22,Dust2
+Team2,Pompa,Cyber Legacy,16,7,Train
+Team1,Cyber Legacy,Pompa,8,16,Nuke
+Team1,Salamander,Tricked,16,12,Nuke
+Team2,Tricked,Salamander,16,9,Mirage
+Team2,Tricked,Salamander,10,16,Train
+Team2,Vexed,Chetz,16,3,Train
+Team1,Chetz,Vexed,7,16,Nuke
+Team2,Japaleno,Nordavind,16,7,Mirage
+Team2,Nordavind,Japaleno,16,7,Inferno
+Team2,Nordavind,Japaleno,10,16,Overpass
+Team2,SKADE,Juggernauts,16,5,Nuke
+Team1,Juggernauts,SKADE,7,16,Dust2
+Team1,ALTERNATE aTTaX,SJ,16,10,Inferno
+Team2,ALTERNATE aTTaX,SJ,16,7,Vertigo
+Team2,fnatic,Complexity,16,9,Mirage
+Team1,Complexity,fnatic,6,16,Dust2
+Team2,Yeah,Big Frames,16,7,Nuke
+Team1,Under 21,TeamOne,6,16,Train
+Team1,TeamOne,Under 21,16,12,Inferno
+Team1,Ground Zero,Rooster,16,13,Vertigo
+Team2,ORDER,Paradox,16,9,Mirage
+Team1,Paradox,ORDER,4,16,Nuke
+Team2,TRIDENT,Chiefs,14,16,Dust2
+Team1,TRIDENT,Chiefs,8,16,Train
+Team2,AVANT,Skyfire,16,6,Inferno
+Team2,Skyfire,AVANT,13,16,Mirage
+Team2,Ground Zero,Rooster,11,16,Mirage
+Team2,Ground Zero,Rooster,10,16,Inferno
+Team1,TRIDENT,Skyfire,9,16,Inferno
+Team1,Skyfire,TRIDENT,16,12,Train
+Team1,AVANT,Chiefs,16,12,Mirage
+Team1,AVANT,Chiefs,16,10,Dust2
+Team2,Ground Zero,Paradox,16,4,Mirage
+Team1,ORDER,Rooster,16,10,Inferno
+Team1,Rooster,ORDER,6,16,Nuke
+Team1,NiP,GODSENT,16,14,Nuke
+Team1,GODSENT,NiP,4,16,Overpass
+Team2,Apeks,Ambush,16,2,Nuke
+Team2,Apeks,Ambush,16,8,Dust2
+Team2,Defusekids,Prima,12,16,Train
+Team2,Prima,Defusekids,16,19,Inferno
+Team1,Prima,Defusekids,25,22,Mirage
+Team2,Vitality,Spirit,16,9,Inferno
+Team1,Vitality,Spirit,5,16,Dust2
+Team2,Vitality,Spirit,13,16,Overpass
+Team2,MIBR,Envy,16,6,Overpass
+Team2,MIBR,Envy,16,3,Mirage
+Team2,Endpoint,Unique,16,9,Mirage
+Team1,Unique,Endpoint,6,16,Dust2
+Team2,Dignitas,Cloud9,11,16,Train
+Team1,Cloud9,Dignitas,16,10,Vertigo
+Team1,Astralis,ENCE,16,13,Dust2
+Team1,ENCE,Astralis,16,14,Inferno
+Team2,ENCE,Astralis,10,16,Overpass
+Team2,Thunder Logic,Yeah,16,5,Train
+Team2,Rooster,Skyfire,16,3,Nuke
+Team2,Skyfire,Rooster,14,16,Mirage
+Team2,AVANT,ORDER,16,19,Mirage
+Team1,ORDER,AVANT,16,10,Dust2
+Team2,Chiefs,Ground Zero,13,16,Mirage
+Team2,Ground Zero,Chiefs,14,16,Inferno
+Team2,Chiefs,Ground Zero,11,16,Nuke
+Team2,Ground Zero,Rooster,12,16,Vertigo
+Team1,Ground Zero,Rooster,6,16,Inferno
+Team1,Complexity,BIG,9,16,Mirage
+Team2,Complexity,BIG,16,9,Nuke
+Team1,Complexity,BIG,16,14,Dust2
+Team2,Copenhagen Flames,MAD Lions,16,9,Dust2
+Team1,Copenhagen Flames,MAD Lions,6,16,Train
+Team1,MAD Lions,Copenhagen Flames,16,13,Nuke
+Team2,Natus Vincere,forZe,12,16,Inferno
+Team2,forZe,Natus Vincere,17,19,Train
+Team2,forZe,Natus Vincere,13,16,Nuke
+Team1,Chaos,Gen.G,16,11,Inferno
+Team2,Gen.G,Chaos,12,16,Mirage
+Team1,fnatic,North,16,12,Vertigo
+Team2,North,fnatic,16,9,Overpass
+Team2,fnatic,North,16,8,Mirage
+Team2,AVANT,Rooster,16,3,Inferno
+Team2,AVANT,Rooster,16,9,Dust2
+Team1,ORDER,AVANT,9,16,Dust2
+Team2,AVANT,ORDER,14,16,Mirage
+Team1,ORDER,AVANT,16,10,Inferno
+Team2,GODSENT,ENCE,13,16,Train
+Team2,ENCE,GODSENT,16,19,Nuke
+Team1,ENCE,GODSENT,4,16,Dust2
+Team2,Defusekids,Turkey5,13,16,Dust2
+Team2,Turkey5,Defusekids,16,9,Vertigo
+Team1,ALTERNATE aTTaX,Salamander,9,16,Train
+Team2,Salamander,ALTERNATE aTTaX,13,16,Inferno
+Team1,Salamander,ALTERNATE aTTaX,2,16,Overpass
+Team1,Tricked,SJ,16,14,Train
+Team2,SJ,Tricked,16,9,Nuke
+Team2,SJ,Tricked,11,16,Dust2
+Team2,Astralis,Spirit,16,6,Dust2
+Team1,Spirit,Astralis,8,16,Nuke
+Team2,Vexed,Apeks,16,9,Dust2
+Team1,Apeks,Vexed,5,16,Mirage
+Team2,Ambush,Chetz,1,16,Mirage
+Team1,Chetz,Ambush,9,16,Overpass
+Team2,Chetz,Ambush,13,16,Nuke
+Team2,HAVU,c0ntact,14,16,Mirage
+Team1,c0ntact,HAVU,5,16,Train
+Team2,c0ntact,HAVU,12,16,Dust2
+Team2,Endpoint,SKADE,11,16,Nuke
+Team2,SKADE,Endpoint,12,16,Dust2
+Team1,Endpoint,SKADE,19,15,Train
+Team1,Vitality,NiP,16,14,Vertigo
+Team1,NiP,Vitality,9,16,Nuke
+Team1,Yeah,Station7,16,12,Mirage
+Team2,Yeah,Station7,16,5,Inferno
+Team2,Rooster,Airborne,14,16,Nuke
+Team1,Airborne,Rooster,16,11,Inferno
+Team1,Chiefs,Ground Zero,8,16,Mirage
+Team2,Ground Zero,Chiefs,16,6,Inferno
+Team1,fnatic,forZe,16,14,Nuke
+Team2,forZe,fnatic,16,7,Mirage
+Team1,fnatic,forZe,16,12,Dust2
+Team2,Juggernauts,Unique,13,16,Dust2
+Team2,Unique,Juggernauts,15,19,Nuke
+Team2,Unique,Juggernauts,16,3,Train
+Team2,Cyber Legacy,HellRaisers,17,19,Overpass
+Team2,HellRaisers,Cyber Legacy,10,16,Train
+Team2,Cyber Legacy,HellRaisers,11,16,Inferno
+Team1,c0ntact,MAD Lions,9,16,Nuke
+Team1,c0ntact,MAD Lions,7,16,Dust2
+Team1,North,BIG,16,11,Inferno
+Team1,North,BIG,22,20,Vertigo
+Team2,SKADE,Pompa,16,3,Train
+Team1,Pompa,SKADE,7,16,Inferno
+Team1,FATE,Prima,5,16,Vertigo
+Team1,Prima,FATE,9,16,Inferno
+Team1,FATE,Prima,4,16,Train
+Team1,MIBR,Gen.G,16,11,Inferno
+Team2,Gen.G,MIBR,13,16,Mirage
+Team2,Natus Vincere,Complexity,14,16,Inferno
+Team1,Complexity,Natus Vincere,8,16,Dust2
+Team2,Complexity,Natus Vincere,12,16,Nuke
+Team2,Orgless,Dignitas,12,16,Nuke
+Team1,Dignitas,Orgless,4,16,Mirage
+Team1,Dignitas,Orgless,3,16,Inferno
+Team1,AA,Thunder Logic,9,16,Overpass
+Team1,Thunder Logic,AA,9,16,Mirage
+Team1,Thunder Logic,AA,6,16,Dust2
+Team1,Paradox,Chiefs,16,14,Nuke
+Team1,Chiefs,Paradox,16,10,Inferno
+Team2,Chiefs,Paradox,16,7,Mirage
+Team2,Rooster,Eimi Fukada FC,16,2,Mirage
+Team1,Eimi Fukada FC,Rooster,16,14,Inferno
+Team2,Eimi Fukada FC,Rooster,11,16,Overpass
+Team1,Lucid Dream,TIGER,8,16,Dust2
+Team2,TIGER,Lucid Dream,12,16,Train
+Team2,TIGER,Lucid Dream,15,19,Inferno
+Team2,Apeks,Turkey5,15,19,Inferno
+Team2,Turkey5,Apeks,14,16,Overpass
+Team1,Apeks,Turkey5,8,16,Dust2
+Team1,Pompa,HellRaisers,16,13,Overpass
+Team2,HellRaisers,Pompa,16,5,Train
+Team1,Pompa,HellRaisers,19,16,Mirage
+Team2,HAVU,MAD Lions,10,16,Mirage
+Team2,MAD Lions,HAVU,16,8,Train
+Team1,SKADE,Tricked,16,12,Mirage
+Team1,Tricked,SKADE,6,16,Inferno
+Team2,North,Complexity,10,16,Mirage
+Team2,Complexity,North,16,8,Nuke
+Team1,Natus Vincere,fnatic,16,10,Overpass
+Team2,fnatic,Natus Vincere,11,16,Dust2
+Team2,forZe,BIG,11,16,Mirage
+Team2,BIG,forZe,11,16,Inferno
+Team2,forZe,BIG,16,9,Nuke
+Team2,FATE,Ambush,13,16,Vertigo
+Team1,Ambush,FATE,16,14,Train
+Team1,Cloud9,Orgless,16,11,Train
+Team1,Orgless,Cloud9,16,12,Inferno
+Team2,Orgless,Cloud9,14,16,Dust2
+Team2,Salamander,Unique,16,2,Mirage
+Team2,Unique,Salamander,16,7,Train
+Team2,Unique,Salamander,11,16,Nuke
+Team2,GODSENT,Spirit,16,9,Inferno
+Team2,Spirit,GODSENT,13,16,Nuke
+Team2,NiP,ENCE,10,16,Train
+Team1,ENCE,NiP,4,16,Overpass
+Team1,NiP,ENCE,8,16,Inferno
+Team1,Astralis,Vitality,16,10,Dust2
+Team1,Vitality,Astralis,19,17,Overpass
+Team1,Vitality,Astralis,8,16,Nuke
+Team1,Chaos,MIBR,7,16,Overpass
+Team2,MIBR,Chaos,12,16,Inferno
+Team1,Chaos,MIBR,8,16,Dust2
+Team2,Thunder Logic,Station7,16,9,Inferno
+Team1,Station7,Thunder Logic,16,10,Overpass
+Team1,Station7,Thunder Logic,16,10,Nuke
+Team1,ETHEREAL,timbermen,16,14,Mirage
+Team1,timbermen,ETHEREAL,9,16,Overpass
+Team1,Faint,Big Chillin,16,14,Train
+Team1,Big Chillin,Faint,16,14,Vertigo
+Team2,Big Chillin,Faint,14,16,Mirage
+Team1,Buffdaddy's Paypal,Serac,16,10,Nuke
+Team1,Serac,Buffdaddy's Paypal,9,16,Mirage
+Team1,Chiefs,Rooster,9,16,Mirage
+Team1,Rooster,Chiefs,8,16,Train
+Team1,Rooster,Chiefs,16,10,Inferno
+Team1,HZ,D13,5,16,Train
+Team1,HZ,D13,8,16,Mirage
+Team1,AA,Yeah,16,12,Train
+Team2,Yeah,AA,16,7,Mirage
+Team1,Yeah,AA,16,10,Inferno
+Team1,Polar Ace,Front,7,16,Inferno
+Team1,Front,Polar Ace,4,16,Mirage
+Team2,Front,Polar Ace,13,16,Dust2
+Team2,Airborne,Paradox,14,16,Mirage
+Team1,Paradox,Airborne,7,16,Overpass
+Team1,Paradox,Airborne,19,16,Inferno
+Team2,Lucid Dream,D13,16,3,Train
+Team1,D13,Lucid Dream,9,16,Nuke
+Team2,Shidiots,i sleep,10,16,Vertigo
+Team1,i sleep,Shidiots,19,15,Inferno
+Team1,FaZe,TYLOO,16,10,Inferno
+Team1,TYLOO,FaZe,8,16,Mirage
+Team2,SKADE,Turkey5,13,16,Dust2
+Team2,Turkey5,SKADE,10,16,Nuke
+Team2,Turkey5,SKADE,13,16,Inferno
+Team2,100 Thieves,Swole Patrol,16,19,Train
+Team1,Swole Patrol,100 Thieves,5,16,Vertigo
+Team2,Swole Patrol,100 Thieves,13,16,Inferno
+Team1,ALTERNATE aTTaX,Prima,16,14,Vertigo
+Team2,Prima,ALTERNATE aTTaX,12,16,Overpass
+Team1,Endpoint,Vexed,16,13,Mirage
+Team1,Vexed,Endpoint,16,11,Train
+Team2,Vexed,Endpoint,13,16,Dust2
+Team2,Liquid,MIBR,16,7,Overpass
+Team1,MIBR,Liquid,2,16,Dust2
+Team1,Front,Trivium,9,16,Mirage
+Team1,Trivium,Front,16,1,Inferno
+Team2,Big Chillin,Prospects,11,16,Vertigo
+Team1,Prospects,Big Chillin,4,16,Train
+Team1,Big Chillin,Prospects,16,14,Inferno
+Team1,timbermen,Dogs of War,16,13,Nuke
+Team1,Dogs of War,timbermen,9,16,Mirage
+Team2,Serac,Rise,23,25,Mirage
+Team1,Rise,Serac,5,16,Overpass
+Team1,Serac,Rise,16,11,Train
+Team2,ex-MC Academy,Incept,13,16,Dust2
+Team1,Incept,ex-MC Academy,16,11,Train
+Team2,FURY,rozu,16,6,Train
+Team1,rozu,FURY,5,16,Nuke
+Team1,Mako,MARKandLARRY,7,16,Overpass
+Team2,MARKandLARRY,Mako,16,9,Nuke
+Team1,Esper,Draconic,8,16,Inferno
+Team1,Draconic,Esper,3,16,Nuke
+Team2,Draconic,Esper,14,16,Mirage
+Team1,OG,TYLOO,16,11,Inferno
+Team1,TYLOO,OG,9,16,Dust2
+Team1,Pompa,Espada,6,16,Mirage
+Team2,Espada,Pompa,16,7,Train
+Team2,Copenhagen Flames,HAVU,17,19,Train
+Team1,HAVU,Copenhagen Flames,16,14,Overpass
+Team2,Salamander,Ambush,16,19,Overpass
+Team2,Ambush,Salamander,11,16,Train
+Team2,Ambush,Salamander,16,19,Nuke
+Team1,Swole Patrol,Liquid,16,11,Vertigo
+Team1,Swole Patrol,Liquid,16,12,Overpass
+Team2,SKADE,Tricked,13,16,Mirage
+Team1,Tricked,SKADE,16,14,Inferno
+Team1,Envy,Cloud9,16,10,Dust2
+Team2,Cloud9,Envy,16,7,Overpass
+Team1,Cloud9,Envy,8,16,Train
+Team1,Evil Geniuses,100 Thieves,16,12,Inferno
+Team1,100 Thieves,Evil Geniuses,16,13,Train
+Team2,100 Thieves,Evil Geniuses,16,6,Nuke
+Team2,ex-UP,Asterius,11,16,Train
+Team1,Mako,ex-MC Academy,19,16,Overpass
+Team2,FURY,Esper,12,16,Vertigo
+Team1,Incept,MARKandLARRY,19,16,Overpass
+Team1,Draconic,rozu,7,16,Dust2
+Team1,rozu,Draconic,19,17,Inferno
+Team1,ex-MC Academy,Mako,5,16,Nuke
+Team1,Esper,FURY,8,16,Inferno
+Team2,FURY,Esper,16,8,Train
+Team1,MARKandLARRY,Incept,16,12,Mirage
+Team2,Incept,MARKandLARRY,10,16,Dust2
+Team1,Hard Legion,Unique,16,11,Dust2
+Team2,Unique,Hard Legion,11,16,Inferno
+Team2,G2,TYLOO,16,7,Inferno
+Team1,TYLOO,G2,16,14,Dust2
+Team1,TYLOO,G2,3,16,Vertigo
+Team1,1WIN,Bogatiri,16,1,Overpass
+Team2,1WIN,Bogatiri,16,8,Train
+Team2,Dignitas,Gen.G,14,16,Train
+Team1,Gen.G,Dignitas,16,12,Nuke
+Team1,mousesports,FaZe,9,16,Nuke
+Team2,FaZe,mousesports,14,16,Train
+Team2,FaZe,mousesports,12,16,Dust2
+Team1,MIBR,Orgless,19,17,Inferno
+Team2,Orgless,MIBR,10,16,Overpass
+Team1,Liquid,100 Thieves,19,16,Vertigo
+Team2,100 Thieves,Liquid,14,16,Mirage
+Team1,AA,Station7,16,11,Overpass
+Team1,Station7,AA,16,12,Mirage
+Team2,AA,Station7,16,2,Dust2
+Team2,9z,Imperial,12,16,Inferno
+Team2,Imperial,9z,17,19,Train
+Team1,9z,Imperial,7,16,Overpass
+Team2,Rysix,Neverest,16,9,Vertigo
+Team1,Rysix,Neverest,16,11,Dust2
+Team2,Faint,ETHEREAL,10,16,Mirage
+Team1,ETHEREAL,Faint,4,16,Nuke
+Team1,ETHEREAL,Faint,5,16,Overpass
+Team1,Buffdaddy's Paypal,Polar Ace,16,12,Inferno
+Team2,Buffdaddy's Paypal,Polar Ace,16,5,Mirage
+Team2,Trivium,Serac,14,16,Vertigo
+Team1,Trivium,Serac,16,14,Overpass
+Team1,Trivium,Serac,16,11,Inferno
+Team2,rozu,Incept,11,16,Dust2
+Team1,rozu,Incept,8,16,Mirage
+Team2,Mako,Esper,16,7,Vertigo
+Team2,Esper,Mako,11,16,Nuke
+Team2,Akatsuki,NoSurrender,16,6,Mirage
+Team1,NoSurrender,Akatsuki,19,17,Vertigo
+Team1,NoSurrender,Akatsuki,16,14,Dust2
+Team1,NoSurrender,Akatsuki,2,16,Nuke
+Team2,NoSurrender,Akatsuki,10,16,Train
+Team1,Esper,rozu,7,16,Mirage
+Team2,rozu,Esper,13,16,Vertigo
+Team1,rozu,Esper,16,14,Train
+Team1,mousesports,OG,19,16,Mirage
+Team2,OG,mousesports,16,5,Train
+Team2,OG,mousesports,16,2,Inferno
+Team1,1WIN,Hard Legion,7,16,Mirage
+Team2,Hard Legion,1WIN,16,6,Overpass
+Team1,1WIN,Hard Legion,7,16,Train
+Team1,SKADE,Prima,8,16,Train
+Team1,Prima,SKADE,6,16,Inferno
+Team1,SKADE,Prima,16,10,Overpass
+Team1,G2,FaZe,16,14,Nuke
+Team1,FaZe,G2,16,11,Dust2
+Team1,G2,FaZe,16,12,Train
+Team2,Vexed,Salamander,12,16,Train
+Team2,Salamander,Vexed,11,16,Overpass
+Team1,Vexed,Salamander,8,16,Mirage
+Team2,Chaos,MAD Lions,14,16,Dust2
+Team2,Chaos,MAD Lions,10,16,Nuke
+Team1,Liquid,FURIA,16,10,Nuke
+Team1,FURIA,Liquid,16,11,Inferno
+Team1,FURIA,Liquid,16,13,Mirage
+Team2,FunPlus Phoenix,c0ntact,16,9,Train
+Team1,c0ntact,FunPlus Phoenix,16,14,Inferno
+Team2,FunPlus Phoenix,c0ntact,12,16,Dust2
+Team2,Rysix,ex-UP,15,19,Overpass
+Team1,ex-UP,Rysix,16,10,Inferno
+Team1,AA,Yeah,8,16,Inferno
+Team2,Yeah,AA,15,19,Dust2
+Team2,AA,Yeah,16,4,Mirage
+Team2,Yeah,AA,16,8,Overpass
+Team2,Asterius,ex-UP,13,16,Vertigo
+Team2,ex-UP,Asterius,16,7,Inferno
+Team2,timbermen,Big Chillin,16,9,Train
+Team1,Big Chillin,timbermen,16,13,Mirage
+Team2,Big Chillin,timbermen,10,16,Dust2
+Team1,FaZe,Virtus.pro,16,11,Overpass
+Team2,Virtus.pro,FaZe,13,16,Mirage
+Team2,Swole Patrol,Evil Geniuses,14,16,Vertigo
+Team2,Swole Patrol,Evil Geniuses,10,16,Inferno
+Team2,FURIA,MIBR,16,4,Train
+Team2,MIBR,FURIA,16,6,Inferno
+Team1,MIBR,FURIA,8,16,Mirage
+Team1,bloo,wea,16,13,Train
+Team2,timbermen,bloo,12,16,Overpass
+Team2,Trivium,ETHEREAL,13,16,Vertigo
+Team1,Trivium,ETHEREAL,16,11,Mirage
+Team2,ETHEREAL,Trivium,16,6,Overpass
+Team2,Espada,Tricked,16,8,Dust2
+Team1,Espada,Tricked,16,14,Train
+Team1,G2,OG,7,16,Mirage
+Team2,OG,G2,16,8,Dust2
+Team2,ALTERNATE aTTaX,Endpoint,16,7,Mirage
+Team1,mousesports,Virtus.pro,16,12,Vertigo
+Team2,Virtus.pro,mousesports,12,16,Train
+Team1,Endpoint,ALTERNATE aTTaX,22,19,Overpass
+Team1,Endpoint,ALTERNATE aTTaX,19,17,Vertigo
+Team2,Cloud9,Copenhagen Flames,16,8,Dust2
+Team1,Cloud9,Copenhagen Flames,22,19,Overpass
+Team2,SKADE,Salamander,12,16,Train
+Team2,SKADE,Salamander,17,19,Dust2
+Team2,HAVU,Envy,16,7,Mirage
+Team1,Envy,HAVU,6,16,Dust2
+Team2,100 Thieves,MIBR,12,16,Train
+Team1,MIBR,100 Thieves,16,14,Inferno
+Team2,i sleep,Paradox,16,8,Dust2
+Team1,Paradox,i sleep,7,16,Nuke
+Team2,mousesports,TYLOO,16,7,Mirage
+Team2,TYLOO,mousesports,13,16,Train
+Team2,SKADE,Pompa,14,16,Mirage
+Team1,Pompa,SKADE,3,16,Inferno
+Team1,Pompa,SKADE,6,16,Train
+Team2,G2,Virtus.pro,16,6,Mirage
+Team2,G2,Virtus.pro,16,8,Dust2
+Team1,Tricked,SKADE,22,18,Nuke
+Team1,SKADE,Tricked,16,10,Mirage
+Team1,Tricked,SKADE,8,16,Dust2
+Team1,Orgless,Dignitas,16,10,Nuke
+Team1,Dignitas,Orgless,16,11,Inferno
+Team2,Orgless,Dignitas,15,19,Train
+Team2,Goliath,Big 5,16,6,Nuke
+Team1,Big 5,Goliath,5,16,Mirage
+Team1,Evil Geniuses,FURIA,8,16,Mirage
+Team2,FURIA,Evil Geniuses,14,16,Train
+Team1,Evil Geniuses,FURIA,16,13,Nuke
+Team1,MIBR,Gen.G,8,16,Dust2
+Team2,Gen.G,MIBR,13,16,Vertigo
+Team2,Gen.G,MIBR,12,16,Train
+Team1,Red Feet,Asterius,8,16,Vertigo
+Team1,Red Feet,Asterius,5,16,Mirage
+Team1,ETHEREAL,bloo,16,13,Inferno
+Team1,bloo,wea,16,11,Overpass
+Team1,bloo,wea,16,12,Nuke
+Team2,Buffdaddy's Paypal,Faint,16,8,Nuke
+Team1,Faint,Buffdaddy's Paypal,9,16,Mirage
+Team1,VERTEX,Rooster,16,14,Inferno
+Team1,Rooster,VERTEX,16,12,Mirage
+Team2,VERTEX,Rooster,13,16,Overpass
+Team2,BLUEJAYS,Mustang Crew,16,5,Vertigo
+Team2,Mustang Crew,BLUEJAYS,14,16,Mirage
+Team1,OG,Virtus.pro,19,17,Dust2
+Team2,OG,Virtus.pro,10,16,Overpass
+Team2,OG,Virtus.pro,13,16,Inferno
+Team2,Singularity,Secret,10,16,Nuke
+Team2,Secret,Singularity,10,16,Mirage
+Team1,Singularity,Secret,8,16,Inferno
+Team2,SKADE,Espada,17,19,Nuke
+Team2,Espada,SKADE,13,16,Overpass
+Team2,Espada,SKADE,13,16,Train
+Team1,SKADE,Espada,16,13,Mirage
+Team1,Chaos,FunPlus Phoenix,16,11,Inferno
+Team2,FunPlus Phoenix,Chaos,16,9,Nuke
+Team2,Chaos,FunPlus Phoenix,12,16,Train
+Team1,Swole Patrol,FURIA,16,12,Vertigo
+Team2,Swole Patrol,FURIA,16,7,Nuke
+Team1,ALTERNATE aTTaX,Salamander,16,14,Train
+Team2,ALTERNATE aTTaX,Salamander,16,3,Vertigo
+Team1,MIBR,Evil Geniuses,16,14,Vertigo
+Team2,MIBR,Evil Geniuses,13,16,Dust2
+Team2,Evil Geniuses,MIBR,16,8,Inferno
+Team2,c0ntact,MAD Lions,12,16,Nuke
+Team1,MAD Lions,c0ntact,28,24,Mirage
+Team1,Faint,bloo,7,16,Overpass
+Team1,bloo,wea,16,13,Nuke
+Team1,Singularity,Mustang Crew,16,12,Vertigo
+Team2,Singularity,Mustang Crew,14,16,Nuke
+Team1,Singularity,Mustang Crew,19,15,Dust2
+Team1,BLUEJAYS,Secret,8,16,Overpass
+Team2,Secret,BLUEJAYS,16,6,Train
+Team2,Apeks,Tricked,16,8,Vertigo
+Team2,Apeks,Tricked,16,7,Inferno
+Team1,Unique,FATE,19,16,Overpass
+Team1,FATE,Unique,3,16,Dust2
+Team2,Virtus.pro,TYLOO,16,8,Inferno
+Team2,Virtus.pro,TYLOO,16,4,Vertigo
+Team2,FaZe,OG,16,7,Dust2
+Team1,OG,FaZe,7,16,Nuke
+Team2,mousesports,G2,16,9,Nuke
+Team2,G2,mousesports,11,16,Train
+Team1,MIBR,Swole Patrol,16,12,Vertigo
+Team1,Swole Patrol,MIBR,5,16,Inferno
+Team1,100 Thieves,FURIA,4,16,Mirage
+Team1,FURIA,100 Thieves,5,16,Vertigo
+Team1,FURIA,100 Thieves,16,12,Nuke
+Team2,Liquid,Evil Geniuses,14,16,Dust2
+Team1,Liquid,Evil Geniuses,16,13,Nuke
+Team2,Evil Geniuses,Liquid,19,22,Inferno
+Team2,Ground Zero,Airborne,10,16,Overpass
+Team2,Airborne,Ground Zero,10,16,Nuke
+Team1,Ground Zero,Airborne,9,16,Inferno
+Team1,Ground Zero,Rooster,16,14,Mirage
+Team1,Rooster,Ground Zero,16,11,Dust2
+Team1,Ground Zero,Rooster,16,12,Inferno
+Team2,Ground Zero,Airborne,12,16,Dust2
+Team2,Airborne,Ground Zero,10,16,Mirage
+Team2,Ground Zero,Airborne,16,6,Inferno
+Team2,Airborne,Ground Zero,12,16,Vertigo
+Team2,BLUEJAYS,Singularity,22,25,Mirage
+Team2,Singularity,BLUEJAYS,13,16,Inferno
+Team2,BLUEJAYS,Singularity,11,16,Dust2
+Team2,FaZe,forZe,16,4,Inferno
+Team2,forZe,FaZe,10,16,Nuke
+Team1,Secret,Singularity,8,16,Dust2
+Team2,Singularity,Secret,13,16,Mirage
+Team1,Singularity,Secret,4,16,Nuke
+Team1,fnatic,NiP,2,16,Overpass
+Team1,NiP,fnatic,5,16,Mirage
+Team1,NiP,fnatic,5,16,Train
+Team2,Cloud9,Envy,16,8,Train
+Team1,Envy,Cloud9,16,13,Inferno
+Team1,Cloud9,Envy,16,12,Dust2
+Team2,Dignitas,Gen.G,13,16,Dust2
+Team1,Gen.G,Dignitas,16,11,Inferno
+Team2,Vitality,OG,16,4,Inferno
+Team1,OG,Vitality,16,12,Nuke
+Team2,Vitality,OG,12,16,Dust2
+Team1,c0ntact,FunPlus Phoenix,7,16,Dust2
+Team2,c0ntact,FunPlus Phoenix,16,3,Inferno
+Team1,FunPlus Phoenix,c0ntact,16,11,Nuke
+Team2,AVANT,Airborne,16,7,Mirage
+Team2,AVANT,Airborne,16,3,Dust2
+Team1,ORDER,Ground Zero,16,11,Mirage
+Team2,ORDER,Ground Zero,13,16,Vertigo
+Team2,ORDER,Ground Zero,16,6,Inferno
+Team1,ORDER,AVANT,16,13,Dust2
+Team2,AVANT,ORDER,16,7,Mirage
+Team1,ORDER,AVANT,8,16,Train
+Team2,AVANT,ORDER,16,6,Inferno
+Team2,Heretics,Nordavind,10,16,Inferno
+Team2,Nordavind,Heretics,12,16,Mirage
+Team2,Heretics,Nordavind,16,6,Vertigo
+Team1,fnatic,FaZe,8,16,Mirage
+Team2,FaZe,fnatic,11,16,Overpass
+Team1,FaZe,fnatic,6,16,Inferno
+Team1,AGO,Secret,7,16,Nuke
+Team1,Secret,AGO,16,14,Mirage
+Team1,Blink,TRTRR,16,12,Mirage
+Team1,Blink,TRTRR,16,11,Train
+Team1,HAVU,Cloud9,19,15,Vertigo
+Team1,Cloud9,HAVU,5,16,Mirage
+Team1,Natus Vincere,Astralis,5,16,Inferno
+Team2,Astralis,Natus Vincere,10,16,Dust2
+Team1,Astralis,Natus Vincere,8,16,Train
+Team1,FunPlus Phoenix,MAD Lions,6,16,Dust2
+Team2,FunPlus Phoenix,MAD Lions,10,16,Nuke
+Team1,mousesports,OG,16,14,Nuke
+Team2,OG,mousesports,11,16,Train
+Team2,MIBR,Gen.G,16,7,Dust2
+Team2,Gen.G,MIBR,15,19,Mirage
+Team2,Buffdaddy's Paypal,bloo,13,16,Inferno
+Team1,Buffdaddy's Paypal,bloo,8,16,Dust2
+Team1,Buffdaddy's Paypal,bloo,16,14,Overpass
+Team1,bloo,wea,8,16,Nuke
+Team1,SKADE,Nemiga,16,10,Nuke
+Team2,SKADE,Nemiga,15,19,Inferno
+Team2,Nemiga,SKADE,14,16,Dust2
+Team2,Movistar Riders,NAVI Junior,16,6,Mirage
+Team1,NAVI Junior,Movistar Riders,6,16,Overpass
+Team2,Astralis,fnatic,13,16,Dust2
+Team2,fnatic,Astralis,11,16,Nuke
+Team1,fnatic,Astralis,16,14,Inferno
+Team2,Gambit Youngsters,SMASH,14,16,Mirage
+Team1,Gambit Youngsters,SMASH,16,12,Dust2
+Team1,SMASH,Gambit Youngsters,9,16,Overpass
+Team1,ALTERNATE aTTaX,Endpoint,16,13,Dust2
+Team1,Endpoint,ALTERNATE aTTaX,8,16,Overpass
+Team1,ALTERNATE aTTaX,Endpoint,16,10,Inferno
+Team2,Mustang Crew,Hard Legion,10,16,Train
+Team1,Mustang Crew,Hard Legion,6,16,Dust2
+Team1,Natus Vincere,OG,7,16,Inferno
+Team2,OG,Natus Vincere,12,16,Overpass
+Team2,OG,Natus Vincere,13,16,Dust2
+Team2,mousesports,FaZe,16,4,Nuke
+Team2,FaZe,mousesports,16,9,Train
+Team2,FaZe,mousesports,12,16,Dust2
+Team2,Big Chillin,Serac,11,16,Vertigo
+Team2,Serac,Big Chillin,11,16,Inferno
+Team1,Big Chillin,Serac,7,16,Mirage
+Team2,Lynn Vision,Invictus,10,16,Train
+Team2,Invictus,Lynn Vision,14,16,Mirage
+Team1,Lynn Vision,Invictus,16,14,Inferno
+Team2,pro100,Sprout,11,16,Dust2
+Team1,pro100,Sprout,5,16,Mirage
+Team2,SMASH,Spirit,16,5,Inferno
+Team1,BIG,Syman,16,10,Vertigo
+Team1,fnatic,OG,16,12,Inferno
+Team1,OG,fnatic,19,15,Mirage
+Team2,fnatic,OG,13,16,Dust2
+Team2,Endpoint,Illuminar,16,8,Vertigo
+Team2,Endpoint,Illuminar,14,16,Mirage
+Team1,Illuminar,Endpoint,8,16,Train
+Team2,BIG,SMASH,16,7,Inferno
+Team1,SMASH,BIG,2,16,Dust2
+Team1,NAVI Junior,Mustang Crew,19,15,Train
+Team1,Mustang Crew,NAVI Junior,9,16,Dust2
+Team1,Syman,Spirit,16,12,Train
+Team2,Syman,Spirit,12,16,Overpass
+Team1,Syman,Spirit,7,16,Mirage
+Team1,FATE,Tricked,7,16,Mirage
+Team2,Tricked,FATE,11,16,Inferno
+Team2,Tricked,FATE,11,16,Train
+Team2,Natus Vincere,mousesports,11,16,Nuke
+Team2,mousesports,Natus Vincere,16,9,Dust2
+Team1,Hard Legion,Movistar Riders,9,16,Overpass
+Team1,Movistar Riders,Hard Legion,7,16,Train
+Team2,Hard Legion,Movistar Riders,10,16,Inferno
+Team1,Casa de Papel,mYinsanity,22,19,Overpass
+Team2,mYinsanity,Casa de Papel,10,16,Inferno
+Team2,KINGZZZ,Red Instinct,10,16,Dust2
+Team1,KINGZZZ,Red Instinct,3,16,Inferno
+Team1,Spirit,SMASH,4,16,Inferno
+Team1,SMASH,Spirit,5,16,Nuke
+Team1,SMASH,Spirit,5,16,Mirage
+Team1,Astralis,FaZe,19,17,Nuke
+Team1,FaZe,Astralis,4,16,Overpass
+Team2,Faint,ETHEREAL,12,16,Mirage
+Team1,ETHEREAL,Faint,22,18,Nuke
+Team2,Thunder Logic,Serac,12,16,Mirage
+Team2,Serac,Thunder Logic,13,16,Overpass
+Team2,Thunder Logic,Serac,13,16,Nuke
+Team1,Rebel,bloo,19,17,Overpass
+Team1,bloo,wea,16,11,Train
+Team2,bloo,wea,16,7,Nuke
+Team1,In The Lab,Trivium,16,10,Mirage
+Team2,Trivium,In The Lab,14,16,Train
+Team2,Espada,Winstrike,16,9,Mirage
+Team2,Espada,Winstrike,11,16,Train
+Team2,Espada,Winstrike,12,16,Dust2
+Team1,SKADE,Singularity,16,10,Nuke
+Team1,Nordavind,Heretics,4,16,Dust2
+Team1,Heretics,Nordavind,16,13,Inferno
+Team1,AGO,Endpoint,25,21,Train
+Team2,mousesports,fnatic,13,16,Inferno
+Team2,fnatic,mousesports,16,7,Nuke
+Team1,SMASH,Syman,9,16,Train
+Team1,Syman,SMASH,16,11,Inferno
+Team1,Japaleno,Hard Legion,16,13,Overpass
+Team1,Japaleno,Hard Legion,16,14,Mirage
+Team1,AGO,SKADE,16,10,Nuke
+Team2,AGO,SKADE,12,16,Train
+Team1,AGO,SKADE,9,16,Mirage
+Team2,Natus Vincere,FaZe,12,16,Mirage
+Team2,FaZe,Natus Vincere,13,16,Train
+Team2,FaZe,Natus Vincere,13,16,Nuke
+Team1,Endpoint,Singularity,16,11,Vertigo
+Team1,Endpoint,Singularity,16,11,Dust2
+Team1,Endpoint,AGO,16,10,Vertigo
+Team1,Endpoint,AGO,16,12,Train
+Team1,OG,Astralis,8,16,Dust2
+Team2,OG,Astralis,10,16,Overpass
+Team2,AA,ETHEREAL,12,16,Overpass
+Team2,AA,ETHEREAL,13,16,Dust2
+Team2,Infinity,Serac,11,16,Nuke
+Team2,Infinity,Serac,16,6,Inferno
+Team1,Infinity,Serac,16,12,Overpass
+Team1,New England Whalers,bloo,16,13,Dust2
+Team1,bloo,wea,8,16,Nuke
+Team1,Oceanus,In The Lab,9,16,Mirage
+Team1,In The Lab,Oceanus,9,16,Nuke
+Team1,In The Lab,Oceanus,6,16,Train
+Team1,AA,Rebel,16,12,Mirage
+Team1,AA,Rebel,16,12,Dust2
+Team1,Thunder Logic,In The Lab,16,12,Mirage
+Team2,In The Lab,Thunder Logic,11,16,Train
+Team2,Faint,bloo,13,16,Dust2
+Team1,bloo,wea,16,14,Nuke
+Team2,Trivium,Serac,12,16,Overpass
+Team2,Serac,Trivium,11,16,Mirage
+Team1,Trivium,Serac,16,12,Vertigo
+Team2,VERTEX,i sleep,20,22,Nuke
+Team2,i sleep,VERTEX,12,16,Inferno
+Team2,VERTEX,i sleep,16,4,Dust2
+Team2,Gambit Youngsters,Heretics,12,16,Vertigo
+Team1,Heretics,Gambit Youngsters,16,13,Dust2
+Team1,Movistar Riders,Japaleno,4,16,Overpass
+Team2,North,Sprout,16,6,Nuke
+Team2,Endpoint,SKADE,15,19,Dust2
+Team2,Endpoint,SKADE,15,19,Inferno
+Team2,Syman,Heretics,1,16,Vertigo
+Team1,Heretics,Syman,22,20,Overpass
+Team1,Japaleno,North,8,16,Vertigo
+Team1,North,Japaleno,9,16,Overpass
+Team2,Japaleno,North,10,16,Dust2
+Team2,SMASH,Nordavind,12,16,Overpass
+Team2,Nordavind,SMASH,16,3,Inferno
+Team1,mousesports,Astralis,3,16,Inferno
+Team2,mousesports,Astralis,1,16,Dust2
+Team1,Movistar Riders,Sprout,7,16,Vertigo
+Team1,Sprout,Movistar Riders,16,13,Mirage
+Team1,FaZe,OG,16,13,Inferno
+Team2,OG,FaZe,12,16,Mirage
+Team2,Natus Vincere,fnatic,13,16,Inferno
+Team2,fnatic,Natus Vincere,16,9,Nuke
+Team2,FunPlus Phoenix,MAD Lions,14,16,Nuke
+Team1,FunPlus Phoenix,MAD Lions,2,16,Dust2
+Team2,Casa de Papel,KINGZZZ,16,9,Dust2
+Team2,KINGZZZ,Casa de Papel,11,16,Inferno
+Team1,Japaleno,Sprout,8,16,Mirage
+Team1,Sprout,Japaleno,19,15,Inferno
+Team2,Gen.G,Cloud9,17,19,Vertigo
+Team1,Cloud9,Gen.G,16,13,Nuke
+Team2,FURIA,MIBR,16,4,Vertigo
+Team2,MIBR,FURIA,14,16,Mirage
+Team1,AA,Trivium,9,16,Vertigo
+Team1,AA,Trivium,16,12,Dust2
+Team1,Trivium,AA,16,13,Mirage
+Team2,bloo,wea,12,16,Dust2
+Team1,bloo,wea,19,16,Overpass
+Team1,Thunder Logic,bloo,8,16,Nuke
+Team2,Virtus.pro,Gambit Youngsters,11,16,Overpass
+Team1,Sprout,Japaleno,19,16,Inferno
+Team2,Japaleno,Sprout,12,16,Train
+Team1,forZe,Nordavind,16,12,Mirage
+Team2,Gambit Youngsters,forZe,10,16,Inferno
+Team1,Gambit Youngsters,forZe,6,16,Dust2
+Team1,Winstrike,Secret,16,10,Train
+Team2,Winstrike,Secret,14,16,Mirage
+Team2,Winstrike,Secret,16,5,Nuke
+Team2,NAVI Junior,Hard Legion,12,16,Dust2
+Team1,NAVI Junior,Hard Legion,16,13,Overpass
+Team2,Hard Legion,NAVI Junior,14,16,Inferno
+Team2,Nordavind,Virtus.pro,12,16,Vertigo
+Team2,Nordavind,Virtus.pro,12,16,Mirage
+Team2,HAVU,Chaos,16,3,Overpass
+Team1,Chaos,HAVU,8,16,Train
+Team1,Gambit Youngsters,Virtus.pro,4,16,Dust2
+Team1,Gambit Youngsters,Virtus.pro,16,14,Vertigo
+Team2,Gambit Youngsters,Virtus.pro,10,16,Train
+Team2,MIBR,Orgless,16,8,Inferno
+Team1,Orgless,MIBR,19,17,Overpass
+Team1,Orgless,MIBR,6,16,Dust2
+Team1,Liquid,Evil Geniuses,16,14,Nuke
+Team1,Liquid,Evil Geniuses,16,12,Dust2
+Team1,Syman,Nordavind,16,11,Overpass
+Team2,Nordavind,Syman,20,22,Inferno
+Team2,Virtus.pro,BIG,16,19,Overpass
+Team2,Virtus.pro,BIG,19,22,Mirage
+Team2,Nordavind,AGO,16,6,Nuke
+Team2,AGO,Nordavind,16,9,Mirage
+Team2,AGO,Nordavind,12,16,Inferno
+Team1,Syman,Movistar Riders,7,16,Overpass
+Team1,Movistar Riders,Syman,16,13,Train
+Team2,SKADE,Sprout,11,16,Mirage
+Team2,SKADE,Sprout,12,16,Inferno
+Team2,NAVI Junior,Heretics,11,16,Vertigo
+Team1,Heretics,NAVI Junior,16,12,Mirage
+Team1,pro100,Nemiga,19,17,Dust2
+Team1,pro100,Nemiga,6,16,Vertigo
+Team2,Nemiga,pro100,16,7,Mirage
+Team2,Endpoint,North,14,16,Vertigo
+Team1,North,Endpoint,16,13,Train
+Team1,mousesports,Astralis,19,17,Dust2
+Team1,mousesports,Astralis,5,16,Inferno
+Team2,Astralis,mousesports,12,16,Nuke
+Team2,FunPlus Phoenix,Gen.G,14,16,Mirage
+Team1,Gen.G,FunPlus Phoenix,16,10,Inferno
+Team1,forZe,Spirit,19,17,Inferno
+Team1,Spirit,forZe,16,13,Dust2
+Team2,Spirit,forZe,16,7,Mirage
+Team2,Chaos,Orgless,17,19,Train
+Team2,Orgless,Chaos,16,8,Inferno
+Team2,FURIA,Evil Geniuses,10,16,Vertigo
+Team2,FURIA,Evil Geniuses,14,16,Inferno
+Team1,Espada,Hard Legion,9,16,Inferno
+Team1,Hard Legion,Espada,25,22,Mirage
+Team2,Heretics,Movistar Riders,16,9,Overpass
+Team2,Movistar Riders,Heretics,11,16,Vertigo
+Team2,BIG,Sprout,16,8,Mirage
+Team1,Sprout,BIG,4,16,Vertigo
+Team2,Illuminar,SMASH,13,16,Mirage
+Team1,Illuminar,SMASH,16,12,Nuke
+Team2,SMASH,Illuminar,14,16,Overpass
+Team2,mousesports,fnatic,11,16,Overpass
+Team1,fnatic,mousesports,7,16,Dust2
+Team1,mousesports,fnatic,16,11,Vertigo
+Team1,fnatic,mousesports,16,1,Nuke
+Team1,fnatic,mousesports,16,12,Mirage
+Team2,North,Spirit,15,19,Dust2
+Team1,Spirit,North,16,10,Inferno
+Team2,Prima,Apeks,14,16,Overpass
+Team2,Apeks,Prima,14,16,Vertigo
+Team2,Apeks,Prima,14,16,Dust2
+Team1,MAD Lions,Cloud9,25,23,Inferno
+Team1,Cloud9,MAD Lions,7,16,Nuke
+Team2,Spirit,BIG,14,16,Dust2
+Team2,BIG,Spirit,10,16,Inferno
+Team2,BIG,Spirit,16,4,Mirage
+Team2,HAVU,MIBR,16,8,Vertigo
+Team1,MIBR,HAVU,19,17,Dust2
+Team2,MIBR,HAVU,16,3,Train
+Team1,Liquid,Evil Geniuses,16,11,Dust2
+Team2,Liquid,Evil Geniuses,16,9,Vertigo
+Team2,Invictus,TIGER,14,16,Train
+Team1,pro100,AGO,9,16,Dust2
+Team1,AGO,pro100,5,16,Mirage
+Team2,pro100,AGO,16,6,Inferno
+Team1,ZIGMA,BTRG,22,20,Inferno
+Team2,BTRG,ZIGMA,16,7,Mirage
+Team2,BTRG,ZIGMA,12,16,Train
+Team1,Heretics,Sprout,16,13,Vertigo
+Team2,Heretics,Sprout,13,16,Mirage
+Team1,Heretics,Sprout,4,16,Nuke
+Team2,Wisla Krakow,TheDice,16,7,Nuke
+Team1,TheDice,Wisla Krakow,4,16,Mirage
+Team2,Salamander,ttc,13,16,Mirage
+Team1,ttc,Salamander,5,16,Nuke
+Team1,Salamander,ttc,16,11,Inferno
+Team1,Turkey5,Ambush,16,10,Dust2
+Team2,Turkey5,Ambush,10,16,Overpass
+Team1,Ambush,Turkey5,16,13,Train
+Team2,SKADE,FATE,16,19,Train
+Team1,FATE,SKADE,9,16,Mirage
+Team1,SKADE,FATE,16,12,Dust2
+Team2,Endpoint,OFFSET,16,6,Inferno
+Team2,OFFSET,Endpoint,1,16,Dust2
+Team2,Vexed,Unique,16,5,Dust2
+Team2,Unique,Vexed,10,16,Vertigo
+Team2,HAVU,Gen.G,20,22,Mirage
+Team1,Gen.G,HAVU,7,16,Dust2
+Team2,HAVU,Gen.G,16,6,Nuke
+Team1,Unique,OFFSET,19,17,Inferno
+Team2,OFFSET,Unique,14,16,Nuke
+Team1,Wisla Krakow,Prima,16,14,Train
+Team1,Prima,Wisla Krakow,16,10,Mirage
+Team1,Wisla Krakow,Prima,16,13,Dust2
+Team2,Endpoint,Vexed,12,16,Overpass
+Team1,Vexed,Endpoint,6,16,Vertigo
+Team2,Endpoint,Vexed,16,6,Dust2
+Team2,Apeks,TheDice,14,16,Dust2
+Team1,TheDice,Apeks,7,16,Overpass
+Team2,Apeks,TheDice,16,5,Mirage
+Team1,Ambush,Reason,16,11,Inferno
+Team2,Reason,Ambush,14,16,Train
+Team2,Salamander,SKADE,14,16,Inferno
+Team2,SKADE,Salamander,10,16,Train
+Team2,Salamander,SKADE,10,16,Mirage
+Team2,FATE,ttc,16,7,Mirage
+Team2,ttc,FATE,10,16,Overpass
+Team2,Cloud9,Orgless,14,16,Nuke
+Team2,Orgless,Cloud9,10,16,Train
+Team1,Cloud9,Orgless,16,11,Inferno
+Team1,Isurus,DETONA,16,11,Train
+Team2,DETONA,Isurus,16,9,Inferno
+Team1,Bravos,Alma,16,11,Inferno
+Team2,Alma,Bravos,16,7,Overpass
+Team1,Invictus,ZIGMA,9,16,Mirage
+Team2,ZIGMA,Invictus,16,9,Inferno
+Team1,Nemiga,Hard Legion,19,17,Vertigo
+Team2,Hard Legion,Nemiga,16,9,Overpass
+Team2,Nemiga,Hard Legion,14,16,Inferno
+Team2,Syman,Movistar Riders,16,9,Inferno
+Team2,Spirit,Virtus.pro,13,16,Train
+Team1,Virtus.pro,Syman,16,14,Overpass
+Team1,Syman,Virtus.pro,7,16,Inferno
+Team1,Japaleno,Nordavind,16,10,Overpass
+Team2,Japaleno,Nordavind,22,25,Mirage
+Team1,Nordavind,Japaleno,16,13,Inferno
+Team1,Movistar Riders,Spirit,5,16,Overpass
+Team1,Movistar Riders,Spirit,7,16,Mirage
+Team1,Prima,Turkey5,16,11,Dust2
+Team2,Turkey5,Prima,14,16,Vertigo
+Team1,Salamander,Unique,16,13,Nuke
+Team2,Unique,Salamander,14,16,Train
+Team1,Apeks,Reason,22,19,Mirage
+Team2,Reason,Apeks,14,16,Nuke
+Team1,Wisla Krakow,Endpoint,16,10,Dust2
+Team1,Endpoint,Wisla Krakow,16,13,Nuke
+Team1,Wisla Krakow,Endpoint,16,12,Train
+Team1,SKADE,Ambush,2,16,Overpass
+Team2,Ambush,SKADE,10,16,Inferno
+Team1,Ambush,SKADE,7,16,Nuke
+Team1,Vexed,FATE,9,16,Train
+Team2,FATE,Vexed,16,3,Overpass
+Team2,Cloud9,HAVU,11,16,Nuke
+Team2,HAVU,Cloud9,16,8,Vertigo
+Team2,Spirit,Syman,16,3,Dust2
+Team2,Spirit,Syman,16,6,Inferno
+Team2,Prima,FATE,11,16,Overpass
+Team1,Prima,FATE,8,16,Train
+Team1,Apeks,Salamander,16,10,Overpass
+Team2,Apeks,Salamander,25,28,Nuke
+Team1,Apeks,Salamander,16,10,Mirage
+Team2,MAD Lions,MIBR,13,16,Train
+Team2,MIBR,MAD Lions,11,16,Mirage
+Team1,MAD Lions,MIBR,5,16,Dust2
+Team2,Invictus,BTRG,16,8,Train
+Team2,Invictus,BTRG,16,4,Dust2
+Team2,Invictus,ZIGMA,16,8,Mirage
+Team1,ZIGMA,Invictus,16,12,Inferno
+Team2,Invictus,ZIGMA,16,5,Nuke
+Team1,ZIGMA,Invictus,16,11,Train
+Team1,ZIGMA,Invictus,7,16,Overpass
+Team1,Gambit Youngsters,Endpoint,16,10,Overpass
+Team2,Endpoint,Gambit Youngsters,11,16,Vertigo
+Team2,Sprout,forZe,11,16,Nuke
+Team1,Japaleno,Nordavind,6,16,Mirage
+Team1,Secret,Illuminar,16,14,Nuke
+Team1,Illuminar,Secret,6,16,Dust2
+Team2,forZe,Nordavind,14,16,Overpass
+Team2,Nordavind,forZe,10,16,Inferno
+Team2,forZe,Nordavind,12,16,Nuke
+Team2,Endpoint,Apeks,20,22,Overpass
+Team1,Apeks,Endpoint,9,16,Vertigo
+Team2,Apeks,Endpoint,11,16,Dust2
+Team1,Ambush,FATE,2,16,Train
+Team1,Ambush,FATE,16,14,Vertigo
+Team2,Ambush,FATE,13,16,Dust2
+Team1,Sprout,Japaleno,16,13,Mirage
+Team1,Japaleno,Sprout,8,16,Dust2
+Team2,forZe,Sprout,16,3,Mirage
+Team1,Sprout,forZe,7,16,Nuke
+Team2,RED Canids,W7M,10,16,Overpass
+Team2,W7M,RED Canids,15,19,Train
+Team2,Keyd,Soberano,16,9,Train
+Team1,Soberano,Keyd,5,16,Vertigo
+Team1,SKADE,Winstrike,9,16,Mirage
+Team1,SKADE,Winstrike,4,16,Dust2
+Team1,Nemiga,1WIN,7,16,Nuke
+Team2,1WIN,Nemiga,12,16,Mirage
+Team2,Nemiga,1WIN,16,5,Inferno
+Team1,SMASH,AGO,16,14,Dust2
+Team2,BIG,Singularity,16,9,Train
+Team1,SMASH,BIG,4,16,Inferno
+Team2,BIG,SMASH,11,16,Nuke
+Team2,BIG,SMASH,10,16,Mirage
+Team1,JiJieHao,D13,16,14,Train
+Team1,D13,JiJieHao,16,13,Mirage
+Team2,JiJieHao,D13,11,16,Nuke
+Team1,AGO,Singularity,16,10,Train
+Team2,Singularity,AGO,11,16,Nuke
+Team1,pro100,1WIN,16,14,Train
+Team1,1WIN,pro100,16,12,Mirage
+Team1,1WIN,pro100,6,16,Dust2
+Team2,BIG,AGO,10,16,Nuke
+Team1,AGO,BIG,7,16,Inferno
+Team2,AGO,BIG,10,16,Mirage
+Team2,trepunktnoll,sAw,10,16,Inferno
+Team2,Espada,Illuminar,16,9,Train
+Team1,Syman,Dignitas,8,16,Train
+Team2,Wisla Krakow,FATE,14,16,Train
+Team2,LDLC,TRVPREMESLO,16,2,Nuke
+Team1,AGF,Heretics,16,14,Inferno
+Team1,Spirit,100pinggods,16,1,Dust2
+Team1,AVEZ,Movistar Riders,16,13,Nuke
+Team1,Beyond,D13,16,12,Nuke
+Team1,D13,Beyond,16,13,Inferno
+Team1,Beyond,D13,16,11,Mirage
+Team2,Copenhagen Flames,Gambit Youngsters,16,6,Inferno
+Team1,JigadooD,w2c,16,10,Nuke
+Team2,w2c,JigadooD,12,16,Mirage
+Team2,Ground Zero,Heartless,16,3,Inferno
+Team2,Heartless,Ground Zero,16,8,Nuke
+Team2,Heartless,Ground Zero,13,16,Overpass
+Team1,ZIGMA,TIGER,16,12,Nuke
+Team2,TIGER,ZIGMA,14,16,Mirage
+Team1,Rooster,i sleep,16,10,Dust2
+Team1,i sleep,Rooster,9,16,Mirage
+Team1,SKADE,Endpoint,5,16,Inferno
+Team1,Copenhagen Flames,Endpoint,9,16,Train
+Team2,Endpoint,Copenhagen Flames,16,4,Dust2
+Team1,JiJieHao,Beyond,6,16,Overpass
+Team1,Beyond,JiJieHao,16,10,Mirage
+Team1,Gambit Youngsters,SKADE,16,13,Inferno
+Team1,SKADE,Gambit Youngsters,16,14,Train
+Team2,Gambit Youngsters,SKADE,14,16,Dust2
+Team1,Spirit,AGF,16,11,Inferno
+Team1,AGF,Spirit,5,16,Mirage
+Team1,AVEZ,sAw,16,13,Inferno
+Team1,sAw,AVEZ,7,16,Overpass
+Team2,Dignitas,LDLC,11,16,Dust2
+Team1,LDLC,Dignitas,16,13,Nuke
+Team2,Espada,FATE,12,16,Overpass
+Team1,Espada,FATE,9,16,Dust2
+Team1,Imperial,paiN,16,11,Inferno
+Team2,paiN,Imperial,10,16,Train
+Team1,Copenhagen Flames,SKADE,16,14,Dust2
+Team2,Copenhagen Flames,SKADE,16,7,Nuke
+Team2,New England Whalers,Orion,16,8,Mirage
+Team1,Orion,New England Whalers,4,16,Nuke
+Team2,Recon 5,bloo,16,9,Inferno
+Team2,bloo,wea,12,16,Nuke
+Team1,Triumph,ETHEREAL,16,14,Inferno
+Team1,ETHEREAL,Triumph,4,16,Nuke
+Team2,PDHM,Monstars,15,19,Nuke
+Team2,PDHM,Monstars,16,9,Inferno
+Team2,PDHM,Monstars,14,16,Mirage
+Team1,NOORG,Asterius,16,12,Mirage
+Team2,AVANT,Ground Zero,16,7,Nuke
+Team2,Ground Zero,AVANT,14,16,Dust2
+Team1,Copenhagen Flames,Spirit,16,10,Nuke
+Team2,Copenhagen Flames,Spirit,14,16,Dust2
+Team1,Copenhagen Flames,Spirit,16,11,Inferno
+Team2,Lucid Dream,JigadooD,16,9,Overpass
+Team2,JigadooD,Lucid Dream,10,16,Inferno
+Team1,Rooster,Chiefs,16,10,Nuke
+Team1,Chiefs,Rooster,16,11,Inferno
+Team1,forZe,LDLC,16,11,Nuke
+Team2,LDLC,forZe,14,16,Inferno
+Team1,Beyond,ZIGMA,6,16,Mirage
+Team1,ZIGMA,Beyond,16,11,Overpass
+Team2,BIG,Nordavind,16,3,Nuke
+Team1,BIG,Nordavind,16,12,Dust2
+Team2,SMASH,forZe,10,16,Mirage
+Team2,SMASH,forZe,12,16,Inferno
+Team2,OG,FATE,16,9,Overpass
+Team1,FATE,OG,3,16,Mirage
+Team2,GODSENT,AVEZ,16,6,Overpass
+Team1,AVEZ,GODSENT,16,14,Inferno
+Team1,AVEZ,GODSENT,8,16,Train
+Team1,Spirit,Virtus.pro,7,16,Dust2
+Team1,Spirit,Virtus.pro,16,13,Overpass
+Team1,Virtus.pro,Spirit,8,16,Train
+Team2,Endpoint,Syman,16,9,Overpass
+Team2,Endpoint,Syman,14,16,Dust2
+Team2,Endpoint,Syman,14,16,Train
+Team2,HAVU,MAD Lions,14,16,Dust2
+Team1,HAVU,MAD Lions,5,16,Mirage
+Team2,LDLC,AVEZ,11,16,Train
+Team1,AVEZ,LDLC,16,12,Nuke
+Team2,GODSENT,forZe,10,16,Inferno
+Team2,forZe,GODSENT,12,16,Overpass
+Team2,forZe,GODSENT,14,16,Nuke
+Team2,Virtus.pro,FATE,16,5,Train
+Team2,Virtus.pro,FATE,16,3,Dust2
+Team2,OG,Spirit,16,19,Nuke
+Team2,Spirit,OG,16,6,Inferno
+Team1,Monstars,Swole Patrol,8,16,Inferno
+Team1,Swole Patrol,Monstars,16,10,Overpass
+Team1,Cloud9,New England Whalers,16,11,Nuke
+Team2,New England Whalers,Cloud9,13,16,Train
+Team2,Envy,Recon 5,16,9,Nuke
+Team1,Recon 5,Envy,16,13,Inferno
+Team2,Envy,Recon 5,16,6,Train
+Team1,Bad News Bears,Triumph,6,16,Vertigo
+Team2,Triumph,Bad News Bears,10,16,Train
+Team1,Bad News Bears,Triumph,22,20,Mirage
+Team2,Recon 5,Monstars,16,6,Mirage
+Team1,Monstars,Recon 5,9,16,Nuke
+Team2,Swole Patrol,Envy,16,7,Inferno
+Team1,Envy,Swole Patrol,16,14,Overpass
+Team1,Swole Patrol,Envy,9,16,Nuke
+Team1,Triumph,New England Whalers,6,16,Nuke
+Team1,Cloud9,Bad News Bears,16,11,Train
+Team1,Bad News Bears,Cloud9,9,16,Overpass
+Team2,New England Whalers,Triumph,14,16,Train
+Team2,Triumph,New England Whalers,16,3,Overpass
+Team1,AVANT,Chiefs,16,13,Nuke
+Team1,Chiefs,AVANT,7,16,Train
+Team2,Lucid Dream,ZIGMA,10,16,Mirage
+Team2,ZIGMA,Lucid Dream,14,16,Train
+Team2,Lucid Dream,ZIGMA,16,8,Nuke
+Team2,Rooster,Ground Zero,16,19,Dust2
+Team1,Ground Zero,Rooster,9,16,Mirage
+Team1,Rooster,Ground Zero,16,13,Inferno
+Team1,Copenhagen Flames,BIG,7,16,Dust2
+Team1,Copenhagen Flames,BIG,4,16,Nuke
+Team2,Beyond,JigadooD,16,4,Mirage
+Team1,JigadooD,Beyond,9,16,Nuke
+Team1,SMASH,Syman,22,18,Mirage
+Team1,SMASH,Syman,16,14,Overpass
+Team1,forZe,Virtus.pro,16,10,Overpass
+Team1,Virtus.pro,forZe,16,11,Inferno
+Team2,Virtus.pro,forZe,14,16,Train
+Team2,GODSENT,Spirit,10,16,Inferno
+Team2,Spirit,GODSENT,12,16,Overpass
+Team2,GODSENT,Spirit,16,9,Dust2
+Team1,OG,AVEZ,16,11,Nuke
+Team1,AVEZ,OG,22,20,Dust2
+Team2,AVEZ,OG,12,16,Overpass
+Team1,Neverest,SWS,9,16,Inferno
+Team2,Neverest,SWS,16,9,Dust2
+Team2,Neverest,SWS,16,6,Mirage
+Team1,Ztayhome,Unique,22,20,Mirage
+Team2,Ztayhome,Unique,16,8,Dust2
+Team1,MIBR,MAD Lions,16,13,Mirage
+Team1,MAD Lions,MIBR,16,13,Inferno
+Team2,MIBR,MAD Lions,13,16,Train
+Team1,SMASH,BIG,7,16,Mirage
+Team2,BIG,SMASH,16,4,Dust2
+Team1,OG,forZe,16,11,Inferno
+Team2,forZe,OG,16,8,Mirage
+Team1,forZe,OG,16,10,Train
+Team1,Bad News Bears,Recon 5,19,17,Nuke
+Team1,Recon 5,Bad News Bears,5,16,Train
+Team1,Swole Patrol,Triumph,19,17,Inferno
+Team1,Triumph,Swole Patrol,3,16,Train
+Team2,Neverest,Asterius,12,16,Nuke
+Team2,Asterius,Neverest,13,16,Mirage
+Team2,Neverest,Asterius,16,8,Dust2
+Team2,Cloud9,Envy,14,16,Nuke
+Team1,Envy,Cloud9,5,16,Overpass
+Team1,Cloud9,Envy,16,14,Train
+Team1,Bad News Bears,Swole Patrol,16,11,Dust2
+Team2,Bad News Bears,Swole Patrol,16,8,Overpass
+Team1,NOORG,Neverest,8,16,Inferno
+Team1,Neverest,NOORG,6,16,Overpass
+Team2,Neverest,NOORG,11,16,Mirage
+Team2,Chiefs,Rooster,12,16,Mirage
+Team1,Rooster,Chiefs,4,16,Nuke
+Team2,Rooster,Chiefs,19,22,Inferno
+Team2,Gambit Youngsters,Nordavind,16,8,Dust2
+Team2,Nordavind,Gambit Youngsters,15,19,Mirage
+Team1,Beyond,ZIGMA,16,11,Nuke
+Team2,ZIGMA,Beyond,10,16,Train
+Team2,Heretics,SKADE,17,19,Inferno
+Team2,SKADE,Heretics,15,19,Dust2
+Team2,Heretics,SKADE,16,8,Nuke
+Team2,forZe,Spirit,13,16,Dust2
+Team1,Spirit,forZe,16,14,Inferno
+Team2,Bravos,RED Canids,13,16,Train
+Team1,RED Canids,Bravos,9,16,Overpass
+Team1,Bad News Bears,Envy,16,14,Dust2
+Team2,Bad News Bears,Envy,16,3,Overpass
+Team1,Isurus,W7M,19,17,Dust2
+Team2,Isurus,W7M,12,16,Mirage
+Team2,Japaleno,Nemiga,19,22,Overpass
+Team1,Japaleno,Nemiga,4,16,Vertigo
+Team1,Secret,Hard Legion,16,12,Overpass
+Team1,Secret,Hard Legion,6,16,Dust2
+Team1,Hard Legion,Secret,4,16,Train
+Team2,pro100,Espada,10,16,Dust2
+Team2,pro100,Espada,12,16,Mirage
+Team1,Endpoint,Illuminar,16,10,Mirage
+Team1,Illuminar,Endpoint,8,16,Inferno
+Team2,fnatic,ENCE,14,16,Dust2
+Team1,ENCE,fnatic,16,13,Mirage
+Team2,Astralis,Complexity,16,4,Vertigo
+Team1,Complexity,Astralis,16,13,Nuke
+Team1,Astralis,Complexity,16,11,Train
+Team2,Isurus,Imperial,14,16,Train
+Team2,Imperial,Isurus,13,16,Nuke
+Team1,Imperial,Isurus,9,16,Inferno
+Team2,BOOM,RED Canids,16,9,Nuke
+Team2,RED Canids,BOOM,16,7,Overpass
+Team1,BOOM,RED Canids,19,16,Mirage
+Team1,Vitality,NiP,16,14,Overpass
+Team1,NiP,Vitality,16,12,Nuke
+Team2,NiP,Vitality,16,4,Inferno
+Team1,Evil Geniuses,Orgless,16,13,Mirage
+Team1,Orgless,Evil Geniuses,6,16,Inferno
+Team1,Triumph,Cloud9,16,11,Vertigo
+Team1,Triumph,Cloud9,9,16,Inferno
+Team1,Triumph,Cloud9,16,14,Train
+Team2,100 Thieves,Gen.G,10,16,Mirage
+Team1,Gen.G,100 Thieves,16,10,Dust2
+Team2,Alma,Soberano,17,19,Dust2
+Team2,Soberano,Alma,13,16,Inferno
+Team2,Keyd,DETONA,15,19,Inferno
+Team1,DETONA,Keyd,4,16,Vertigo
+Team1,Espada,Endpoint,16,13,Dust2
+Team1,Endpoint,Espada,19,16,Mirage
+Team2,Endpoint,Espada,13,16,Inferno
+Team1,FaZe,North,16,11,Overpass
+Team1,North,FaZe,16,13,Inferno
+Team2,North,FaZe,11,16,Nuke
+Team2,Heretics,Dignitas,14,16,Dust2
+Team1,Heretics,Dignitas,16,12,Inferno
+Team2,Dignitas,Heretics,14,16,Nuke
+Team1,SKADE,Nordavind,16,13,Dust2
+Team1,SKADE,Nordavind,6,16,Nuke
+Team1,Nordavind,SKADE,19,16,Mirage
+Team2,BOOM,Imperial,16,2,Inferno
+Team2,BOOM,Imperial,16,3,Vertigo
+Team2,RED Canids,Isurus,16,7,Dust2
+Team1,Isurus,RED Canids,16,14,Mirage
+Team2,RED Canids,Isurus,13,16,Nuke
+Team2,GODSENT,G2,12,16,Dust2
+Team1,GODSENT,G2,6,16,Vertigo
+Team2,MIBR,Yeah,16,5,Dust2
+Team2,Yeah,MIBR,18,22,Mirage
+Team1,Liquid,Bad News Bears,16,10,Mirage
+Team2,Bad News Bears,Liquid,16,9,Nuke
+Team2,Bad News Bears,Liquid,13,16,Overpass
+Team2,FURIA,Envy,20,22,Nuke
+Team1,Envy,FURIA,9,16,Mirage
+Team2,FURIA,Envy,16,6,Inferno
+Team1,Hard Legion,Nemiga,5,16,Vertigo
+Team2,Hard Legion,Nemiga,14,16,Overpass
+Team2,mousesports,Movistar Riders,12,16,Inferno
+Team1,Movistar Riders,mousesports,19,17,Train
+Team1,c0ntact,Copenhagen Flames,16,12,Nuke
+Team1,Copenhagen Flames,c0ntact,19,17,Inferno
+Team2,Copenhagen Flames,c0ntact,16,3,Train
+Team2,NiP,Dignitas,16,9,Train
+Team1,Dignitas,NiP,4,16,Vertigo
+Team2,RED Canids,Imperial,12,16,Dust2
+Team1,Imperial,RED Canids,16,11,Train
+Team2,BOOM,Isurus,16,9,Inferno
+Team2,Isurus,BOOM,14,16,Mirage
+Team1,Cloud9,Orgless,8,16,Nuke
+Team2,100 Thieves,Evil Geniuses,11,16,Dust2
+Team1,Gen.G,Triumph,16,1,Vertigo
+Team1,Triumph,Gen.G,16,10,Dust2
+Team2,100 Thieves,Evil Geniuses,16,7,Inferno
+Team1,Evil Geniuses,100 Thieves,4,16,Nuke
+Team2,Gen.G,Triumph,16,8,Inferno
+Team2,Orgless,Cloud9,17,19,Overpass
+Team1,Cloud9,Orgless,16,10,Inferno
+Team1,DETONA Pound,9z,5,16,Nuke
+Team1,9z,DETONA Pound,16,13,Train
+Team2,fnatic,Astralis,16,9,Train
+Team1,Astralis,fnatic,19,16,Inferno
+Team2,Astralis,fnatic,12,16,Overpass
+Team2,Vitality,Complexity,16,19,Mirage
+Team1,Complexity,Vitality,8,16,Dust2
+Team1,Complexity,Vitality,3,16,Inferno
+Team1,Imperial,Isurus,19,16,Dust2
+Team2,Imperial,Isurus,10,16,Nuke
+Team2,Isurus,Imperial,16,8,Inferno
+Team2,Envy,Yeah,16,2,Mirage
+Team1,Yeah,Envy,2,16,Nuke
+Team1,FURIA,Bad News Bears,16,12,Inferno
+Team1,Bad News Bears,FURIA,8,16,Mirage
+Team2,MIBR,Liquid,12,16,Dust2
+Team2,MIBR,Liquid,13,16,Inferno
+Team1,ENCE,Heretics,5,16,Nuke
+Team2,Heretics,ENCE,16,6,Inferno
+Team2,mousesports,North,14,16,Vertigo
+Team1,North,mousesports,16,12,Mirage
+Team2,G2,FaZe,20,22,Mirage
+Team1,FaZe,G2,19,15,Dust2
+Team2,c0ntact,Movistar Riders,13,16,Nuke
+Team1,Movistar Riders,c0ntact,5,16,Mirage
+Team1,Movistar Riders,c0ntact,16,11,Train
+Team2,Nexus,LF Org,13,16,Train
+Team2,Nexus,LF Org,16,5,Dust2
+Team1,Nexus,LF Org,19,16,Mirage
+Team2,BOOM,Isurus,16,6,Nuke
+Team2,Isurus,BOOM,19,22,Mirage
+Team1,Thunder Logic,Keep the Comms Up,28,26,Nuke
+Team2,Keep the Comms Up,Thunder Logic,16,4,Mirage
+Team2,Keep the Comms Up,Thunder Logic,15,19,Overpass
+Team2,ETHEREAL,AA,16,7,Inferno
+Team2,AA,ETHEREAL,16,6,Overpass
+Team1,ETHEREAL,AA,9,16,Mirage
+Team2,Keyd,Alma,16,8,Mirage
+Team1,Keyd,Alma,8,16,Vertigo
+Team1,W7M,DETONA,16,14,Inferno
+Team1,W7M,DETONA,16,13,Dust2
+Team1,AA,Thunder Logic,16,10,Dust2
+Team2,AA,Thunder Logic,16,4,Overpass
+Team2,Chiefs,Mako,16,5,Vertigo
+Team1,really weird,Rooster,16,11,Dust2
+Team2,GODSENT,Copenhagen Flames,13,16,Inferno
+Team1,Copenhagen Flames,GODSENT,8,16,Dust2
+Team2,Copenhagen Flames,GODSENT,14,16,Nuke
+Team1,NiP,ENCE,22,19,Train
+Team1,ENCE,NiP,19,17,Overpass
+Team2,NiP,ENCE,16,5,Inferno
+Team1,fnatic,Dignitas,19,17,Train
+Team1,Dignitas,fnatic,25,22,Overpass
+Team2,fnatic,Dignitas,14,16,Dust2
+Team1,Nemiga,Wisla Krakow,16,12,Vertigo
+Team1,KOVA,Veto,16,12,Nuke
+Team2,KOVA,Veto,12,16,Dust2
+Team2,Veto,KOVA,11,16,Mirage
+Team1,Unicorns of Love,Endpoint,6,16,Dust2
+Team1,FaZe,Movistar Riders,9,16,Overpass
+Team1,Movistar Riders,FaZe,9,16,Mirage
+Team2,FaZe,Movistar Riders,16,7,Inferno
+Team1,Complexity,Heretics,7,16,Nuke
+Team2,Heretics,Complexity,14,16,Mirage
+Team1,Heretics,Complexity,22,18,Dust2
+Team1,Vitality,Astralis,7,16,Dust2
+Team1,Vitality,Astralis,5,16,Nuke
+Team1,Cloud9,Evil Geniuses,19,17,Dust2
+Team1,Cloud9,Evil Geniuses,8,16,Nuke
+Team2,Cloud9,Evil Geniuses,16,9,Overpass
+Team2,Triumph,100 Thieves,10,16,Dust2
+Team2,Triumph,100 Thieves,10,16,Vertigo
+Team1,Polar Ace,Keep the Comms Up,8,16,Mirage
+Team1,Keep the Comms Up,Polar Ace,16,10,Inferno
+Team1,AA,Big Frames,19,16,Mirage
+Team1,New England Whalers,Mythic,16,13,Overpass
+Team2,Keep the Comms Up,Thunder Logic,16,5,Overpass
+Team2,Thunder Logic,Keep the Comms Up,12,16,Nuke
+Team1,Rugratz,Warriors International,9,16,Overpass
+Team2,Infinity,Monstars,16,5,Dust2
+Team1,Chiefs,ORDER,7,16,Vertigo
+Team2,ORDER,Bantz,16,8,Dust2
+Team1,Overt,Forbidden,16,10,Dust2
+Team2,Bantz,PC419,16,6,Dust2
+Team2,GODSENT,North,16,9,Dust2
+Team2,GODSENT,North,11,16,Vertigo
+Team2,North,GODSENT,11,16,Nuke
+Team1,G2,Copenhagen Flames,6,16,Inferno
+Team2,Copenhagen Flames,G2,14,16,Dust2
+Team1,Copenhagen Flames,G2,5,16,Nuke
+Team2,mousesports,c0ntact,16,19,Inferno
+Team2,mousesports,c0ntact,16,2,Dust2
+Team1,mousesports,c0ntact,16,1,Train
+Team2,Demolition Crew,Nemiga,13,16,Nuke
+Team1,Vitality,Dignitas,16,13,Nuke
+Team2,Dignitas,Vitality,11,16,Dust2
+Team2,fnatic,Heretics,14,16,Nuke
+Team2,Heretics,fnatic,14,16,Inferno
+Team1,Heretics,fnatic,8,16,Overpass
+Team1,ENCE,Complexity,8,16,Nuke
+Team2,Complexity,ENCE,10,16,Train
+Team1,Complexity,ENCE,16,11,Mirage
+Team1,SKADE,Endpoint,16,13,Overpass
+Team2,Brute,PACT,16,19,Overpass
+Team1,PACT,Brute,16,14,Dust2
+Team1,Liquid,Envy,7,16,Nuke
+Team2,Envy,Liquid,16,7,Dust2
+Team2,FURIA,Yeah,14,16,Inferno
+Team2,Yeah,FURIA,12,16,Mirage
+Team2,FURIA,Yeah,16,9,Nuke
+Team1,MIBR,Bad News Bears,16,12,Inferno
+Team2,MIBR,Bad News Bears,16,7,Dust2
+Team2,Mythic,Buffdaddy's Paypal,16,7,Mirage
+Team2,Isurus,Bravos,16,2,Train
+Team2,Bravos,Isurus,16,7,Nuke
+Team1,Rugratz,Polar Ace,16,11,Inferno
+Team2,District 7,Keep the Comms Up,11,16,Mirage
+Team2,RED Canids,Soberano,16,9,Dust2
+Team1,Soberano,RED Canids,4,16,Mirage
+Team1,Polar Ace,Buffdaddy's Paypal,28,26,Overpass
+Team2,Infinity,Recon 5,19,22,Inferno
+Team2,AVANT,Ground Zero,16,9,Nuke
+Team1,Apeks,Dignitas,8,16,Nuke
+Team2,esea open,TWA,16,8,Mirage
+Team1,Rooster,Ground Zero,16,13,Inferno
+Team1,Incept,FURY,16,13,Inferno
+Team2,AVANT,Overt,16,5,Train
+Team2,TWA,PC419,16,4,Nuke
+Team2,FURY,Paradox,12,16,Dust2
+Team1,ENCE,GODSENT,16,10,Dust2
+Team2,Dignitas,ENCE,11,16,Dust2
+Team1,Winstrike,Unique,16,0,Nuke
+Team1,Unique,Winstrike,7,16,Vertigo
+Team1,forZe,Nemiga,9,16,Overpass
+Team1,Nemiga,forZe,16,11,Mirage
+Team2,Spirit,Gambit Youngsters,16,8,Overpass
+Team1,Gambit Youngsters,Spirit,9,16,Dust2
+Team1,Apeks,GODSENT,16,11,Nuke
+Team1,Unicorns of Love,PACT,16,13,Dust2
+Team1,ALTERNATE aTTaX,Demolition Crew,16,12,Inferno
+Team2,GODSENT,Dignitas,11,16,Inferno
+Team2,Astralis,NiP,12,16,Vertigo
+Team2,North,Copenhagen Flames,14,16,Inferno
+Team2,Movistar Riders,G2,12,16,Inferno
+Team2,Movistar Riders,G2,1,16,Vertigo
+Team2,Copenhagen Flames,North,16,7,Mirage
+Team2,NiP,Astralis,12,16,Nuke
+Team2,NiP,Astralis,11,16,Inferno
+Team2,FATE,ALTERNATE aTTaX,10,16,Overpass
+Team1,ENCE,Apeks,16,11,Mirage
+Team1,Evil Geniuses,Triumph,16,14,Mirage
+Team1,Triumph,Evil Geniuses,6,16,Nuke
+Team1,Gen.G,Cloud9,16,14,Train
+Team2,Cloud9,Gen.G,16,9,Nuke
+Team1,Gen.G,Cloud9,9,16,Inferno
+Team1,AA,Keep the Comms Up,16,13,Mirage
+Team1,Keep the Comms Up,AA,16,14,Dust2
+Team1,AA,Keep the Comms Up,16,10,Inferno
+Team2,Polar Ace,Warriors International,16,5,Inferno
+Team1,Under 21,Big Frames,7,16,Mirage
+Team2,TeamOne,bloo,16,7,Mirage
+Team2,Way 2 French,Morning Light,16,7,Mirage
+Team1,Nordavind,KOVA,6,16,Nuke
+Team2,Heroic,North,16,6,Nuke
+Team1,Heroic,Nordavind,16,12,Dust2
+Team2,Natus Vincere,Espada,16,7,Inferno
+Team1,Natus Vincere,Espada,19,17,Nuke
+Team2,Virtus.pro,pro100,17,19,Train
+Team1,pro100,Virtus.pro,16,12,Vertigo
+Team1,Syman,Hard Legion,16,12,Inferno
+Team2,Syman,Hard Legion,17,19,Dust2
+Team1,Hard Legion,Syman,16,12,Overpass
+Team1,KOVA,North,16,14,Vertigo
+Team1,North,Nordavind,19,17,Nuke
+Team2,mousesports,FaZe,10,16,Mirage
+Team2,FaZe,mousesports,16,7,Train
+Team2,ENCE,Dignitas,14,16,Nuke
+Team2,Dignitas,ENCE,12,16,Train
+Team2,Dignitas,ENCE,10,16,Overpass
+Team2,GODSENT,c0ntact,14,16,Inferno
+Team1,c0ntact,GODSENT,9,16,Vertigo
+Team2,GODSENT,c0ntact,16,9,Nuke
+Team1,Heroic,KOVA,16,13,Nuke
+Team1,Liquid,FURIA,5,16,Vertigo
+Team1,FURIA,Liquid,16,13,Inferno
+Team1,MIBR,Envy,16,13,Dust2
+Team1,Envy,MIBR,22,18,Train
+Team2,MIBR,Envy,16,5,Inferno
+Team1,Bad News Bears,Yeah,19,17,Dust2
+Team1,Yeah,Bad News Bears,9,16,Overpass
+Team1,Winstrike,Nemiga,19,16,Vertigo
+Team2,Gambit Youngsters,Unique,16,9,Dust2
+Team1,Unique,Gambit Youngsters,4,16,Vertigo
+Team2,forZe,Spirit,10,16,Dust2
+Team1,Spirit,forZe,16,12,Train
+Team1,Nemiga,Winstrike,16,13,Dust2
+Team2,Nemiga,Winstrike,13,16,Nuke
+Team2,KOVA,Apeks,12,16,Mirage
+Team1,Apeks,KOVA,16,11,Vertigo
+Team2,NiP,Complexity,14,16,Mirage
+Team2,Complexity,NiP,11,16,Vertigo
+Team2,Complexity,NiP,12,16,Train
+Team2,fnatic,Vitality,13,16,Dust2
+Team2,Vitality,fnatic,20,22,Inferno
+Team2,fnatic,Vitality,11,16,Mirage
+Team2,Heretics,Astralis,10,16,Dust2
+Team2,Heretics,Astralis,12,16,Inferno
+Team1,ENCE,Apeks,16,13,Nuke
+Team1,Apeks,ENCE,8,16,Dust2
+Team2,Casa de Papel,Red Instinct,14,16,Overpass
+Team1,Casa de Papel,Red Instinct,9,16,Dust2
+Team1,100 Thieves,Cloud9,16,13,Train
+Team2,Cloud9,100 Thieves,12,16,Vertigo
+Team2,Evil Geniuses,Gen.G,16,6,Train
+Team1,Gen.G,Evil Geniuses,19,17,Nuke
+Team1,Gen.G,Evil Geniuses,16,14,Dust2
+Team2,Winstrike,Nemiga,16,5,Nuke
+Team1,Winstrike,Nemiga,16,10,Vertigo
+Team2,Hard Legion,pro100,13,16,Nuke
+Team2,pro100,Hard Legion,16,8,Inferno
+Team2,Natus Vincere,Virtus.pro,13,16,Inferno
+Team1,Virtus.pro,Natus Vincere,16,14,Train
+Team2,Syman,Espada,12,16,Inferno
+Team2,Espada,Syman,15,19,Mirage
+Team1,Espada,Syman,6,16,Overpass
+Team1,Dignitas,North,16,13,Vertigo
+Team2,North,Dignitas,10,16,Nuke
+Team2,Movistar Riders,Copenhagen Flames,14,16,Inferno
+Team1,Copenhagen Flames,Movistar Riders,16,12,Overpass
+Team2,mousesports,G2,13,16,Vertigo
+Team1,G2,mousesports,5,16,Train
+Team2,G2,mousesports,14,16,Dust2
+Team1,Espada,Gambit Youngsters,9,16,Mirage
+Team1,Espada,Gambit Youngsters,16,12,Overpass
+Team1,Gambit Youngsters,Espada,16,13,Dust2
+Team1,Heroic,Dignitas,8,16,Train
+Team2,Dignitas,Heroic,11,16,Dust2
+Team2,Heroic,Dignitas,11,16,Nuke
+Team2,Liquid,Yeah,16,2,Inferno
+Team1,Yeah,Liquid,7,16,Mirage
+Team1,FURIA,MIBR,16,14,Inferno
+Team1,FURIA,MIBR,16,10,Vertigo
+Team1,Bad News Bears,Envy,4,16,Train
+Team2,Envy,Bad News Bears,17,19,Dust2
+Team2,Bad News Bears,Envy,11,16,Mirage
+Team1,Chiefs,Incept,16,13,Inferno
+Team2,Heretics,Secret,16,8,Inferno
+Team1,Secret,Heretics,16,13,Mirage
+Team2,Heretics,Secret,11,16,Nuke
+Team2,Paradox,esea open,16,5,Inferno
+Team2,Mako,Ground Zero,10,16,Inferno
+Team2,Chiefs,Forbidden,16,5,Vertigo
+Team2,Nordavind,Sprout,16,5,Mirage
+Team2,Nordavind,Sprout,16,7,Nuke
+Team2,Tricked,ALTERNATE aTTaX,11,16,Train
+Team2,forZe,Gambit Youngsters,12,16,Inferno
+Team1,forZe,Gambit Youngsters,6,16,Overpass
+Team2,Endpoint,Salamander,16,3,Dust2
+Team2,Salamander,ALTERNATE aTTaX,14,16,Dust2
+Team1,Endpoint,Tricked,16,12,Mirage
+Team2,ALTERNATE aTTaX,Endpoint,12,16,Inferno
+Team1,Salamander,Tricked,16,12,Mirage
+Team2,DETONA,Bravos,17,19,Dust2
+Team2,DETONA,Bravos,16,8,Nuke
+Team1,W7M,Keyd,16,14,Nuke
+Team2,Keyd,W7M,12,16,Inferno
+Team2,Apeks,Virtus.pro,19,22,Vertigo
+Team1,Bantz,esea open,16,11,Inferno
+Team2,Mako,Skyfire,12,16,Nuke
+Team1,AVEZ,Sprout,4,16,Train
+Team2,Rooster,Overt,16,7,Overpass
+Team1,Ground Zero,esea open,19,17,Nuke
+Team1,Justice,Skyfire,6,16,Mirage
+Team1,Sprout,Virtus.pro,16,12,Vertigo
+Team1,Virtus.pro,Sprout,8,16,Mirage
+Team2,Gambit Youngsters,Nemiga,16,19,Inferno
+Team2,Nemiga,Gambit Youngsters,13,16,Dust2
+Team1,Gambit Youngsters,Nemiga,3,16,Mirage
+Team2,Spirit,Unique,16,2,Train
+Team2,Unique,Spirit,11,16,Dust2
+Team2,forZe,Winstrike,16,8,Overpass
+Team2,Winstrike,forZe,14,16,Nuke
+Team1,Apeks,AVEZ,22,18,Overpass
+Team1,Apeks,AVEZ,16,13,Inferno
+Team1,AGO,HAVU,4,16,Train
+Team1,Nordavind,Giants,16,14,Inferno
+Team2,FaZe,GODSENT,16,6,Overpass
+Team2,GODSENT,FaZe,11,16,Nuke
+Team1,Wisla Krakow,SKADE,16,10,Nuke
+Team2,Nordavind,HAVU,10,16,Nuke
+Team2,North,c0ntact,12,16,Inferno
+Team2,c0ntact,North,14,16,Vertigo
+Team1,c0ntact,North,9,16,Nuke
+Team2,Singularity,SKADE,12,16,Mirage
+Team1,Apeks,Virtus.pro,16,12,Mirage
+Team1,Apeks,Virtus.pro,8,16,Inferno
+Team1,Apeks,Virtus.pro,16,14,Vertigo
+Team2,Giants,AGO,13,16,Dust2
+Team1,HAVU,Giants,16,11,Dust2
+Team2,NiP,Heretics,10,16,Nuke
+Team1,Heretics,NiP,3,16,Overpass
+Team2,Nordavind,AGO,16,8,Overpass
+Team1,Astralis,Dignitas,19,17,Train
+Team1,Dignitas,Astralis,5,16,Dust2
+Team1,AA,Mythic,8,16,Mirage
+Team1,Swedish Canadians,Rugratz,16,13,Mirage
+Team2,Chaos,Big Frames,16,2,Dust2
+Team2,Infinity,Big Frames,10,16,Mirage
+Team1,Under 21,TeamOne,19,16,Mirage
+Team1,Polar Ace,Morning Light,8,16,Overpass
+Team1,Chiefs,Ground Zero,19,16,Mirage
+Team1,Ground Zero,Chiefs,7,16,Nuke
+Team1,Renegades,ORDER,16,11,Train
+Team2,ORDER,Renegades,12,16,Inferno
+Team1,Lucid Dream,ViCi,9,16,Mirage
+Team1,Lucid Dream,ViCi,3,16,Nuke
+Team1,TIGER,Beyond,16,14,Mirage
+Team2,Beyond,TIGER,11,16,Dust2
+Team2,forZe,Salamander,13,16,Mirage
+Team2,Camel Riders,D13,16,6,Nuke
+Team1,D13,Camel Riders,9,16,Dust2
+Team2,Secret,Heroic,10,16,Train
+Team1,Heroic,Secret,16,12,Dust2
+Team1,TYLOO,Mazaalai,19,17,Dust2
+Team2,Mazaalai,TYLOO,13,16,Mirage
+Team1,Mako,Rooster,4,16,Inferno
+Team1,Mustang Crew,AGO,4,16,Dust2
+Team2,Overt,Justice,16,8,Dust2
+Team2,Skyfire,PC419,14,16,Mirage
+Team1,Salamander,AGO,16,12,Train
+Team1,Salamander,AGO,16,13,Dust2
+Team1,GODSENT,Nordavind,9,16,Dust2
+Team2,GODSENT,Nordavind,14,16,Overpass
+Team2,Virtus.pro,Syman,16,2,Mirage
+Team1,Syman,Virtus.pro,8,16,Inferno
+Team1,Hard Legion,Espada,6,16,Dust2
+Team2,Espada,Hard Legion,16,2,Overpass
+Team1,Natus Vincere,pro100,16,10,Inferno
+Team2,Natus Vincere,pro100,16,7,Dust2
+Team2,forZe,Mustang Crew,16,5,Nuke
+Team1,forZe,Mustang Crew,16,11,Train
+Team2,Movistar Riders,Japaleno,16,9,Mirage
+Team2,Nordavind,Demolition Crew,16,9,Mirage
+Team1,FATE,Apeks,16,14,Overpass
+Team1,Vitality,ENCE,9,16,Mirage
+Team1,Heretics,NiP,4,16,Vertigo
+Team2,ENCE,Vitality,16,6,Nuke
+Team1,fnatic,Complexity,16,14,Nuke
+Team2,Complexity,fnatic,16,19,Inferno
+Team1,Endpoint,HellRaisers,16,14,Dust2
+Team1,ALTERNATE aTTaX,Nordavind,5,16,Overpass
+Team2,Unicorns of Love,Singularity,10,16,Overpass
+Team2,Movistar Riders,FATE,16,8,Inferno
+Team2,forZe,AGO,1,16,Dust2
+Team1,forZe,AGO,16,10,Nuke
+Team1,AGO,forZe,19,15,Mirage
+Team2,HellRaisers,Wisla Krakow,16,8,Inferno
+Team2,Japaleno,Apeks,16,8,Overpass
+Team2,Apeks,Movistar Riders,13,16,Nuke
+Team1,Envy,Cloud9,16,12,Overpass
+Team1,Cloud9,Envy,16,14,Nuke
+Team2,Envy,Cloud9,12,16,Dust2
+Team1,Japaleno,FATE,16,10,Inferno
+Team2,Isurus,Soberano,10,16,Dust2
+Team1,Soberano,Isurus,5,16,Inferno
+Team1,Under 21,Way 2 French,16,1,Mirage
+Team1,Buffdaddy's Paypal,TeamOne,5,16,Dust2
+Team1,Mythic,Chaos,9,16,Inferno
+Team1,RED Canids,Alma,16,10,Mirage
+Team1,RED Canids,Alma,16,10,Vertigo
+Team2,Buffdaddy's Paypal,AA,12,16,Mirage
+Team2,Swedish Canadians,Big Frames,16,4,Nuke
+Team1,Swedish Canadians,Chaos,16,14,Mirage
+Team1,Polar Ace,Infinity,16,12,Overpass
+Team2,Renegades,Ground Zero,16,6,Mirage
+Team2,Ground Zero,Renegades,15,19,Dust2
+Team2,ORDER,Chiefs,10,16,Dust2
+Team1,Chiefs,ORDER,9,16,Train
+Team1,ORDER,Chiefs,16,11,Inferno
+Team2,TIGER,ViCi,16,7,Mirage
+Team1,TIGER,ViCi,9,16,Overpass
+Team1,ViCi,TIGER,16,13,Nuke
+Team2,Lucid Dream,Beyond,16,5,Train
+Team1,Beyond,Lucid Dream,9,16,Overpass
+Team2,Nordavind,FATE,16,2,Inferno
+Team1,TYLOO,Camel Riders,16,13,Dust2
+Team1,Camel Riders,TYLOO,6,16,Mirage
+Team2,Mazaalai,D13,13,16,Nuke
+Team2,Mazaalai,D13,12,16,Dust2
+Team1,Skyfire,TWA,7,16,Nuke
+Team2,Bantz,FURY,16,8,Inferno
+Team1,SMASH,Complexity,16,13,Mirage
+Team2,Nordavind,Heroic,14,16,Inferno
+Team1,Heroic,Nordavind,16,13,Nuke
+Team2,Incept,TWA,10,16,Overpass
+Team1,Forbidden,PC419,16,13,Mirage
+Team1,Bantz,Paradox,16,10,Dust2
+Team2,Complexity,FATE,16,5,Train
+Team2,Complexity,FATE,16,5,Mirage
+Team2,Unique,forZe,10,16,Dust2
+Team2,Unique,forZe,10,16,Inferno
+Team2,Gambit Youngsters,Winstrike,11,16,Vertigo
+Team1,Winstrike,Gambit Youngsters,16,11,Dust2
+Team1,Spirit,Nemiga,9,16,Inferno
+Team2,Nemiga,Spirit,12,16,Dust2
+Team2,Spirit,Nemiga,16,4,Nuke
+Team1,SMASH,Nordavind,25,22,Overpass
+Team2,SMASH,Nordavind,14,16,Mirage
+Team2,SMASH,Nordavind,16,4,Inferno
+Team1,Heretics,AVEZ,22,20,Nuke
+Team1,G2,c0ntact,16,11,Mirage
+Team1,c0ntact,G2,6,16,Overpass
+Team1,North,Movistar Riders,16,11,Overpass
+Team2,Movistar Riders,North,12,16,Vertigo
+Team1,sAw,Secret,6,16,Nuke
+Team2,SKADE,GamerLegion,16,5,Inferno
+Team2,Heretics,Secret,16,3,Nuke
+Team2,HSL,Elites,26,28,Mirage
+Team2,Elites,HSL,10,16,Dust2
+Team1,HSL,Elites,9,16,Train
+Team1,Elites,HSL,16,1,Nuke
+Team2,SJ,KOVA,11,16,Nuke
+Team2,KOVA,SJ,16,5,Train
+Team1,AVEZ,sAw,9,16,Dust2
+Team2,Complexity,Nordavind,16,4,Train
+Team1,Nordavind,Complexity,5,16,Mirage
+Team1,Heretics,sAw,19,17,Inferno
+Team1,100 Thieves,Liquid,8,16,Mirage
+Team1,Liquid,100 Thieves,16,10,Vertigo
+Team1,Secret,AVEZ,8,16,Overpass
+Team2,Mythic,TeamOne,16,3,Dust2
+Team2,Rugratz,Under 21,16,4,Train
+Team2,AA,Keep the Comms Up,16,8,Mirage
+Team1,bloo,wea,9,16,Mirage
+Team2,ORDER,Ground Zero,16,4,Inferno
+Team2,ORDER,Ground Zero,16,8,Vertigo
+Team2,Renegades,Chiefs,16,3,Train
+Team2,Chiefs,Renegades,11,16,Mirage
+Team2,Chaos,Warriors International,16,2,Overpass
+Team2,ViCi,Beyond,16,8,Train
+Team2,Beyond,ViCi,10,16,Overpass
+Team2,Lucid Dream,TIGER,11,16,Dust2
+Team1,TIGER,Lucid Dream,16,11,Overpass
+Team2,Secret,SKADE,16,9,Train
+Team1,Mazaalai,Camel Riders,16,14,Nuke
+Team2,TYLOO,D13,13,16,Train
+Team1,D13,TYLOO,16,10,Mirage
+Team1,Camel Riders,Mazaalai,9,16,Dust2
+Team2,Endpoint,BIG,13,16,Dust2
+Team1,Secret,BIG,8,16,Dust2
+Team2,Secret,BIG,13,16,Nuke
+Team1,Espada,pro100,16,10,Train
+Team2,pro100,Espada,14,16,Dust2
+Team1,Natus Vincere,Syman,4,16,Overpass
+Team2,Syman,Natus Vincere,14,16,Dust2
+Team2,Natus Vincere,Syman,12,16,Train
+Team2,Virtus.pro,Hard Legion,13,16,Overpass
+Team1,Virtus.pro,Hard Legion,16,13,Inferno
+Team2,Hard Legion,Virtus.pro,16,9,Train
+Team1,Endpoint,SKADE,16,13,Overpass
+Team2,SKADE,Endpoint,10,16,Dust2
+Team2,FaZe,Copenhagen Flames,12,16,Inferno
+Team1,Copenhagen Flames,FaZe,5,16,Dust2
+Team2,Copenhagen Flames,FaZe,10,16,Train
+Team2,mousesports,GODSENT,10,16,Overpass
+Team1,GODSENT,mousesports,16,11,Train
+Team1,Endpoint,Secret,7,16,Train
+Team1,Secret,Endpoint,8,16,Dust2
+Team1,Endpoint,Secret,16,10,Inferno
+Team1,Gen.G,Cloud9,16,10,Inferno
+Team1,Cloud9,Gen.G,16,13,Vertigo
+Team2,Gen.G,Cloud9,16,6,Train
+Team2,ORDER,Chiefs,16,8,Nuke
+Team2,Chiefs,ORDER,19,22,Train
+Team1,D13,TIGER,7,16,Dust2
+Team1,TIGER,D13,22,19,Nuke
+Team2,Complexity,Salamander,16,4,Nuke
+Team2,Complexity,Salamander,16,9,Mirage
+Team2,Apeks,Nordavind NO,16,2,Vertigo
+Team2,Nordavind NO,Apeks,12,16,Nuke
+Team1,ViCi,TYLOO,16,11,Inferno
+Team2,TYLOO,ViCi,16,4,Vertigo
+Team1,ViCi,TYLOO,9,16,Train
+Team2,Endpoint,CeX,16,4,Overpass
+Team1,CeX,Endpoint,4,16,Dust2
+Team2,Endpoint,CeX,16,5,Vertigo
+Team2,BIG,Apeks,16,8,Overpass
+Team1,Apeks,BIG,5,16,Dust2
+Team2,Riddle,Bifrost,16,8,Dust2
+Team1,Bifrost,Riddle,16,12,Nuke
+Team1,Bifrost,Riddle,6,16,Inferno
+Team1,Unique,Nemiga,8,16,Vertigo
+Team2,forZe,Gambit Youngsters,11,16,Overpass
+Team2,Spirit,Winstrike,16,7,Nuke
+Team2,Winstrike,Spirit,14,16,Mirage
+Team1,Nemiga,Unique,22,19,Dust2
+Team2,Gambit Youngsters,forZe,17,19,Inferno
+Team1,forZe,Gambit Youngsters,9,16,Train
+Team2,SMASH,AGO,16,6,Dust2
+Team1,AGO,SMASH,3,16,Mirage
+Team1,Apeks,Riddle,16,10,Dust2
+Team2,Apeks,Riddle,16,8,Nuke
+Team1,Vitality,Heretics,16,10,Nuke
+Team1,Heretics,Vitality,7,16,Dust2
+Team1,Complexity,Dignitas,28,24,Train
+Team2,Dignitas,Complexity,11,16,Dust2
+Team1,NiP,fnatic,9,16,Overpass
+Team1,NiP,fnatic,16,10,Mirage
+Team2,fnatic,NiP,12,16,Inferno
+Team1,Astralis,ENCE,19,17,Train
+Team1,ENCE,Astralis,16,12,Nuke
+Team1,Astralis,ENCE,16,11,Inferno
+Team1,Endpoint,Sprout,16,10,Dust2
+Team2,Sprout,Endpoint,14,16,Train
+Team1,100 Thieves,Envy,16,12,Mirage
+Team1,Envy,100 Thieves,19,17,Inferno
+Team2,100 Thieves,Envy,10,16,Nuke
+Team1,FURIA,Liquid,16,14,Overpass
+Team2,Liquid,FURIA,12,16,Vertigo
+Team2,Paradox,Rooster,12,16,Train
+Team1,Paradox,Rooster,9,16,Mirage
+Team1,Paradox,Overt,16,14,Train
+Team2,Overt,Paradox,13,16,Inferno
+Team2,Paradox,Rooster,13,16,Inferno
+Team1,Renegades,ORDER,7,16,Train
+Team2,ORDER,Renegades,20,22,Inferno
+Team1,Renegades,ORDER,16,12,Dust2
+Team1,PACT,Illuminar,16,10,Nuke
+Team2,PACT,Illuminar,13,16,Dust2
+Team1,PACT,Illuminar,16,11,Train
+Team2,TYLOO,TIGER,16,9,Dust2
+Team2,TIGER,TYLOO,16,7,Inferno
+Team2,TYLOO,TIGER,15,19,Overpass
+Team1,Endpoint,Complexity,2,16,Mirage
+Team1,Endpoint,Complexity,9,16,Dust2
+Team2,Espada,Virtus.pro,10,16,Dust2
+Team2,Espada,Virtus.pro,11,16,Inferno
+Team2,Pompa,AVEZ,16,6,Train
+Team2,AVEZ,Pompa,16,5,Overpass
+Team2,AVEZ,Pompa,14,16,Nuke
+Team2,Natus Vincere,Hard Legion,14,16,Overpass
+Team2,Natus Vincere,Hard Legion,16,19,Dust2
+Team1,Syman,pro100,16,14,Dust2
+Team2,pro100,Syman,16,2,Overpass
+Team1,Syman,pro100,22,20,Mirage
+Team2,BIG,SMASH,12,16,Dust2
+Team1,BIG,SMASH,16,13,Overpass
+Team2,BIG,SMASH,16,9,Nuke
+Team2,PACT,Pompa,16,8,Vertigo
+Team2,Pompa,PACT,13,16,Dust2
+Team2,FaZe,c0ntact,16,9,Inferno
+Team2,c0ntact,FaZe,15,19,Dust2
+Team1,Movistar Riders,GODSENT,16,14,Inferno
+Team2,Movistar Riders,GODSENT,16,9,Vertigo
+Team2,mousesports,Copenhagen Flames,13,16,Overpass
+Team2,Copenhagen Flames,mousesports,14,16,Nuke
+Team1,Copenhagen Flames,mousesports,9,16,Train
+Team2,North,G2,14,16,Vertigo
+Team1,North,G2,16,12,Dust2
+Team1,North,G2,19,16,Nuke
+Team2,BIG,Complexity,16,19,Inferno
+Team1,BIG,Complexity,19,17,Nuke
+Team1,Complexity,BIG,16,10,Dust2
+Team1,Big Frames,New England Whalers,5,16,Nuke
+Team1,Big Frames,New England Whalers,6,16,Dust2
+Team1,Under 21,Polar Ace,8,16,Inferno
+Team1,Polar Ace,Under 21,16,14,Nuke
+Team2,Swedish Canadians,Morning Light,14,16,Overpass
+Team1,Morning Light,Swedish Canadians,8,16,Nuke
+Team1,Swedish Canadians,Morning Light,16,13,Mirage
+Team1,Cloud9,Liquid,5,16,Dust2
+Team1,Cloud9,Liquid,16,12,Inferno
+Team1,Cloud9,Liquid,16,13,Vertigo
+Team1,Recon 5,Yeah,16,11,Inferno
+Team1,Yeah,Recon 5,8,16,Nuke
+Team1,FURIA,Gen.G,6,16,Train
+Team2,Gen.G,FURIA,12,16,Vertigo
+Team2,Gen.G,FURIA,16,9,Inferno
+Team2,Recon 5,Under 21,14,16,Nuke
+Team1,Under 21,Recon 5,8,16,Vertigo
+Team1,Recon 5,Under 21,5,16,Inferno
+Team1,New England Whalers,Swedish Canadians,7,16,Mirage
+Team2,Swedish Canadians,New England Whalers,16,9,Overpass
+Team1,Under 21,Swedish Canadians,7,16,Mirage
+Team1,Swedish Canadians,Under 21,16,13,Nuke
+Team1,AVEZ,Mustang Crew,19,17,Train
+Team1,AVEZ,Mustang Crew,16,10,Overpass
+Team2,HellRaisers,Secret,16,7,Mirage
+Team2,HellRaisers,Secret,14,16,Dust2
+Team2,HellRaisers,Secret,13,16,Train
+Team1,FATE,Singularity,16,10,Inferno
+Team1,FATE,Singularity,6,16,Nuke
+Team2,KOVA,LDLC,15,19,Dust2
+Team2,KOVA,LDLC,16,5,Vertigo
+Team1,KOVA,LDLC,16,12,Nuke
+Team2,FATE,Singularity,19,22,Overpass
+Team1,Winstrike,BIG,8,16,Vertigo
+Team1,Winstrike,BIG,5,16,Mirage
+Team1,KOVA,Secret,4,16,Train
+Team1,Secret,KOVA,16,12,Nuke
+Team2,Singularity,AVEZ,13,16,Nuke
+Team2,AVEZ,Singularity,16,6,Overpass
+Team1,BIG,Gambit Youngsters,8,16,Dust2
+Team1,Gambit Youngsters,BIG,16,14,Vertigo
+Team1,Tricked,ALTERNATE aTTaX,8,16,Train
+Team1,Endpoint,Salamander,16,11,Inferno
+Team2,AVEZ,Secret,10,16,Train
+Team2,AVEZ,Secret,16,3,Overpass
+Team2,AVEZ,Secret,16,6,Nuke
+Team2,Salamander,ALTERNATE aTTaX,10,16,Inferno
+Team1,Endpoint,Tricked,16,14,Inferno
+Team1,ALTERNATE aTTaX,Endpoint,16,13,Vertigo
+Team2,Salamander,Tricked,16,8,Train
+Team1,Hard Legion,ALTERNATE aTTaX,16,11,Overpass
+Team2,Ambush,Salamander,11,16,Nuke
+Team1,Salamander,Hard Legion,8,16,Train
+Team1,Salamander,Hard Legion,5,16,Inferno
+Team2,Espada,Pompa,16,9,Train
+Team1,Pompa,Espada,9,16,Mirage
+Team2,GODSENT,Vitality,14,16,Dust2
+Team1,GODSENT,Vitality,7,16,Inferno
+Team2,fnatic,Movistar Riders,20,22,Train
+Team2,Movistar Riders,fnatic,16,2,Inferno
+Team2,ALTERNATE aTTaX,Ambush,11,16,Train
+Team2,Ambush,ALTERNATE aTTaX,17,19,Vertigo
+Team2,ALTERNATE aTTaX,Ambush,13,16,Overpass
+Team1,GamerLegion,Nordavind,5,16,Mirage
+Team1,HAVU,AGO,19,17,Dust2
+Team2,Sprout,Endpoint,11,16,Overpass
+Team2,PACT,HellRaisers,16,6,Train
+Team2,Singularity,Nemiga,22,25,Overpass
+Team2,Giants,Nordavind,15,19,Inferno
+Team2,NAVI Junior,LDLC,15,19,Inferno
+Team1,LDLC,NAVI Junior,9,16,Mirage
+Team1,NAVI Junior,LDLC,16,10,Dust2
+Team1,Nordavind,HAVU,19,16,Dust2
+Team2,North,Heretics,14,16,Inferno
+Team1,Heretics,North,16,13,Vertigo
+Team1,ENCE,Copenhagen Flames,22,20,Inferno
+Team1,Copenhagen Flames,ENCE,5,16,Train
+Team1,Salamander,Ambush,6,16,Overpass
+Team2,Salamander,Ambush,16,8,Train
+Team1,Salamander,Ambush,16,12,Nuke
+Team1,Giants,AGO,16,14,Dust2
+Team1,Giants,HAVU,16,12,Nuke
+Team1,Nordavind,AGO,16,14,Mirage
+Team1,AA,Chaos,6,16,Inferno
+Team1,Rugratz,Morning Light,16,12,Inferno
+Team2,Mythic,Keep the Comms Up,16,6,Overpass
+Team1,Recon 5,Swedish Canadians,16,12,Dust2
+Team2,Infinity,Warriors International,25,28,Dust2
+Team2,Secret,Espada,16,7,Mirage
+Team1,Forbidden,Justice,5,16,Dust2
+Team1,PC419,Mako,6,16,Nuke
+Team2,Complexity,Sinners,14,16,Mirage
+Team2,Virtus.pro,Nemiga,10,16,Mirage
+Team2,Nemiga,Virtus.pro,17,19,Inferno
+Team1,Nemiga,Virtus.pro,6,16,Vertigo
+Team1,Secret,Sinners,8,16,Nuke
+Team1,Secret,Sinners,19,17,Overpass
+Team1,Secret,Sinners,16,13,Mirage
+Team2,Overt,Skyfire,14,16,Vertigo
+Team1,FaZe,NiP,9,16,Overpass
+Team2,NiP,FaZe,22,25,Mirage
+Team2,NiP,FaZe,16,19,Train
+Team2,Japaleno,Movistar Riders,16,5,Mirage
+Team2,Complexity,Espada,13,16,Mirage
+Team1,Espada,Complexity,3,16,Dust2
+Team1,Espada,Complexity,6,16,Inferno
+Team1,Unicorns of Love,Wisla Krakow,3,16,Nuke
+Team1,Apeks,FATE,9,16,Overpass
+Team2,SKADE,Sprout,17,19,Dust2
+Team1,Movistar Riders,FATE,8,16,Inferno
+Team2,SKADE,PACT,12,16,Dust2
+Team2,Japaleno,Apeks,16,5,Mirage
+Team1,Sinners,Complexity,9,16,Vertigo
+Team2,Sinners,Complexity,16,19,Nuke
+Team1,Singularity,PACT,9,16,Dust2
+Team2,Apeks,Movistar Riders,17,19,Nuke
+Team1,Astralis,G2,16,13,Vertigo
+Team1,G2,Astralis,7,16,Overpass
+Team2,Japaleno,FATE,14,16,Dust2
+Team1,Under 21,AA,16,10,Inferno
+Team2,New England Whalers,Buffdaddy's Paypal,16,9,Overpass
+Team2,Mythic,Infinity,16,9,Overpass
+Team1,Big Frames,Way 2 French,16,1,Mirage
+Team1,TeamOne,Polar Ace,16,10,Mirage
+Team1,Recon 5,Morning Light,19,17,Inferno
+Team2,Buffdaddy's Paypal,Infinity,13,16,Dust2
+Team2,Warriors International,Recon 5,13,16,Vertigo
+Team2,SMASH,SKADE,11,16,Overpass
+Team2,Incept,esea open,16,5,Mirage
+Team2,AVANT,ORDER,11,16,Nuke
+Team2,TWA,Forbidden,16,3,Mirage
+Team2,ORDER,Paradox,16,7,Train
+Team2,KOVA,Endpoint,12,16,Vertigo
+Team1,Winstrike,Syman,16,14,Mirage
+Team2,Syman,Winstrike,13,16,Nuke
+Team1,esea open,AVANT,5,16,Nuke
+Team2,ORDER,PC419,16,2,Nuke
+Team1,Incept,Ground Zero,4,16,Dust2
+Team1,Endpoint,SKADE,16,10,Dust2
+Team2,SKADE,Endpoint,16,4,Inferno
+Team2,SKADE,Endpoint,15,19,Overpass
+Team2,Ground Zero,TWA,16,6,Inferno
+Team1,LDLC,Pompa,16,14,Train
+Team1,Pompa,LDLC,8,16,Dust2
+Team1,Heretics,sAw,16,14,Inferno
+Team1,GamerLegion,AGO,7,16,Dust2
+Team2,NiP,Vitality,16,19,Mirage
+Team2,Vitality,NiP,15,19,Overpass
+Team2,NiP,Vitality,17,19,Inferno
+Team2,ALTERNATE aTTaX,Unicorns of Love,16,3,Vertigo
+Team1,Heretics,AVEZ,16,10,Inferno
+Team2,SMASH,KOVA,11,16,Nuke
+Team1,SMASH,KOVA,16,14,Mirage
+Team2,SMASH,KOVA,16,6,Dust2
+Team1,Movistar Riders,Sprout,4,16,Train
+Team1,HellRaisers,AGO,7,16,Dust2
+Team2,Secret,Heretics,16,19,Nuke
+Team1,NAVI Junior,Espada,22,18,Train
+Team2,NAVI Junior,Espada,11,16,Dust2
+Team1,NAVI Junior,Espada,3,16,Overpass
+Team1,PACT,ALTERNATE aTTaX,16,13,Inferno
+Team1,FATE,Movistar Riders,16,13,Overpass
+Team1,Secret,sAw,16,12,Nuke
+Team2,AVEZ,sAw,16,6,Mirage
+Team2,SMASH,SKADE,11,16,Inferno
+Team1,SMASH,SKADE,16,13,Mirage
+Team2,SMASH,SKADE,16,7,Train
+Team1,G2,Heretics,16,14,Nuke
+Team1,Heretics,G2,19,16,Dust2
+Team2,Heretics,G2,14,16,Mirage
+Team1,AVEZ,Secret,16,11,Nuke
+Team1,Polar Ace,Chaos,5,16,Mirage
+Team2,Keep the Comms Up,Recon 5,10,16,Inferno
+Team2,AA,Warriors International,19,22,Mirage
+Team2,Infinity,Swedish Canadians,16,19,Overpass
+Team1,Copenhagen Flames,AVEZ,16,13,Nuke
+Team2,Gambit Youngsters,Sprout,14,16,Inferno
+Team1,Spirit,Virtus.pro,16,13,Inferno
+Team2,Virtus.pro,Spirit,16,3,Mirage
+Team2,Spirit,Virtus.pro,16,4,Overpass
+Team1,Copenhagen Flames,Sprout,9,16,Inferno
+Team1,Copenhagen Flames,Sprout,4,16,Dust2
+Team1,LDLC,NAVI Junior,7,16,Vertigo
+Team2,NAVI Junior,LDLC,16,9,Inferno
+Team1,G2,Vitality,16,14,Nuke
+Team1,Vitality,G2,16,14,Vertigo
+Team1,G2,Vitality,16,14,Dust2
+Team1,AVEZ,Gambit Youngsters,3,16,Dust2
+Team2,AVEZ,Gambit Youngsters,14,16,Overpass
+Team1,Gambit Youngsters,Copenhagen Flames,19,17,Vertigo
+Team2,Copenhagen Flames,Gambit Youngsters,14,16,Inferno
+Team2,FaZe,Astralis,12,16,Dust2
+Team1,FaZe,Astralis,7,16,Inferno
+Team1,W7M,Keyd,16,13,Mirage
+Team1,Keyd,W7M,9,16,Inferno
+Team2,Sprout,Salamander,14,16,Train
+Team1,Sprout,Salamander,16,12,Overpass
+Team2,Salamander,Sprout,19,22,Dust2
+Team2,Movistar Riders,S2V,16,8,Nuke
+Team2,Movistar Riders,S2V,11,16,Inferno
+Team1,Movistar Riders,S2V,16,10,Overpass
+Team1,Endpoint,Complexity,9,16,Vertigo
+Team2,Complexity,Endpoint,16,2,Mirage
+Team2,Hard Legion,Winstrike,15,19,Vertigo
+Team2,Winstrike,Hard Legion,16,7,Mirage
+Team1,Syman,Nemiga,7,16,Nuke
+Team1,Nemiga,Syman,16,12,Overpass
+Team2,SMASH,Secret,13,16,Train
+Team1,Secret,SMASH,16,13,Dust2
+Team2,Giants,x6tence,11,16,Nuke
+Team2,x6tence,Giants,14,16,Inferno
+Team1,x6tence,Giants,3,16,Dust2
+Team1,Hard Legion,Gambit Youngsters,7,16,Overpass
+Team2,Hard Legion,Gambit Youngsters,16,6,Dust2
+Team1,Gambit Youngsters,Hard Legion,9,16,Inferno
+Team2,North,GODSENT,16,8,Dust2
+Team2,GODSENT,North,16,8,Vertigo
+Team2,North,GODSENT,14,16,Nuke
+Team1,FaZe,G2,16,11,Dust2
+Team1,G2,FaZe,16,10,Mirage
+Team1,G2,FaZe,16,11,Nuke
+Team2,RED Canids,Isurus,14,16,Nuke
+Team1,Isurus,RED Canids,4,16,Train
+Team2,Isurus,RED Canids,11,16,Dust2
+Team1,Skyfire,Generation of Miracles,16,12,Overpass
+Team2,Generation of Miracles,Skyfire,16,19,Vertigo
+Team2,Overt,Generation of Miracles,11,16,Inferno
+Team2,Generation of Miracles,Overt,16,4,Train
+Team1,Generation of Miracles,Skyfire,16,11,Vertigo
+Team2,Skyfire,Generation of Miracles,13,16,Mirage
+Team1,Secret,Gambit Youngsters,6,16,Overpass
+Team1,Secret,Gambit Youngsters,16,14,Mirage
+Team2,Gambit Youngsters,Secret,12,16,Dust2
+Team1,sAw,KPI,16,12,Overpass
+Team2,sAw,KPI,16,2,Vertigo
+Team2,Winstrike,Spirit,13,16,Dust2
+Team2,Winstrike,Spirit,11,16,Nuke
+Team1,Virtus.pro,Hard Legion,16,14,Inferno
+Team2,Virtus.pro,Hard Legion,10,16,Overpass
+Team2,Hard Legion,Virtus.pro,16,3,Dust2
+Team2,Real Betis,Wygers,14,16,Overpass
+Team1,Wygers,Real Betis,5,16,Train
+Team2,Real Betis,Wygers,16,8,Inferno
+Team1,mYinsanity,KINGZZZ,4,16,Mirage
+Team1,mYinsanity,KINGZZZ,9,16,Dust2
+Team1,Complexity,Sprout,16,12,Nuke
+Team2,Complexity,Sprout,16,4,Inferno
+Team1,G2,Astralis,6,16,Nuke
+Team2,Astralis,G2,16,2,Vertigo
+Team2,NiP,Heretics,14,16,Nuke
+Team1,Heretics,NiP,8,16,Overpass
+Team2,Heretics,NiP,13,16,Vertigo
+Team2,Secret,Complexity,11,16,Train
+Team1,Complexity,Secret,16,12,Nuke
+Team2,W7M,RED Canids,16,4,Train
+Team1,RED Canids,W7M,9,16,Overpass
+Team2,AGF,LDLC,12,16,Train
+Team1,AGF,LDLC,16,12,Nuke
+Team1,LDLC,AGF,9,16,Inferno
+Team1,FATE,HellRaisers,16,11,Train
+Team2,FATE,HellRaisers,12,16,Inferno
+Team1,FATE,HellRaisers,19,16,Dust2
+Team1,TWA,Bantz,19,17,Train
+Team1,Ambush,Pompa,16,10,Nuke
+Team1,Ambush,Pompa,16,10,Inferno
+Team1,Singularity,sAw,16,12,Nuke
+Team2,Singularity,sAw,10,16,Vertigo
+Team2,Singularity,sAw,10,16,Dust2
+Team1,Ambush,AGF,16,14,Train
+Team1,AGF,Ambush,7,16,Overpass
+Team1,FATE,sAw,4,16,Nuke
+Team1,sAw,FATE,7,16,Train
+Team2,FATE,sAw,10,16,Dust2
+Team1,ALTERNATE aTTaX,Nemiga,16,14,Vertigo
+Team2,Endpoint,AVEZ,16,9,Overpass
+Team2,AVEZ,Endpoint,10,16,Vertigo
+Team2,Syman,LDLC,16,8,Train
+Team1,LDLC,Syman,16,14,Nuke
+Team1,LDLC,Syman,16,11,Dust2
+Team1,Ambush,sAw,9,16,Vertigo
+Team1,sAw,Ambush,7,16,Train
+Team2,sAw,Ambush,16,4,Nuke
+Team1,Nordavind,FATE,16,12,Dust2
+Team1,FATE,Nordavind,9,16,Inferno
+Team2,PACT,Singularity,16,9,Vertigo
+Team2,Chaos,Warriors International,16,3,Overpass
+Team2,Polar Ace,Swedish Canadians,10,16,Overpass
+Team1,Salamander,AGO,2,16,Dust2
+Team1,Rooster,Chiefs,7,16,Inferno
+Team2,AVANT,Paradox,16,3,Inferno
+Team1,SMASH,Hard Legion,16,12,Inferno
+Team1,Forbidden,Control,6,16,Mirage
+Team1,Endpoint,SG.pro,16,10,Vertigo
+Team2,Endpoint,SG.pro,16,19,Train
+Team1,Endpoint,SG.pro,22,19,Overpass
+Team1,Astralis,Heroic,19,16,Train
+Team2,Heroic,Astralis,14,16,Inferno
+Team2,SMASH,AGO,15,19,Overpass
+Team2,SMASH,AGO,16,7,Nuke
+Team1,AGO,SMASH,6,16,Dust2
+Team1,Nordavind,Sprout,9,16,Dust2
+Team1,HAVU,Japaleno,16,11,Overpass
+Team1,Japaleno,HAVU,7,16,Train
+Team2,Syman,SG.pro,10,16,Mirage
+Team2,Syman,SG.pro,13,16,Train
+Team2,G2,North,10,16,Vertigo
+Team1,North,G2,8,16,Inferno
+Team1,North,G2,16,14,Dust2
+Team1,Hard Legion,Salamander,16,11,Train
+Team1,Salamander,Hard Legion,8,16,Inferno
+Team2,GamerLegion,Demolition Crew,15,19,Mirage
+Team2,pro100,HellRaisers,16,9,Dust2
+Team1,Espada,SKADE,16,10,Train
+Team1,Wisla Krakow,ALTERNATE aTTaX,16,11,Overpass
+Team2,FATE,Unicorns of Love,16,6,Overpass
+Team1,LDLC,Endpoint,3,16,Vertigo
+Team2,LDLC,Endpoint,16,6,Inferno
+Team2,LDLC,Endpoint,13,16,Dust2
+Team1,SKADE,HellRaisers,16,14,Train
+Team1,HellRaisers,SKADE,16,13,Nuke
+Team2,SKADE,HellRaisers,11,16,Inferno
+Team2,AGO,Hard Legion,11,16,Overpass
+Team1,AGO,Hard Legion,16,10,Vertigo
+Team2,Hard Legion,AGO,16,9,Mirage
+Team1,FATE,KOVA,8,16,Dust2
+Team2,ALTERNATE aTTaX,Heretics,14,16,Dust2
+Team1,Heretics,ALTERNATE aTTaX,8,16,Vertigo
+Team1,Heretics,ALTERNATE aTTaX,9,16,Overpass
+Team2,Liquid,Chaos,16,4,Inferno
+Team1,Chaos,Liquid,16,11,Mirage
+Team1,Chaos,Liquid,16,13,Overpass
+Team1,TeamOne,Recon 5,9,16,Inferno
+Team1,Rugratz,bloo,8,16,Inferno
+Team2,Morning Light,Infinity,16,6,Overpass
+Team2,Big Frames,Keep the Comms Up,16,3,Mirage
+Team2,New England Whalers,Warriors International,16,3,Overpass
+Team1,AA,Way 2 French,19,15,Mirage
+Team2,Warriors International,Big Frames,16,8,Mirage
+Team1,Infinity,Under 21,9,16,Dust2
+Team1,Swedish Canadians,Polar Ace,16,14,Overpass
+Team2,Apeks,Secret,17,19,Mirage
+Team1,Rooster,Bantz,16,11,Nuke
+Team1,AVEZ,Spirit,5,16,Nuke
+Team2,Justice,PC419,16,2,Train
+Team2,Spirit,Secret,16,7,Train
+Team1,Spirit,Secret,9,16,Dust2
+Team2,Spirit,Secret,12,16,Nuke
+Team2,G2,Heroic,13,16,Nuke
+Team2,Heroic,G2,13,16,Vertigo
+Team1,G2,Heroic,19,17,Mirage
+Team1,Tricked,Hard Legion,16,13,Overpass
+Team2,Tricked,Hard Legion,10,16,Inferno
+Team2,Tricked,Hard Legion,12,16,Train
+Team2,pro100,PACT,16,19,Train
+Team2,LDLC,SG.pro,16,2,Nuke
+Team2,LDLC,SG.pro,10,16,Mirage
+Team1,LDLC,SG.pro,9,16,Train
+Team1,ALTERNATE aTTaX,Sprout,16,11,Inferno
+Team1,AVEZ,Apeks,16,13,Nuke
+Team1,Apeks,AVEZ,16,13,Overpass
+Team1,Apeks,AVEZ,16,10,Dust2
+Team1,pro100,Nemiga,6,16,Inferno
+Team2,Astralis,North,16,4,Vertigo
+Team1,North,Astralis,8,16,Inferno
+Team2,SKADE,Tricked,16,19,Nuke
+Team1,Tricked,SKADE,16,14,Inferno
+Team1,CR4ZY,BIG Academy,16,1,Nuke
+Team2,SG.pro,Endpoint,10,16,Vertigo
+Team2,Endpoint,SG.pro,16,5,Train
+Team2,Izako Boars,CLEANTmix,16,6,Train
+Team2,Spirit,Apeks,16,4,Overpass
+Team1,Apeks,Spirit,5,16,Train
+Team2,MIBR,FURIA,11,16,Vertigo
+Team1,FURIA,MIBR,16,12,Train
+Team2,Chaos,Buffdaddy's Paypal,16,7,Overpass
+Team1,RBG,Under 21,16,12,Inferno
+Team2,Morning Light,Keep the Comms Up,16,5,Mirage
+Team1,Swedish Canadians,AA,16,12,Mirage
+Team1,Way 2 French,Chaos,2,16,Inferno
+Team2,Buffdaddy's Paypal,Keep the Comms Up,13,16,Mirage
+Team1,New England Whalers,Polar Ace,16,10,Overpass
+Team1,Under 21,Recon 5,7,16,Nuke

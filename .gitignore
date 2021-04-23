@@ -131,11 +131,11 @@ temp.html
 
 
 #That site doesnt need at all
-Data/
-dataRefactor.py
-predict.py
-pythonScripts/trainModels.py
-pythonScripts/Random_forest.joblib
+#Data/
+#dataRefactor.py
+#predict.py
+#pythonScripts/trainModels.py
+#pythonScripts/Random_forest.joblib
 
 Models/
 
