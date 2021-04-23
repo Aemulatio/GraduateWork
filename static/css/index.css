@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #eeeeee;
+    background-color: #333333;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.banner__content {
+    padding: 20px;
+    display: block;
+    border: 1px solid #34495e;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.banner__title {
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    background-color: #34495e;
+
+}
+
+.banner__body {
+    background-color: #34495e;
+    padding: 10px 0;
+    font-size: 18px;
+
+}
+
+.banner__button {
+    position: relative;
+    margin: 30px auto 0;
+
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 18px;
+
+}
+
+.banner__button:active {
+    color: #f39c12;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.container {
+    width: 1170px;
+}
+
+.predict {
+
+}
+
+.predict__container {
+    margin: 0 auto;
+}
+
+.predict__content {
+    padding: 50px 0;
+    margin: 0 auto;
+    /*width: 30%;*/
+    display: flex;
+}
+
+.predict__form {
+    float: left;
+    display: inline-flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.predict__element {
+    padding: 5px 10px;
+    display: block;
+    float: left;
+    height: 292px;
+}
+
+.predict__element h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/*TODO: Тут есть блок!!!!*/
+/*.predict__select {*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*    width: 100%;*/
+/*    margin: 0 0 10px;*/
+/*}*/
+
+
+.predict__selected-team-logo {
+    align-content: center;
+    display: flex;
+}
+
+.predict__selected-map-logo {
+    align-content: center;
+    display: flex;
+}
+
+.predict__map-logo {
+    float: left;
+    position: relative;
+    max-height: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.predict__team-logo {
+    float: left;
+    position: relative;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+.predict__submit {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    margin-left: -7.5em;
+    height: 3em;
+    width: 15em;
+
+    border: none;
+    border-radius: .25em;
+    background-color: #2c3e50;
+
+    outline: none;
+
+    height: 40px;
+    width: 200px;
+    margin-left: -100px;
+    font-size: 16px;
+
+}
+
+.predict img {
+    padding: 20px 0 25px 0
+}
+
+
+.result__container {
+    margin: 0 auto;
+}
+
+.result__content {
+    padding: 50px 0;
+
+    margin: 0 auto;
+    /*width: 50%;*/
+}
+
+.result__entered-data-title {
+    text-align: center;
+    padding: 0 0 20px 0;
+
+}
+
+.result__entered-data {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.result__entered-data-teams {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.result__map {
+    padding: 15px 0;
+}
+
+
+.result__block {
+    padding: 0 10px;
+}
+
+.result__team1 {
+    float: left;
+    margin-left: -65px;
+    margin-right: 65px;
+}
+
+.result__line {
+    transform: rotate(30deg);
+    /*width: 1px;*/
+    border-right: 6px solid #cc0000;
+    border-radius: 5px;
+}
+
+
+.result__team2 {
+    padding-top: 50px;
+    float: right;
+    margin-left: 65px;
+}
+
+.result__block h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.result__winner-title {
+    padding-top: 20px;
+}
+
+
+.result__map h3 {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.result__winner h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.result__team-logo {
+    display: flex;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.choose-graph-style{
+    min-height: 160px;
+}
+
+.choose-graph-style__container {
+    margin: 0 auto;
+}
+
+.choose-graph-style__container h2 {
+    text-align: center;
+    /*padding: 0 0 15px;*/
+}
+
+.choose-graph-style__box {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #2c3e50;
+    border: 1px solid #2c3e50;
+    border-radius: 3px;
+    text-align: left;
+}
+
+
+/*****
+ *
+ * Radio checked style related
+ * the fun part starts here
+ *
+ */
+input[type=radio] {
+    display: none;
+}
+
+/**
+ * How it should look when hovered
+ */
+.active-label, label:focus, label:hover, label:active, input:checked + label {
+    color: #80B4E8;
+}
+
+.active-label:before, label:focus:before, label:hover:before, label:active:before, input:checked + label:before {
+    background: #eeeeee;
+    border-color: #80B4E8;
+
+}
+
+/**
+ * Make those labels sexy
+ */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    display: block;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #2c3e50;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    /**
+     * This is the radio fake dot basically
+     */
+}
+
+label:first-of-type {
+    border: 0;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: .2rem solid #ccc;
+}
+
+
+/**
+ * How it should look when checked
+ */
+input:checked + label:before {
+    border-color: white;
+    border: none;
+    background: #80B4E8;
+
+    width: 16px;
+    height: 16px;
+}
+
+
+/*.chooser-graph-style__block {*/
+/*    height: 3em;*/
+/*}*/
+
+
+/*.choose-graph-style__type {*/
+/*    display: flex;*/
+/*    align-content: center;*/
+/*    justify-content: center;*/
+/*    padding: 10px 0 15px 0;*/
+/*}*/
+
+/*.choose-graph-style__type input {*/
+/*    display: block;*/
+/*    margin: 3px 5px 3px 10px;*/
+/*    float: left;*/
+/*}*/
+
+.graphs{
+    min-height: 684px;
+
+}
+
+.graphs__container {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.graphs__content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Reset Select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select */
+.predict__selector {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select {
+    flex: 1;
+    padding: 0 1.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Arrow */
+.predict__selector::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+/* Transition */
+.predict__selector:hover::after {
+    color: #f39c12;
+}
+
+option {
+    background-color: #2c3e50;
+    max-height: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    display: block;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    animation: animate 5s linear infinite;
+    border: 1px solid #444444;
+
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #555555;
+}
+
+
+

@@ -125,4 +125,19 @@ dmypy.json
 .pyre/
 
 #My test files
-123.*
+123*.*
+temp.html
+
+
+
+#That site doesnt need at all
+#Data/
+#dataRefactor.py
+#predict.py
+#pythonScripts/trainModels.py
+#pythonScripts/Random_forest.joblib
+
+Models/
+
+!Data/results6_wo_garbage_NTN.csv
+
