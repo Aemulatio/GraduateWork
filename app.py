@@ -94,5 +94,30 @@ def main():
                                )
 
 
+# @app.route('/test.html', methods=['post', 'get'])
+# def main():
+#     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
+#     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
+#         train_forest()
+#     if request.method == 'POST':
+#         # print(str(request.form.get('team1')))
+#         t1 = request.form.get('team1')
+#         t2 = request.form.get('team2')
+#         map = request.form.get('map')
+#
+#         return render_template('index.html',
+#                                winner=predict(t1, t2, map),
+#                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
+#                                maps=np.unique(data['Map'].unique()),
+#                                team1=t1,
+#                                team2=t2,
+#                                map=map
+#                                )
+#     else:
+#         return render_template('index.html',
+#                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
+#                                maps=np.unique(data['Map'].unique())
+#                                )
+
 if __name__ == '__main__':
     app.run()
