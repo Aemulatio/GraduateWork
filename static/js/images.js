@@ -44,7 +44,3 @@ button.onclick = function () {
     document.querySelector('.banner').classList.toggle('on');
     document.querySelector('.banner').classList.toggle('off');
 }
-
-$(document).ready(() => {
-    $('.ui.dropdown').dropdown({fullTextSearch: true});
-})

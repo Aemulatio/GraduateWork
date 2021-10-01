@@ -40,14 +40,7 @@
                         <option value="{{team}}">{{team}}</option>
                         {%endfor%}
                     </select>
-                    <div class="predict__selector">
-                        <!--                        <select name="team1" id="team1" class="predict__select" onchange="teamOne()"-->
-                        <!--                                required>-->
 
-                        <!--                        </select>-->
-
-
-                    </div>
                     <div class="predict__selected-team-logo">
                         <img src="" alt="" class="predict__team1-logo predict__team-logo">
                     </div>
@@ -264,5 +257,10 @@
 </script>
 {%endif%}
 <script type="text/javascript" src="../static/js/images.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.ui.dropdown').dropdown({fullTextSearch: true});
+    });
+</script>
 </body>
 </html>
