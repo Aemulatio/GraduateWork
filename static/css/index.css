@@ -413,6 +413,12 @@ div.ui.dropdown.search.selection {
     width: 14.8em;
 }
 
+div.ui.dropdown.search.selection.active.visible {
+    /*border-left: 1px solid #96c8da !important;*/
+    /*border-top: 1px solid #96c8da !important;*/
+    /*border-right: 1px solid #96c8da !important;*/
+}
+
 /*Dropdown icon*/
 div.ui.dropdown.search.selection > i.dropdown.icon {
     background: #34495e;
@@ -437,10 +443,21 @@ div.ui.dropdown.search.selection > i.dropdown.icon {
 }
 
 /*Dropdown text*/
-div.ui.dropdown.search.selection > div.default.text {
+div.ui.dropdown.search.selection > div.text {
     background-color: inherit;
     color: white;
     font-size: 14px;
+}
+
+/*Dropdown items*/
+div.ui.dropdown.search.selection > div.menu > div.item {
+    background: #2c3e50;
+    color: white;
+    border: 0;
+}
+
+div.ui.dropdown.search.selection > div.menu > div.item:hover, div.ui.dropdown.search.selection > div.menu > div.item.selected {
+    background: #4b6987;
 }
 
 /* Reset Select */

@@ -33,11 +33,11 @@
                     <h2 class="clearfix">
                         <span>Команда 1</span>
                     </h2>
-                    <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()"
-                            required>
+                    <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>
                         <option selected disabled value="">Выберите команду</option>
                         {%for team in teams%}
                         <option value="{{team}}">{{team}}</option>
+                        s
                         {%endfor%}
                     </select>
                     <div class="predict__selected-team-logo">
@@ -49,14 +49,22 @@
                     <h2 class="clearfix">
                         <span>Команда 2</span>
                     </h2>
-                    <div class="predict__selector">
-                        <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>
-                            <option selected disabled value="">Выберите команду</option>
-                            {%for team in teams%}
-                            <option value="{{team}}">{{team}}</option>
-                            {%endfor%}
-                        </select>
-                    </div>
+                    <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>
+                        <option selected disabled value="">Выберите команду</option>
+                        {%for team in teams%}
+                        <option value="{{team}}">{{team}}</option>
+                        s
+                        {%endfor%}
+                    </select>
+
+                    <!--                    <div class="predict__selector">-->
+                    <!--                        <select name="team2" id="team2" class="predict__select" onchange="teamTwo()" required>-->
+                    <!--                            <option selected disabled value="">Выберите команду</option>-->
+                    <!--                            {%for team in teams%}-->
+                    <!--                            <option value="{{team}}">{{team}}</option>-->
+                    <!--                            {%endfor%}-->
+                    <!--                        </select>-->
+                    <!--                    </div>-->
                     <div class="predict__selected-team-logo">
                         <img src="" alt="" class="predict__team2-logo predict__team-logo">
                     </div>
@@ -66,14 +74,13 @@
                     <h2 class="clearfix">
                         <span>Карта</span>
                     </h2>
-                    <div class="predict__selector">
-                        <select name="map" id="map" class="predict__select " onchange="map_logo()" required>
-                            <option selected disabled value="">Выберите карту</option>
-                            {%for map in maps%}
-                            <option value="{{map}}" class="predict__select">{{map}}</option>
-                            {%endfor%}
-                        </select>
-                    </div>
+                    <!--                        <select name="map" id="map" class="predict__select " onchange="map_logo()" required>-->
+                    <select name="map" id="map" class="ui dropdown search " onchange="map_logo()" required>
+                        <option selected disabled value="">Выберите карту</option>
+                        {%for map in maps%}
+                        <option value="{{map}}" class="predict__select">{{map}}</option>
+                        {%endfor%}
+                    </select>
                     <div class="predict__selected-map-logo">
                         <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
                     </div>
