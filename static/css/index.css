@@ -417,7 +417,7 @@ div.ui.dropdown.search.selection {
 div.ui.dropdown.search.selection > i.dropdown.icon {
     background: #34495e;
     height: 100%;
-    right: -28px;
+    right: 10px;
     opacity: 1;
     border-radius: 0 .25em .25em 0;
 }
