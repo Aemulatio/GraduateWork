@@ -239,6 +239,16 @@
 /*    content: url("../imgs/map_img/mirage.jpg");*/
 /*}*/
 
+.result__versus {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .result__entered-data-title {
     text-align: center;
     padding: 0 0 20px 0;
