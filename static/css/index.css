@@ -230,16 +230,14 @@
 
 }
 
-.result__content:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: .6;
-    z-index: -1;
-    /*background: url("../imgs/map_img/mirage.jpg") center center no-repeat;*/
-    /*background-size: contain;*/
-    content: url("../imgs/map_img/mirage.jpg");
-}
+/*.result__content:before {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    opacity: .6;*/
+/*    z-index: -1;*/
+/*    content: url("../imgs/map_img/mirage.jpg");*/
+/*}*/
 
 .result__entered-data-title {
     text-align: center;

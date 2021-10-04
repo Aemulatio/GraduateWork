@@ -13,6 +13,19 @@
     <script type="text/javascript" src="../static/js/semantic.min.js"></script>
 
     <script src="https://kit.fontawesome.com/560f832382.js" crossorigin="anonymous"></script>
+
+    {%if winner%}
+    <style>
+        .result__content:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .6;
+            z-index: -1;
+            content: url("../static/imgs/map_img/{{map}}.jpg");
+        }
+    </style>
+    {%endif%}
 </head>
 <body>
 <div class="banner off">
