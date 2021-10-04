@@ -22,7 +22,7 @@
         </div>
     </div>
 </div>
-
+<!--
 <div class="ui top attached tabular menu">
     <a class="active item" data-tab="first">Форма для ввода</a>
     {%if winner%}
@@ -30,132 +30,133 @@
     <a class="item" data-tab="graphics">Графики</a>
     {%endif%}
 </div>
-<div class="ui bottom attached active tab segment" data-tab="first">
-    <div class="predict clearfix">
-        <div class="predict__container container clearfix">
-            <div class="predict__content ">
-                <form action="/" method="post" class="predict__form clearfix" id="predict__form"
-                      name="prediction__form">
-                    <!--КОМАНДА-1-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Команда 1</span>
-                        </h2>
-                        <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>
-                            <option selected disabled value="">Выберите команду</option>
-                            {%for team in teams%}
-                            <option value="{{team}}">{{team}}</option>
-                            s
-                            {%endfor%}
-                        </select>
-                        <div class="predict__selected-team-logo">
-                            <img src="" alt="" class="predict__team1-logo predict__team-logo">
-                        </div>
+-->
+<!--<div class="ui bottom attached active tab segment" data-tab="first">-->
+<div class="predict clearfix">
+    <div class="predict__container container clearfix">
+        <div class="predict__content ">
+            <form action="/" method="post" class="predict__form clearfix" id="predict__form"
+                  name="prediction__form">
+                <!--КОМАНДА-1-->
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
+                        <span>Команда 1</span>
+                    </h2>
+                    <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>
+                        <option selected disabled value="">Выберите команду</option>
+                        {%for team in teams%}
+                        <option value="{{team}}">{{team}}</option>
+                        s
+                        {%endfor%}
+                    </select>
+                    <div class="predict__selected-team-logo">
+                        <img src="" alt="" class="predict__team1-logo predict__team-logo">
                     </div>
-                    <!--КОМАНДА-2-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Команда 2</span>
-                        </h2>
-                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>
-                            <option selected disabled value="">Выберите команду</option>
-                            {%for team in teams%}
-                            <option value="{{team}}">{{team}}</option>
-                            s
-                            {%endfor%}
-                        </select>
-                        <div class="predict__selected-team-logo">
-                            <img src="" alt="" class="predict__team2-logo predict__team-logo">
-                        </div>
+                </div>
+                <!--КОМАНДА-2-->
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
+                        <span>Команда 2</span>
+                    </h2>
+                    <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>
+                        <option selected disabled value="">Выберите команду</option>
+                        {%for team in teams%}
+                        <option value="{{team}}">{{team}}</option>
+                        s
+                        {%endfor%}
+                    </select>
+                    <div class="predict__selected-team-logo">
+                        <img src="" alt="" class="predict__team2-logo predict__team-logo">
                     </div>
-                    <!--КАРТА-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Карта</span>
-                        </h2>
-                        <select name="map" id="map" class="ui dropdown search " onchange="map_logo()" required>
-                            <option selected disabled value="">Выберите карту</option>
-                            {%for map in maps%}
-                            <option value="{{map}}" class="predict__select">{{map}}</option>
-                            {%endfor%}
-                        </select>
-                        <div class="predict__selected-map-logo">
-                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
-                        </div>
+                </div>
+                <!--КАРТА-->
+                <div class="predict__element clearfix">
+                    <h2 class="clearfix">
+                        <span>Карта</span>
+                    </h2>
+                    <select name="map" id="map" class="ui dropdown search " onchange="map_logo()" required>
+                        <option selected disabled value="">Выберите карту</option>
+                        {%for map in maps%}
+                        <option value="{{map}}" class="predict__select">{{map}}</option>
+                        {%endfor%}
+                    </select>
+                    <div class="predict__selected-map-logo">
+                        <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
                     </div>
-                    <!--SUBMIT-->
-                    <input type="submit" class="predict__submit">
-                </form>
-            </div>
+                </div>
+                <!--SUBMIT-->
+                <input type="submit" class="predict__submit">
+            </form>
         </div>
     </div>
 </div>
+<!--</div>-->
 
 {%if winner%}
-<div class="ui bottom attached tab segment" data-tab="result">
-    <div class="result">
-        <div class="result__container container">
-            <div class="result__content clearfix">
-                <h2 class="result__entered-data-title">Вы ввели:</h2>
-                <div class="result__entered-data clearfix">
-                    <div class="result__entered-data-teams">
-                        <div class="result__team1 result__block">
-                            <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
-                            <h3>{{team1}}</h3>
-                        </div>
-                        <div class="result__line"></div>
-                        <div class="result__team2 result__block">
-                            <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
-                            <h3>{{team2}}</h3>
-                        </div>
+<!--<div class="ui bottom attached tab segment" data-tab="result">-->
+<div class="result">
+    <div class="result__container container">
+        <div class="result__content clearfix">
+            <h2 class="result__entered-data-title">Вы ввели:</h2>
+            <div class="result__entered-data clearfix">
+                <div class="result__entered-data-teams">
+                    <div class="result__team1 result__block">
+                        <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
+                        <h3>{{team1}}</h3>
+                    </div>
+                    <div class="result__line"></div>
+                    <div class="result__team2 result__block">
+                        <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
+                        <h3>{{team2}}</h3>
                     </div>
                 </div>
-                <div class="result__entered-data clearfix">
-                    <div class="result__map">
-                        <img src="../static/imgs/map_logos/{{map}}.png" alt="{{map}}" class="result__team-logo">
-                        <h3>{{map}}</h3>
-                    </div>
+            </div>
+            <div class="result__entered-data clearfix">
+                <div class="result__map">
+                    <img src="../static/imgs/map_logos/{{map}}.png" alt="{{map}}" class="result__team-logo">
+                    <h3>{{map}}</h3>
                 </div>
-                <h2 class="result__entered-data-title result__winner-title">Победитель:</h2>
-                <div class="result__winner">
-                    <img src="../static/imgs/logos/{{winner}}.png" alt="{{winner}}"
-                         class="result__team-logo" title="{{winner}}">
-                    <h3>{{winner}}</h3>
-                </div>
+            </div>
+            <h2 class="result__entered-data-title result__winner-title">Победитель:</h2>
+            <div class="result__winner">
+                <img src="../static/imgs/logos/{{winner}}.png" alt="{{winner}}"
+                     class="result__team-logo" title="{{winner}}">
+                <h3>{{winner}}</h3>
             </div>
         </div>
     </div>
 </div>
-<div class="ui bottom attached tab segment" data-tab="graphics">
+<!--</div>-->
+<!--<div class="ui bottom attached tab segment" data-tab="graphics">-->
 
 
-    <div class="choose-graph-style">
-        <div class="choose-graph-style__container container">
-            <h2>Выберите вид гистограммы:</h2>
-            <div class="choose-graph-style__box">
-                <input type="radio" id="common" name="radio" checked onchange="change()">
-                <label for="common">Гистограмма с группировкой</label>
+<div class="choose-graph-style">
+    <div class="choose-graph-style__container container">
+        <h2>Выберите вид гистограммы:</h2>
+        <div class="choose-graph-style__box">
+            <input type="radio" id="common" name="radio" checked onchange="change()">
+            <label for="common">Гистограмма с группировкой</label>
 
-                <input type="radio" id="stacked" name="radio" onchange="change()">
-                <label for="stacked">Вложеная гистограмма</label>
-            </div>
+            <input type="radio" id="stacked" name="radio" onchange="change()">
+            <label for="stacked">Вложеная гистограмма</label>
         </div>
     </div>
-
-    <div class="graphs">
-        <div class="graphs__container container">
-            <div class="graphs__content">
-                <div class="graphs__team1">
-                    <canvas id="team1__graph"></canvas>
-                </div>
-                <div class="graphs__team2">
-                    <canvas id="team2__graph"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
+
+<div class="graphs">
+    <div class="graphs__container container">
+        <div class="graphs__content">
+            <div class="graphs__team1">
+                <canvas id="team1__graph"></canvas>
+            </div>
+            <div class="graphs__team2">
+                <canvas id="team2__graph"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--</div>-->
 <script title="Graphs" type="text/javascript">
 
     function build(team, canvasID) {
