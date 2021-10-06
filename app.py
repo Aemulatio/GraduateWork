@@ -71,6 +71,7 @@ def train_forest():
 @app.route('/', methods=['post', 'get'])
 def main():
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
+    logos = os.listdir("static/imgs/logos")
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         train_forest()
     if request.method == 'POST':
@@ -85,12 +86,14 @@ def main():
                                maps=np.unique(data['Map'].unique()),
                                team1=t1,
                                team2=t2,
-                               map=map
+                               map=map,
+                               logos=logos
                                )
     else:
         return render_template('index.html',
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
-                               maps=np.unique(data['Map'].unique())
+                               maps=np.unique(data['Map'].unique()),
+                               logos=logos
                                )
 
 
