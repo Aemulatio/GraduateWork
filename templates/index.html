@@ -366,13 +366,16 @@
                 // console.log($(this).data('name').toLowerCase())
                 if (team.indexOf(input_val) == -1) {
                     console.log(team + " net")
-                    $(this).addClass("hide");
+                    $(this).addClass("hide").remove();
                 } else {
                     console.log(team + ' yest')
                     // $(this).parents(".phone_department").addClass("show_dept");
                     $(this).removeClass('hide');
                 }
             });
+            if (input_val === '') {
+                $("#team1_slider .slick-list .slick-track").empty().append(team1_slider)
+            }
             //$(".phone_department.show_dept.hide").removeClass("show_dept").removeClass("hide");
 
 

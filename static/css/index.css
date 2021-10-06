@@ -720,5 +720,5 @@ div.slick-slide:not(.slick-center) {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
