@@ -722,3 +722,36 @@ div.slick-slide:not(.slick-center) {
 .hide {
     display: none !important;
 }
+
+/*modal*/
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.element {
+    margin: 10px 0;
+    transition: background-color .5s ease;
+}
+
+.element * {
+    background-color: transparent;
+}
+
+.element img {
+
+    max-height: 150px;
+    max-width: 150px;
+
+}
+
+.element:hover {
+    /*border: 1px solid lightcyan;*/
+    background: lightcyan;
+}
+
+.choosen {
+    background-color: #f39c12;
+}
