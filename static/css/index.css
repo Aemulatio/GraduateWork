@@ -719,3 +719,6 @@ div.slick-slide:not(.slick-center) {
     filter: blur(5px);
 }
 
+.hide {
+    display: none;
+}
