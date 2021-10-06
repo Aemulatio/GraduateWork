@@ -361,7 +361,7 @@
             let input_val = $("#team1_search").val().toLowerCase();
             team1_slider.removeClass('hide');
             team1_slider.each(function (index) {
-                let team = $(this).attr('data-name').toLowerCase();
+                let team = $(this).data('name').toLowerCase();
                 if (team.indexOf(input_val) == -1) {
                     $(this).addClass("hide");
                 } else {
