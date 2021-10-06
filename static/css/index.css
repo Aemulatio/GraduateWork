@@ -106,6 +106,10 @@
     color: #f39c12;
 }
 
+body {
+    position: relative;
+}
+
 .on {
     display: block;
 }
@@ -118,8 +122,13 @@
     width: 1170px;
 }
 
-.predict {
+.slide {
+    height: 100vh;
+}
 
+.predict {
+    /*height: 100vh;*/
+    /*position: sticky;*/
 }
 
 .predict__container {
@@ -215,10 +224,12 @@
 
 .result__container {
     margin: 0 auto;
+    background-color: transparent;
 }
 
 .result__content {
     /*padding: 50px 0;*/
+    background-color: transparent;
     padding: 250px 0;
 
     margin: 0 auto;
@@ -239,15 +250,6 @@
 /*    content: url("../imgs/map_img/mirage.jpg");*/
 /*}*/
 
-.result__versus {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 
 .result__entered-data-title {
     text-align: center;
@@ -261,8 +263,10 @@
 }
 
 .result__entered-data {
-    width: 50%;
-    margin: 0 auto;
+    /*width: 50%;*/
+    /*margin: 0 auto;*/
+
+    padding: 125px;
 }
 
 
@@ -325,7 +329,8 @@
 
 .result__team-logo {
     display: flex;
-    width: 130px;
+    /*width: 130px;*/
+    width: 210px;
     margin: 0 auto;
 }
 
@@ -619,4 +624,73 @@ option {
 }
 
 
+/*stick*/
 
+/*.stick1 {*/
+/*position: sticky;*/
+/*position: -webkit-sticky;*/
+/*top: 0vh;*/
+/*}*/
+/**/
+/*.stick2 {*/
+/*    position: sticky;*/
+/*    position: -webkit-sticky;*/
+/*    top: 110vh;*/
+/*}*/
+/**/
+/*.stick3 {*/
+/*    position: sticky;*/
+/*    position: -webkit-sticky;*/
+/*    top: 220vh;*/
+/*}*/
+
+/*absolute*/
+
+.abs {
+    /*position: absolute;*/
+}
+
+.pos_1 {
+    z-index: 10000;
+}
+
+.pos_last {
+    z-index: -1000;
+}
+
+
+/*versus*/
+
+.result {
+    background: linear-gradient(325deg, #CA2D05 50%, #03B1D8 50%);
+    position: relative;
+}
+
+.separate {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    transform: rotate(325deg);
+}
+
+.result__versus {
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+}
+
+body {
+    position: relative;
+    height: 300vh !important;
+}
+
+/*entered*/
+.predict__entered {
+    background: transparent;
+}

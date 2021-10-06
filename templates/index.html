@@ -22,7 +22,8 @@
             left: 0;
             opacity: .6;
             z-index: -1;
-            content: url("../static/imgs/map_img/{{map}}.jpg");
+            /*content: url("../static/imgs/map_img/{{map}}.jpg");*/
+            /*content: url("../static/imgs/map_img/Mirage.jpg");*/
         }
     </style>
     {%endif%}
@@ -47,8 +48,8 @@
 </div>
 -->
 <!--<div class="ui bottom attached active tab segment" data-tab="first">-->
-<div class="predict clearfix">
-    <div class="predict__container container clearfix">
+<div class="predict slide abs clearfix">
+    <div class="predict__container stick1 container clearfix">
         <div class="predict__content ">
             <form action="/" method="post" class="predict__form clearfix" id="predict__form"
                   name="prediction__form">
@@ -102,6 +103,20 @@
                 <!--SUBMIT-->
                 <input type="submit" class="predict__submit">
             </form>
+
+            <div class="predict__entered">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 </div>
@@ -109,13 +124,11 @@
 
 {%if winner%}
 <!--<div class="ui bottom attached tab segment" data-tab="result">-->
-<div class="result">
-    <div class="result__container container">
+<div class="result slide abs" id="res">
+    <img src="../static/imgs/player-versus-player.png" class="result__versus" alt="" style="">
+
+    <div class="result__container stick2 container">
         <div class="result__content clearfix">
-            <!--            <h2 class="result__entered-data-title">Вы ввели:</h2>-->
-
-            <img src="../static/imgs/versus.png" class="result__versus" alt="" style="">
-
             <div class="result__entered-data clearfix">
                 <div class="result__entered-data-teams">
                     <div class="result__team1 result__block">
@@ -145,37 +158,40 @@
             <!--            </div>-->
         </div>
     </div>
+    <!--        <div class="separate">    </div>-->
 </div>
 <!--</div>-->
 <!--<div class="ui bottom attached tab segment" data-tab="graphics">-->
 
+<div class="slide last abs">
+    <div class="stick3">
+        <div class="choose-graph-style">
+            <div class="choose-graph-style__container container">
+                <h2>Выберите вид гистограммы:</h2>
+                <div class="choose-graph-style__box">
+                    <input type="radio" id="common" name="radio" checked onchange="change()">
+                    <label for="common">Гистограмма с группировкой</label>
 
-<div class="choose-graph-style">
-    <div class="choose-graph-style__container container">
-        <h2>Выберите вид гистограммы:</h2>
-        <div class="choose-graph-style__box">
-            <input type="radio" id="common" name="radio" checked onchange="change()">
-            <label for="common">Гистограмма с группировкой</label>
+                    <input type="radio" id="stacked" name="radio" onchange="change()">
+                    <label for="stacked">Вложеная гистограмма</label>
+                </div>
+            </div>
+        </div>
 
-            <input type="radio" id="stacked" name="radio" onchange="change()">
-            <label for="stacked">Вложеная гистограмма</label>
+        <div class="graphs">
+            <div class="graphs__container container">
+                <div class="graphs__content">
+                    <div class="graphs__team1">
+                        <canvas id="team1__graph"></canvas>
+                    </div>
+                    <div class="graphs__team2">
+                        <canvas id="team2__graph"></canvas>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<div class="graphs">
-    <div class="graphs__container container">
-        <div class="graphs__content">
-            <div class="graphs__team1">
-                <canvas id="team1__graph"></canvas>
-            </div>
-            <div class="graphs__team2">
-                <canvas id="team2__graph"></canvas>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--</div>-->
 <script title="Graphs" type="text/javascript">
 
@@ -293,7 +309,46 @@
 <script>
     $(document).ready(() => {
         $('.ui.dropdown').dropdown({fullTextSearch: true});
-        $('.menu .item').tab();
+        // $('.menu .item').tab();
+
+        let vhOffset = window.innerHeight * 1;
+        $(window).on('scroll', () => {
+
+            /*if (window.pageYOffset < vhOffset) {
+                $(".predict").addClass('stick')
+                $(".result").removeClass('stick')
+                $(".last").removeClass('stick')
+                console.log(0x1)
+            } else if (window.pageYOffset >= vhOffset && window.pageYOffset < vhOffset * 2) {
+                $(".predict").removeClass('stick')
+                $(".result").addClass('stick')
+                $(".last").removeClass('stick')
+                console.log(2)
+            } else if (window.pageYOffset >= vhOffset * 2 && window.pageYOffset < vhOffset * 3) {
+                $(".predict").removeClass('stick')
+                $(".result").removeClass('stick')
+                $(".last").addClass('stick')
+                console.log(3)
+            }*/
+            // if (window.pageYOffset < vhOffset) {
+            //     $(".predict").removeClass('pos_last').addClass('pos_1')
+            //     $(".result, .last").addClass('pos_last').removeClass('pos_1')
+            //
+            //     console.log(0x1)
+            // } else if (window.pageYOffset >= vhOffset && window.pageYOffset < vhOffset * 2) {
+            //     $(".result").removeClass('pos_last').addClass('pos_1')
+            //     $(".predict, .last").addClass('pos_last').removeClass('pos_1')
+            //     console.log(2)
+            // } else if (window.pageYOffset >= vhOffset * 2 && window.pageYOffset < vhOffset * 3) {
+            //     $(".last").removeClass('pos_last').addClass('pos_1')
+            //     $(".result, .predict").addClass('pos_last').removeClass('pos_1')
+            //     console.log(3)
+            // }
+
+            // console.log(window.pageYOffset)
+        });
+
+
     });
 </script>
 </body>
