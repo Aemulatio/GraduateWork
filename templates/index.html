@@ -355,8 +355,8 @@
             infinite: false,
         });
 
-        let team1_slider = $('#team1_slider');
-
+        let team1_slider = $('#team1_slider .slick-list .slick-track div');
+        console.log(team1_slider)
         $("#team1_search").keyup(function () {
             let input_val = $("#team1_search").val().toLowerCase();
             team1_slider.removeClass('hide');
