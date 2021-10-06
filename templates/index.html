@@ -118,10 +118,10 @@
 
             </div>
             <div class="predict__teams-logo" style="width: 500px">
-                {%for logo in logos%}
-                <div data-name="{{logo}}">
-                    <img src="../static/imgs/logos/{{logo}}" data-name="{{logo}}" alt="">
-                    <h3 style="text-align: center">{{logo}}</h3>
+                {%for team in teams%}
+                <div data-name="{{team}}">
+                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                    <h3 style="text-align: center">{{team}}</h3>
                 </div>
                 {%endfor%}
                 <!--                <img src="../static/imgs/logos/TYLOO.png" data-name="" alt="">-->
