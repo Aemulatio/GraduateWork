@@ -694,3 +694,24 @@ body {
 .predict__entered {
     background: transparent;
 }
+
+/*slider*/
+
+.predict__teams-logo img {
+    /*max-width: 150px;*/
+    max-height: 150px;
+}
+
+img.slick-slide {
+    margin: 0 10px;
+}
+
+img.slick-slide.slick-current.slick-center {
+    transform: scale(1.1);
+    margin: 0 15px;
+}
+
+img.slick-slide:not(.slick-center) {
+    filter: blur(5px);
+}
+
