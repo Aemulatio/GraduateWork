@@ -119,10 +119,13 @@
             </div>
             <div class="predict__teams-logo" style="width: 500px">
                 {%for logo in logos%}
-                <img src="../static/imgs/logos/{{logo}}" alt="">
+                <div data-name="{{logo}}">
+                    <img src="../static/imgs/logos/{{logo}}" data-name="{{logo}}" alt="">
+                    <h3 style="text-align: center">{{logo}}</h3>
+                </div>
                 {%endfor%}
-                <!--                <img src="../static/imgs/logos/1WIN.png" data-name="" alt="">-->
-                <!--                <img src="../static/imgs/logos/3DMAX.png" alt="">-->
+                <!--                <img src="../static/imgs/logos/TYLOO.png" data-name="" alt="">-->
+                <!--                <img src="../static/imgs/logos/Ground Zero.png" alt="">-->
                 <!--                <img src="../static/imgs/logos/9z.png" alt="">-->
                 <!--                <img src="../static/imgs/logos/Cloud9.png" alt="">-->
             </div>
@@ -325,6 +328,7 @@
             centerMode: true,
             centerPadding: '60px',
             slidesToShow: 3,
+            arrows: true,
             responsive: [
                 {
                     breakpoint: 768,
