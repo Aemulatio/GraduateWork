@@ -365,13 +365,15 @@
                 // console.log($(this).data('name'))
                 // console.log($(this).data('name').toLowerCase())
                 if (team.indexOf(input_val) == -1) {
+                    console.log(team + " net")
                     $(this).addClass("hide");
                 } else {
+                    console.log(team + ' yest')
                     // $(this).parents(".phone_department").addClass("show_dept");
                     $(this).removeClass('hide');
                 }
             });
-            $(".phone_department.show_dept.hide").removeClass("show_dept").removeClass("hide");
+            //$(".phone_department.show_dept.hide").removeClass("show_dept").removeClass("hide");
 
 
         });
