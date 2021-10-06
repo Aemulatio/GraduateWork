@@ -702,16 +702,20 @@ body {
     max-height: 150px;
 }
 
-img.slick-slide {
+div.slick-slide {
     margin: 0 10px;
+    /*max-height: 200px;*/
 }
 
-img.slick-slide.slick-current.slick-center {
-    transform: scale(1.1);
+div.slick-slide.slick-current.slick-center {
     margin: 0 15px;
 }
 
-img.slick-slide:not(.slick-center) {
+div.slick-slide.slick-current.slick-center img {
+    transform: scale(1.1);
+}
+
+div.slick-slide:not(.slick-center) {
     filter: blur(5px);
 }
 
