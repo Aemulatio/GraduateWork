@@ -98,187 +98,23 @@
                         <span>Команда 2</span>
                     </h2>
 
-                    <div class="ui modal">
+                    <div class="ui modal" id="team2Modal">
                         <div class="header">Header</div>
+                        <div class="content">
+                            <!--                            <form action="" class="ui form">-->
+                            <input type="text" class="ui input" id="team2Filter">
+                            <button class="ui button" id="team2FilterOk">Подтвердить</button>
+                            <!--                            </form>-->
+                        </div>
                         <div class="scrolling content">
                             <div class="elements">
-                                <!--                                {%for team in teams%}-->
+                                {%for team in teams%}
                                 <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                                    <!--                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">-->
                                     <h3 style="text-align: center">{{team}}</h3>
                                 </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <div data-name="{{team}}" class="element">
-                                    <!--                                    <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
-                                    <h3 style="text-align: center">{{team}}</h3>
-                                </div>
-                                <!--                                {%endfor%}-->
+                                {%endfor%}
 
                             </div>
                         </div>
@@ -575,6 +411,23 @@
         $("#team2_choose").on('click', function () {
             $(".ui.modal").modal('show');
         });
+
+        $("#team2Filter").keyup(function () {
+            let input_val = $("#team2Filter").val().toLowerCase();
+            $(".ui.modal .element").removeClass('hide');
+            $(".ui.modal .element").each(function (index) {
+                let team = $(this).data("name").toString().toLowerCase();
+                if (team.indexOf(input_val) == -1) {
+                    console.log(team + " net")
+                    $(this).addClass("hide").removeClass('vis');
+                } else {
+                    console.log(team + ' yest')
+                    // $(this).parents(".phone_department").addClass("show_dept");
+                    $(this).removeClass('hide').addClass('vis');
+                }
+            });
+        });
+
 
         $(".element").on('click', function () {
             if (!$(this).hasClass('choosen')) $('.element').removeClass('choosen');

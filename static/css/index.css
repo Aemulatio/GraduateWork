@@ -725,15 +725,35 @@ div.slick-slide:not(.slick-center) {
 
 /*modal*/
 
+#team2Filter {
+    background-color: inherit;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#team2FilterOk {
+    width: 50%;
+    margin: 10px auto 0;
+    display: block;
+
+}
+
+#team2Modal.modal > * {
+    background-color: #bbb;
+}
+
 .elements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: inherit;
 }
 
 .element {
     margin: 10px 0;
     transition: background-color .5s ease;
+    background-color: inherit;
 }
 
 .element * {
@@ -749,7 +769,7 @@ div.slick-slide:not(.slick-center) {
 
 .element:hover {
     /*border: 1px solid lightcyan;*/
-    background: lightcyan;
+    background: #888;
 }
 
 .choosen {
