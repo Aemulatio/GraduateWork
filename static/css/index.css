@@ -754,6 +754,7 @@ div.slick-slide:not(.slick-center) {
     margin: 10px 0;
     transition: background-color .5s ease;
     background-color: inherit;
+    width: 18%;
 }
 
 .element * {
@@ -761,7 +762,8 @@ div.slick-slide:not(.slick-center) {
 }
 
 .element img {
-
+    margin: 0 auto;
+    display: block;
     max-height: 150px;
     max-width: 150px;
 
