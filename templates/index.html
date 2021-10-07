@@ -81,8 +81,64 @@
                     <!--                    tut-->
                     <div class="predict__teams-logo" id="team1_slider" style="width: 500px">
                         {%for team in teams%}
+                        <div data-name="natus" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{navi}}</h3>
+                        </div>
+                        <div data-name="vici" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{vici}}</h3>
+                        </div>
                         <div data-name="{{team}}" class="vis">
-                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
+                            <h3 style="text-align: center">{{team}}</h3>
+                        </div>
+                        <div data-name="{{team}}" class="vis">
+                            <!--                            <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                            <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">
                             <h3 style="text-align: center">{{team}}</h3>
                         </div>
                         {%endfor%}
@@ -349,6 +405,9 @@
         $('.ui.dropdown').dropdown({fullTextSearch: true});
         // $('.menu .item').tab();
 
+        let teams = '{{teams}}';
+        console.log(teams)
+
         $(".predict__teams-logo").slick({
             centerMode: true,
             centerPadding: '60px',
@@ -384,25 +443,64 @@
         let team1_slider = $('#team1_slider .slick-list .slick-track div');
         console.log(team1_slider)
         $("#team1_search").keyup(function () {
-            let input_val = $("#team1_search").val().toLowerCase();
-            team1_slider.removeClass('hide');
-            team1_slider.each(function (index) {
-                let team = $(this).data('name').toString().toLowerCase();
-                // console.log($(this).data('name'))
-                // console.log($(this).data('name').toLowerCase())
-                if (team.indexOf(input_val) == -1) {
-                    console.log(team + " net")
-                    $(this).addClass("hide").removeClass('vis');
-                } else {
-                    console.log(team + ' yest')
-                    // $(this).parents(".phone_department").addClass("show_dept");
-                    $(this).removeClass('hide').addClass('vis');
-                }
+            setTimeout(() => {
+                let input_val = $("#team1_search").val().toLowerCase().trim();
+                $('#team1_slider .slick-list .slick-track div').removeClass('hide');
+                $('#team1_slider .slick-list .slick-track div').each(function (index) {
+                    let team = $(this).data('name').toString().toLowerCase();
+                    console.log($(this))
+                    if (team.indexOf(input_val) == -1) {
+                        console.log(team + " net")
+                        // $(this).addClass("hide").removeClass('vis');
+                        $(this)[0].remove();
+                    } else {
+                        console.log(team + ' yest')
+                        // $(this).parents(".phone_department").addClass("show_dept");
+                        $(this).removeClass('hide').addClass('vis');
+                    }
+                }, 1000);
+
+                $('#team1_slider .slick-list .slick-track div')[0].classList.add("slick-current", "slick-center")
             });
-            // team1_slider[0].classList.add("slick-current", "slick-center")
-            // if (input_val === '') {
-            //     $("#team1_slider .slick-list .slick-track").empty().append(team1_slider)
-            // }
+            $(".predict__teams-logo").slick('unslick');
+
+            $(".predict__teams-logo").slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ],
+
+                variableWidth: true,
+                adaptiveHeight: true,
+                infinite: false,
+                slide: '.vis'
+            });
+
+            if (input_val === '') {
+                $("#team1_slider .slick-list .slick-track").empty().append(team1_slider)
+                console.log("aaaaaaaaa")
+            }
+
             //$(".phone_department.show_dept.hide").removeClass("show_dept").removeClass("hide");
 
         });
