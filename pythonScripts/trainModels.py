@@ -140,7 +140,7 @@ if __name__ == "__main__":
 
     # LR = 'Logistic_regression_model.sav'
     # SVM_model = 'SVM_model.sav'
-    RF = 'Random_forest.sav'
+    RF = 'RANDOM_FOREST.pickle'
 
     from joblib import dump, load
 
@@ -162,7 +162,6 @@ if __name__ == "__main__":
     # print()
     # train_predict(ETC, X_train, y_train, X_test, y_test)
 
-
     #
     # pickle.dump(knn, open("Models/knn.sav", 'wb'))
 
@@ -179,4 +178,4 @@ if __name__ == "__main__":
 
     # pickle.dump(clf_A, open("Models/" + LR, 'wb'))
     # pickle.dump(clf_B, open("Models/" + SVM_model, 'wb'))
-    # pickle.dump(rf, open("../Models/" + RF, 'wb'))
+    pickle.dump(rf, open("../Models/" + RF, 'wb'))

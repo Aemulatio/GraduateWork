@@ -11,13 +11,13 @@ from sklearn import ensemble
 app = Flask(__name__)
 
 
-def predict(t1, t2, map):
+def predict(t1, t2, game_map):
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         model = pickle.load(open("Models/SVM_model.sav", 'rb'))
     else:
         model = pickle.load(open("Models/RANDOM_FOREST.pickle", 'rb'))
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
-
+    print(data)
     UniqueTeams = pd.Series(np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))))
     # Получаем все карты, на которых играли команды
     UniqueMaps = pd.Series(np.unique(data['Map'].unique()))
@@ -25,7 +25,7 @@ def predict(t1, t2, map):
     vvod = pd.DataFrame({
         "Team1": pd.Index(UniqueTeams).get_loc(t1),
         "Team2": pd.Index(UniqueTeams).get_loc(t2),
-        "Map": pd.Index(UniqueMaps).get_loc(map),
+        "Map": pd.Index(UniqueMaps).get_loc(game_map),
     }, index=[0])
 
     ret = model.predict(vvod)
@@ -40,6 +40,8 @@ def predict(t1, t2, map):
 
 @app.errorhandler(500)
 def error_500(error):
+    print(request.form)
+    print(request.method)
     return (error)
 
 
@@ -71,30 +73,30 @@ def train_forest():
 @app.route('/', methods=['post', 'get'])
 def main():
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
-#     logos = os.listdir("static/imgs/logos")
-#     teams =
+    #     logos = os.listdir("static/imgs/logos")
+    #     teams =
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         train_forest()
     if request.method == 'POST':
         # print(str(request.form.get('team1')))
         t1 = request.form.get('team1')
         t2 = request.form.get('team2')
-        map = request.form.get('map')
+        game_map = request.form.get('map')
+
+        print(t1, t2, game_map)
 
         return render_template('index.html',
-                               winner=predict(t1, t2, map),
+                               winner=predict(t1, t2, game_map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique()),
                                team1=t1,
                                team2=t2,
                                map=map,
-#                                logos=logos
                                )
     else:
         return render_template('index.html',
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique()),
-#                                logos=logos
                                )
 
 
