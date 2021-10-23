@@ -78,10 +78,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="team1_choose">Выбрать команду</button>
+                        <button id="team1_choose" class="ui button">Выбрать команду</button>
                         <input type="text" name="team1" id="team1" hidden required>
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team1-logo predict__team-logo">
+                            <p id="predict__team1-name"></p>
                         </div>
                     </div>
                     <!--КОМАНДА-2-->
@@ -107,10 +108,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="team2_choose">Выбрать команду</button>
+                        <button id="team2_choose" class="ui button">Выбрать команду</button>
                         <input type="text" name="team2" id="team2" hidden required>
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team2-logo predict__team-logo">
+                            <p id="predict__team2-name"></p>
                         </div>
                     </div>
                     <!--КАРТА-->
@@ -118,12 +120,6 @@
                         <h2 class="clearfix">
                             <span>Карта</span>
                         </h2>
-                        <!--                        <select name="map" id="map" class="ui dropdown search " onchange="map_logo()" required>-->
-                        <!--                            <option selected disabled value="">Выберите карту</option>-->
-                        <!--                            {%for map in maps%}-->
-                        <!--                            <option value="{{map}}" class="predict__select">{{map}}</option>-->
-                        <!--                            {%endfor%}-->
-                        <!--                        </select>-->
                         <div class="ui modal" id="mapModal">
                             <div class="header" style="text-align: center">Карта</div>
                             <div class="content">
@@ -141,10 +137,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="map_choose">Выбрать команду</button>
+                        <button id="map_choose" class="ui button">Выбрать команду</button>
                         <input type="text" name="map" id="map" hidden required>
                         <div class="predict__selected-map-logo">
                             <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
+                            <p id="predict__map-name"></p>
                         </div>
                     </div>
                     <!--SUBMIT-->
@@ -337,7 +334,6 @@
     </script>
     {%endif%}
 </div>
-<script type="text/javascript" src="../static/js/images.js"></script>
 
 <script type="text/javascript" src="../static/pagepilling/jquery.pagepiling.min.js"></script>
 <script>
@@ -397,6 +393,8 @@
                 $('.predict__team1-logo').attr('src', $("#team1Modal.ui.modal .element.choosen img")[0].src)
                 $(".ui.modal").modal('hide');
                 $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
+                $("#team1_choose").addClass("modalSelected");
+                $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
             } else {
                 alert("Команда не выбрана");
             }
@@ -425,6 +423,8 @@
                 $('.predict__team2-logo').attr('src', $("#team2Modal.ui.modal .element.choosen img")[0].src)
                 $(".ui.modal").modal('hide');
                 $("#team2").val($("#team2Modal.ui.modal .element.choosen").data('name'));
+                $("#team2_choose").addClass("modalSelected");
+                $("#predict__team2-name").text($("#team2Modal.ui.modal .element.choosen").data('name'));
             } else {
                 alert("Команда не выбрана");
             }
@@ -453,17 +453,40 @@
                 $('.predict__map-logo').attr('src', $("#mapModal.ui.modal .element.choosen img")[0].src)
                 $(".ui.modal").modal('hide');
                 $("#map").val($("#mapModal.ui.modal .element.choosen").data('name'));
+                $("#map_choose").addClass("modalSelected");
+                $("#predict__map-name").text($("#mapModal.ui.modal .element.choosen").data('name'));
             } else {
                 alert("Команда не выбрана");
             }
         });
-
 
         $(".element").on('click', function () {
             if (!$(this).hasClass('choosen')) $('.element').removeClass('choosen');
             // console.log($(this))
             $(this).toggleClass('choosen');
         })
+
+        $('#predict__form').submit(function (e) {
+            let team1 = $("#team1").val();
+            let team2 = $("#team2").val();
+
+            if (team1 !== team2) {
+                return true;
+            } else {
+                $(".banner").toggleClass('on').toggleClass('off');
+                return false;
+            }
+        });
+        $(".predict__submit").on('click', function (e) {
+            e.preventDefault();
+            $('#predict__form').submit();
+        });
+
+        $(".banner__button").on('click', function (e) {
+            e.preventDefault();
+            $(".banner").toggleClass('on').toggleClass('off');
+        });
+
     });
 </script>
 </body>
