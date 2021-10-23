@@ -785,7 +785,7 @@ div.slick-slide:not(.slick-center) {
 }
 
 .section {
-    height: 100vh !important;
+    /*height: 100vh !important;*/
 }
 
 .ui.button.modalSelected {
