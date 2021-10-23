@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <link rel="stylesheet" href="../static/pagepilling/jquery.pagepiling.min.css">-->
+
+    <!--    <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">-->
+
+    <!--    <link rel="stylesheet" href="../static/css/semantic.min.css">-->
+
+    <!--    <link rel="stylesheet" href="../static/css/index.css">-->
+
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
+    <script src="../static/js/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/semantic.min.css">
+
+    <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">
+    <!--    <link rel="stylesheet" href="../static/pagepilling/jquery.pagepiling.min.css">-->
+
+    <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/semantic.min.js"></script>
+
+    <script type="text/javascript" src="../static/js/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+<body>
+<div id="fullpage">
+    <!--    <div class="predict clearfix section">-->
+    <!--        <div class="predict__container stick1 container clearfix">-->
+    <!--            <div class="predict__content ">-->
+    <!--                <form action="/" method="post" class="predict__form clearfix" id="predict__form"-->
+    <!--                      name="prediction__form">-->
+    <!--                    &lt;!&ndash;КОМАНДА-1&ndash;&gt;-->
+    <!--                    <div class="predict__element clearfix">-->
+    <!--                        <h2 class="clearfix">-->
+    <!--                            <span>Команда 1</span>-->
+    <!--                        </h2>-->
+
+    <!--                        <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>-->
+    <!--                            <option selected disabled value="">Выберите команду</option>-->
+    <!--                            {%for team in teams%}-->
+    <!--                            <option value="{{team}}">{{team}}</option>-->
+    <!--                            {%endfor%}-->
+    <!--                        </select>-->
+
+    <!--                        <div class="predict__selected-team-logo">-->
+    <!--                            <img src="" alt="" class="predict__team1-logo predict__team-logo">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;КОМАНДА-2&ndash;&gt;-->
+    <!--                    <div class="predict__element clearfix">-->
+    <!--                        <h2 class="clearfix">-->
+    <!--                            <span>Команда 2</span>-->
+    <!--                        </h2>-->
+
+    <!--                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>-->
+    <!--                            <option selected disabled value="">Выберите команду</option>-->
+    <!--                            {%for team in teams%}-->
+    <!--                            <option value="{{team}}">{{team}}</option>-->
+
+    <!--                            {%endfor%}-->
+    <!--                        </select>-->
+    <!--                        <div class="predict__selected-team-logo">-->
+    <!--                            <img src="" alt="" class="predict__team2-logo predict__team-logo">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;КАРТА&ndash;&gt;-->
+    <!--                    <div class="predict__element clearfix">-->
+    <!--                        <h2 class="clearfix">-->
+    <!--                            <span>Карта</span>-->
+    <!--                        </h2>-->
+    <!--                        <select name="map" id="map" class="ui dropdown search " onchange="map_logo()" required>-->
+    <!--                            <option selected disabled value="">Выберите карту</option>-->
+    <!--                            {%for map in maps%}-->
+    <!--                            <option value="{{map}}" class="predict__select">{{map}}</option>-->
+    <!--                            {%endfor%}-->
+    <!--                        </select>-->
+    <!--                        <div class="predict__selected-map-logo">-->
+    <!--                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    &lt;!&ndash;SUBMIT&ndash;&gt;-->
+    <!--                    <input type="submit" class="predict__submit">-->
+    <!--                </form>-->
+
+    <!--                <div class="predict__entered">-->
+
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="predict clearfix section">
+        <div class="predict__container stick1 container clearfix">
+            <div class="predict__content ">
+                <form action="/" method="post" class="predict__form clearfix" id="predict__form"
+                      name="prediction__form">
+                    <!--КОМАНДА-1-->
+                    <div class="predict__element clearfix">
+                        <h2 class="clearfix">
+                            <span>Команда 1</span>
+                        </h2>
+                        <div class="ui modal" id="team1Modal">
+                            <div class="header" style="text-align: center">Команда 1</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="team1Filter">
+                                <button class="ui button" id="team1FilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for team in teams%}
+                                    <div data-name="{{team}}" class="element">
+                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                                        <h3 style="text-align: center">{{team}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <button id="team1_choose" class="ui button">Выбрать команду</button>
+                        <input type="text" name="team1" id="team1" hidden required>
+                        <div class="predict__selected-team-logo">
+                            <img src="" alt="" class="predict__team1-logo predict__team-logo">
+                            <p id="predict__team1-name"></p>
+                        </div>
+                    </div>
+                    <!--КОМАНДА-2-->
+                    <div class="predict__element clearfix">
+                        <h2 class="clearfix">
+                            <span>Команда 2</span>
+                        </h2>
+
+                        <div class="ui modal" id="team2Modal">
+                            <div class="header" style="text-align: center">Команда 2</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="team2Filter">
+                                <button class="ui button" id="team2FilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for team in teams%}
+                                    <div data-name="{{team}}" class="element">
+                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                                        <h3 style="text-align: center">{{team}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <button id="team2_choose" class="ui button">Выбрать команду</button>
+                        <input type="text" name="team2" id="team2" hidden required>
+                        <div class="predict__selected-team-logo">
+                            <img src="" alt="" class="predict__team2-logo predict__team-logo">
+                            <p id="predict__team2-name"></p>
+                        </div>
+                    </div>
+                    <!--КАРТА-->
+                    <div class="predict__element clearfix">
+                        <h2 class="clearfix">
+                            <span>Карта</span>
+                        </h2>
+                        <div class="ui modal" id="mapModal">
+                            <div class="header" style="text-align: center">Карта</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="mapFilter">
+                                <button class="ui button" id="mapFilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for map in maps%}
+                                    <div data-name="{{map}}" class="element">
+                                        <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}" alt="">
+                                        <h3 style="text-align: center">{{map}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <button id="map_choose" class="ui button">Выбрать команду</button>
+                        <input type="text" name="map" id="map" hidden required>
+                        <div class="predict__selected-map-logo">
+                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
+                            <p id="predict__map-name"></p>
+                        </div>
+                    </div>
+                    <!--SUBMIT-->
+                    <input type="submit" class="predict__submit">
+                </form>
+
+                <div class="predict__entered">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">2</div>
+    <div class="section">3</div>
+    <div class="section">4</div>
+    <div class="result slide abs section active" id="res">
+        <img src="../static/imgs/player-versus-player.png" class="result__versus" alt="" style="">
+
+        <div class="result__container stick2 container">
+            <div class="result__content clearfix">
+                <div class="result__entered-data clearfix">
+                    <div class="result__entered-data-teams">
+                        <div class="result__team1 result__block">
+                            <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
+                            <!--                        <img src="../static/imgs/logos/1WIN.png" alt="{{team1}}" class="result__team-logo">-->
+                            <h3>{{team1}}</h3>
+                        </div>
+                        <!--                    <div class="result__line"></div>-->
+                        <div class="result__team2 result__block">
+                            <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
+                            <!--                        <img src="../static/imgs/logos/1WIN.png" alt="{{team1}}" class="result__team-logo">-->
+                            <h3>{{team2}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--            <div class="result__entered-data clearfix">-->
+                <!--                <div class="result__map">-->
+                <!--                    <img src="../static/imgs/map_logos/{{map}}.png" alt="{{map}}" class="result__team-logo">-->
+                <!--                    <h3>{{map}}</h3>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <h2 class="result__entered-data-title result__winner-title">Победитель:</h2>-->
+                <!--            <div class="result__winner">-->
+                <!--                <img src="../static/imgs/logos/{{winner}}.png" alt="{{winner}}"-->
+                <!--                     class="result__team-logo" title="{{winner}}">-->
+                <!--                <h3>{{winner}}</h3>-->
+                <!--            </div>-->
+            </div>
+        </div>
+        <!--        <div class="separate">    </div>-->
+    </div>
+    <div class="slide last abs section">
+        <div class="stick3">
+            <div class="choose-graph-style">
+                <div class="choose-graph-style__container container">
+                    <h2>Выберите вид гистограммы:</h2>
+                    <div class="choose-graph-style__box">
+                        <input type="radio" id="common" name="radio" checked onchange="change()">
+                        <label for="common">Гистограмма с группировкой</label>
+
+                        <input type="radio" id="stacked" name="radio" onchange="change()">
+                        <label for="stacked">Вложеная гистограмма</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graphs">
+                <div class="graphs__container container">
+                    <div class="graphs__content">
+                        <div class="graphs__team1">
+                            <canvas id="team1__graph"></canvas>
+                        </div>
+                        <div class="graphs__team2">
+                            <canvas id="team2__graph"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script title="Graphs" type="text/javascript">
+
+        function build(team, canvasID) {
+            let path_matches = ' ../static/jsons/' + team + '_matches.json';
+            let path__wins = '../static/jsons/' + team + '_wins.json';
+            let request_m = new XMLHttpRequest();
+            request_m.open('GET', path_matches);
+            request_m.responseType = 'json';
+            request_m.send();
+            request_m.onload = function () {
+                let request_w = new XMLHttpRequest();
+                request_w.open('GET', path__wins);
+                request_w.responseType = 'json';
+                request_w.send();
+                request_w.onload = function () {
+                    let matchesJSON_unordered = request_m.response;
+                    let winsJSON_unordered = request_w.response;
+                    //матчи
+                    const matchesJSON = {};
+                    Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
+                        matchesJSON[key] = matchesJSON_unordered[key];
+                    });
+                    //победы
+                    const winsJSON = {};
+                    Object.keys(winsJSON_unordered).sort().forEach(function (key) {
+                        winsJSON[key] = winsJSON_unordered[key];
+                    });
+                    let matches = Object.values(matchesJSON);
+                    let wins = Object.values(winsJSON);
+                    let stacked = document.getElementById('stacked').checked
+
+                    var ctx = document.getElementById(canvasID).getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: Object.keys(matchesJSON),
+                            datasets: [
+                                {
+                                    label: 'Количество побед команды ' + team,
+                                    backgroundColor: 'rgba(65, 105, 225, 1)',
+                                    data: wins,
+                                },
+                                {
+                                    label: 'Количество матчей команды ' + team,
+                                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                                    data: matches,
+                                },]
+                        },
+                        options: {
+                            scales: {
+                                xAxes: [{
+                                    stacked: stacked,
+                                    gridLines: {
+                                        color: '#fffff0',
+                                    },
+                                    ticks: {
+                                        fontColor: '#ffffff'
+                                    }
+                                }],
+                                yAxes: [{
+                                    stacked: false,
+                                    ticks: {
+                                        fontColor: '#ffffff'
+                                    },
+                                    gridLines: {
+                                        color: '#fffff0',
+                                    },
+
+                                }],
+                            },
+                            legend: {
+                                labels: {
+                                    fontColor: '#ffffff'
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
+        function change() {
+            // $('#team1__graph').attr('id', 'team1__graph1')
+            $('#team1__graph').remove();
+            $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+
+            // $('#team2__graph').attr('id', 'team2__graph2')
+            $('#team2__graph').remove();
+            $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+
+            build('{{team1}}', 'team1__graph');
+            build('{{team2}}', 'team2__graph');
+        }
+
+        window.onresize = function (event) {
+            // $('#team1__graph').attr('id', 'team1__graph1')
+            $('#team1__graph').remove();
+            $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+
+            // $('#team2__graph').attr('id', 'team2__graph2')
+            $('#team2__graph').remove();
+            $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+
+            build('{{team1}}', 'team1__graph');
+            build('{{team2}}', 'team2__graph');
+        };
+
+        build('{{team1}}', 'team1__graph');
+        build('{{team2}}', 'team2__graph');
+    </script>
+</div>
+
+<script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
+<!--<script type="text/javascript" src="../static/pagepilling/jquery.pagepiling.min.js"></script>-->
+
+<script type="text/javascript" src="../static/fullpage/fullpage.min.js"></script>
+<!--<script type="text/javascript" src="../static/fullpage/fullpage.extensions.min.js"></script>-->
+<script>
+    $(document).ready(function () {
+        // $('#fullpage').pagepiling({
+        //     direction: 'horizontal',
+        // });
+        // $('#fullpage').fullpage({
+        //     options here
+        // autoScrolling: false,
+        // licenseKey: 'YOUR KEY HERE',
+        //
+        // scrollHorizontally: true
+        // });
+        $("#fullpage").fullpage();
+
+    })
+</script>
+</body>
+</html>
