@@ -339,9 +339,24 @@
 <script type="text/javascript" src="../static/js/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(() => {
+
+        // $('body').bind('beforeunload', function (e) {
+        //     alert("refresh")
+        // })
+
+        $(window).bind('beforeunload', function () { //temp
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+            return 'are you sure you want to leave?';
+        });
+
         $('.ui.dropdown').dropdown({fullTextSearch: true});
 
-        $("#fullpage").fullpage();
+        $("#fullpage").fullpage({
+            // anchors: ['Предсказание', "Результат", "Графики"],
+        });
 
         $("#team1_choose").on('click', function (e) {
             e.preventDefault();
