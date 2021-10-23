@@ -68,12 +68,12 @@
                         <!--                        <input type="text" name="team1" id="team1" value="5POWER" hidden>-->
                         <!--                        <input type="text" name="team2" id="team2" value="1WIN" hidden>-->
 
-                        <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>
-                            <option selected disabled value="">Выберите команду</option>
-                            {%for team in teams%}
-                            <option value="{{team}}">{{team}}</option>
-                            {%endfor%}
-                        </select>
+                        <!--                        <select class="ui dropdown search" name="team1" id="team1" onchange="teamOne()" required>-->
+                        <!--                            <option selected disabled value="">Выберите команду</option>-->
+                        <!--                            {%for team in teams%}-->
+                        <!--                            <option value="{{team}}">{{team}}</option>-->
+                        <!--                            {%endfor%}-->
+                        <!--                        </select>-->
 
                         <!--                    tut-->
                         <!--                        <div class="predict__teams-logo" id="team1_slider" style="width: 500px">-->
@@ -141,6 +141,28 @@
                         <!--                        {%endfor%}-->
                         <!--                    </div>-->
 
+                        <div class="ui modal" id="team1Modal">
+                            <div class="header" style="text-align: center">Команда 1</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="team1Filter">
+                                <button class="ui button" id="team1FilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for team in teams%}
+                                    <div data-name="{{team}}" class="element">
+                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                                        <h3 style="text-align: center">{{team}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="team1_choose">Выбрать команду</button>
+                        <input type="text" name="team1" id="team1" hidden required>
+
+
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team1-logo predict__team-logo">
                         </div>
@@ -152,7 +174,7 @@
                         </h2>
 
                         <div class="ui modal" id="team2Modal">
-                            <div class="header">Header</div>
+                            <div class="header" style="text-align: center">Команда 2</div>
                             <div class="content">
                                 <input type="text" class="ui input" id="team2Filter">
                                 <button class="ui button" id="team2FilterOk">Подтвердить</button>
@@ -170,15 +192,15 @@
                         </div>
 
                         <button id="team2_choose">Выбрать команду</button>
+                        <input type="text" name="team2" id="team2" hidden required>
 
-
-<!--                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>-->
-<!--                            <option selected disabled value="">Выберите команду</option>-->
-<!--                            {%for team in teams%}-->
-<!--                            <option value="{{team}}">{{team}}</option>-->
-<!---->
-<!--                            {%endfor%}-->
-<!--                        </select>-->
+                        <!--                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>-->
+                        <!--                            <option selected disabled value="">Выберите команду</option>-->
+                        <!--                            {%for team in teams%}-->
+                        <!--                            <option value="{{team}}">{{team}}</option>-->
+                        <!---->
+                        <!--                            {%endfor%}-->
+                        <!--                        </select>-->
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team2-logo predict__team-logo">
                         </div>
@@ -410,113 +432,49 @@
         });
         // $.fn.pagepiling.moveTo(2);
 
-
-        $(".predict__teams-logo").slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ],
-
-            variableWidth: true,
-            adaptiveHeight: true,
-            infinite: false,
-            slide: '.vis'
-        });
-
-        let team1_slider = $('#team1_slider .slick-list .slick-track div');
-        console.log(team1_slider)
-        $("#team1_search").keyup(function () {
-            setTimeout(() => {
-                let input_val = $("#team1_search").val().toLowerCase().trim();
-                $('#team1_slider .slick-list .slick-track div').removeClass('hide');
-                $('#team1_slider .slick-list .slick-track div').each(function (index) {
-                    let team = $(this).data('name').toString().toLowerCase();
-                    console.log($(this))
-                    if (team.indexOf(input_val) == -1) {
-                        console.log(team + " net")
-                        // $(this).addClass("hide").removeClass('vis');
-                        $(this)[0].remove();
-                    } else {
-                        console.log(team + ' yest')
-                        // $(this).parents(".phone_department").addClass("show_dept");
-                        $(this).removeClass('hide').addClass('vis');
-                    }
-                }, 1000);
-
-                $('#team1_slider .slick-list .slick-track div')[0].classList.add("slick-current", "slick-center")
-            });
-            $(".predict__teams-logo").slick('unslick');
-
-            $(".predict__teams-logo").slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                arrows: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
-                        }
-                    }
-                ],
-
-                variableWidth: true,
-                adaptiveHeight: true,
-                infinite: false,
-                slide: '.vis'
-            });
-
-            if (input_val === '') {
-                $("#team1_slider .slick-list .slick-track").empty().append(team1_slider)
-                console.log("aaaaaaaaa")
-            }
-
-            //$(".phone_department.show_dept.hide").removeClass("show_dept").removeClass("hide");
-
+        $("#team1_choose").on('click', function (e) {
+            e.preventDefault();
+            $("#team1Modal.ui.modal").modal('show');
         });
 
         $("#team2_choose").on('click', function (e) {
             e.preventDefault();
-            $(".ui.modal").modal('show');
+            $("#team2Modal.ui.modal").modal('show');
         });
+
+        $("#team1Filter").keyup(function () {
+            let input_val = $("#team1Filter").val().toLowerCase();
+            $("#team1Modal.ui.modal .element").removeClass('hide');
+            $("#team1Modal.ui.modal .element").each(function (index) {
+                let team = $(this).data("name").toString().toLowerCase();
+                if (team.indexOf(input_val) == -1) {
+                    console.log(team + " net")
+                    $(this).addClass("hide").removeClass('vis');
+                } else {
+                    console.log(team + ' yest')
+                    // $(this).parents(".phone_department").addClass("show_dept");
+                    $(this).removeClass('hide').addClass('vis');
+                }
+            });
+        });
+
+        $("#team1FilterOk").on('click', function (e) {
+            e.preventDefault();
+
+            if ($("#team1Modal.ui.modal .element.choosen").length === 1) {
+                $('.predict__team1-logo').attr('src', $("#team1Modal.ui.modal .element.choosen img")[0].src)
+                $(".ui.modal").modal('hide');
+                $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
+            } else {
+                alert("Команда не выбрана");
+            }
+        });
+
 
         $("#team2Filter").keyup(function () {
             let input_val = $("#team2Filter").val().toLowerCase();
-            $(".ui.modal .element").removeClass('hide');
-            $(".ui.modal .element").each(function (index) {
+            $("#team2Modal.ui.modal .element").removeClass('hide');
+            $("#team2Modal.ui.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
                 if (team.indexOf(input_val) == -1) {
                     console.log(team + " net")
@@ -532,8 +490,13 @@
         $("#team2FilterOk").on('click', function (e) {
             e.preventDefault();
 
-            $('.predict__team2-logo').attr('src', $(".ui.modal .element.choosen img")[0].src)
-            $(".ui.modal").modal('hide');
+            if ($("#team2Modal.ui.modal .element.choosen").length === 1) {
+                $('.predict__team2-logo').attr('src', $("#team2Modal.ui.modal .element.choosen img")[0].src)
+                $(".ui.modal").modal('hide');
+                $("#team2").val($("#team2Modal.ui.modal .element.choosen").data('name'));
+            } else {
+                alert("Команда не выбрана");
+            }
         });
 
 
