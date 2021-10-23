@@ -10,7 +10,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="../static/css/semantic.min.css">
 
-<!--    <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">-->
+    <!--    <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">-->
     <link rel="stylesheet" href="../static/pagepilling/jquery.pagepiling.min.css">
 
     <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
@@ -20,7 +20,6 @@
     <script type="text/javascript" src="../static/slick/slick.min.js"></script>
     <!--    <script type="text/javascript" src="../static/fullpage/fullpage.min.js"></script>-->
     <!--    <script type="text/javascript" src="../static/fullpage/fullpage.extensions.min.js"></script>-->
-
 
     <link rel="stylesheet" type="text/css" href="../static/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../static/slick/slick-theme.css"/>
@@ -51,16 +50,6 @@
         </div>
     </div>
 </div>
-<!--
-<div class="ui top attached tabular menu">
-    <a class="active item" data-tab="first">Форма для ввода</a>
-    {%if winner%}
-    <a class="item" data-tab="result">Результат</a>
-    <a class="item" data-tab="graphics">Графики</a>
-    {%endif%}
-</div>
--->
-<!--<div class="ui bottom attached active tab segment" data-tab="first">-->
 <div id="fullpage">
     <div class="predict clearfix section">
         <div class="predict__container stick1 container clearfix">
@@ -162,37 +151,34 @@
                             <span>Команда 2</span>
                         </h2>
 
-                        <!--                        <div class="ui modal" id="team2Modal">-->
-                        <!--                            <div class="header">Header</div>-->
-                        <!--                            <div class="content">-->
-                        <!--                                &lt;!&ndash;                            <form action="" class="ui form">&ndash;&gt;-->
-                        <!--                                <input type="text" class="ui input" id="team2Filter">-->
-                        <!--                                <button class="ui button" id="team2FilterOk">Подтвердить</button>-->
-                        <!--                                &lt;!&ndash;                            </form>&ndash;&gt;-->
-                        <!--                            </div>-->
-                        <!--                            <div class="scrolling content">-->
-                        <!--                                <div class="elements">-->
-                        <!--                                    {%for team in teams%}-->
-                        <!--                                    <div data-name="{{team}}" class="element">-->
-                        <!--                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                        <!--                                        &lt;!&ndash;                                    <img src="../static/imgs/logos/9z.png" data-name="{{team}}" alt="">&ndash;&gt;-->
-                        <!--                                        <h3 style="text-align: center">{{team}}</h3>-->
-                        <!--                                    </div>-->
-                        <!--                                    {%endfor%}-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
+                        <div class="ui modal" id="team2Modal">
+                            <div class="header">Header</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="team2Filter">
+                                <button class="ui button" id="team2FilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for team in teams%}
+                                    <div data-name="{{team}}" class="element">
+                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">
+                                        <h3 style="text-align: center">{{team}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
 
-                        <!--                        <button id="team2_choose">Выбрать команду</button>-->
+                        <button id="team2_choose">Выбрать команду</button>
 
 
-                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>
-                            <option selected disabled value="">Выберите команду</option>
-                            {%for team in teams%}
-                            <option value="{{team}}">{{team}}</option>
-
-                            {%endfor%}
-                        </select>
+<!--                        <select class="ui dropdown search" name="team2" id="team2" onchange="teamTwo()" required>-->
+<!--                            <option selected disabled value="">Выберите команду</option>-->
+<!--                            {%for team in teams%}-->
+<!--                            <option value="{{team}}">{{team}}</option>-->
+<!---->
+<!--                            {%endfor%}-->
+<!--                        </select>-->
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team2-logo predict__team-logo">
                         </div>
@@ -222,11 +208,9 @@
             </div>
         </div>
     </div>
-    <!--</div>-->
 
     {%if winner%}
-    <!--<div class="ui bottom attached tab segment" data-tab="result">-->
-    <div class="result slide abs section" id="res">
+    <div class="result slide abs section active" id="res">
         <img src="../static/imgs/player-versus-player.png" class="result__versus" alt="" style="">
 
         <div class="result__container stick2 container">
@@ -262,9 +246,6 @@
         </div>
         <!--        <div class="separate">    </div>-->
     </div>
-    <!--</div>-->
-    <!--<div class="ui bottom attached tab segment" data-tab="graphics">-->
-
     <div class="slide last abs section">
         <div class="stick3">
             <div class="choose-graph-style">
@@ -294,7 +275,7 @@
             </div>
         </div>
     </div>
-    <!--</div>-->
+
     <script title="Graphs" type="text/javascript">
 
         function build(team, canvasID) {
@@ -413,7 +394,6 @@
 <script>
     $(document).ready(() => {
         $('.ui.dropdown').dropdown({fullTextSearch: true});
-        // $('.menu .item').tab();
 
         // $('#fullpage').fullpage({
         //     //options here
@@ -423,7 +403,13 @@
         //     // scrollHorizontally: true,
         // });
 
-        $("#fullpage").pagepiling();
+        $("#fullpage").pagepiling({
+            // direction: 'horizontal',
+            anchors: ['predict', 'result', 'graphs'],
+
+        });
+        // $.fn.pagepiling.moveTo(2);
+
 
         $(".predict__teams-logo").slick({
             centerMode: true,
