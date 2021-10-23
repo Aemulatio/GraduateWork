@@ -25,7 +25,9 @@ function map_logo() {
 }
 
 $('#predict__form').submit(function () {
-    let team1 = document.getElementById('team1')
+    let team1 = document.getElementById('team1');
+    // let team1 = '5POWER';
+    // let team2 = '1WIN';
     let team2 = document.getElementById('team2')
 
 
