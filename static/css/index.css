@@ -147,13 +147,14 @@ body {
     display: inline-flex;
     margin: 0 auto;
     position: relative;
+    height: 510px;
 }
 
 .predict__element {
     padding: 5px 10px;
     display: block;
     float: left;
-    height: 292px;
+    /*height: 292px;*/
 }
 
 .predict__element h2 {
@@ -205,8 +206,10 @@ body {
 .predict__submit {
     position: absolute;
     bottom: -15%;
-    left: 50%;
-    margin-left: -7.5em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*margin-left: -7.5em;*/
     height: 3em;
     width: 15em;
 
@@ -216,11 +219,17 @@ body {
 
     outline: none;
 
-    height: 40px;
-    width: 200px;
-    margin-left: -100px;
+    /*height: 40px;*/
+    /*width: 200px;*/
+    /*margin-left: -100px;*/
     font-size: 16px;
 
+    cursor: pointer;
+
+}
+
+.predict__submit:hover {
+    background-color: rgba(44, 62, 80, 0.8);
 }
 
 .predict img {
@@ -791,4 +800,38 @@ div.slick-slide:not(.slick-center) {
 .ui.button.modalSelected {
     background-color: #2c3e50 !important;
     color: #eeeeee !important;
+}
+
+.team_squad {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 70%;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.predict__element {
+    /*min-width: 500px;*/
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team_member {
+    /*padding: 0 5px;*/
+    padding-bottom: 10px;
+}
+
+.team_member img {
+    width: 100px;
+    padding: 0;
+}
+
+.team_member-name {
+    text-align: center;
 }
