@@ -72,11 +72,66 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="team1_choose" class="ui button">Выбрать команду</button>
+                        <div>
+                            <button id="team1_choose" class="ui button">Выбрать команду</button>
+                        </div>
                         <input type="text" name="team1" id="team1" hidden required>
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team1-logo predict__team-logo">
                             <p id="predict__team1-name"></p>
+                        </div>
+                        <div id="team1_squad" style="display: none" class="team_squad">
+                            <div class="team_member" id="team1_member1">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team1_member2">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team1_member3">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team1_member4">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team1_member5">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--КАРТА-->
+                    <div class="predict__element clearfix">
+                        <h2 class="clearfix">
+                            <span>Карта</span>
+                        </h2>
+                        <div class="ui modal" id="mapModal">
+                            <div class="header" style="text-align: center">Карта</div>
+                            <div class="content">
+                                <input type="text" class="ui input" id="mapFilter">
+                                <button class="ui button" id="mapFilterOk">Подтвердить</button>
+                            </div>
+                            <div class="scrolling content">
+                                <div class="elements">
+                                    {%for map in maps%}
+                                    <div data-name="{{map}}" class="element">
+                                        <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}" alt="">
+                                        <h3 style="text-align: center">{{map}}</h3>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="map_choose" class="ui button">Выбрать карту</button>
+                        </div>
+                        <input type="text" name="map" id="map" hidden required>
+                        <div class="predict__selected-map-logo">
+                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
+                            <p id="predict__map-name"></p>
                         </div>
                     </div>
                     <!--КОМАНДА-2-->
@@ -102,49 +157,42 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="team2_choose" class="ui button">Выбрать команду</button>
+                        <div>
+                            <button id="team2_choose" class="ui button">Выбрать команду</button>
+                        </div>
                         <input type="text" name="team2" id="team2" hidden required>
                         <div class="predict__selected-team-logo">
                             <img src="" alt="" class="predict__team2-logo predict__team-logo">
                             <p id="predict__team2-name"></p>
                         </div>
-                    </div>
-                    <!--КАРТА-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Карта</span>
-                        </h2>
-                        <div class="ui modal" id="mapModal">
-                            <div class="header" style="text-align: center">Карта</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="mapFilter">
-                                <button class="ui button" id="mapFilterOk">Подтвердить</button>
+                        <div id="team2_squad" style="display: none" class="team_squad">
+                            <div class="team_member" id="team2_member1">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
                             </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for map in maps%}
-                                    <div data-name="{{map}}" class="element">
-                                        <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}" alt="">
-                                        <h3 style="text-align: center">{{map}}</h3>
-                                    </div>
-                                    {%endfor%}
-                                </div>
+                            <div class="team_member" id="team2_member2">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
                             </div>
-                        </div>
-                        <button id="map_choose" class="ui button">Выбрать команду</button>
-                        <input type="text" name="map" id="map" hidden required>
-                        <div class="predict__selected-map-logo">
-                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
-                            <p id="predict__map-name"></p>
+                            <div class="team_member" id="team2_member3">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team2_member4">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
+                            <div class="team_member" id="team2_member5">
+                                <img src="../static/imgs/temp.png" alt="">
+                                <p class="team_member-name">test</p>
+                            </div>
                         </div>
                     </div>
                     <!--SUBMIT-->
-                    <input type="submit" class="predict__submit">
+                    <div>
+                        <input type="submit" class="predict__submit">
+                    </div>
                 </form>
-
-                <div class="predict__entered">
-
-                </div>
             </div>
         </div>
     </div>
@@ -398,6 +446,7 @@
                 $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
                 $("#team1_choose").addClass("modalSelected");
                 $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
+                $("#team1_squad").show();
             } else {
                 alert("Команда не выбрана");
             }
@@ -428,6 +477,7 @@
                 $("#team2").val($("#team2Modal.ui.modal .element.choosen").data('name'));
                 $("#team2_choose").addClass("modalSelected");
                 $("#predict__team2-name").text($("#team2Modal.ui.modal .element.choosen").data('name'));
+                $("#team2_squad").show();
             } else {
                 alert("Команда не выбрана");
             }
