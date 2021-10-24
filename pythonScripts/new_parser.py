@@ -1,9 +1,7 @@
 from bs4 import BeautifulSoup
-from bs4.formatter import Formatter
-import lxml
 import requests
 import time
-import datetime
+import csv
 
 
 def parse(url, outPutFile, attr='a'):
@@ -46,6 +44,69 @@ def parse(url, outPutFile, attr='a'):
         print(r.status_code)
 
 
-if __name__ == '__main__':
+def parseFile(fileName, outPutFileName, ser=0):
+    pages_src = list()
+    f = open("../Data/New/" + fileName, "r", encoding="UTF-8")
+    if f:
+        soup = BeautifulSoup(f, 'html.parser')
+        pages_src.append(soup.find_all('tbody'))
+        # print(len(soup.find_all('tbody')))
+        data = list()
+        series = ser
+        for pageSrc in soup.find_all('tbody'):
+            # print(str(pageSrc) + "\n")
+            for tr in pageSrc.find_all('tr'):  # reversed(....) сзаду-наперед
+                """Get data about each game."""
+                teams = []
+                score = []
+                if "first" in tr["class"]:
+                    series = series + 1
+                date = tr.find('div', class_='time').text.replace('/', '-')
+                teams_ = tr.find_all("td", class_="team-col")
+                for t in teams_:
+                    if t.find("a") is None:
+                        break
+                    teams.append(t.find("a").text)
+                    score.append(t.find("span", class_="score").text.strip().replace(
+                        ')', '').replace('(', ''))
+                if tr.find("div", class_="dynamic-map-name-full") is None:
+                    print(tr)
+                    break
+                played_map = tr.find("div", class_="dynamic-map-name-full").text
+                event = tr.find("td", class_="event-col").text
+                data.append((date, teams, score, played_map, event, series))
+
+        data = list(reversed(data))  # reverse data, from old to new, instead of new-old
+
+        """Create a .csv file."""
+        with open("../Data/New/" + outPutFileName, "w", newline='', encoding='utf-8') as csv_file:
+            writer = csv.writer(csv_file, delimiter=',')
+            writer.writerow(['Date', 'Teams', 'Score', 'Map', 'Event', 'Series'])
+            for line in data:
+                writer.writerow(line)
+        print(fileName + " done!")
+
+        return series
+
+
+def first_preps():
+    """Первичный парсинг"""
+    print("-----------------")
+    url = 'https://www.hltv.org/stats/matches?startDate=2018-01-01&endDate=2018-12-31'
+    parse(url, 'csgo2018.html', "w")
+    print("-----------------")
+    url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-12-31'
+    parse(url, 'csgo2019.html', "w")
+    print("-----------------")
     url = 'https://www.hltv.org/stats/matches?startDate=2020-01-01&endDate=2020-12-31'
-    parse(url, 'test.html', 'w')
+    parse(url, 'csgo2020.html', "w")
+    print("-----------------")
+
+
+if __name__ == '__main__':
+    # first_preps()
+    # url = 'https://www.hltv.org/stats/matches?startDate=2019-01-01&endDate=2019-12-31'
+    # parse(url, 'csgo2019.html', "w")
+    ser = parseFile("csgo2018.html", 'rawData18.csv')
+    ser = parseFile("csgo2019.html", 'rawData19.csv', ser)
+    parseFile("csgo2020.html", 'rawData20.csv', ser)
