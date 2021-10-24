@@ -29,11 +29,12 @@ def parse(url, outPutFile, attr='a'):
         else:
             # Записываем текущую ссылку
             f.write(str(r.url))
-
+        # Если нет ссылки на следующую выборку, то просто закрываем файл
         if not soup.find('div', class_='pagination-component pagination-top with-stats-table') \
                 .find('a', class_='pagination-next').has_attr('href'):
             f.close()
         else:
+            # Иначе, закрываем файл, получаем ссылку дальше и делаем рекурсию, через 3 секунды
             f.close()
             href = soup.find('div', class_='pagination-component pagination-top with-stats-table') \
                 .find('a', class_='pagination-next')['href']
@@ -41,6 +42,7 @@ def parse(url, outPutFile, attr='a'):
             time.sleep(3)
             parse("https://www.hltv.org" + href, outPutFile, 'a')
     else:
+        # Отладочный момент, чтобы знать какая ошибка произошла
         print(r.status_code)
 
 
