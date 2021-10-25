@@ -688,6 +688,29 @@ option {
     transform: rotate(325deg);
 }
 
+.result__background-versus {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.result__background-versus img {
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+}
+
+.result__background-versus img:first-child {
+    left: 0;
+    right: 10%;
+}
+
+.result__background-versus img:last-child {
+    left: 10%;
+    right: 0;
+}
+
 .result__versus {
     position: absolute;
     z-index: 1;
