@@ -245,7 +245,7 @@ body {
 .result__content {
     /*padding: 50px 0;*/
     background-color: transparent;
-    padding: 250px 0;
+    /*padding: 250px 0;*/
 
     margin: 0 auto;
     /*width: 50%;*/
@@ -299,6 +299,7 @@ body {
 
 .result__block {
     padding: 0 10px;
+    position: relative;
 }
 
 .result__team1 {
@@ -693,6 +694,7 @@ option {
     background-color: transparent;
     width: 100%;
     height: 100%;
+    top: 0;
 }
 
 .result__background-versus img {
@@ -768,6 +770,21 @@ option {
     }
 }
 
+.result__trophy {
+    position: absolute;
+    max-width: 100px;
+    width: 100px;
+    animation: bump .1s;
+    display: none;
+}
+
+.left-trophy {
+    left: 0;
+}
+
+.right-trophy {
+    right: 0;
+}
 
 .result__versus {
     position: absolute;
