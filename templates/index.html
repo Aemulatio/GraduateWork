@@ -211,10 +211,16 @@
                         <div class="result__team1 result__block">
                             <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
                             <h3>{{team1}}</h3>
+                            {%if team1==winner%}
+                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
+                            {%endif%}
                         </div>
                         <div class="result__team2 result__block">
                             <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
                             <h3>{{team2}}</h3>
+                            {%if team2==winner%}
+                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
+                            {%endif%}
                         </div>
                     </div>
                 </div>
@@ -390,6 +396,11 @@
             $(".result__team1").attr("style", "display:block");
             $(".result__team2").attr("style", "display:block");
         }, 4500)
+
+        setTimeout(() => {
+            $(".result__trophy").attr("style", "display:block");
+        }, 5200)
+
         // $('body').bind('beforeunload', function (e) {
         //     alert("refresh")
         // })
