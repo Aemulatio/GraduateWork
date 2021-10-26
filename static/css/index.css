@@ -677,7 +677,7 @@ option {
 /*versus*/
 
 .result {
-    background: linear-gradient(325deg, #CA2D05 50%, #03B1D8 50%);
+    /*background: linear-gradient(325deg, #CA2D05 50%, #03B1D8 50%);*/
     position: relative;
 }
 
@@ -699,17 +699,75 @@ option {
     background-color: transparent;
     position: absolute;
     margin: auto;
+    top: 0;
+    bottom: 0;
 }
 
 .result__background-versus img:first-child {
     left: 0;
     right: 10%;
+
+    animation-name: sword;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
 }
 
 .result__background-versus img:last-child {
     left: 10%;
     right: 0;
+
+    animation-name: sword-left;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
 }
+
+@keyframes sword {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes sword-left {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.result__team1 {
+    animation: bump .3s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+
+.result__team2 {
+    animation: bump .3s .1s;
+    display: none;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(10);
+        display: none;
+    }
+    100% {
+        transform: scale(1);
+        display: block;
+    }
+}
+
 
 .result__versus {
     position: absolute;
@@ -725,7 +783,7 @@ option {
 
 body {
     position: relative;
-    height: 300vh !important;
+    /*height: 300vh !important;*/
 }
 
 /*entered*/
@@ -738,23 +796,6 @@ body {
 .predict__teams-logo img {
     /*max-width: 150px;*/
     max-height: 150px;
-}
-
-div.slick-slide {
-    margin: 0 10px;
-    /*max-height: 200px;*/
-}
-
-div.slick-slide.slick-current.slick-center {
-    margin: 0 15px;
-}
-
-div.slick-slide.slick-current.slick-center img {
-    transform: scale(1.1);
-}
-
-div.slick-slide:not(.slick-center) {
-    filter: blur(5px);
 }
 
 .hide {
