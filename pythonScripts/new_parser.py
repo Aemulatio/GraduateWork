@@ -2,6 +2,12 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import csv
+import hashlib
+
+
+def setCache(data: str) -> str:
+    hash_result = hashlib.md5(data.encode()).hexdigest()
+    return hash_result
 
 
 def parse(url, outPutFile, attr='a'):
