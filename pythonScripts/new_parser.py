@@ -6,11 +6,17 @@ import hashlib
 
 
 def setCache(data: str) -> str:
+    """
+    Хэширует строку data по алгоритму MD5
+
+    :param data: Строка для хэширования
+    :return: Захэшированную в MD5 строку
+    """
     hash_result = hashlib.md5(data.encode()).hexdigest()
     return hash_result
 
 
-def parse(url, outPutFile, attr='a'):
+def parse(url: str, outPutFile: str, attr: str = 'a'):
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36",
         "pragma": 'no-cache',
@@ -50,7 +56,7 @@ def parse(url, outPutFile, attr='a'):
         print(r.status_code)
 
 
-def parseFile(fileName, outPutFileName, ser=0):
+def parseFile(fileName: str, outPutFileName: str, ser: int = 0) -> int:
     pages_src = list()
     f = open("../Data/New/" + fileName, "r", encoding="UTF-8")
     if f:
@@ -65,6 +71,7 @@ def parseFile(fileName, outPutFileName, ser=0):
                 """Get data about each game."""
                 teams = []
                 score = []
+                # TODO: надо получать ссылку из первой ячейки, переходить в нее, и получать состав команд на текущий матч
                 if "first" in tr["class"]:
                     series = series + 1
                 date = tr.find('div', class_='time').text.replace('/', '-')
@@ -116,3 +123,4 @@ if __name__ == '__main__':
     ser = parseFile("csgo2018.html", 'rawData18.csv')
     ser = parseFile("csgo2019.html", 'rawData19.csv', ser)
     parseFile("csgo2020.html", 'rawData20.csv', ser)
+    setCache("123")
