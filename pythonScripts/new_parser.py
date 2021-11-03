@@ -143,6 +143,7 @@ def parseFile_new(fileName: str, outPutFileName: str, ser: int = 0) -> int:
                 else:
                     print("Вернулась не 200")
                     print(r.status_code)
+                    break
                 print("-----------------------------------")
 
                 # print(tr)
@@ -201,4 +202,9 @@ if __name__ == '__main__':
     # ser = parseFile("csgo2019.html", 'rawData19.csv', ser)
     # parseFile("csgo2020.html", 'rawData20.csv', ser)
     # print(setCache("123"))
+
     parseFile_new("csgo2018.html", 'rawData18_newFormat.csv')
+    print("file done")
+    parseFile_new("csgo2019.html", 'rawData19_newFormat.csv')
+    print("file done")
+    parseFile_new("csgo2020.html", 'rawData20_newFormat.csv')
