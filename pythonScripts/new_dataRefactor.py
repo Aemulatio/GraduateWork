@@ -2,6 +2,7 @@ import csv
 import pandas as pd
 from itertools import groupby
 import numpy as np
+import ast
 
 
 def printAll(list):
@@ -18,7 +19,7 @@ def csv_reader(path):
 
 def csv_writer(filename: str, data: list):
     with open(filename, "w", newline='', encoding='utf-8') as csv_file:
-        writer = csv.writer(csv_file, delimiter=',', )
+        writer = csv.writer(csv_file, delimiter=',')
         writer.writerow(
             ['Winner',
              'Team1', "T1_Player1", "T1_Player2", "T1_Player3", "T1_Player4", "T1_Player5",
@@ -64,7 +65,7 @@ def refactor(input_file: str, output_file: str):
                 "player4": t2[4],
                 "player5": t2[5],
             }
-            # print(team1, team2)
+
             # Получаем победителя
             if score[0] > score[1]:
                 # winner = "Team1"
@@ -78,53 +79,7 @@ def refactor(input_file: str, output_file: str):
                  team1['player5'], team2['name'], team2['player1'], team2['player2'], team2['player3'],
                  team2['player4'], team2['player5'], map])
 
-    print(refactored)
     csv_writer(output_file, refactored)
-
-
-def refactor_data_from_csvs_to_csv(files, newFileName):
-    """Преобразует данные из входных файлов в один"""
-    output_filename = newFileName
-    data = list()
-    for file in files:
-        data.append(csv_reader(file)[1:])
-
-    # К этому виду привести
-    # Winner | Team1 | Team2 | Team1_Score | Team2_Score |   Map   |
-    # Пример данных в таблице
-    #  Na'Vi | Na'Vi |  EG   |      16     |      0      | deDust2 |
-    # А так было
-    # ['4-1-18', "['ViCi', 'New4']", "['16', '6']", 'Inferno', 'Letou Invitational', '11109']
-
-    refactored_data = list()
-    table = str.maketrans("[]", "  ")
-    for year in data:
-        for match in year:
-            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
-            teams = match[1].translate(table).replace("\"", "'").split(',')
-            # Разбиваем полученный массив на отдельные переменные убирая ' и лишние пробелы
-            team1, team2 = teams[0].strip()[1:-1], teams[1].strip()[1:-1]
-
-            # Заменяем [ ] из строки на пробелы, заменяем " на ' и разбираем ее на 2, тк имеем дело с строками
-            score = match[2].translate(table).replace("\'", "").split(',')
-            # Разбиваем полученный массив на отдельные переменные убирая и лишние пробелы
-            team1_score, team2_score = score[0].strip(), score[1].strip()
-
-            # Получаем победителя
-            winner = str()
-            if team1_score > team2_score:
-                winner = "Team1"
-            else:
-                winner = "Team2"
-
-            # Получаем карту на которой играли
-            map = match[3]
-
-            # Добавляем данные в таком виде
-            refactored_data.append([winner, team1, team2, team1_score, team2_score, map])
-
-    # Пишем в файл
-    csv_writer(output_filename, refactored_data)
 
 
 def team_by_team_csv(list, ids, name):
@@ -205,7 +160,7 @@ def split_by_teams(files):
 
 def delete_garbage(filename, matches_count, output):
     data = pd.read_csv(filename)
-    UniqueTeams = np.unique(np.concatenate((np.array(data)[:, 1], np.array(data)[:, 2])))
+    UniqueTeams = np.unique(np.concatenate((np.array(data)[:, 1], np.array(data)[:, 7])))
 
     for team in UniqueTeams:
         if team in data.values:
@@ -222,8 +177,6 @@ def delete_garbage(filename, matches_count, output):
     # csv_writer(output, data)
 
 
-import ast
-
 if __name__ == '__main__':
     # refactor_data_from_csvs_to_csv(['../Data/rawData20.csv', '../Data/rawData19.csv', '../Data/rawData20.csv'],
     #                                'results11_TN.csv')
@@ -235,7 +188,13 @@ if __name__ == '__main__':
     # split_by_teams(['Data/rawData19.csv', 'Data/rawData20.csv'])
     # printAll(data)
     # 'Data/rawData18.csv',
+
     # unite(['../Data/New/rawData18_newFormat.csv', '../Data/New/rawData19_newFormat.csv',
     #        '../Data/New/rawData20_newFormat.csv'], "csgo18-20.csv")
+    # refactor("../Data/New/csgo18-20.csv", "../Data/New/refactored18-20.csv")
 
-    refactor("../Data/New/csgo18-20.csv", "../Data/New/refactored18-20.csv")
+    # data = pd.read_csv("../Data/New/refactored18-20.csv")
+    # print(np.array(data)[:, 1])
+    # print(np.array(data)[:])
+    # UniqueTeams = np.unique(np.concatenate((np.array(data)[:, 1], np.array(data)[:, 7])))
+    # print(UniqueTeams)
