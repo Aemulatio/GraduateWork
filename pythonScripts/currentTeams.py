@@ -1,7 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 import time
+import datetime
 import csv
+import json
 
 headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36",
@@ -13,6 +15,7 @@ headers = {
 
 
 def getTeams(files: list[str]):
+    print(datetime.datetime.now())
     html = str()
     for file in files:
         f = open(file, 'r', encoding="UTF-8")
@@ -21,14 +24,14 @@ def getTeams(files: list[str]):
 
     soup = BeautifulSoup(html, features='html.parser')
     goodTeams = list()
-    gt = list()
+    gt = {}
     badTeams = list()
     for tbody in soup.find_all('tbody'):
         for tr in tbody.find_all('tr'):
             for team_col in tr.select('td.team-col'):
                 # print(team_col.find('a')['href'])
                 if team_col.find('a').text in badTeams or team_col.find('a').text in goodTeams:
-                    print("Повтор")
+                    # print("Повтор")
                     continue
                 url = "https://hltv.org" + team_col.find('a')['href'].replace('/stats', '').replace('teams', 'team')
                 # print(team_col.find('a')['href'].replace('/stats', '').replace('teams', 'team'))
@@ -38,7 +41,7 @@ def getTeams(files: list[str]):
                     no = soup2.select('#rosterBox .empty-state')
                     if len(no) == 1:
                         badTeams.append(team_col.find('a').text)
-                        print('bad')
+                        # print('bad')
                     else:
                         # goodTeams.append(team_col.find('a').text())
                         roster = soup2.find("div", class_="bodyshot-team").find_all("a", class_='col-custom')
@@ -53,47 +56,39 @@ def getTeams(files: list[str]):
                                 'player4': {},
                                 'player5': {},
                             }
-                            # print("------")
-                            # print(roster[0])
-                            # print(type(roster[0]))
-                            # print(type(str(roster[0])))
                             subSoup = [BeautifulSoup(str(roster[0]), features='html.parser'),
                                        BeautifulSoup(str(roster[1]), features='html.parser'),
                                        BeautifulSoup(str(roster[2]), features='html.parser'),
                                        BeautifulSoup(str(roster[3]), features='html.parser'),
                                        BeautifulSoup(str(roster[4]), features='html.parser')]
-                            # print("******")
-                            # print(subSoup.find("a"))
-                            # print(subSoup.find("a")['href'])
+
                             obj['player1']['url'] = 'https://hltv.org' + subSoup[0].find('a')['href']
                             obj['player2']['url'] = 'https://hltv.org' + subSoup[1].find('a')['href']
                             obj['player3']['url'] = 'https://hltv.org' + subSoup[2].find('a')['href']
                             obj['player4']['url'] = 'https://hltv.org' + subSoup[3].find('a')['href']
                             obj['player5']['url'] = 'https://hltv.org' + subSoup[4].find('a')['href']
 
-                            obj['player1']['name'] = subSoup[0].select('a span.text-ellipsis').text
-                            obj['player2']['name'] = subSoup[1].select('a span.text-ellipsis').text
-                            obj['player3']['name'] = subSoup[2].select('a span.text-ellipsis').text
-                            obj['player4']['name'] = subSoup[3].select('a span.text-ellipsis').text
-                            obj['player5']['name'] = subSoup[4].select('a span.text-ellipsis').text
+                            obj['player1']['name'] = subSoup[0].select_one('a span.text-ellipsis').text
+                            obj['player2']['name'] = subSoup[1].select_one('a span.text-ellipsis').text
+                            obj['player3']['name'] = subSoup[2].select_one('a span.text-ellipsis').text
+                            obj['player4']['name'] = subSoup[3].select_one('a span.text-ellipsis').text
+                            obj['player5']['name'] = subSoup[4].select_one('a span.text-ellipsis').text
 
-                            obj['player1']['imgURI'] = 'https://hltv.org' + \
-                                                       subSoup[0].select('a img.bodyshot-team-img')[
-                                                           'src']
-                            obj['player2']['imgURI'] = 'https://hltv.org' + \
-                                                       subSoup[1].select('a img.bodyshot-team-img')[
-                                                           'src']
-                            obj['player3']['imgURI'] = 'https://hltv.org' + \
-                                                       subSoup[2].select('a img.bodyshot-team-img')[
-                                                           'src']
-                            obj['player4']['imgURI'] = 'https://hltv.org' + \
-                                                       subSoup[3].select('a img.bodyshot-team-img')[
-                                                           'src']
-                            obj['player5']['imgURI'] = 'https://hltv.org' + \
-                                                       subSoup[4].select('a img.bodyshot-team-img')[
-                                                           'src']
+                            # print(subSoup[0].select_one('a img.bodyshot-team-img'))
+                            # obj['player1']['imgURI'] = 'https://hltv.org' + \
+                            #                            subSoup[0].select_one('a img.bodyshot-team-img')['src']
+                            # obj['player2']['imgURI'] = 'https://hltv.org' + \
+                            #                            subSoup[1].select_one('a img.bodyshot-team-img')['src']
+                            # obj['player3']['imgURI'] = 'https://hltv.org' + \
+                            #                            subSoup[2].select_one('a img.bodyshot-team-img')['src']
+                            # obj['player4']['imgURI'] = 'https://hltv.org' + \
+                            #                            subSoup[3].select_one('a img.bodyshot-team-img')['src']
+                            # obj['player5']['imgURI'] = 'https://hltv.org' + \
+                            #                            subSoup[4].select_one('a img.bodyshot-team-img')['src']
 
                             print(obj)
+                            gt[team_col.find('a').text] = obj
+                            goodTeams.append(team_col.find('a').text)
                         else:
                             badTeams.append(team_col.find('a').text)
 
@@ -104,14 +99,28 @@ def getTeams(files: list[str]):
                     print(r.status_code)
                     break
                 pass
-        print("_------------------------_")
+        print("_------------------------_ end of tbody _------------------------_")
+
+    print(datetime.datetime.now())
+    endFile = open("../Data/New/teams.json", 'w', encoding='utf-8')
+    endFile.write(json.dumps(gt))
+    print(datetime.datetime.now())
+    endFile.close()
 
 
 # print(len(soup.find_all('tbody')))
 
 # print(html)
 
+def to_json(input_file: str):
+    f = open(input_file, 'r', encoding='utf-8')
+    data = f.read()
+    f.close()
+    f = open("../Data/New/teams.json", 'w', encoding='utf-8')
+    f.write(data)
+    f.close()
+
 
 if __name__ == '__main__':
-    getTeams(["../Data/New/csgo2018.html", "../Data/New/csgo2019.html", "../Data/New/csgo2020.html"])
-pass
+    # getTeams(["../Data/New/csgo2018.html", "../Data/New/csgo2019.html", "../Data/New/csgo2020.html"])  # почти час
+    to_json("../Data/New/teams.txt")
