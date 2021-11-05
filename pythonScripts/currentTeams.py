@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-import time
 import datetime
-import csv
 import json
 
 headers = {
@@ -21,7 +19,6 @@ def getTeams(files: list[str]):
         f = open(file, 'r', encoding="UTF-8")
         html = html + f.read()
         f.close()
-
     soup = BeautifulSoup(html, features='html.parser')
     goodTeams = list()
     gt = {}
@@ -29,23 +26,17 @@ def getTeams(files: list[str]):
     for tbody in soup.find_all('tbody'):
         for tr in tbody.find_all('tr'):
             for team_col in tr.select('td.team-col'):
-                # print(team_col.find('a')['href'])
                 if team_col.find('a').text in badTeams or team_col.find('a').text in goodTeams:
-                    # print("Повтор")
                     continue
                 url = "https://hltv.org" + team_col.find('a')['href'].replace('/stats', '').replace('teams', 'team')
-                # print(team_col.find('a')['href'].replace('/stats', '').replace('teams', 'team'))
                 r = requests.get(url, headers=headers)
                 if r.status_code == 200:  # r.status
                     soup2 = BeautifulSoup(r.text, features='html.parser')
                     no = soup2.select('#rosterBox .empty-state')
                     if len(no) == 1:
                         badTeams.append(team_col.find('a').text)
-                        # print('bad')
                     else:
-                        # goodTeams.append(team_col.find('a').text())
                         roster = soup2.find("div", class_="bodyshot-team").find_all("a", class_='col-custom')
-                        # print(roster)
                         if len(roster) == 5:
                             obj = {
                                 'teamUrl': url,
@@ -91,8 +82,6 @@ def getTeams(files: list[str]):
                             goodTeams.append(team_col.find('a').text)
                         else:
                             badTeams.append(team_col.find('a').text)
-
-                        # obj['player1'] = roster[0].find('')
                         pass
                 else:  # r.status
                     print("Не 200")
@@ -107,10 +96,6 @@ def getTeams(files: list[str]):
     print(datetime.datetime.now())
     endFile.close()
 
-
-# print(len(soup.find_all('tbody')))
-
-# print(html)
 
 def to_json(input_file: str):
     f = open(input_file, 'r', encoding='utf-8')
