@@ -3,6 +3,7 @@ import pandas as pd
 from itertools import groupby
 import numpy as np
 import ast
+import json
 
 
 def printAll(list):
@@ -41,6 +42,12 @@ def unite(files: list, output_filename: str):
 
 
 def refactor(input_file: str, output_file: str):
+    """
+Приводит к заданному виду файлы
+    :param input_file:
+    :param output_file:
+    :return:
+    """
     data = csv_reader(input_file)[1:]
     refactored = list()
     for row in data:
@@ -78,6 +85,20 @@ def refactor(input_file: str, output_file: str):
                 [winner, team1['name'], team1['player1'], team1['player2'], team1['player3'], team1['player4'],
                  team1['player5'], team2['name'], team2['player1'], team2['player2'], team2['player3'],
                  team2['player4'], team2['player5'], map])
+
+    csv_writer(output_file, refactored)
+
+
+def delete_teams(input_file: str, output_file: str, teams: str):
+    f = open(teams, 'r', encoding='utf-8')
+    teams_list = json.loads(f.read()).keys()
+    f.close()
+    data = csv_reader(input_file)
+    refactored = list()
+
+    for row in data:
+        if row[1] in teams_list or row[7] in teams_list:
+            refactored.append(row)
 
     csv_writer(output_file, refactored)
 
@@ -192,6 +213,8 @@ if __name__ == '__main__':
     # unite(['../Data/New/rawData18_newFormat.csv', '../Data/New/rawData19_newFormat.csv',
     #        '../Data/New/rawData20_newFormat.csv'], "csgo18-20.csv")
     # refactor("../Data/New/csgo18-20.csv", "../Data/New/refactored18-20.csv")
+    delete_teams("../Data/New/refactored18-20.csv", "../Data/New/refactored_goodTeams18-20.csv",
+                 "../Data/New/teams.json")
 
     # data = pd.read_csv("../Data/New/refactored18-20.csv")
     # print(np.array(data)[:, 1])
