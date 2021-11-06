@@ -10,7 +10,8 @@ def setTeams(input_file: str):
     f = open(input_file, 'r', encoding='utf-8')
     data = json.loads(f.read())
     for row in data.items():
-        collection.insert_one({row[0]: row[1]})
+        collection.insert_one({"teamName": row[0],
+                               row[0]: row[1]})
 
 
 if __name__ == '__main__':
