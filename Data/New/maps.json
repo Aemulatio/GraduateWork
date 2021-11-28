@@ -1,0 +1,35 @@
+{
+  "Cache": {
+    "mapName": "Cache"
+  },
+  "Cobblestone": {
+    "mapName": "Cobblestone"
+  },
+  "Dust2": {
+    "mapName": "Dust2"
+  },
+  "Inferno": {
+    "mapName": "Inferno"
+  },
+  "Map": {
+    "mapName": "Map"
+  },
+  "Mirage": {
+    "mapName": "Mirage"
+  },
+  "Nuke": {
+    "mapName": "Nuke"
+  },
+  "Overpass": {
+    "mapName": "Overpass"
+  },
+  "Train": {
+    "mapName": "Train"
+  },
+  "Tuscan": {
+    "mapName": "Tuscan"
+  },
+  "Vertigo": {
+    "mapName": "Vertigo"
+  }
+}
