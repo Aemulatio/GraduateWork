@@ -25,7 +25,7 @@ def csv_writer(filename: str, data: list):
             ['Winner',
              'Team1', "T1_Player1", "T1_Player2", "T1_Player3", "T1_Player4", "T1_Player5",
              'Team2', "T2_Player1", "T2_Player2", "T2_Player3", "T2_Player4", "T2_Player5",
-             'Team1_Score', 'Team2_Score', 'Map'])
+             'Map'])
         for line in data:
             writer.writerow(line)
 
@@ -103,6 +103,25 @@ def delete_teams(input_file: str, output_file: str, teams: str):
     csv_writer(output_file, refactored)
 
 
+def get_unique_maps(input_file: str, output_file: str):
+    """
+    Получает уникальный список карт
+
+    :param input_file:
+    :param output_file:
+    :return:
+    """
+    data = csv_reader(input_file)
+    # print(data)
+    UniqueMap = np.unique(np.array(data)[:, -1])
+    maps = {}
+    for map in UniqueMap:
+        maps[map] = {"mapName": map}
+
+    endFile = open(output_file, 'w', encoding='utf-8')
+    endFile.write(json.dumps(maps))
+
+
 def team_by_team_csv(list, ids, name):
     try:  # Менять в зависимости от нужды либо море либо тимс
         with open("Data/More/" + name + ".csv", "w", newline='', encoding='utf-8') as csv_file:
@@ -114,8 +133,12 @@ def team_by_team_csv(list, ids, name):
         print("Nu ok", name)
 
 
-def split_by_teams(files):
-    """Разбивает данные по командам"""
+def split_by_teams(files: list[str]):
+    """
+    Разбивает данные по командам
+
+    :type files: object
+    """
     output_filename = ""
     data = list()
     for file in files:
@@ -213,8 +236,10 @@ if __name__ == '__main__':
     # unite(['../Data/New/rawData18_newFormat.csv', '../Data/New/rawData19_newFormat.csv',
     #        '../Data/New/rawData20_newFormat.csv'], "csgo18-20.csv")
     # refactor("../Data/New/csgo18-20.csv", "../Data/New/refactored18-20.csv")
-    delete_teams("../Data/New/refactored18-20.csv", "../Data/New/refactored_goodTeams18-20.csv",
-                 "../Data/New/teams.json")
+    # delete_teams("../Data/New/refactored18-20.csv", "../Data/New/refactored_goodTeams18-20.csv",
+    #              "../Data/New/teams.json")
+
+    get_unique_maps("../Data/New/refactored_goodTeams18-20.csv", "../Data/New/maps.json")
 
     # data = pd.read_csv("../Data/New/refactored18-20.csv")
     # print(np.array(data)[:, 1])
