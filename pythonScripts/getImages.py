@@ -13,24 +13,72 @@ def getFullProfile():
     for obj in collection.find():
         data.append(obj)
 
+    newData = []
     for d in data[:]:
+        teamName = d.get('teamName')
+        teamUrl = d.get(teamName).get('teamUrl')
+        
+        name1 = d.get(teamName).get('player1').get('name')
         url1 = d.get(d.get('teamName')).get('player1').get("url")
         p1 = getImage(url1)
         print(p1)
+        name2 = d.get(teamName).get('player2').get('name')
         url2 = d.get(d.get('teamName')).get('player2').get("url")
         p2 = getImage(url2)
         print(p2)
+        name3 = d.get(teamName).get('player3').get('name')
         url3 = d.get(d.get('teamName')).get('player3').get("url")
         p3 = getImage(url3)
         print(p3)
+        name4 = d.get(teamName).get('player4').get('name')
         url4 = d.get(d.get('teamName')).get('player4').get("url")
         p4 = getImage(url4)
         print(p4)
+        name5 = d.get(teamName).get('player5').get('name')
         url5 = d.get(d.get('teamName')).get('player5').get("url")
         p5 = getImage(url5)
         print(p5)
-        print("-----------------------")
+        newData.append(
+            {
+                'teamName': teamName,
+                teamName:
+                    {
+                        'teamUrl': teamUrl,
+                        'teamName': teamName,
+                        'player1':
+                            {
+                                "url": url1,
+                                'name': name1,
+                                'image': p1,
+                            },
+                        'player2':
+                            {
+                                "url": url2,
+                                'name': name2,
+                                'image': p2,
+                            },
+                        'player3':
+                            {
+                                "url": url3,
+                                'name': name3,
+                                'image': p3,
+                            },
+                        'player4':
+                            {
+                                "url": url4,
+                                'name': name4,
+                                'image': p4,
+                            },
+                        'player5':
+                            {
+                                "url": url5,
+                                'name': name5,
+                                'image': p5,
+                            },
+                    }
+            })
 
+        print("-----------------------")
 
 def getImage(url):
     headers = {
