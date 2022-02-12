@@ -59,7 +59,7 @@ def getTeams():
     db = client.Diploma
     collection = db.Teams
     data = []
-    for obj in collection.find():
+    for obj in collection.find().sort('teamName'):
         object = {
             'teamName': obj['teamName'],
             'teamUrl': obj[obj['teamName']]['teamUrl'],
