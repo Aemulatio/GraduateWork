@@ -7,6 +7,8 @@ import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
 from sklearn import ensemble
+from pymongo import MongoClient
+import json
 
 app = Flask(__name__)
 
@@ -38,11 +40,37 @@ def predict(t1, t2, game_map):
     return ret
 
 
+def setTeams(input_file: str):
+    client = MongoClient(
+        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    db = client.Diploma
+    collection = db.Teams
+    for obj in collection.find():
+        collection.delete_many(obj)
+    f = open(input_file, 'r', encoding='utf-8')
+    data = json.loads(f.read())
+    # print(data)
+    for row in data:  # .items():
+        print(row)
+        # collection.insert_one({"teamName": row[0],
+        #                        row[0]: row[1]})
+        collection.insert_one({"teamName": row.get('teamName'),
+                               row.get('teamName'): row.get(row.get('teamName'))})
+
+
 @app.errorhandler(500)
 def error_500(error):
     print(request.form)
     print(request.method)
-    return (error)
+    return error
+
+
+@app.errorhandler(404)
+def error_500(error):
+    print(request.form)
+    print(request.method)
+    print(error)
+    return render_template("404.html")
 
 
 def train_forest():
@@ -126,5 +154,14 @@ def test():
                                )
 
 
+@app.route("/statistics.html")
+def statistics():
+    last_update = ''
+    return render_template("statistics.html",
+                           last_update=last_update,
+
+                           )
+
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
