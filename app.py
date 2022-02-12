@@ -1,3 +1,5 @@
+import base64
+
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -58,7 +60,18 @@ def getTeams():
     collection = db.Teams
     data = []
     for obj in collection.find():
-        data.append(obj)
+        object = {
+            'teamName': obj['teamName'],
+            'teamUrl': obj[obj['teamName']]['teamUrl'],
+            'teamLogo': base64.b64decode(obj[obj['teamName']]['teamLogo']).decode('utf-8'),
+            'player1': obj[obj['teamName']]['player1'],
+            'player2': obj[obj['teamName']]['player2'],
+            'player3': obj[obj['teamName']]['player3'],
+            'player4': obj[obj['teamName']]['player4'],
+            'player5': obj[obj['teamName']]['player5'],
+
+        }
+        data.append(object)
     return data
 
 
