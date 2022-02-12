@@ -40,22 +40,15 @@ def predict(t1, t2, game_map):
     return ret
 
 
-def setTeams(input_file: str):
+def getLogs():
     client = MongoClient(
         "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
     db = client.Diploma
-    collection = db.Teams
+    collection = db.logs
+    data = []
     for obj in collection.find():
-        collection.delete_many(obj)
-    f = open(input_file, 'r', encoding='utf-8')
-    data = json.loads(f.read())
-    # print(data)
-    for row in data:  # .items():
-        print(row)
-        # collection.insert_one({"teamName": row[0],
-        #                        row[0]: row[1]})
-        collection.insert_one({"teamName": row.get('teamName'),
-                               row.get('teamName'): row.get(row.get('teamName'))})
+        data.append(obj['date'])
+    return data
 
 
 @app.errorhandler(500)
@@ -156,10 +149,9 @@ def test():
 
 @app.route("/statistics.html")
 def statistics():
-    last_update = ''
+    last_update = getLogs()
     return render_template("statistics.html",
                            last_update=last_update,
-
                            )
 
 
