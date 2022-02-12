@@ -47,7 +47,9 @@ def getLogs():
     collection = db.logs
     data = []
     for obj in collection.find():
-        data.append(obj['date'])
+        # data.append(obj['date'])
+        data.append(obj['date'].strftime("%d.%m.%Y, %H:%M:%S"))
+        # data.append(datetime.strptime(obj['date'], '%d/%m/%y %H:%M:%S'))
     return data
 
 
