@@ -64,11 +64,9 @@
                             <div class="scrolling content">
                                 <div class="elements">
                                     {%for team in new_teams%}
-                                    <div data-name="{{team}}" class="element">
-                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt=""
-
-                                        >
-                                        <h3 style="text-align: center">{{team}}</h3>
+                                    <div data-name="{{team['teamName']}}" class="element">
+                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}" alt="">
+                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
                                     </div>
                                     {%endfor%}
                                 </div>
