@@ -58,7 +58,7 @@ def getTeams():
     collection = db.Teams
     data = []
     for obj in collection.find():
-        data.append(obj['date'])
+        data.append(obj)
     return data
 
 
@@ -130,6 +130,7 @@ def main():
         return render_template('index.html',
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique()),
+                               new_teams=getTeams(),
                                )
 
 
