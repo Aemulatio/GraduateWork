@@ -11,9 +11,13 @@ def setTeams(input_file: str):
         collection.delete_many(obj)
     f = open(input_file, 'r', encoding='utf-8')
     data = json.loads(f.read())
-    for row in data.items():
-        collection.insert_one({"teamName": row[0],
-                               row[0]: row[1]})
+    # print(data)
+    for row in data:  # .items():
+        print(row)
+        # collection.insert_one({"teamName": row[0],
+        #                        row[0]: row[1]})
+        collection.insert_one({"teamName": row.get('teamName'),
+                               row.get('teamName'): row.get(row.get('teamName'))})
 
 
 def setMaps(input_file: str):
@@ -31,5 +35,6 @@ def setMaps(input_file: str):
 
 
 if __name__ == '__main__':
-    setTeams("../Data/New/teams.json")
-    setMaps("../Data/New/maps.json")
+    # setTeams("../Data/New/teams.json")
+    setTeams("../Data/New/teams_from_db_with_logos.json")
+    # setMaps("../Data/New/maps.json")
