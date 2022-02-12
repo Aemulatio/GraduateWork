@@ -47,9 +47,18 @@ def getLogs():
     collection = db.logs
     data = []
     for obj in collection.find():
-        # data.append(obj['date'])
         data.append(obj['date'].strftime("%d.%m.%Y, %H:%M:%S"))
-        # data.append(datetime.strptime(obj['date'], '%d/%m/%y %H:%M:%S'))
+    return data
+
+
+def getTeams():
+    client = MongoClient(
+        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    db = client.Diploma
+    collection = db.Teams
+    data = []
+    for obj in collection.find():
+        data.append(obj['date'])
     return data
 
 
@@ -115,6 +124,7 @@ def main():
                                team1=t1,
                                team2=t2,
                                map=map,
+                               new_teams=getTeams()
                                )
     else:
         return render_template('index.html',
@@ -150,11 +160,12 @@ def test():
 
 
 @app.route("/statistics.html")
+@app.route("/statistics/")
+@app.route("/statistics")
 def statistics():
     last_update = getLogs()
     return render_template("statistics.html",
-                           last_update=last_update,
-                           )
+                           last_update=last_update)
 
 
 if __name__ == '__main__':
