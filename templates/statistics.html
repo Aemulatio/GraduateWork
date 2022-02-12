@@ -6,5 +6,25 @@
     <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
+<div class="container">
+    <h1 class="h1">Автоматические обновления БД</h1>
+    <h3>До нового обновления осталось:</h3>
+    <p id="update_cooldown"></p>
+    <table>
+        <thead>
+        <tr>
+            <th>Дата</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        {%for upd in last_update%}
+        <tr>
+            <td>{{upd}}</td>
+        </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+</div>
 </body>
 </html>
