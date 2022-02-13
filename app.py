@@ -116,6 +116,7 @@ def train_forest():
 
 
 @app.route('/', methods=['post', 'get'])
+@app.route('/index.html', methods=['post', 'get'])
 def main():
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
     #     logos = os.listdir("static/imgs/logos")
