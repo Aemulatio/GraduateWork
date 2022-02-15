@@ -192,6 +192,9 @@ def first_preps():
     url = 'https://www.hltv.org/stats/matches?startDate=2020-01-01&endDate=2020-12-31'
     parse(url, 'csgo2020.html', "w")
     print("-----------------")
+    url = 'https://www.hltv.org/stats/matches?startDate=2021-01-01&endDate=2021-12-31'
+    parse(url, 'csgo2021.html', "w")
+    print("-----------------")
 
 
 if __name__ == '__main__':
@@ -203,8 +206,16 @@ if __name__ == '__main__':
     # parseFile("csgo2020.html", 'rawData20.csv', ser)
     # print(setCache("123"))
 
-    parseFile_new("csgo2018.html", 'rawData18_newFormat.csv')
+    # parseFile_new("csgo2018.html", 'rawData18_newFormat.csv')
+    # print("file done")
+    # parseFile_new("csgo2019.html", 'rawData19_newFormat.csv')
+    # print("file done")
+    # parseFile_new("csgo2020.html", 'rawData20_newFormat.csv')
+    # print("file done")
+
+    url = 'https://www.hltv.org/stats/matches?startDate=2021-01-01&endDate=2021-12-31'
+    parse(url, 'csgo2021.html', "w")
+    print("-----------------")
+    parseFile_new("csgo2021.html", 'rawData21_newFormat.csv')
     print("file done")
-    parseFile_new("csgo2019.html", 'rawData19_newFormat.csv')
-    print("file done")
-    parseFile_new("csgo2020.html", 'rawData20_newFormat.csv')
+
