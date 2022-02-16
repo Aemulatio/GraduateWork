@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import hashlib
+from datetime import datetime
 
 
 def setCache(data: str) -> str:
@@ -55,7 +56,13 @@ def writeHash(hash: str):
     """
     db = client.Diploma
     collection = db.hash
-    # TODO: Тут пишем в бд хэш
+    now = datetime.now()
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    collection.insert_one({
+        "hash": hash,
+        "dateTime": dt_string
+    })
 
 
 def writeData(
@@ -75,6 +82,7 @@ def writeData(
         map: str,
 ):
     """
+    Запись в таблицу Stats
 
     :param winner:
     :param team1:
@@ -93,10 +101,22 @@ def writeData(
     :return:
     """
     db = client.Diploma
-    collection = db.stats  # вроде статс
-    # TODO: Тут пишем в бд собранные данные
-
-    pass
+    collection = db.Stats  # вроде статс
+    collection.insert_one(
+        {"winner": winner,
+         "team1": team1,
+         "team1_p1": team1_p1,
+         "team1_p2": team1_p2,
+         "team1_p3": team1_p3,
+         "team1_p4": team1_p4,
+         "team1_p5": team1_p5,
+         "team2": team2,
+         "team2_p1": team2_p1,
+         "team2_p2": team2_p2,
+         "team2_p3": team2_p3,
+         "team2_p4": team2_p4,
+         "team2_p5": team2_p5,
+         "map": map})
 
 
 def autoScrapper(url: str, lastHash: str):
@@ -122,13 +142,14 @@ def autoScrapper(url: str, lastHash: str):
         if soup.find('table', class_='stats-table matches-table no-sort') is not None:
             for tr in soup.find('table', class_='stats-table matches-table no-sort').find('tbody').find_all('tr'):
                 """Проходим по строкам таблицы"""
-                current_hash = setCache(str(tr))  # Получаем кэш текущей строки таблицы
+                new_url = 'https://hltv.org' + tr.find('td', class_='date-col').find('a')['href']
+                print("new url:")
+                print(new_url)
+                current_hash = setCache(str(new_url))  # Получаем кэш текущей строки таблицы
                 if current_hash != lastHash:  # Если текущий хэш не равен последнему из базы
                     if checkHash(current_hash) is False:  # если такого нет в БД
-
                         ####
-                        new_url = 'https://hltv.org' + tr.find('td', class_='date-col').find('a')['href']
-                        print(new_url)
+
                         r_new = requests.get(new_url, headers=headers)
                         teamsPlayers = []  # составы команд
                         if (r_new.status_code == 200):  # если страничка загрузилась, то ок
@@ -145,10 +166,9 @@ def autoScrapper(url: str, lastHash: str):
                                 del teamPlayers
                         # print(teamsPlayers)
                         else:
-                            print("Вернулась не 200")
+                            print("Вернулась не 200 - матч")
                             print(r_new.status_code)
                             break
-                        print("-----------------------------------")
 
                         score = []
                         # if "first" in tr["class"]:
@@ -165,23 +185,42 @@ def autoScrapper(url: str, lastHash: str):
                             break
                         played_map = tr.find("div", class_="dynamic-map-name-full").text
                         event = tr.find("td", class_="event-col").text
-                        writeData()
+                        print("data:")
+                        print(teamsPlayers, score, played_map, event)
+                        writeData(winner=teamsPlayers[0][0] if score[0] > score[1] else teamsPlayers[1][0],
+                                  team1=teamsPlayers[0][0],
+                                  team1_p1=teamsPlayers[0][1],
+                                  team1_p2=teamsPlayers[0][2],
+                                  team1_p3=teamsPlayers[0][3],
+                                  team1_p4=teamsPlayers[0][4],
+                                  team1_p5=teamsPlayers[0][5],
+                                  team2=teamsPlayers[1][0],
+                                  team2_p1=teamsPlayers[1][1],
+                                  team2_p2=teamsPlayers[1][2],
+                                  team2_p3=teamsPlayers[1][3],
+                                  team2_p4=teamsPlayers[1][4],
+                                  team2_p5=teamsPlayers[1][5],
+                                  map=played_map
+                                  )
+                        writeHash(current_hash)
+                        print(current_hash)
                         ####
-                        print(tr)
-                        pass
-        # Иначе
-        else:
-            # Записываем текущую ссылку
-            pass
+                    else:
+                        print("Такой уже есть")
+                else:  # Если это был последний хэш, то надо прекращать работу
+                    print("Текущий и последний были равны")
+                    return
+
+                print("-----------------------------------")
         # Если нет ссылки на следующую выборку, то просто закрываем файл
         if not soup.find('div', class_='pagination-component pagination-top with-stats-table') \
                 .find('a', class_='pagination-next').has_attr('href'):
-            pass
+            return
         else:
             # Иначе, закрываем файл, получаем ссылку дальше и делаем рекурсию, через 3 секунды
-            pass
             href = soup.find('div', class_='pagination-component pagination-top with-stats-table') \
                 .find('a', class_='pagination-next')['href']
+            print("Следующая страница")
             print(href)
             time.sleep(3)
             autoScrapper("https://www.hltv.org" + href, getLastDocument())
