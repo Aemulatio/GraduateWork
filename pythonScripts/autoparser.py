@@ -57,7 +57,6 @@ def writeHash(hash: str):
     db = client.Diploma
     collection = db.hash
     now = datetime.now()
-    # dd/mm/YY H:M:S
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
     collection.insert_one({
         "hash": hash,
@@ -117,6 +116,34 @@ def writeData(
          "team2_p4": team2_p4,
          "team2_p5": team2_p5,
          "map": map})
+
+
+def autoStart():
+    """
+    Записывает в БД старт
+    :return:
+    """
+    db = client.Diploma
+    collection = db.autoStarts
+    now = datetime.now()
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    collection.insert_one({
+        "start": dt_string
+    })
+
+
+def autoEnd():
+    """
+    Записывает в БД старт
+    :return:
+    """
+    db = client.Diploma
+    collection = db.autoEnd
+    now = datetime.now()
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    collection.insert_one({
+        "end": dt_string
+    })
 
 
 def autoScrapper(url: str, lastHash: str):
@@ -234,4 +261,6 @@ if __name__ == '__main__':
         "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
     url = "https://www.hltv.org/stats/matches"
     lastHash = getLastDocument()
+    autoStart()
     autoScrapper(url, lastHash=lastHash)
+    autoEnd()
