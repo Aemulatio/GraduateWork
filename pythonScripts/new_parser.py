@@ -40,13 +40,15 @@ def parse(url: str, outPutFile: str, attr: str = 'a'):
             # Записываем текущую ссылку
             f.write(str(r.url))
         # Если нет ссылки на следующую выборку, то просто закрываем файл
-        if not soup.find('div', class_='pagination-component pagination-top with-stats-table') \
+        # if not soup.find('div', class_='pagination-component pagination-top with-stats-table') \
+        if not soup.find('div', class_='pagination-component with-stats-table') \
                 .find('a', class_='pagination-next').has_attr('href'):
             f.close()
         else:
             # Иначе, закрываем файл, получаем ссылку дальше и делаем рекурсию, через 3 секунды
             f.close()
-            href = soup.find('div', class_='pagination-component pagination-top with-stats-table') \
+            # href = soup.find('div', class_='pagination-component pagination-top with-stats-table') \
+            href = soup.find('div', class_='pagination-component with-stats-table') \
                 .find('a', class_='pagination-next')['href']
             print(href)
             time.sleep(3)
