@@ -30,6 +30,8 @@ def parse(url: str, outPutFile: str, attr: str = 'a'):
         f = open("../Data/New/" + outPutFile, attr, encoding="UTF-8")
         html = r.text  # код текущей страницы в переменную
         soup = BeautifulSoup(html, features='html.parser')  # объект BS
+
+        print(r.status_code)
         # Если есть таблица с классами
         if soup.find('table', class_='stats-table matches-table no-sort') is not None:
             # пишем тбоди
