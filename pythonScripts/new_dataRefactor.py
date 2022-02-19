@@ -51,11 +51,14 @@ def refactor(input_file: str, output_file: str):
     data = csv_reader(input_file)[1:]
     refactored = list()
     for row in data:
-        t1 = ast.literal_eval(row[1])
-        t2 = ast.literal_eval(row[2])
+        print(row)
+        print(row[1])
+        print(row[2])
+        t1 = ast.literal_eval(row[2])
+        t2 = ast.literal_eval(row[3])
         if len(t1) == 6 and len(t2) == 6:
-            score = ast.literal_eval(row[3])
-            map = row[4]
+            score = ast.literal_eval(row[4])
+            map = row[5]
             team1 = {
                 "name": t1[0],
                 "player1": t1[1],
@@ -234,12 +237,12 @@ if __name__ == '__main__':
     # 'Data/rawData18.csv',
 
     # unite(['../Data/New/rawData18_newFormat.csv', '../Data/New/rawData19_newFormat.csv',
-    #        '../Data/New/rawData20_newFormat.csv'], "csgo18-20.csv")
-    # refactor("../Data/New/csgo18-20.csv", "../Data/New/refactored18-20.csv")
-    # delete_teams("../Data/New/refactored18-20.csv", "../Data/New/refactored_goodTeams18-20.csv",
-    #              "../Data/New/teams.json")
+    #        '../Data/New/rawData20_newFormat.csv', '../Data/New/rawData21_newFormat.csv',], "csgo18-21.csv")
+    # refactor("../Data/New/csgo18-21.csv", "../Data/New/refactored_csgo_18-21.csv")
+    delete_teams("../Data/New/refactored_csgo_18-21.csv", "../Data/New/refactored_goodTeams_csgo_18-21.csv",
+                 "../Data/New/teams.json")
 
-    get_unique_maps("../Data/New/refactored_goodTeams18-20.csv", "../Data/New/maps.json")
+    # get_unique_maps("../Data/New/refactored_goodTeams18-20.csv", "../Data/New/maps.json")
 
     # data = pd.read_csv("../Data/New/refactored18-20.csv")
     # print(np.array(data)[:, 1])
