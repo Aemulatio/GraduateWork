@@ -1,6 +1,15 @@
+import csv
+
 from pymongo import MongoClient
 import json
 
+
+
+
+def csv_reader(path):
+    with open(path, 'r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        return [row for row in reader]
 
 def setTeams(input_file: str):
     # client = MongoClient(
@@ -33,9 +42,8 @@ def setMaps(input_file: str):
 
 def setStats(input_file: str):
     collection = db.Stats
-    f = open(input_file, 'r', encoding='utf-8')
-    data = json.loads(f.read())
-    for row in data.items():
+    data = csv_reader(input_file)
+    for row in data:
         collection.insert_one(
             {"winner": row[0],
              "team1": row[1],
@@ -61,4 +69,4 @@ if __name__ == '__main__':
     # setTeams("../Data/New/teams.json")
     # setTeams("../Data/New/teams_from_db_with_logos.json")
     # setMaps("../Data/New/maps.json")
-    setStats()
+    setStats("../Data/New/refactored_goodTeams_csgo_18-21.csv")
