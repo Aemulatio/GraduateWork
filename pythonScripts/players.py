@@ -1,11 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
-import time
-import csv
-import hashlib
+from pymongo import MongoClient
 
 
-def getPlayers(url: str, outPutFile: str, attr: str = 'a'):
+def getPlayers(url: str):
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36",
         "pragma": 'no-cache',
@@ -15,21 +13,14 @@ def getPlayers(url: str, outPutFile: str, attr: str = 'a'):
     }
     r = requests.get(url, headers=headers)
     if r.status_code == 200:  # 200 - ok
-        f = open("../Data/New/" + outPutFile, attr, encoding="UTF-8")
         html = r.text  # код текущей страницы в переменную
         soup = BeautifulSoup(html, features='html.parser')  # объект BS
 
         if soup.find('table', class_='stats-table player-ratings-table') is not None:
-            # пишем тбоди
-            # f.write(str(soup.find('table', class_='stats-table matches-table no-sort').find('tbody')))
-            # f.write("\n")
-            # for tr in soup.find('tbody'):
-            # print("---------------------------------")
-            # print(tr)
-            # print(tr.select("td.playerCol a"))
             for href in soup.select("td.playerCol a"):
-                user_id = str(href).split("/")[3]
-                nickName = str(href).split("/")[-1]
+                user_id = str(href['href']).split("/")[3]
+                nickName = str(href['href']).split("/")[-1]
+                print(nickName)
                 new_url = "https://www.hltv.org" + href['href']
                 r2 = requests.get(new_url, headers=headers)
                 if (r2.status_code == 200):  # если страничка загрузилась, то ок
@@ -43,12 +34,29 @@ def getPlayers(url: str, outPutFile: str, attr: str = 'a'):
                     impact = stats[3].get_text()
                     adr = stats[4].get_text()
                     kpr = stats[5].get_text()
-                    #TODO: запись в бд
-
+                    collection.insert_one({
+                        'user_id': user_id,
+                        'nickName': nickName,
+                        'current_team': current_team,
+                        'rating': rating,
+                        'dpr': dpr,
+                        'kast': kast,
+                        'impact': impact,
+                        'adr': adr,
+                        'kpr': kpr,
+                    })
     else:
         print(r.status_code)
 
 
 if __name__ == '__main__':
     url = 'https://www.hltv.org/stats/players/'
-    getPlayers(url, "players.html")
+    client = MongoClient(
+        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    db = client.Diploma
+    collection = db.Players
+    print("Соединено")
+    for obj in collection.find():
+        collection.delete_many(obj)
+    print("Удалено все")
+    getPlayers(url)
