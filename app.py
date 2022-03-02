@@ -83,7 +83,7 @@ def error_500(error):
 
 
 @app.errorhandler(404)
-def error_500(error):
+def error_404(error):
     print(request.form)
     print(request.method)
     print(error)
