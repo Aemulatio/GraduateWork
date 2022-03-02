@@ -148,6 +148,8 @@ def main():
                                )
 
 
+@app.route('/test', methods=['post', 'get'])
+@app.route('/test/', methods=['post', 'get'])
 @app.route('/test.html', methods=['post', 'get'])
 def test():
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
