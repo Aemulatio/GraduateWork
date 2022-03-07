@@ -4,12 +4,11 @@ from pymongo import MongoClient
 import json
 
 
-
-
 def csv_reader(path):
     with open(path, 'r', encoding='utf-8') as file:
         reader = csv.reader(file)
         return [row for row in reader]
+
 
 def setTeams(input_file: str):
     # client = MongoClient(
@@ -20,13 +19,15 @@ def setTeams(input_file: str):
         collection.delete_many(obj)
     f = open(input_file, 'r', encoding='utf-8')
     data = json.loads(f.read())
-    # print(data)
-    for row in data:  # .items():
+    # with open(input_file) as f:
+    #     data = json.load(f)
+    print(data)
+    for row in data.items():
         print(row)
-        # collection.insert_one({"teamName": row[0],
-        #                        row[0]: row[1]})
-        collection.insert_one({"teamName": row.get('teamName'),
-                               row.get('teamName'): row.get(row.get('teamName'))})
+        collection.insert_one({"teamName": row[0], row[0]: row[1]})
+        # collection.insert_one({"teamName": row.get('teamName'), row.get('teamName'): row.get(row.get('teamName'))})
+    # print(data)
+    # collection.insert_one(data)
 
 
 def setMaps(input_file: str):
@@ -69,4 +70,6 @@ if __name__ == '__main__':
     # setTeams("../Data/New/teams.json")
     # setTeams("../Data/New/teams_from_db_with_logos.json")
     # setMaps("../Data/New/maps.json")
-    setStats("../Data/New/refactored_goodTeams_csgo_18-21.csv")
+    # setStats("../Data/New/refactored_goodTeams_csgo_18-21.csv")
+    setTeams("../Data/New/teams_.json")
+    client.close()

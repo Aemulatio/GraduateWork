@@ -1,3 +1,5 @@
+import time
+
 from bs4 import BeautifulSoup
 import requests
 import datetime
@@ -131,7 +133,7 @@ def getTeams(files: list[str]):
                     print("Не 200")
                     print(r.status_code)
                     break
-                pass
+                time.sleep(5)
         print("_------------------------_ end of tbody _------------------------_")
 
     print(datetime.datetime.now())
