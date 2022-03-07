@@ -23,12 +23,14 @@ def getTeams(files: list[str]):
     goodTeams = list()
     gt = {}
     badTeams = list()
+    print("start parse")
     for tbody in soup.find_all('tbody'):
         for tr in tbody.find_all('tr'):
             for team_col in tr.select('td.team-col'):
                 if team_col.find('a').text in badTeams or team_col.find('a').text in goodTeams:
                     continue
                 url = "https://hltv.org" + team_col.find('a')['href'].replace('/stats', '').replace('teams', 'team')
+                url = url[:url.find("?")]
                 r = requests.get(url, headers=headers)
                 if r.status_code == 200:  # r.status
                     soup2 = BeautifulSoup(r.text, features='html.parser')
@@ -38,9 +40,13 @@ def getTeams(files: list[str]):
                     else:
                         roster = soup2.find("div", class_="bodyshot-team").find_all("a", class_='col-custom')
                         if len(roster) == 5:
+                            print(url)
+                            logo = soup2.find("img", class_="teamlogo day-only")['srcset'][:-3]
+                            # print(logo)
                             obj = {
                                 'teamUrl': url,
                                 "teamName": team_col.find('a').text,
+                                "teamLogo": logo,
                                 'player1': {},
                                 'player2': {},
                                 'player3': {},
@@ -91,7 +97,7 @@ def getTeams(files: list[str]):
         print("_------------------------_ end of tbody _------------------------_")
 
     print(datetime.datetime.now())
-    endFile = open("../Data/New/teams.json", 'w', encoding='utf-8')
+    endFile = open("../Data/New/teams_.json", 'w', encoding='utf-8')
     endFile.write(json.dumps(gt))
     print(datetime.datetime.now())
     endFile.close()
@@ -101,11 +107,12 @@ def to_json(input_file: str):
     f = open(input_file, 'r', encoding='utf-8')
     data = f.read()
     f.close()
-    f = open("../Data/New/teams.json", 'w', encoding='utf-8')
+    f = open("../Data/New/teams_.json", 'w', encoding='utf-8')
     f.write(data)
     f.close()
 
 
 if __name__ == '__main__':
-    # getTeams(["../Data/New/csgo2018.html", "../Data/New/csgo2019.html", "../Data/New/csgo2020.html"])  # почти час
-    to_json("../Data/New/teams.txt")
+    getTeams(["../Data/New/csgo2018.html", "../Data/New/csgo2019.html", "../Data/New/csgo2020.html",
+              "../Data/New/csgo2021.html"])  # почти час
+    to_json("../Data/New/teams_.txt")
