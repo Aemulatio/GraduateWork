@@ -41,8 +41,13 @@ def getTeams(files: list[str]):
                         roster = soup2.find("div", class_="bodyshot-team").find_all("a", class_='col-custom')
                         if len(roster) == 5:
                             print(url)
-                            logo = soup2.find("img", class_="teamlogo day-only")['srcset'][:-3]
-                            # print(logo)
+                            logo_container = soup2.find("img", class_="teamlogo")
+                            print(logo_container)
+                            if logo_container.has_attr("srcset"):
+                                logo = soup2.find("img", class_="teamlogo")['srcset'][:-3].replace("amp;", "")
+                            else:
+                                logo = soup2.find("img", class_="teamlogo")['src'].replace("amp;", "")
+                            print(logo)
                             obj = {
                                 'teamUrl': url,
                                 "teamName": team_col.find('a').text,
@@ -71,17 +76,50 @@ def getTeams(files: list[str]):
                             obj['player4']['name'] = subSoup[3].select_one('a span.text-ellipsis').text
                             obj['player5']['name'] = subSoup[4].select_one('a span.text-ellipsis').text
 
-                            # print(subSoup[0].select_one('a img.bodyshot-team-img'))
-                            # obj['player1']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[0].select_one('a img.bodyshot-team-img')['src']
-                            # obj['player2']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[1].select_one('a img.bodyshot-team-img')['src']
+                            # if subSoup[0].select_one('a img.bodyshot-team-img') is not None:
+                            print(subSoup[0].select_one('a img'))
+
+                            p1URI = subSoup[0].select_one('a img')['src'].replace("amp;", "")
+                            if p1URI[0] == "/":
+                                obj['player1']['imgURI'] = 'https://hltv.org' + p1URI
+                            else:
+                                obj['player1']['imgURI'] = p1URI
+
+                            p2URI = subSoup[1].select_one('a img')['src'].replace("amp;", "")
+                            if p2URI[0] == "/":
+                                obj['player2']['imgURI'] = 'https://hltv.org' + p2URI
+                            else:
+                                obj['player2']['imgURI'] = p2URI
+
+                            p3URI = subSoup[2].select_one('a img')['src'].replace("amp;", "")
+                            if p3URI[0] == "/":
+                                obj['player3']['imgURI'] = 'https://hltv.org' + p3URI
+                            else:
+                                obj['player3']['imgURI'] = p3URI
+
+                            p4URI = subSoup[3].select_one('a img')['src'].replace("amp;", "")
+                            if p4URI[0] == "/":
+                                obj['player4']['imgURI'] = 'https://hltv.org' + p4URI
+                            else:
+                                obj['player4']['imgURI'] = p4URI
+
+                            p5URI = subSoup[4].select_one('a img')['src'].replace("amp;", "")
+                            if p5URI[0] == "/":
+                                obj['player5']['imgURI'] = 'https://hltv.org' + p5URI
+                            else:
+                                obj['player5']['imgURI'] = p5URI
+
+                            #
                             # obj['player3']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[2].select_one('a img.bodyshot-team-img')['src']
+                            #                            subSoup[2].select_one('a img')['src'].replace("amp;", "")
                             # obj['player4']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[3].select_one('a img.bodyshot-team-img')['src']
+                            #                            subSoup[3].select_one('a img')['src'].replace("amp;", "")
                             # obj['player5']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[4].select_one('a img.bodyshot-team-img')['src']
+                            #                            subSoup[4].select_one('a img')['src'].replace("amp;", "")
+                            # else:
+                            #     print(subSoup[0].select_one('a'))
+                            #     print(subSoup[0].select_one('a img'))
+                            #     return
 
                             print(obj)
                             gt[team_col.find('a').text] = obj
