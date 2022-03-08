@@ -66,15 +66,15 @@
                                     {%for team in new_teams%}
                                     <div data-name="{{team['teamName']}}" class="element"
                                          data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['image']}}"
+                                         data-player1img="{{team['player1']['imgURI']}}"
                                          data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['image']}}"
+                                         data-player2img="{{team['player2']['imgURI']}}"
                                          data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['image']}}"
+                                         data-player3img="{{team['player3']['imgURI']}}"
                                          data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['image']}}"
+                                         data-player4img="{{team['player4']['imgURI']}}"
                                          data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['image']}}">
+                                         data-player5img="{{team['player5']['imgURI']}}">
                                         {%if team['teamLogo'][0] == '/'%}
                                         <img src="https://www.hltv.org{{team['teamLogo']}}"
                                              data-name="{{team['teamName']}}" alt="">
@@ -168,24 +168,24 @@
                             </div>
                             <div class="scrolling content">
                                 <div class="elements">
-<!--                                    {%for team in teams%}-->
-<!--                                    <div data-name="{{team}}" class="element">-->
-<!--                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-<!--                                        <h3 style="text-align: center">{{team}}</h3>-->
-<!--                                    </div>-->
-<!--                                    {%endfor%}-->
+                                    <!--                                    {%for team in teams%}-->
+                                    <!--                                    <div data-name="{{team}}" class="element">-->
+                                    <!--                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
+                                    <!--                                        <h3 style="text-align: center">{{team}}</h3>-->
+                                    <!--                                    </div>-->
+                                    <!--                                    {%endfor%}-->
                                     {%for team in new_teams%}
                                     <div data-name="{{team['teamName']}}" class="element"
                                          data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['image']}}"
+                                         data-player1img="{{team['player1']['imgURI']}}"
                                          data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['image']}}"
+                                         data-player2img="{{team['player2']['imgURI']}}"
                                          data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['image']}}"
+                                         data-player3img="{{team['player3']['imgURI']}}"
                                          data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['image']}}"
+                                         data-player4img="{{team['player4']['imgURI']}}"
                                          data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['image']}}">
+                                         data-player5img="{{team['player5']['imgURI']}}">
                                         {%if team['teamLogo'][0] == '/'%}
                                         <img src="https://www.hltv.org{{team['teamLogo']}}"
                                              data-name="{{team['teamName']}}" alt="">
@@ -507,23 +507,23 @@
                 $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
                 $("#team1_squad").show();
 
-                $("#team1_member1 img")[0].src = atob($("#team1Modal.ui.modal .element.choosen").data('player1img'));
+                $("#team1_member1 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player1img');
                 $("#team1_member1 p").text($("#team1Modal.ui.modal .element.choosen").data('player1name'));
                 $("#team1p1").val($("#team1Modal.ui.modal .element.choosen").data('player1name'));
 
-                $("#team1_member2 img")[0].src = atob($("#team1Modal.ui.modal .element.choosen").data('player2img'));
+                $("#team1_member2 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player2img');
                 $("#team1_member2 p").text($("#team1Modal.ui.modal .element.choosen").data('player2name'));
                 $("#team1p2").val($("#team1Modal.ui.modal .element.choosen").data('player2name'));
 
-                $("#team1_member3 img")[0].src = atob($("#team1Modal.ui.modal .element.choosen").data('player3img'));
+                $("#team1_member3 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player3img');
                 $("#team1_member3 p").text($("#team1Modal.ui.modal .element.choosen").data('player3name'));
                 $("#team1p3").val($("#team1Modal.ui.modal .element.choosen").data('player3name'));
 
-                $("#team1_member4 img")[0].src = atob($("#team1Modal.ui.modal .element.choosen").data('player4img'));
+                $("#team1_member4 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player4img');
                 $("#team1_member4 p").text($("#team1Modal.ui.modal .element.choosen").data('player4name'));
                 $("#team1p4").val($("#team1Modal.ui.modal .element.choosen").data('player4name'));
 
-                $("#team1_member5 img")[0].src = atob($("#team1Modal.ui.modal .element.choosen").data('player5img'));
+                $("#team1_member5 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player5img');
                 $("#team1_member5 p").text($("#team1Modal.ui.modal .element.choosen").data('player5name'));
                 $("#team1p5").val($("#team1Modal.ui.modal .element.choosen").data('player5name'));
             } else {
@@ -558,23 +558,23 @@
                 $("#predict__team2-name").text($("#team2Modal.ui.modal .element.choosen").data('name'));
                 $("#team2_squad").show();
 
-                $("#team2_member1 img")[0].src = atob($("#team2Modal.ui.modal .element.choosen").data('player1img'));
+                $("#team2_member1 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player1img');
                 $("#team2_member1 p").text($("#team2Modal.ui.modal .element.choosen").data('player1name'));
                 $("#team2p1").val($("#team2Modal.ui.modal .element.choosen").data('player1name'));
 
-                $("#team2_member2 img")[0].src = atob($("#team2Modal.ui.modal .element.choosen").data('player2img'));
+                $("#team2_member2 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player2img');
                 $("#team2_member2 p").text($("#team2Modal.ui.modal .element.choosen").data('player2name'));
                 $("#team2p2").val($("#team2Modal.ui.modal .element.choosen").data('player2name'));
 
-                $("#team2_member3 img")[0].src = atob($("#team2Modal.ui.modal .element.choosen").data('player3img'));
+                $("#team2_member3 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player3img');
                 $("#team2_member3 p").text($("#team2Modal.ui.modal .element.choosen").data('player3name'));
                 $("#team2p3").val($("#team2Modal.ui.modal .element.choosen").data('player3name'));
 
-                $("#team2_member4 img")[0].src = atob($("#team2Modal.ui.modal .element.choosen").data('player4img'));
+                $("#team2_member4 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player4img');
                 $("#team2_member4 p").text($("#team2Modal.ui.modal .element.choosen").data('player4name'));
                 $("#team2p4").val($("#team2Modal.ui.modal .element.choosen").data('player4name'));
 
-                $("#team2_member5 img")[0].src = atob($("#team2Modal.ui.modal .element.choosen").data('player5img'));
+                $("#team2_member5 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player5img');
                 $("#team2_member5 p").text($("#team2Modal.ui.modal .element.choosen").data('player5name'));
                 $("#team2p5").val($("#team2Modal.ui.modal .element.choosen").data('player5name'));
             } else {
