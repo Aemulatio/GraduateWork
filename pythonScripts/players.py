@@ -88,6 +88,7 @@ def getPlayerInfo(url):
                 'adr': adr,
                 'kpr': kpr,
             })
+            time.sleep(3)
         else:
             print(r2.status_code)
     else:
@@ -98,20 +99,20 @@ def getPlayersFromDBCollection():
     teams_collection = db.Teams
     for team in teams_collection.find():
         getPlayerInfo(str(team[team['teamName']]['player1']['url']).replace('player', "stats/players"))
-        time.sleep(4)
+        # time.sleep(4)
 
         getPlayerInfo(str(team[team['teamName']]['player2']['url']).replace('player', "stats/players"))
-        time.sleep(4)
+        # time.sleep(4)
 
         getPlayerInfo(str(team[team['teamName']]['player3']['url']).replace('player', "stats/players"))
-        time.sleep(4)
+        # time.sleep(4)
 
         getPlayerInfo(str(team[team['teamName']]['player4']['url']).replace('player', "stats/players"))
-        time.sleep(4)
+        # time.sleep(4)
 
         getPlayerInfo(str(team[team['teamName']]['player5']['url']).replace('player', "stats/players"))
-        time.sleep(4)
         print("----------------------------")
+        time.sleep(4)
 
     # r = requests.get(url, headers=headers)
 
