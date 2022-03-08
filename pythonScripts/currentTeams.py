@@ -111,18 +111,6 @@ def getTeams(files: list[str]):
                             else:
                                 obj['player5']['imgURI'] = p5URI
 
-                            #
-                            # obj['player3']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[2].select_one('a img')['src'].replace("amp;", "")
-                            # obj['player4']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[3].select_one('a img')['src'].replace("amp;", "")
-                            # obj['player5']['imgURI'] = 'https://hltv.org' + \
-                            #                            subSoup[4].select_one('a img')['src'].replace("amp;", "")
-                            # else:
-                            #     print(subSoup[0].select_one('a'))
-                            #     print(subSoup[0].select_one('a img'))
-                            #     return
-
                             print(obj)
                             gt[team_col.find('a').text] = obj
                             goodTeams.append(team_col.find('a').text)
@@ -154,5 +142,5 @@ def to_json(input_file: str):
 
 if __name__ == '__main__':
     getTeams(["../Data/New/csgo2018.html", "../Data/New/csgo2019.html", "../Data/New/csgo2020.html",
-              "../Data/New/csgo2021.html"])  # почти час
+              "../Data/New/csgo2021.html"])  # почти 6 час
     to_json("../Data/New/teams_.txt")
