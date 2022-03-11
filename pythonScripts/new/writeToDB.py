@@ -71,5 +71,5 @@ if __name__ == '__main__':
     # setTeams("../Data/New/teams_from_db_with_logos.json")
     # setMaps("../Data/New/maps.json")
     # setStats("../Data/New/refactored_goodTeams_csgo_18-21.csv")
-    setTeams("../Data/New/teams_.json")
+    setTeams("../../Data/New/teams_.json")
     client.close()

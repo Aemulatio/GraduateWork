@@ -125,7 +125,7 @@ def getTeams(files: list[str]):
         print("_------------------------_ end of tbody _------------------------_")
 
     print(datetime.datetime.now())
-    endFile = open("../Data/New/teams_.json", 'w', encoding='utf-8')
+    endFile = open("../../Data/New/teams_.json", 'w', encoding='utf-8')
     endFile.write(json.dumps(gt))
     print(datetime.datetime.now())
     endFile.close()
@@ -135,7 +135,7 @@ def to_json(input_file: str):
     f = open(input_file, 'r', encoding='utf-8')
     data = f.read()
     f.close()
-    f = open("../Data/New/teams_.json", 'w', encoding='utf-8')
+    f = open("../../Data/New/teams_.json", 'w', encoding='utf-8')
     f.write(data)
     f.close()
 

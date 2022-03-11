@@ -239,7 +239,7 @@ if __name__ == '__main__':
     # unite(['../Data/New/rawData18_newFormat.csv', '../Data/New/rawData19_newFormat.csv',
     #        '../Data/New/rawData20_newFormat.csv', '../Data/New/rawData21_newFormat.csv',], "csgo18-21.csv")
     # refactor("../Data/New/csgo18-21.csv", "../Data/New/refactored_csgo_18-21.csv")
-    delete_teams("../Data/New/refactored_csgo_18-21.csv", "../Data/New/refactored_goodTeams_csgo_18-21.csv",
+    delete_teams("../../Data/New/refactored_csgo_18-21.csv", "../Data/New/refactored_goodTeams_csgo_18-21.csv",
                  "../Data/New/teams.json")
 
     # get_unique_maps("../Data/New/refactored_goodTeams18-20.csv", "../Data/New/maps.json")
