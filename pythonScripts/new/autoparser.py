@@ -175,8 +175,6 @@ def autoScrapper(url: str, lastHash: str):
                 current_hash = setCache(str(new_url))  # Получаем кэш текущей строки таблицы
                 if current_hash != lastHash:  # Если текущий хэш не равен последнему из базы
                     if checkHash(current_hash) is False:  # если такого нет в БД
-                        ####
-
                         r_new = requests.get(new_url, headers=headers)
                         teamsPlayers = []  # составы команд
                         if (r_new.status_code == 200):  # если страничка загрузилась, то ок
@@ -198,14 +196,10 @@ def autoScrapper(url: str, lastHash: str):
                             break
 
                         score = []
-                        # if "first" in tr["class"]:
-                        #     series = series + 1
-                        # date = tr.find('div', class_='time').text.replace('/', '-')
                         teams_ = tr.find_all("td", class_="team-col")
                         for t in teams_:
                             if t.find("a") is None:
                                 break
-                            # teams.append(t.find("a").text)
                             score.append(t.find("span", class_="score").text.strip().replace(')', '').replace('(', ''))
                         if tr.find("div", class_="dynamic-map-name-full") is None:
                             print(tr)
