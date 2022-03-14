@@ -54,18 +54,18 @@ def getStats():
 
 			prepareData_collection.insert_one({
 				'winner': stat['winner'],
-				"t1_rating": stat['team1'] + " " + str(round(t1_rating / 5, 3)),
-				't1_dpr': stat['team1'] + " " + str(round(t1_dpr / 5, 3)),
-				't1_kast': stat['team1'] + " " + str(round(t1_kast / 5, 3)),
-				't1_impact': stat['team1'] + " " + str(round(t1_impact / 5, 3)),
-				't1_adr': stat['team1'] + " " + str(round(t1_adr / 5, 3)),
-				't1_kpr': stat['team1'] + " " + str(round(t1_kpr / 5, 3)),
-				"t2_rating": stat['team2'] + " " + str(round(t2_rating / 5, 3)),
-				't2_dpr': stat['team2'] + " " + str(round(t2_dpr / 5, 3)),
-				't2_kast': stat['team2'] + " " + str(round(t2_kast / 5, 3)),
-				't2_impact': stat['team2'] + " " + str(round(t2_impact / 5, 3)),
-				't2_adr': stat['team2'] + " " + str(round(t2_adr / 5, 3)),
-				't2_kpr': stat['team2'] + " " + str(round(t2_kpr / 5, 3)),
+				"t1_rating": stat['team1'] + " " + str(round(t1_rating / team1_len, 3)),
+				't1_dpr': stat['team1'] + " " + str(round(t1_dpr / team1_len, 3)),
+				't1_kast': stat['team1'] + " " + str(round(t1_kast / team1_len, 3)),
+				't1_impact': stat['team1'] + " " + str(round(t1_impact / team1_len, 3)),
+				't1_adr': stat['team1'] + " " + str(round(t1_adr / team1_len, 3)),
+				't1_kpr': stat['team1'] + " " + str(round(t1_kpr / team1_len, 3)),
+				"t2_rating": stat['team2'] + " " + str(round(t2_rating / team2_len, 3)),
+				't2_dpr': stat['team2'] + " " + str(round(t2_dpr / team2_len, 3)),
+				't2_kast': stat['team2'] + " " + str(round(t2_kast / team2_len, 3)),
+				't2_impact': stat['team2'] + " " + str(round(t2_impact / team2_len, 3)),
+				't2_adr': stat['team2'] + " " + str(round(t2_adr / team2_len, 3)),
+				't2_kpr': stat['team2'] + " " + str(round(t2_kpr / team2_len, 3)),
 			})
 			print("-------------------")
 
