@@ -150,6 +150,10 @@ if __name__ == "__main__":
         # return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
         return f1_score(target, y_pred, pos_label='Team1'), sum(target == y_pred) / float(len(y_pred))
 
+    def pred_prob(clf, obj):
+        # Проверить дома
+        return clf.predict_proba([obj])
+
 
     def train_predict(clf, X_train, y_train, X_test, y_test):
         ''' Train and predict using a classifer based on F1 score. '''
@@ -172,3 +176,4 @@ if __name__ == "__main__":
     rf = ensemble.RandomForestClassifier(n_estimators=1000, random_state=11, max_features=3, n_jobs=-1)
     # print(rf.max_depth)
     train_predict(rf, X_train, y_train, X_test, y_test)
+    print(pred_prob(rf, X_test[0, :]))
