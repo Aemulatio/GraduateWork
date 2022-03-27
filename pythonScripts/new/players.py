@@ -3,6 +3,7 @@ import time
 from bs4 import BeautifulSoup
 import requests
 from pymongo import MongoClient
+from db import connectionString
 
 
 def getPlayers(url: str):
@@ -119,8 +120,7 @@ def getPlayersFromDBCollection():
 
 if __name__ == '__main__':
     url = 'https://www.hltv.org/stats/players/'
-    client = MongoClient(
-        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    client = MongoClient(connectionString)
     db = client.Diploma
     collection = db.Players
     print("Соединено")

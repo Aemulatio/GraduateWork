@@ -4,6 +4,7 @@ import requests
 import time
 import hashlib
 from datetime import datetime
+from db import connectionString
 
 
 def setCache(data: str) -> str:
@@ -251,8 +252,7 @@ def autoScrapper(url: str, lastHash: str):
 
 
 if __name__ == '__main__':
-    client = MongoClient(
-        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    client = MongoClient(connectionString)
     url = "https://www.hltv.org/stats/matches"
     lastHash = getLastDocument()
     autoStart()

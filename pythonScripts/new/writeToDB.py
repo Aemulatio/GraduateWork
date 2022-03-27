@@ -2,6 +2,7 @@ import csv
 
 from pymongo import MongoClient
 import json
+from db import connectionString
 
 
 def csv_reader(path):
@@ -64,8 +65,7 @@ def setStats(input_file: str):
 
 
 if __name__ == '__main__':
-    client = MongoClient(
-        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    client = MongoClient(connectionString)
     db = client.Diploma
     # setTeams("../Data/New/teams.json")
     # setTeams("../Data/New/teams_from_db_with_logos.json")

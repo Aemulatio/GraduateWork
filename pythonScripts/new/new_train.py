@@ -9,6 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn import ensemble
 import pickle
+from db import connectionString
 
 
 def getAllData():
@@ -58,8 +59,7 @@ def getAllData():
 
 
 if __name__ == "__main__":
-    client = MongoClient(
-        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
+    client = MongoClient(connectionString)
     db = client.Diploma
     allData = getAllData()
     data = pd.DataFrame(allData, columns=[
