@@ -139,6 +139,68 @@ def new_predict(t1, t2, map):
     # }, index=[0])
 
 
+def getAllMatches(teamname):
+    collection = db.Stats
+    data = []
+    for obj in collection.aggregate([
+        {
+            '$match': {
+                '$or': [
+                    {
+                        'team1': teamname
+                    }, {
+                        'team2': teamname
+                    }
+                ]
+            }
+        }, {
+            '$group': {
+                '_id': '$map',
+                'count': {
+                    '$count': {}
+                }
+            }
+        }, {
+            '$sort': {
+                '_id': 1
+            }
+        }
+    ]):
+        data.append(obj)
+    return data
+
+
+def getWinsMatches(teamname):
+    collection = db.Stats
+    data = []
+    for obj in collection.aggregate([
+        {
+            '$match': {
+                '$or': [
+                    {
+                        'team1': teamname
+                    }, {
+                        'team2': teamname
+                    }
+                ]
+            }
+        }, {
+            '$group': {
+                '_id': '$map',
+                'count': {
+                    '$count': {}
+                }
+            }
+        }, {
+            '$sort': {
+                '_id': 1
+            }
+        }
+    ]):
+        data.append(obj)
+    return data
+
+
 def getLogs():
     collection = db.logs
     data = []
@@ -162,6 +224,21 @@ def getTeams():
             'player5': obj[obj['teamName']]['player5'],
         }
         data.append(object)
+    return data
+
+
+def getCurrentTeams(t1, t2):
+    collection = db.Teams
+    data = {}
+    for obj in collection.find({"$or": [{"teamName": t1}, {"teamName": t2}]}):
+        objects = {
+            # obj['teamName']: {
+            'teamName': obj['teamName'],
+            'teamUrl': obj[obj['teamName']]['teamUrl'],
+            'teamLogo': obj[obj['teamName']]['teamLogo']
+            # }
+        }
+        data[obj['teamName']] = objects
     return data
 
 
@@ -211,6 +288,7 @@ def main():
     data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
     #     logos = os.listdir("static/imgs/logos")
     #     teams =
+    print(request)
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         train_forest()
     if request.method == 'POST':
@@ -220,15 +298,19 @@ def main():
         game_map = request.form.get('map')
 
         print(t1, t2, game_map)
-
+        print(getAllMatches(t1))
+        print(getAllMatches(t2))
         return render_template('index.html',
-                               winner=predict(t1, t2, game_map),
+                               winner="1",  # predict(t1, t2, game_map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique()),
                                team1=t1,
                                team2=t2,
                                map=map,
-                               new_teams=getTeams()
+                               new_teams=getTeams(),
+                               teams_winner=getCurrentTeams(t1, t2),
+                               team1_played=getAllMatches(t1),
+                               team2_played=getAllMatches(t2),
                                )
     else:
         return render_template('index.html',
