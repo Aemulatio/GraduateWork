@@ -255,14 +255,17 @@
                 <div class="result__entered-data clearfix">
                     <div class="result__entered-data-teams">
                         <div class="result__team1 result__block">
+                            {#
                             <img src="../static/imgs/logos/{{team1}}.png" alt="{{team1}}" class="result__team-logo">
+                            #}
+                            <img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}" class="result__team-logo">
                             <h3>{{team1}}</h3>
                             {%if team1==winner%}
                             <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
                             {%endif%}
                         </div>
                         <div class="result__team2 result__block">
-                            <img src="../static/imgs/logos/{{team2}}.png" alt="{{team2}}" class="result__team-logo">
+                            <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}" class="result__team-logo">
                             <h3>{{team2}}</h3>
                             {%if team2==winner%}
                             <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
@@ -316,6 +319,71 @@
     </div>
 
     <script title="Graphs" type="text/javascript">
+
+        function buildFromDB(team, canvasID) {
+            let matchesJSON_unordered = request_m.response;
+            let winsJSON_unordered = request_w.response;
+            //матчи
+            const matchesJSON = {};
+            Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
+                matchesJSON[key] = matchesJSON_unordered[key];
+            });
+            //победы
+            const winsJSON = {};
+            Object.keys(winsJSON_unordered).sort().forEach(function (key) {
+                winsJSON[key] = winsJSON_unordered[key];
+            });
+            let matches = Object.values(matchesJSON);
+            let wins = Object.values(winsJSON);
+            let stacked = document.getElementById('stacked').checked
+
+            var ctx = document.getElementById(canvasID).getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(matchesJSON),
+                    datasets: [
+                        {
+                            label: 'Количество побед команды ' + team,
+                            backgroundColor: 'rgba(65, 105, 225, 1)',
+                            data: wins,
+                        },
+                        {
+                            label: 'Количество матчей команды ' + team,
+                            backgroundColor: 'rgba(255, 99, 132, 1)',
+                            data: matches,
+                        },]
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            stacked: stacked,
+                            gridLines: {
+                                color: '#fffff0',
+                            },
+                            ticks: {
+                                fontColor: '#ffffff'
+                            }
+                        }],
+                        yAxes: [{
+                            stacked: false,
+                            ticks: {
+                                fontColor: '#ffffff'
+                            },
+                            gridLines: {
+                                color: '#fffff0',
+                            },
+
+                        }],
+                    },
+                    legend: {
+                        labels: {
+                            fontColor: '#ffffff'
+                        }
+                    }
+                }
+            });
+        }
 
         function build(team, canvasID) {
             let path_matches = ' ../static/jsons/' + team + '_matches.json';
