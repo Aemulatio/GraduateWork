@@ -140,9 +140,6 @@ def new_predict(t1, t2, map):
 
 
 def getLogs():
-    client = MongoClient(
-        "mongodb+srv://new:oIGh34Xd8010lrgj@cluster0.rg6wi.mongodb.net/Cluster0?retryWrites=true&w=majority")
-    db = client.Diploma
     collection = db.logs
     data = []
     for obj in collection.find():
