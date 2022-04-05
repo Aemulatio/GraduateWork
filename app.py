@@ -278,7 +278,6 @@ def main():
         game_map = request.form.get('map')
 
         print(t1, t2, game_map)
-        print(getAllMatches(t1))
         return render_template('index.html',
                                winner="1",  # predict(t1, t2, game_map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
@@ -288,10 +287,8 @@ def main():
                                map=map,
                                new_teams=getTeams(),
                                teams_winner=getCurrentTeams(t1, t2),
-                               team1_played=getAllMatches(t1),
-                               team1_wins=getWinsMatches(t1),
-                               team2_played=getAllMatches(t2),
-                               team2_wins=getWinsMatches(t2),
+                               playedMaps={t1: getAllMatches(t1), t2: getAllMatches(t2)},
+                               winnedMaps={t1: getWinsMatches(t1), t2: getWinsMatches(t2)},
                                )
     else:
         return render_template('index.html',
