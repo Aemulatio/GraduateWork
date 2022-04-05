@@ -156,7 +156,7 @@ def getAllMatches(teamname):
             '$sort': {'_id': 1}
         }
     ]):
-        data.append(obj)
+        data.append({obj['_id']: obj['count']})
     return data
 
 
@@ -177,7 +177,7 @@ def getWinsMatches(teamname):
             '$sort': {'_id': 1}
         }
     ]):
-        data.append(obj)
+        data.append({obj['_id']: obj['count']})
     return data
 
 
@@ -279,7 +279,6 @@ def main():
 
         print(t1, t2, game_map)
         print(getAllMatches(t1))
-        print(getWinsMatches(t1))
         return render_template('index.html',
                                winner="1",  # predict(t1, t2, game_map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
