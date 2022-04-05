@@ -317,12 +317,16 @@
             </div>
         </div>
     </div>
+    <script src="../static/js/Chart.min.js"></script>
 
     <script title="Graphs" type="text/javascript">
 
         function buildFromDB(team, canvasID) {
-            let matchesJSON_unordered = {{}};
-            let winsJSON_unordered = request_w.response;
+            let matchesJSON_unordered = "{{playedMaps[" + team + "]}}";
+            console.log(matchesJSON_unordered);
+            console.log("{{playedMaps}}")
+            console.log(`{{playedMaps[team]}}`)
+            let winsJSON_unordered = {};
             //матчи
             const matchesJSON = {};
             Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
@@ -473,8 +477,11 @@
             $('#team2__graph').remove();
             $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
 
-            build('{{team1}}', 'team1__graph');
-            build('{{team2}}', 'team2__graph');
+            // build('{{team1}}', 'team1__graph');
+            buildFromDB('{{team1}}', 'team1__graph');
+
+            buildFromDB('{{team2}}', 'team2__graph');
+            // build('{{team2}}', 'team2__graph');
         }
 
         window.onresize = function (event) {
@@ -486,12 +493,15 @@
             $('#team2__graph').remove();
             $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
 
-            build('{{team1}}', 'team1__graph');
-            build('{{team2}}', 'team2__graph');
+            buildFromDB('{{team1}}', 'team1__graph');
+            buildFromDB('{{team2}}', 'team2__graph');
+            // build('{{team1}}', 'team1__graph');
+            // build('{{team2}}', 'team2__graph');
         };
 
-        build('{{team1}}', 'team1__graph');
-        build('{{team2}}', 'team2__graph');
+        buildFromDB('{{team1}}', 'team1__graph');
+        buildFromDB('{{team2}}', 'team2__graph');
+        // build('{{team2}}', 'team2__graph');
     </script>
     {%endif%}
 </div>
@@ -499,7 +509,6 @@
 <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
 <!--<script type="text/javascript" src="../static/pagepilling/jquery.pagepiling.min.js"></script>-->
 <script type="text/javascript" src="../static/fullpage/fullpage.min.js"></script>
-<script src="../static/js/Chart.min.js"></script>
 
 <script type="text/javascript" src="../static/js/semantic.min.js"></script>
 
