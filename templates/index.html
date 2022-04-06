@@ -320,7 +320,6 @@
     <script src="../static/js/chart.min.js"></script>
 
     <script title="Graphs" type="text/javascript">
-
         function buildFromDB(team, canvasID) {
             let matchesJSON = JSON.parse('{{playedMaps|tojson|safe}}')[team];
             let winsJSON = JSON.parse('{{winnedMaps|tojson|safe}}')[team];
@@ -330,7 +329,7 @@
             let stacked = document.getElementById('stacked').checked
 
             var ctx = document.getElementById(canvasID).getContext('2d');
-            var myChart = new Chart(ctx, {
+            const myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: Object.keys(matchesJSON[0]),
@@ -387,119 +386,30 @@
             });
         }
 
-        function build(team, canvasID) {
-            let path_matches = ' ../static/jsons/' + team + '_matches.json';
-            let path__wins = '../static/jsons/' + team + '_wins.json';
-            let request_m = new XMLHttpRequest();
-            request_m.open('GET', path_matches);
-            request_m.responseType = 'json';
-            request_m.send();
-            request_m.onload = function () {
-                let request_w = new XMLHttpRequest();
-                request_w.open('GET', path__wins);
-                request_w.responseType = 'json';
-                request_w.send();
-                request_w.onload = function () {
-                    let matchesJSON_unordered = request_m.response;
-                    let winsJSON_unordered = request_w.response;
-                    //матчи
-                    const matchesJSON = {};
-                    Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
-                        matchesJSON[key] = matchesJSON_unordered[key];
-                    });
-                    //победы
-                    const winsJSON = {};
-                    Object.keys(winsJSON_unordered).sort().forEach(function (key) {
-                        winsJSON[key] = winsJSON_unordered[key];
-                    });
-                    let matches = Object.values(matchesJSON);
-                    let wins = Object.values(winsJSON);
-                    let stacked = document.getElementById('stacked').checked
-
-                    var ctx = document.getElementById(canvasID).getContext('2d');
-                    var myChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: Object.keys(matchesJSON),
-                            datasets: [
-                                {
-                                    label: 'Количество побед команды ' + team,
-                                    backgroundColor: 'rgba(65, 105, 225, 1)',
-                                    data: wins,
-                                },
-                                {
-                                    label: 'Количество матчей команды ' + team,
-                                    backgroundColor: 'rgba(255, 99, 132, 1)',
-                                    data: matches,
-                                },]
-                        },
-                        options: {
-                            scales: {
-                                xAxes: [{
-                                    stacked: stacked,
-                                    gridLines: {
-                                        color: '#fffff0',
-                                    },
-                                    ticks: {
-                                        fontColor: '#ffffff'
-                                    }
-                                }],
-                                yAxes: [{
-                                    stacked: false,
-                                    ticks: {
-                                        fontColor: '#ffffff'
-                                    },
-                                    gridLines: {
-                                        color: '#fffff0',
-                                    },
-
-                                }],
-                            },
-                            legend: {
-                                labels: {
-                                    fontColor: '#ffffff'
-                                }
-                            }
-                        }
-                    });
-                }
-            }
-        }
-
         function change() {
-            // $('#team1__graph').attr('id', 'team1__graph1')
             $('#team1__graph').remove();
             $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
 
-            // $('#team2__graph').attr('id', 'team2__graph2')
             $('#team2__graph').remove();
             $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
 
-            // build('{{team1}}', 'team1__graph');
             buildFromDB('{{team1}}', 'team1__graph');
-
             buildFromDB('{{team2}}', 'team2__graph');
-            // build('{{team2}}', 'team2__graph');
         }
 
         window.onresize = function (event) {
-            // $('#team1__graph').attr('id', 'team1__graph1')
             $('#team1__graph').remove();
             $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
 
-            // $('#team2__graph').attr('id', 'team2__graph2')
             $('#team2__graph').remove();
             $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
 
             buildFromDB('{{team1}}', 'team1__graph');
             buildFromDB('{{team2}}', 'team2__graph');
-            // build('{{team1}}', 'team1__graph');
-            // build('{{team2}}', 'team2__graph');
         };
 
         buildFromDB('{{team1}}', 'team1__graph');
         buildFromDB('{{team2}}', 'team2__graph');
-        // build('{{team2}}', 'team2__graph');
     </script>
     {%endif%}
 </div>
