@@ -288,7 +288,7 @@ def main():
                                maps=np.unique(data['Map'].unique()),
                                team1=t1,
                                team2=t2,
-                               map=map,
+                               map=game_map,
                                new_teams=getTeams(),
                                teams_winner=getCurrentTeams(t1, t2),
                                playedMaps={t1: getAllMatches(t1), t2: getAllMatches(t2)},
