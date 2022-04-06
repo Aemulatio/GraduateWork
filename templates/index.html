@@ -317,7 +317,7 @@
             </div>
         </div>
     </div>
-    <script src="../static/js/Chart.min.js"></script>
+    <script src="../static/js/chart.min.js"></script>
 
     <script title="Graphs" type="text/javascript">
 
@@ -348,32 +348,42 @@
                 },
                 options: {
                     scales: {
-                        xAxes: [{
+                        x: {
                             stacked: stacked,
                             gridLines: {
                                 color: '#fffff0',
                             },
                             ticks: {
-                                fontColor: '#ffffff'
+                                color: '#ffffff'
+                            },
+                            grid: {
+                                color: "rgba(255, 255,255, 1)",
                             }
-                        }],
-                        yAxes: [{
+
+                        },
+                        y: {
                             stacked: false,
                             ticks: {
                                 // stepSize: 1,
-                                fontColor: '#ffffff'
+                                color: '#ffffff'
                             },
                             gridLines: {
                                 color: '#fffff0',
                             },
-                        }],
+                            grid: {
+                                color: "rgba(255, 255,255, 1)",
+                            }
+                        },
+
                     },
-                    legend: {
-                        labels: {
-                            fontColor: '#ffffff'
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            }
                         }
-                    }
-                }
+                    },
+                },
             });
         }
 
