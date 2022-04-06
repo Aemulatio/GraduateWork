@@ -11,14 +11,6 @@
     <link rel="stylesheet" href="../static/css/semantic.min.css">
 
     <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">
-    <!--    <link rel="stylesheet" href="../static/pagepilling/jquery.pagepiling.min.css">-->
-
-
-    <!--        <script type="text/javascript" src="../static/fullpage/fullpage.min.js"></script>-->
-    <!--        <script type="text/javascript" src="../static/fullpage/fullpage.extensions.min.js"></script>-->
-
-
-    <!--    <script src="https://kit.fontawesome.com/560f832382.js" crossorigin="anonymous"></script>-->
 
     {%if winner%}
     <style>
@@ -168,12 +160,6 @@
                             </div>
                             <div class="scrolling content">
                                 <div class="elements">
-                                    <!--                                    {%for team in teams%}-->
-                                    <!--                                    <div data-name="{{team}}" class="element">-->
-                                    <!--                                        <img src="../static/imgs/logos/{{team}}.png" data-name="{{team}}" alt="">-->
-                                    <!--                                        <h3 style="text-align: center">{{team}}</h3>-->
-                                    <!--                                    </div>-->
-                                    <!--                                    {%endfor%}-->
                                     {%for team in new_teams%}
                                     <div data-name="{{team['teamName']}}" class="element"
                                          data-player1Name="{{team['player1']['name']}}"
@@ -273,18 +259,6 @@
                         </div>
                     </div>
                 </div>
-                <!--            <div class="result__entered-data clearfix">-->
-                <!--                <div class="result__map">-->
-                <!--                    <img src="../static/imgs/map_logos/{{map}}.png" alt="{{map}}" class="result__team-logo">-->
-                <!--                    <h3>{{map}}</h3>-->
-                <!--                </div>-->
-                <!--            </div>-->
-                <!--            <h2 class="result__entered-data-title result__winner-title">Победитель:</h2>-->
-                <!--            <div class="result__winner">-->
-                <!--                <img src="../static/imgs/logos/{{winner}}.png" alt="{{winner}}"-->
-                <!--                     class="result__team-logo" title="{{winner}}">-->
-                <!--                <h3>{{winner}}</h3>-->
-                <!--            </div>-->
             </div>
         </div>
     </div>
@@ -594,7 +568,7 @@
                 return false;
             }
         });
-        
+
         $(".predict__submit").on('click', function (e) {
             e.preventDefault();
             $('#predict__form').submit();
