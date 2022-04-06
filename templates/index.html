@@ -324,18 +324,16 @@
         function buildFromDB(team, canvasID) {
             let matchesJSON = JSON.parse('{{playedMaps|tojson|safe}}')[team];
             let winsJSON = JSON.parse('{{winnedMaps|tojson|safe}}')[team];
-            console.log("matches:", matchesJSON);
-            console.log("wins:", winsJSON);
 
-            let matches = Object.values(matchesJSON);
-            let wins = Object.values(winsJSON);
+            let matches = Object.values(matchesJSON[0]);
+            let wins = Object.values(winsJSON[0]);
             let stacked = document.getElementById('stacked').checked
 
             var ctx = document.getElementById(canvasID).getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: Object.keys(matchesJSON),
+                    labels: Object.keys(matchesJSON[0]),
                     datasets: [
                         {
                             label: 'Количество побед команды ' + team,
