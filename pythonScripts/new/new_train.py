@@ -17,7 +17,7 @@ def getAllData():
     Получает всю таблицу статы
     :return:
     """
-    collection = db.Stats
+    collection = db.Prepare_01
     data = list()
     # data.append([
     #     'winner',
@@ -38,19 +38,22 @@ def getAllData():
     for obj in collection.find():
         data.append(
             [obj['winner'],
-             obj['team1'],
-             obj['team1_p1'],
-             obj['team1_p2'],
-             obj['team1_p3'],
-             obj['team1_p4'],
-             obj['team1_p5'],
-             obj['team2'],
-             obj['team2_p1'],
-             obj['team2_p2'],
-             obj['team2_p3'],
-             obj['team2_p4'],
-             obj['team2_p5'],
-             obj['map'], ]
+             # obj['team1'],
+             obj['t1_rating'],
+             obj['t1_dpr'],
+             obj['t1_kast'],
+             obj['t1_impact'],
+             obj['t1_adr'],
+             obj['t1_kpr'],
+             # obj['team2'],
+             obj['t2_rating'],
+             obj['t2_dpr'],
+             obj['t2_kast'],
+             obj['t2_impact'],
+             obj['t2_adr'],
+             obj['t2_kpr'],
+             # obj['map'],
+             ]
         )
     # [winner, team1['name'], team1['player1'], team1['player2'], team1['player3'], team1['player4'],
     #  team1['player5'], team2['name'], team2['player1'], team2['player2'], team2['player3'],
@@ -64,33 +67,35 @@ if __name__ == "__main__":
     allData = getAllData()
     data = pd.DataFrame(allData, columns=[
         'winner',
-        'team1',
+        # 'team1',
         'team1_p1',
         'team1_p2',
         'team1_p3',
         'team1_p4',
         'team1_p5',
-        'team2',
+        'team1_p6',
+        # 'team2',
         'team2_p1',
         'team2_p2',
         'team2_p3',
         'team2_p4',
         'team2_p5',
-        'map'
+        'team2_p6',
+        # 'map'
     ])
     # print(type(allData))
     # data = pd.read_csv(getAllData())
     print(data)
     # Получаем все команды
-    UniqueTeams = pd.Series(np.unique(np.concatenate((data['team1'].unique(), data['team2'].unique()))))
+    # UniqueTeams = pd.Series(np.unique(np.concatenate((data['team1'].unique(), data['team2'].unique()))))
     # Получаем все карты, на которых играли команды
-    UniqueMaps = pd.Series(np.unique(data['map'].unique()))
+    # UniqueMaps = pd.Series(np.unique(data['map'].unique()))
 
     X_all = data.drop(['winner'], 1)
     y_all = data['winner']
 
-    cols = [['team1', 'team1_p1', 'team1_p2', 'team1_p3', 'team1_p4', 'team1_p5', 'team2', 'team2_p1', 'team2_p2',
-             'team2_p3', 'team2_p4', 'team2_p5', 'map']]
+    cols = [['team1', 'team1_p1', 'team1_p2', 'team1_p3', 'team1_p4', 'team1_p5', 'team1_p6', 'team2_p1', 'team2_p2',
+             'team2_p3', 'team2_p4', 'team2_p5', "team2_p6"]]
 
 
     def preprocess_features(X):
@@ -147,8 +152,8 @@ if __name__ == "__main__":
 
         # return f1_score(target, y_pred, average="macro"), sum(target == y_pred) / float(len(y_pred))
         # return f1_score(target, y_pred, average="micro"), sum(target == y_pred) / float(len(y_pred))
-        # return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
-        return f1_score(target, y_pred, pos_label='Team1'), sum(target == y_pred) / float(len(y_pred))
+        return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
+        # return f1_score(target, y_pred, pos_label='Team1'), sum(target == y_pred) / float(len(y_pred))
 
     def pred_prob(clf, obj):
         # Проверить дома
@@ -173,7 +178,17 @@ if __name__ == "__main__":
         print("F1 score and accuracy score for test set: {:.4f} , {:.4f}.".format(f1, acc))
 
 
-    rf = ensemble.RandomForestClassifier(n_estimators=1000, random_state=11, max_features=3, n_jobs=-1)
+    rf = ensemble.RandomForestClassifier(n_estimators=5000, random_state=11, n_jobs=-1)
     # print(rf.max_depth)
     train_predict(rf, X_train, y_train, X_test, y_test)
-    print(pred_prob(rf, X_test[0, :]))
+    print(pred_prob(rf, X_test.iloc[0, :]), rf.classes_)
+    print(rf.predict([X_test.iloc[0, :]]))
+
+
+    clf_A = LogisticRegression(random_state=42, penalty='l2')
+    clf_B = SVC(random_state=912, kernel='rbf')
+    #
+    train_predict(clf_A, X_train, y_train, X_test, y_test)
+    print("")
+    train_predict(clf_B, X_train, y_train, X_test, y_test)
+    print("")
