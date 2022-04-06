@@ -432,18 +432,6 @@
             $(".result__trophy").attr("style", "display:block");
         }, 5200)
 
-        // $('body').bind('beforeunload', function (e) {
-        //     alert("refresh")
-        // })
-
-        // $(window).bind('beforeunload', function () { //temp
-        //     window.scrollTo({
-        //         top: 0,
-        //         behavior: 'smooth',
-        //     });
-        //     return 'are you sure you want to leave?';
-        // });
-
         $('.ui.dropdown').dropdown({fullTextSearch: true});
 
         $("#fullpage").fullpage({
@@ -470,12 +458,10 @@
             $("#team1Modal.ui.modal .element").removeClass('hide');
             $("#team1Modal.ui.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) == -1) {
+                if (team.indexOf(input_val) === -1) {
                     // console.log(team + " net")
                     $(this).addClass("hide").removeClass('vis');
                 } else {
-                    // console.log(team + ' yest')
-                    // $(this).parents(".phone_department").addClass("show_dept");
                     $(this).removeClass('hide').addClass('vis');
                 }
             });
@@ -521,12 +507,9 @@
             $("#team2Modal.ui.modal .element").removeClass('hide');
             $("#team2Modal.ui.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) == -1) {
-                    // console.log(team + " net")
+                if (team.indexOf(input_val) === -1) {
                     $(this).addClass("hide").removeClass('vis');
                 } else {
-                    // console.log(team + ' yest')
-                    // $(this).parents(".phone_department").addClass("show_dept");
                     $(this).removeClass('hide').addClass('vis');
                 }
             });
@@ -572,12 +555,9 @@
             $("#mapModal.ui.modal .element").removeClass('hide');
             $("#mapModal.ui.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) == -1) {
-                    // console.log(team + " net")
+                if (team.indexOf(input_val) === -1) {
                     $(this).addClass("hide").removeClass('vis');
                 } else {
-                    // console.log(team + ' yest')
-                    // $(this).parents(".phone_department").addClass("show_dept");
                     $(this).removeClass('hide').addClass('vis');
                 }
             });
@@ -614,6 +594,7 @@
                 return false;
             }
         });
+        
         $(".predict__submit").on('click', function (e) {
             e.preventDefault();
             $('#predict__form').submit();
