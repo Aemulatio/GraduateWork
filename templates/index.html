@@ -322,21 +322,11 @@
     <script title="Graphs" type="text/javascript">
 
         function buildFromDB(team, canvasID) {
-            let matchesJSON_unordered = "{{playedMaps[" + team + "]}}";
-            console.log(matchesJSON_unordered);
-            console.log("{{playedMaps}}")
-            console.log(`{{playedMaps[team]}}`)
-            let winsJSON_unordered = {};
-            //матчи
-            const matchesJSON = {};
-            Object.keys(matchesJSON_unordered).sort().forEach(function (key) {
-                matchesJSON[key] = matchesJSON_unordered[key];
-            });
-            //победы
-            const winsJSON = {};
-            Object.keys(winsJSON_unordered).sort().forEach(function (key) {
-                winsJSON[key] = winsJSON_unordered[key];
-            });
+            let matchesJSON = JSON.parse('{{playedMaps|tojson|safe}}')[team];
+            let winsJSON = JSON.parse('{{winnedMaps|tojson|safe}}')[team];
+            console.log("matches:", matchesJSON);
+            console.log("wins:", winsJSON);
+
             let matches = Object.values(matchesJSON);
             let wins = Object.values(winsJSON);
             let stacked = document.getElementById('stacked').checked
