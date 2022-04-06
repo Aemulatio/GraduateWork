@@ -142,6 +142,7 @@ def new_predict(t1, t2, map):
 def getAllMatches(teamname):
     collection = db.Stats
     data = []
+    dict = {}
     for obj in collection.aggregate([
         {
             '$match': {
@@ -156,13 +157,15 @@ def getAllMatches(teamname):
             '$sort': {'_id': 1}
         }
     ]):
-        data.append({obj['_id']: obj['count']})
+        dict.update({obj['_id']: obj['count']})
+    data.append(dict)
     return data
 
 
 def getWinsMatches(teamname):
     collection = db.Stats
     data = []
+    dict = {}
     for obj in collection.aggregate([
         {
             '$match': {
@@ -177,7 +180,8 @@ def getWinsMatches(teamname):
             '$sort': {'_id': 1}
         }
     ]):
-        data.append({obj['_id']: obj['count']})
+        dict.update({obj['_id']: obj['count']})
+    data.append(dict)
     return data
 
 
@@ -278,12 +282,6 @@ def main():
         game_map = request.form.get('map')
 
         print(t1, t2, game_map)
-        playedMaps = {}
-        playedMaps[t1] = getAllMatches(t1)
-        playedMaps[t2] = getAllMatches(t2)
-        winnedMaps = {}
-        winnedMaps[t1] = getWinsMatches(t1)
-        winnedMaps[t2] = getWinsMatches(t2)
         return render_template('index.html',
                                winner="1",  # predict(t1, t2, game_map),
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
@@ -293,8 +291,12 @@ def main():
                                map=map,
                                new_teams=getTeams(),
                                teams_winner=getCurrentTeams(t1, t2),
-                               playedMaps=playedMaps,
-                               winnedMaps=winnedMaps,
+                               playedMaps={t1: getAllMatches(t1), t2: getAllMatches(t2)},
+                               winnedMaps={t1: getWinsMatches(t1), t2: getWinsMatches(t2)},
+                               # team1_played=getAllMatches(t1),
+                               # team1_wins=getWinsMatches(t1),
+                               # team2_played=getAllMatches(t2),
+                               # team2_wins=getWinsMatches(t2),
                                )
     else:
         return render_template('index.html',
