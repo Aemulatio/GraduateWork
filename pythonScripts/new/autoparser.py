@@ -207,65 +207,66 @@ def autoScrapper(url: str, lastHash: str):
                 site_id = new_url[42:new_url.find("/", 43)]
                 current_hash = setCache(str(new_url))  # Получаем кэш текущей строки таблицы
                 # if current_hash != lastHash:  # Если текущий хэш не равен последнему из базы
-                if site_id != lastHash:  # Если текущий хэш не равен последнему из базы
-                    # if checkHash(current_hash) is False:  # если такого нет в БД
-                    if checkID(site_id) is False:  # если такого нет в БД
-                        r_new = requests.get(new_url, headers=headers)
-                        teamsPlayers = []  # составы команд
-                        if (r_new.status_code == 200):  # если страничка загрузилась, то ок
-                            html = r_new.text  # код текущей страницы в переменную
-                            soup2 = BeautifulSoup(html, features='html.parser')  # объект BS
-                            for table in soup2.find_all('table',
-                                                        class_='stats-table'):  # обходим все таблички с результатми матча
-                                teamPlayers = []
-                                teamPlayers.append(
-                                    table.find('th', class_='st-teamname').text)  # пишем название команды
-                                for player in table.select('tbody tr td.st-player a'):  # обходим всех игроков
-                                    teamPlayers.append(player.text)  # пишем ник игрока
-                                teamsPlayers.append(teamPlayers)
-                                del teamPlayers
-                        # print(teamsPlayers)
-                        else:
-                            print("Вернулась не 200 - матч")
-                            print(r_new.status_code)
-                            break
-
-                        score = []
-                        teams_ = tr.find_all("td", class_="team-col")
-                        for t in teams_:
-                            if t.find("a") is None:
-                                break
-                            score.append(t.find("span", class_="score").text.strip().replace(')', '').replace('(', ''))
-                        if tr.find("div", class_="dynamic-map-name-full") is None:
-                            print(tr)
-                            break
-                        played_map = tr.find("div", class_="dynamic-map-name-full").text
-                        event = tr.find("td", class_="event-col").text
-                        print("data:")
-                        print(teamsPlayers, score, played_map, event)
-                        writeData(winner=teamsPlayers[0][0] if score[0] > score[1] else teamsPlayers[1][0],
-                                  team1=teamsPlayers[0][0],
-                                  team1_p1=teamsPlayers[0][1],
-                                  team1_p2=teamsPlayers[0][2],
-                                  team1_p3=teamsPlayers[0][3],
-                                  team1_p4=teamsPlayers[0][4],
-                                  team1_p5=teamsPlayers[0][5],
-                                  team2=teamsPlayers[1][0],
-                                  team2_p1=teamsPlayers[1][1],
-                                  team2_p2=teamsPlayers[1][2],
-                                  team2_p3=teamsPlayers[1][3],
-                                  team2_p4=teamsPlayers[1][4],
-                                  team2_p5=teamsPlayers[1][5],
-                                  map=played_map
-                                  )
-                        writeHash(current_hash, new_url)
-                        print(current_hash)
-                        ####
+                # if site_id != lastHash:  # Если текущий хэш не равен последнему из базы
+                # if checkHash(current_hash) is False:  # если такого нет в БД
+                if checkID(site_id) is False:  # если такого нет в БД
+                    r_new = requests.get(new_url, headers=headers)
+                    teamsPlayers = []  # составы команд
+                    if (r_new.status_code == 200):  # если страничка загрузилась, то ок
+                        html = r_new.text  # код текущей страницы в переменную
+                        soup2 = BeautifulSoup(html, features='html.parser')  # объект BS
+                        for table in soup2.find_all('table',
+                                                    class_='stats-table'):  # обходим все таблички с результатми матча
+                            teamPlayers = []
+                            teamPlayers.append(
+                                table.find('th', class_='st-teamname').text)  # пишем название команды
+                            for player in table.select('tbody tr td.st-player a'):  # обходим всех игроков
+                                teamPlayers.append(player.text)  # пишем ник игрока
+                            teamsPlayers.append(teamPlayers)
+                            del teamPlayers
+                    # print(teamsPlayers)
                     else:
-                        print("Такой уже есть")
-                else:  # Если это был последний хэш, то надо прекращать работу
-                    print("Текущий и последний были равны")
+                        print("Вернулась не 200 - матч")
+                        print(r_new.status_code)
+                        break
+
+                    score = []
+                    teams_ = tr.find_all("td", class_="team-col")
+                    for t in teams_:
+                        if t.find("a") is None:
+                            break
+                        score.append(t.find("span", class_="score").text.strip().replace(')', '').replace('(', ''))
+                    if tr.find("div", class_="dynamic-map-name-full") is None:
+                        print(tr)
+                        break
+                    played_map = tr.find("div", class_="dynamic-map-name-full").text
+                    event = tr.find("td", class_="event-col").text
+                    print("data:")
+                    print(teamsPlayers, score, played_map, event)
+                    writeData(winner=teamsPlayers[0][0] if score[0] > score[1] else teamsPlayers[1][0],
+                              team1=teamsPlayers[0][0],
+                              team1_p1=teamsPlayers[0][1],
+                              team1_p2=teamsPlayers[0][2],
+                              team1_p3=teamsPlayers[0][3],
+                              team1_p4=teamsPlayers[0][4],
+                              team1_p5=teamsPlayers[0][5],
+                              team2=teamsPlayers[1][0],
+                              team2_p1=teamsPlayers[1][1],
+                              team2_p2=teamsPlayers[1][2],
+                              team2_p3=teamsPlayers[1][3],
+                              team2_p4=teamsPlayers[1][4],
+                              team2_p5=teamsPlayers[1][5],
+                              map=played_map
+                              )
+                    writeHash(current_hash, new_url)
+                    print(current_hash)
+                    ####
+                else:
+                    print("Такой уже есть")
                     return
+                # else:  # Если это был последний хэш, то надо прекращать работу
+                #     print("Текущий и последний были равны")
+                #     return
 
                 print("-----------------------------------")
         # Если нет ссылки на следующую выборку, то просто закрываем файл
@@ -280,6 +281,7 @@ def autoScrapper(url: str, lastHash: str):
             print(href)
             time.sleep(3)
             # autoScrapper("https://www.hltv.org" + href, getLastDocument())
+            r.close()
             autoScrapper("https://www.hltv.org" + href, lastHash)
     else:
         # Отладочный момент, чтобы знать какая ошибка произошла
