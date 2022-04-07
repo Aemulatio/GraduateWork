@@ -28,8 +28,25 @@ def getLastDocument() -> str:
     db = client.Diploma
     collection = db.hash
     data = ''
-    for obj in collection.find().sort('date', -1).limit(1):
+    for obj in collection.find().sort('dateTime', -1).limit(1):
         data = obj['hash']
+
+    client.close()
+    return data
+
+
+def getLastID() -> str:
+    """
+    Получает хэш последней обработанной строки
+
+    :return: Хэш полученной строки
+    """
+
+    db = client.Diploma
+    collection = db.hash
+    data = ''
+    for obj in collection.find().sort('site_id', -1).limit(1):
+        data = obj['site_id']
 
     client.close()
     return data
@@ -49,19 +66,33 @@ def checkHash(hash: str) -> bool:
     return False
 
 
-def writeHash(hash: str):
+def checkID(_id: str) -> bool:
+    db = client.Diploma
+    collection = db.hash
+    for obj in collection.find({"site_id": _id}):
+        return True
+    return False
+
+
+def writeHash(hash: str, new_url: str):
     """
     Пишет хэш в БД
+    :param new_url:
     :param hash: Хэш
     :return:
     """
+
+    site_id = new_url[42:new_url.find("/", 43)]
+    print("site_id", site_id)
     db = client.Diploma
     collection = db.hash
     now = datetime.now()
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
     collection.insert_one({
         "hash": hash,
-        "dateTime": dt_string
+        "url": new_url,
+        "dateTime": dt_string,
+        "site_id": site_id
     })
 
 
@@ -173,9 +204,12 @@ def autoScrapper(url: str, lastHash: str):
                 new_url = 'https://hltv.org' + tr.find('td', class_='date-col').find('a')['href']
                 print("new url:")
                 print(new_url)
+                site_id = new_url[42:new_url.find("/", 43)]
                 current_hash = setCache(str(new_url))  # Получаем кэш текущей строки таблицы
-                if current_hash != lastHash:  # Если текущий хэш не равен последнему из базы
-                    if checkHash(current_hash) is False:  # если такого нет в БД
+                # if current_hash != lastHash:  # Если текущий хэш не равен последнему из базы
+                if site_id != lastHash:  # Если текущий хэш не равен последнему из базы
+                    # if checkHash(current_hash) is False:  # если такого нет в БД
+                    if checkID(site_id) is False:  # если такого нет в БД
                         r_new = requests.get(new_url, headers=headers)
                         teamsPlayers = []  # составы команд
                         if (r_new.status_code == 200):  # если страничка загрузилась, то ок
@@ -224,7 +258,7 @@ def autoScrapper(url: str, lastHash: str):
                                   team2_p5=teamsPlayers[1][5],
                                   map=played_map
                                   )
-                        writeHash(current_hash)
+                        writeHash(current_hash, new_url)
                         print(current_hash)
                         ####
                     else:
@@ -245,7 +279,8 @@ def autoScrapper(url: str, lastHash: str):
             print("Следующая страница")
             print(href)
             time.sleep(3)
-            autoScrapper("https://www.hltv.org" + href, getLastDocument())
+            # autoScrapper("https://www.hltv.org" + href, getLastDocument())
+            autoScrapper("https://www.hltv.org" + href, lastHash)
     else:
         # Отладочный момент, чтобы знать какая ошибка произошла
         print(r.status_code)
@@ -254,7 +289,9 @@ def autoScrapper(url: str, lastHash: str):
 if __name__ == '__main__':
     client = MongoClient(connectionString)
     url = "https://www.hltv.org/stats/matches"
-    lastHash = getLastDocument()
+    # lastHash = getLastDocument()
+    lastID = getLastDocument()
     autoStart()
-    autoScrapper(url, lastHash=lastHash)
+    autoScrapper(url, lastHash=lastID)
     autoEnd()
+    client.close()
