@@ -11,12 +11,7 @@ def getStats():
         team2_len = players_collections.count_documents({'current_team': stat['team2']})
         if team1_len > 0 and team2_len > 0:
             print(stat)
-            t1_rating = 0
-            t1_dpr = 0
-            t1_kast = 0
-            t1_impact = 0
-            t1_adr = 0
-            t1_kpr = 0
+            t1_rating = t1_dpr = t1_kast = t1_impact = t1_adr = t1_kpr = 0
             for team1_obj in players_collections.find({'current_team': stat['team1']}):
                 t1_rating += float(team1_obj['rating'])
                 t1_dpr += float(team1_obj['dpr'])
@@ -25,12 +20,7 @@ def getStats():
                 t1_adr += float(team1_obj['adr'])
                 t1_kpr += float(team1_obj['kpr'])
 
-            t2_rating = 0
-            t2_dpr = 0
-            t2_kast = 0
-            t2_impact = 0
-            t2_adr = 0
-            t2_kpr = 0
+            t2_rating = t2_dpr = t2_kast = t2_impact = t2_adr = t2_kpr = 0
             for team2_obj in players_collections.find({'current_team': stat['team2']}):
                 t2_rating += float(team2_obj['rating'])
                 t2_dpr += float(team2_obj['dpr'])
