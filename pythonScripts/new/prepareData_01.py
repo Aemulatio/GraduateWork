@@ -2,19 +2,6 @@ from pymongo import MongoClient
 from db import connectionString
 
 
-def getPlayers() -> list:
-    """
-
-    :return:
-    """
-
-    players_collections = db.Players
-    players = []
-    for player in players_collections.find():
-        players.append(player)
-    return players
-
-
 def getStats():
     stats_collection = db.Stats
     players_collections = db.Players
@@ -76,14 +63,7 @@ def getStats():
             print("-------------------")
 
 
-# print(stat['team1'])
-# for player in players_collections.find({'current_team': stat['team1']}):
-# 	print(player)
-
-
 if __name__ == '__main__':
     client = MongoClient(connectionString)
     db = client.Diploma
-    # allPlayers = getPlayers()
-    # print(allPlayers)
     getStats()
