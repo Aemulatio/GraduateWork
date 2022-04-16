@@ -34,40 +34,57 @@
                         <h2 class="clearfix">
                             <span>Команда 1</span>
                         </h2>
-                        <div class="ui modal" id="team1Modal">
-                            <div class="header" style="text-align: center">Команда 1</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="team1Filter">
-                                <button class="ui button" id="team1FilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for team in new_teams%}
-                                    <div data-name="{{team['teamName']}}" class="element"
-                                         data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['imgURI']}}"
-                                         data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['imgURI']}}"
-                                         data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['imgURI']}}"
-                                         data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['imgURI']}}"
-                                         data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['imgURI']}}">
-                                        {%if team['teamLogo'][0] == '/'%}
-                                        <img src="https://www.hltv.org{{team['teamLogo']}}"
-                                             data-name="{{team['teamName']}}" alt="">
-                                        {%else%}
-                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}" alt="">
-                                        {%endif%}
-                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
+                        <div id="team1Modal" class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align: center">
+                                        <h3 class="modal-title" id="staticBackdropLabel">
+                                            Команда 1
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                     </div>
-                                    {%endfor%}
+                                    <div class="modal-body">
+                                        <input type="text" class="ui input" id="team1Filter">
+                                        <button class="btn btn-light" id="team1FilterOk">Подтвердить</button>
+                                        <!--                                        <div class="elements">-->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                {%for team in new_teams%}
+                                                <div data-name="{{team['teamName']}}" class="element col-lg-3 col-6"
+                                                     data-player1Name="{{team['player1']['name']}}"
+                                                     data-player1img="{{team['player1']['imgURI']}}"
+                                                     data-player2Name="{{team['player2']['name']}}"
+                                                     data-player2img="{{team['player2']['imgURI']}}"
+                                                     data-player3Name="{{team['player3']['name']}}"
+                                                     data-player3img="{{team['player3']['imgURI']}}"
+                                                     data-player4Name="{{team['player4']['name']}}"
+                                                     data-player4img="{{team['player4']['imgURI']}}"
+                                                     data-player5Name="{{team['player5']['name']}}"
+                                                     data-player5img="{{team['player5']['imgURI']}}">
+                                                    {%if team['teamLogo'][0] == '/'%}
+                                                    <img src="https://www.hltv.org{{team['teamLogo']}}"
+                                                         data-name="{{team['teamName']}}" alt="">
+                                                    {%else%}
+                                                    <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}"
+                                                         alt="">
+                                                    {%endif%}
+                                                    <h3 style="text-align: center">{{team['teamName']}}</h3>
+                                                </div>
+
+                                                {%endfor%}
+                                            </div>
+                                            <!--                                        </div>-->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button id="team1_choose" class="ui button">Выбрать команду</button>
+                            <button id="team1_choose" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#team1Modal">
+                                Выбрать команду
+                            </button>
                         </div>
                         <input type="text" name="team1" id="team1" hidden required>
                         <input type="text" name="team1p1" id="team1p1" hidden required>
@@ -111,7 +128,7 @@
                             <div class="header" style="text-align: center">Карта</div>
                             <div class="content">
                                 <input type="text" class="ui input" id="mapFilter">
-                                <button class="ui button" id="mapFilterOk">Подтвердить</button>
+                                <button class="btn btn-light" id="mapFilterOk">Подтвердить</button>
                             </div>
                             <div class="scrolling content">
                                 <div class="elements">
@@ -125,7 +142,7 @@
                             </div>
                         </div>
                         <div>
-                            <button id="map_choose" class="ui button">Выбрать карту</button>
+                            <button id="map_choose" class="btn btn-light">Выбрать карту</button>
                         </div>
                         <input type="text" name="map" id="map" hidden required>
                         <div class="predict__selected-map-logo">
@@ -143,7 +160,7 @@
                             <div class="header" style="text-align: center">Команда 2</div>
                             <div class="content">
                                 <input type="text" class="ui input" id="team2Filter">
-                                <button class="ui button" id="team2FilterOk">Подтвердить</button>
+                                <button class="btn btn-light" id="team2FilterOk">Подтвердить</button>
                             </div>
                             <div class="scrolling content">
                                 <div class="elements">
@@ -172,7 +189,7 @@
                             </div>
                         </div>
                         <div>
-                            <button id="team2_choose" class="ui button">Выбрать команду</button>
+                            <button id="team2_choose" class="btn btn-light">Выбрать команду</button>
                         </div>
                         <input type="text" name="team2" id="team2" hidden required>
                         <input type="text" name="team2p1" id="team2p1" hidden required>
@@ -390,15 +407,13 @@
             $(".result__trophy").attr("style", "display:block");
         }, 5200)
 
-        $('.ui.dropdown').dropdown({fullTextSearch: true});
-
         $("#fullpage").fullpage({
             // anchors: ['Предсказание', "Результат", "Графики"],
         });
 
         $("#team1_choose").on('click', function (e) {
             e.preventDefault();
-            $("#team1Modal.ui.modal").modal('show');
+            // $("#team1Modal.ui.modal").modal('show');
         });
 
         $("#team2_choose").on('click', function (e) {
@@ -432,7 +447,7 @@
                 $('.predict__team1-logo').attr('src', $("#team1Modal.ui.modal .element.choosen img")[0].src)
                 $(".ui.modal").modal('hide');
                 $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
-                $("#team1_choose").addClass("modalSelected");
+                // $("#team1_choose").addClass("modalSelected");
                 $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
                 $("#team1_squad").show();
 
