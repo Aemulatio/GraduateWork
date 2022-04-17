@@ -340,7 +340,7 @@
                 <div class="result__entered-data-teams col-8">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="result__team1 result__block col-6">
+                            <div class="result__team1 result__block col-xs-12 col-md-6 position-relative">
                                 {%if teams_winner[team1]['teamLogo'][0] == '/'%}
                                 <img src="https://www.hltv.org{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
                                      class="result__team-logo">
@@ -351,20 +351,22 @@
 
                                 <h3>{{team1}}</h3>
                                 {%if team1==winner%}
-                                <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
+                                <img src="../static/imgs/trophy.png" alt=""
+                                     class="result__trophy left-trophy position-absolute top-0 start-0">
                                 {%endif%}
                             </div>
-                            <div class="result__team2 result__block col-6">
+                            <div class="result__team2 result__block col-xs-12 col-md-6 position-relative">
                                 {%if teams_winner[team2]['teamLogo'][0] == '/'%}
                                 <img src="https://www.hltv.org{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}"
                                      class="result__team-logo">
                                 {%else%}
-                                <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team1}}"
+                                <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}"
                                      class="result__team-logo">
                                 {%endif%}
                                 <h3>{{team2}}</h3>
                                 {%if team2==winner%}
-                                <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
+                                <img src="../static/imgs/trophy.png" alt=""
+                                     class="result__trophy right-trophy position-absolute bottom-0 end-0">
                                 {%endif%}
                             </div>
                         </div>
