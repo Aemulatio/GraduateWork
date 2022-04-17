@@ -154,7 +154,8 @@
                         </div>
                         <div>
                             <button id="map_choose" class="btn btn-light" data-bs-toggle="modal"
-                                    data-bs-target="#mapModal">Выбрать карту</button>
+                                    data-bs-target="#mapModal">Выбрать карту
+                            </button>
                         </div>
                         <input type="text" name="map" id="map" hidden required>
                         <div class="predict__selected-map-logo">
@@ -168,40 +169,55 @@
                             <span>Команда 2</span>
                         </h2>
 
-                        <div class="ui modal" id="team2Modal">
-                            <div class="header" style="text-align: center">Команда 2</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="team2Filter">
-                                <button class="btn btn-light" id="team2FilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for team in new_teams%}
-                                    <div data-name="{{team['teamName']}}" class="element"
-                                         data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['imgURI']}}"
-                                         data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['imgURI']}}"
-                                         data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['imgURI']}}"
-                                         data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['imgURI']}}"
-                                         data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['imgURI']}}">
-                                        {%if team['teamLogo'][0] == '/'%}
-                                        <img src="https://www.hltv.org{{team['teamLogo']}}"
-                                             data-name="{{team['teamName']}}" alt="">
-                                        {%else%}
-                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}" alt="">
-                                        {%endif%}
-                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
+                        <div class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true" id="team2Modal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align: center">
+                                        <h3 class="modal-title">
+                                            Команда 2
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                     </div>
-                                    {%endfor%}
+                                    <div class="modal-body">
+                                        <input type="text" class="ui input" id="team2Filter">
+                                        <button class="btn btn-light" id="team2FilterOk">Подтвердить</button>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="elements">
+                                                    {%for team in new_teams%}
+                                                    <div data-name="{{team['teamName']}}" class="element col-lg-3 col-6"
+                                                         data-player1Name="{{team['player1']['name']}}"
+                                                         data-player1img="{{team['player1']['imgURI']}}"
+                                                         data-player2Name="{{team['player2']['name']}}"
+                                                         data-player2img="{{team['player2']['imgURI']}}"
+                                                         data-player3Name="{{team['player3']['name']}}"
+                                                         data-player3img="{{team['player3']['imgURI']}}"
+                                                         data-player4Name="{{team['player4']['name']}}"
+                                                         data-player4img="{{team['player4']['imgURI']}}"
+                                                         data-player5Name="{{team['player5']['name']}}"
+                                                         data-player5img="{{team['player5']['imgURI']}}">
+                                                        {%if team['teamLogo'][0] == '/'%}
+                                                        <img src="https://www.hltv.org{{team['teamLogo']}}"
+                                                             data-name="{{team['teamName']}}" alt="">
+                                                        {%else%}
+                                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}"
+                                                             alt="">
+                                                        {%endif%}
+                                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
+                                                    </div>
+                                                    {%endfor%}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button id="team2_choose" class="btn btn-light">Выбрать команду</button>
+                            <button id="team2_choose" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#team2Modal">Выбрать команду
+                            </button>
                         </div>
                         <input type="text" name="team2" id="team2" hidden required>
                         <input type="text" name="team2p1" id="team2p1" hidden required>
@@ -503,33 +519,33 @@
         $("#team2FilterOk").on('click', function (e) {
             e.preventDefault();
 
-            if ($("#team2Modal.ui.modal .element.choosen").length === 1) {
-                $('.predict__team2-logo').attr('src', $("#team2Modal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#team2").val($("#team2Modal.ui.modal .element.choosen").data('name'));
+            if ($("#team2Modal.modal .element.choosen").length === 1) {
+                $('.predict__team2-logo').attr('src', $("#team2Modal.modal .element.choosen img")[0].src)
+                $(".modal").hide()
+                $("#team2").val($("#team2Modal.modal .element.choosen").data('name'));
                 $("#team2_choose").addClass("modalSelected");
-                $("#predict__team2-name").text($("#team2Modal.ui.modal .element.choosen").data('name'));
+                $("#predict__team2-name").text($("#team2Modal.modal .element.choosen").data('name'));
                 $("#team2_squad").show();
 
-                $("#team2_member1 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player1img');
-                $("#team2_member1 p").text($("#team2Modal.ui.modal .element.choosen").data('player1name'));
-                $("#team2p1").val($("#team2Modal.ui.modal .element.choosen").data('player1name'));
+                $("#team2_member1 img")[0].src = $("#team2Modal.modal .element.choosen").data('player1img');
+                $("#team2_member1 p").text($("#team2Modal.modal .element.choosen").data('player1name'));
+                $("#team2p1").val($("#team2Modal.modal .element.choosen").data('player1name'));
 
-                $("#team2_member2 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player2img');
-                $("#team2_member2 p").text($("#team2Modal.ui.modal .element.choosen").data('player2name'));
-                $("#team2p2").val($("#team2Modal.ui.modal .element.choosen").data('player2name'));
+                $("#team2_member2 img")[0].src = $("#team2Modal.modal .element.choosen").data('player2img');
+                $("#team2_member2 p").text($("#team2Modal.modal .element.choosen").data('player2name'));
+                $("#team2p2").val($("#team2Modal.modal .element.choosen").data('player2name'));
 
-                $("#team2_member3 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player3img');
-                $("#team2_member3 p").text($("#team2Modal.ui.modal .element.choosen").data('player3name'));
-                $("#team2p3").val($("#team2Modal.ui.modal .element.choosen").data('player3name'));
+                $("#team2_member3 img")[0].src = $("#team2Modal.modal .element.choosen").data('player3img');
+                $("#team2_member3 p").text($("#team2Modal.modal .element.choosen").data('player3name'));
+                $("#team2p3").val($("#team2Modal.modal .element.choosen").data('player3name'));
 
-                $("#team2_member4 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player4img');
-                $("#team2_member4 p").text($("#team2Modal.ui.modal .element.choosen").data('player4name'));
-                $("#team2p4").val($("#team2Modal.ui.modal .element.choosen").data('player4name'));
+                $("#team2_member4 img")[0].src = $("#team2Modal.modal .element.choosen").data('player4img');
+                $("#team2_member4 p").text($("#team2Modal.modal .element.choosen").data('player4name'));
+                $("#team2p4").val($("#team2Modal.modal .element.choosen").data('player4name'));
 
-                $("#team2_member5 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player5img');
-                $("#team2_member5 p").text($("#team2Modal.ui.modal .element.choosen").data('player5name'));
-                $("#team2p5").val($("#team2Modal.ui.modal .element.choosen").data('player5name'));
+                $("#team2_member5 img")[0].src = $("#team2Modal.modal .element.choosen").data('player5img');
+                $("#team2_member5 p").text($("#team2Modal.modal .element.choosen").data('player5name'));
+                $("#team2p5").val($("#team2Modal.modal .element.choosen").data('player5name'));
             } else {
                 alert("Команда не выбрана");
             }
