@@ -38,7 +38,7 @@
                             <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header" style="text-align: center">
-                                        <h3 class="modal-title" id="staticBackdropLabel">
+                                        <h3 class="modal-title">
                                             Команда 1
                                         </h3>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -121,25 +121,40 @@
                         <h2 class="clearfix">
                             <span>Карта</span>
                         </h2>
-                        <div class="ui modal" id="mapModal">
-                            <div class="header" style="text-align: center">Карта</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="mapFilter">
-                                <button class="btn btn-light" id="mapFilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for map in maps%}
-                                    <div data-name="{{map}}" class="element">
-                                        <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}" alt="">
-                                        <h3 style="text-align: center">{{map}}</h3>
+                        <div class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true" id="mapModal">
+                            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="text-align: center">
+                                        <h3 class="modal-title">
+                                            Карта
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                     </div>
-                                    {%endfor%}
+                                    <div class="modal-body">
+
+
+                                        <input type="text" class="ui input" id="mapFilter">
+                                        <button class="btn btn-light" id="mapFilterOk">Подтвердить</button>
+
+                                        <div class="container-fluid">
+                                            <div class="elements">
+                                                {%for map in maps%}
+                                                <div data-name="{{map}}" class="element col-lg-3 col-6">
+                                                    <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}"
+                                                         alt="">
+                                                    <h3 style="text-align: center">{{map}}</h3>
+                                                </div>
+                                                {%endfor%}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button id="map_choose" class="btn btn-light">Выбрать карту</button>
+                            <button id="map_choose" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#mapModal">Выбрать карту</button>
                         </div>
                         <input type="text" name="map" id="map" hidden required>
                         <div class="predict__selected-map-logo">
@@ -415,18 +430,18 @@
 
         $("#team2_choose").on('click', function (e) {
             e.preventDefault();
-            $("#team2Modal.ui.modal").modal('show');
+            // $("#team2Modal.ui.modal").modal('show');
         });
 
         $("#map_choose").on('click', function (e) {
             e.preventDefault();
-            $("#mapModal.ui.modal").modal('show');
+            // $("#mapModal.ui.modal").modal('show');
         });
 
         $("#team1Filter").keyup(function () {
             let input_val = $("#team1Filter").val().toLowerCase();
-            $("#team1Modal.ui.modal .element").removeClass('hide');
-            $("#team1Modal.ui.modal .element").each(function (index) {
+            $("#team1Modal.modal .element").removeClass('hide');
+            $("#team1Modal.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
                 if (team.indexOf(input_val) === -1) {
                     // console.log(team + " net")
@@ -474,8 +489,8 @@
 
         $("#team2Filter").keyup(function () {
             let input_val = $("#team2Filter").val().toLowerCase();
-            $("#team2Modal.ui.modal .element").removeClass('hide');
-            $("#team2Modal.ui.modal .element").each(function (index) {
+            $("#team2Modal.modal .element").removeClass('hide');
+            $("#team2Modal.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
                 if (team.indexOf(input_val) === -1) {
                     $(this).addClass("hide").removeClass('vis');
@@ -522,8 +537,8 @@
 
         $("#mapFilter").keyup(function () {
             let input_val = $("#mapFilter").val().toLowerCase();
-            $("#mapModal.ui.modal .element").removeClass('hide');
-            $("#mapModal.ui.modal .element").each(function (index) {
+            $("#mapModal.modal .element").removeClass('hide');
+            $("#mapModal.modal .element").each(function (index) {
                 let team = $(this).data("name").toString().toLowerCase();
                 if (team.indexOf(input_val) === -1) {
                     $(this).addClass("hide").removeClass('vis');
@@ -536,12 +551,12 @@
         $("#mapFilterOk").on('click', function (e) {
             e.preventDefault();
 
-            if ($("#mapModal.ui.modal .element.choosen").length === 1) {
-                $('.predict__map-logo').attr('src', $("#mapModal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#map").val($("#mapModal.ui.modal .element.choosen").data('name'));
+            if ($("#mapModal.modal .element.choosen").length === 1) {
+                $('.predict__map-logo').attr('src', $("#mapModal.modal .element.choosen img")[0].src)
+                $(".modal").hide()
+                $("#map").val($("#mapModal.modal .element.choosen").data('name'));
                 $("#map_choose").addClass("modalSelected");
-                $("#predict__map-name").text($("#mapModal.ui.modal .element.choosen").data('name'));
+                $("#predict__map-name").text($("#mapModal.modal .element.choosen").data('name'));
             } else {
                 alert("Команда не выбрана");
             }
