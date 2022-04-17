@@ -342,7 +342,8 @@
                         <div class="row">
                             <div class="result__team1 result__block col-6">
                                 {%if teams_winner[team1]['teamLogo'][0] == '/'%}
-                                <img src="https://www.hltv.org{{teams_winner[team1]['teamLogo']}}" alt="">
+                                <img src="https://www.hltv.org{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
+                                     class="result__team-logo">
                                 {%else%}
                                 <img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
                                      class="result__team-logo">
@@ -354,8 +355,9 @@
                                 {%endif%}
                             </div>
                             <div class="result__team2 result__block col-6">
-                                 {%if teams_winner[team2]['teamLogo'][0] == '/'%}
-                                <img src="https://www.hltv.org{{teams_winner[team2]['teamLogo']}}" alt="">
+                                {%if teams_winner[team2]['teamLogo'][0] == '/'%}
+                                <img src="https://www.hltv.org{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}"
+                                     class="result__team-logo">
                                 {%else%}
                                 <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team1}}"
                                      class="result__team-logo">

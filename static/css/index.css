@@ -320,7 +320,7 @@ body {
 .result__team2 {
     padding-top: 50px;
     float: right;
-    margin-left: 65px;
+    /*margin-left: 65px;*/
 }
 
 .result__block h3 {
