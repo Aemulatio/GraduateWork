@@ -1,12 +1,12 @@
 from pymongo import MongoClient
 import pandas as pd
 import numpy as np
-import time
 from time import time
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
+from sklearn.svm import SVR
 from sklearn import ensemble
 import pickle
 from db import connectionString
@@ -141,6 +141,9 @@ if __name__ == "__main__":
 
     def predict_labels(clf, features, target):
         ''' Makes predictions using a fit classifier based on F1 score. '''
+        from sklearn.metrics import max_error
+        from sklearn.metrics import explained_variance_score
+        from sklearn.metrics import r2_score
 
         # Start the clock, make predictions, then stop the clock
         start = time()
@@ -151,9 +154,13 @@ if __name__ == "__main__":
         print("Made predictions in {:.4f} seconds.".format(end - start))
 
         # return f1_score(target, y_pred, average="macro"), sum(target == y_pred) / float(len(y_pred))
+        # return max_error(target, y_pred), sum(target == y_pred) / float(len(y_pred))
+        # return explained_variance_score(target, y_pred), sum(target == y_pred) / float(len(y_pred))
+        return r2_score(target, y_pred), sum(target == y_pred) / float(len(y_pred))
         # return f1_score(target, y_pred, average="micro"), sum(target == y_pred) / float(len(y_pred))
-        return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
+        # return f1_score(target, y_pred, average="weighted"), sum(target == y_pred) / float(len(y_pred))
         # return f1_score(target, y_pred, pos_label='Team1'), sum(target == y_pred) / float(len(y_pred))
+
 
     def pred_prob(clf, obj):
         # Проверить дома
@@ -180,15 +187,23 @@ if __name__ == "__main__":
 
     rf = ensemble.RandomForestClassifier(n_estimators=5000, random_state=11, n_jobs=-1)
     # print(rf.max_depth)
-    train_predict(rf, X_train, y_train, X_test, y_test)
-    print(pred_prob(rf, X_test.iloc[0, :]), rf.classes_)
-    print(rf.predict([X_test.iloc[0, :]]))
+    # train_predict(rf, X_train, y_train, X_test, y_test)
+    # print(pred_prob(rf, X_test.iloc[0, :]), rf.classes_)
+    # print(rf.predict([X_test.iloc[0, :]]))
 
+    gbr = ensemble.GradientBoostingRegressor(n_estimators=5000, random_state=11, )
+    train_predict(gbr, X_train, y_train, X_test, y_test)
 
-    clf_A = LogisticRegression(random_state=42, penalty='l2')
-    clf_B = SVC(random_state=912, kernel='rbf')
+    # clf_A = LogisticRegression(random_state=42, penalty='l2')
+    # clf_B = SVC(random_state=912, kernel='rbf')
+    # clf_C = SVR()
+    # clf_C.fit(X_train, y_train)
+    # print(clf_C.predict([X_test.iloc[0, :]]))
+    # print([X_test.iloc[0, :]])
     #
-    train_predict(clf_A, X_train, y_train, X_test, y_test)
+    # train_predict(clf_A, X_train, y_train, X_test, y_test)
+    # print("")
+    # train_predict(clf_B, X_train, y_train, X_test, y_test)
     print("")
-    train_predict(clf_B, X_train, y_train, X_test, y_test)
+    # train_predict(clf_C, X_train, y_train, X_test, y_test)
     print("")
