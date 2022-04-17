@@ -440,33 +440,33 @@
         $("#team1FilterOk").on('click', function (e) {
             e.preventDefault();
 
-            if ($("#team1Modal.ui.modal .element.choosen").length === 1) {
-                $('.predict__team1-logo').attr('src', $("#team1Modal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
+            if ($("#team1Modal.modal .element.choosen").length === 1) {
+                $('.predict__team1-logo').attr('src', $("#team1Modal.modal .element.choosen img")[0].src)
+                $(".modal").hide()
+                $("#team1").val($("#team1Modal.modal .element.choosen").data('name'));
                 // $("#team1_choose").addClass("modalSelected");
-                $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
+                $("#predict__team1-name").text($("#team1Modal.modal .element.choosen").data('name'));
                 $("#team1_squad").show();
 
-                $("#team1_member1 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player1img');
-                $("#team1_member1 p").text($("#team1Modal.ui.modal .element.choosen").data('player1name'));
-                $("#team1p1").val($("#team1Modal.ui.modal .element.choosen").data('player1name'));
+                $("#team1_member1 img")[0].src = $("#team1Modal.modal .element.choosen").data('player1img');
+                $("#team1_member1 p").text($("#team1Modal.modal .element.choosen").data('player1name'));
+                $("#team1p1").val($("#team1Modal.modal .element.choosen").data('player1name'));
 
-                $("#team1_member2 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player2img');
-                $("#team1_member2 p").text($("#team1Modal.ui.modal .element.choosen").data('player2name'));
-                $("#team1p2").val($("#team1Modal.ui.modal .element.choosen").data('player2name'));
+                $("#team1_member2 img")[0].src = $("#team1Modal.modal .element.choosen").data('player2img');
+                $("#team1_member2 p").text($("#team1Modal.modal .element.choosen").data('player2name'));
+                $("#team1p2").val($("#team1Modal.modal .element.choosen").data('player2name'));
 
-                $("#team1_member3 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player3img');
-                $("#team1_member3 p").text($("#team1Modal.ui.modal .element.choosen").data('player3name'));
-                $("#team1p3").val($("#team1Modal.ui.modal .element.choosen").data('player3name'));
+                $("#team1_member3 img")[0].src = $("#team1Modal.modal .element.choosen").data('player3img');
+                $("#team1_member3 p").text($("#team1Modal.modal .element.choosen").data('player3name'));
+                $("#team1p3").val($("#team1Modal.modal .element.choosen").data('player3name'));
 
-                $("#team1_member4 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player4img');
-                $("#team1_member4 p").text($("#team1Modal.ui.modal .element.choosen").data('player4name'));
-                $("#team1p4").val($("#team1Modal.ui.modal .element.choosen").data('player4name'));
+                $("#team1_member4 img")[0].src = $("#team1Modal.modal .element.choosen").data('player4img');
+                $("#team1_member4 p").text($("#team1Modal.modal .element.choosen").data('player4name'));
+                $("#team1p4").val($("#team1Modal.modal .element.choosen").data('player4name'));
 
-                $("#team1_member5 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player5img');
-                $("#team1_member5 p").text($("#team1Modal.ui.modal .element.choosen").data('player5name'));
-                $("#team1p5").val($("#team1Modal.ui.modal .element.choosen").data('player5name'));
+                $("#team1_member5 img")[0].src = $("#team1Modal.modal .element.choosen").data('player5img');
+                $("#team1_member5 p").text($("#team1Modal.modal .element.choosen").data('player5name'));
+                $("#team1p5").val($("#team1Modal.modal .element.choosen").data('player5name'));
             } else {
                 alert("Команда не выбрана");
             }
