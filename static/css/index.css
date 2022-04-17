@@ -119,7 +119,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    /*width: 1170px;*/
 }
 
 .slide {
@@ -151,9 +151,9 @@ body {
 }
 
 .predict__element {
-    padding: 5px 10px;
-    display: block;
-    float: left;
+    /*padding: 5px 10px;*/
+    /*display: block;*/
+    /*float: left;*/
     /*height: 292px;*/
 }
 
@@ -204,11 +204,12 @@ body {
 }
 
 .predict__submit {
+    /*
     position: absolute;
     bottom: -15%;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto;*/
     /*margin-left: -7.5em;*/
     height: 3em;
     width: 15em;
@@ -885,28 +886,37 @@ body {
 }
 
 .team_squad {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+     flex-wrap: wrap;
 
-    width: 70%;
-    justify-content: space-around;
-    padding-top: 10px;
+     width: 70%;
+     justify-content: space-around;
+     padding-top: 10px;*/
 }
 
 .predict__element {
     /*min-width: 500px;*/
 
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
+    /*align-content: flex-start;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
 }
 
 .team_member {
     /*padding: 0 5px;*/
     padding-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team_member .row .col-12 {
+    display: flex;
+    justify-content: center;
 }
 
 .team_member img {
@@ -916,4 +926,7 @@ body {
 
 .team_member-name {
     text-align: center;
+}
+.start-39 {
+    left: 39%!important;
 }

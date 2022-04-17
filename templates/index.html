@@ -25,12 +25,12 @@
 </div>
 <div id="fullpage">
     <div class="predict clearfix section">
-        <div class="predict__container stick1 container clearfix">
-            <div class="predict__content ">
-                <form action="/" method="post" class="predict__form clearfix" id="predict__form"
-                      name="prediction__form">
+        <div class=" stick1 container clearfix">
+            <form action="/" method="post" class="container-fluid clearfix" id="predict__form"
+                  name="prediction__form">
+                <div class="row position-relative">
                     <!--КОМАНДА-1-->
-                    <div class="predict__element clearfix">
+                    <div class="predict__element clearfix col-md-4 col-12">
                         <h2 class="clearfix">
                             <span>Команда 1</span>
                         </h2>
@@ -45,7 +45,7 @@
                                                 aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <input type="text" class="ui input" id="team1Filter">
+                                        <input type="text" class="form-label" id="team1Filter">
                                         <button class="btn btn-light" id="team1FilterOk">Подтвердить</button>
                                         <div class="container-fluid">
                                             <div class="row">
@@ -77,12 +77,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-grid mx-auto">
                             <button id="team1_choose" class="btn btn-light" data-bs-toggle="modal"
                                     data-bs-target="#team1Modal">
                                 Выбрать команду
                             </button>
                         </div>
+
                         <input type="text" name="team1" id="team1" hidden required>
                         <input type="text" name="team1p1" id="team1p1" hidden required>
                         <input type="text" name="team1p2" id="team1p2" hidden required>
@@ -93,31 +94,63 @@
                             <img src="" alt="" class="predict__team1-logo predict__team-logo">
                             <p id="predict__team1-name"></p>
                         </div>
-                        <div id="team1_squad" style="display: none" class="team_squad">
-                            <div class="team_member" id="team1_member1">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member2">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member3">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member4">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member5">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
+                        <div id="team1_squad" style="display: none" class="team_squad container-fluid">
+                            <div class="row">
+                                <div class="team_member col-md-6 col-6 container-fluid" id="team1_member1">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member  col-md-6 col-6 container-fluid" id="team1_member2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member  col-md-6 col-6 container-fluid" id="team1_member3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member  col-md-6 col-6 container-fluid" id="team1_member4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member  col-12 container-fluid" id="team1_member5">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--КАРТА-->
-                    <div class="predict__element clearfix">
+                    <div class="predict__element clearfix col-md-4 col-12">
                         <h2 class="clearfix">
                             <span>Карта</span>
                         </h2>
@@ -132,9 +165,7 @@
                                                 aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-
-
-                                        <input type="text" class="ui input" id="mapFilter">
+                                        <input type="text" class="form-label" id="mapFilter">
                                         <button class="btn btn-light" id="mapFilterOk">Подтвердить</button>
 
                                         <div class="container-fluid">
@@ -152,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-grid mx-auto">
                             <button id="map_choose" class="btn btn-light" data-bs-toggle="modal"
                                     data-bs-target="#mapModal">Выбрать карту
                             </button>
@@ -164,7 +195,7 @@
                         </div>
                     </div>
                     <!--КОМАНДА-2-->
-                    <div class="predict__element clearfix">
+                    <div class="predict__element clearfix col-md-4 col-12">
                         <h2 class="clearfix">
                             <span>Команда 2</span>
                         </h2>
@@ -180,7 +211,7 @@
                                                 aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <input type="text" class="ui input" id="team2Filter">
+                                        <input type="text" class="form-label" id="team2Filter">
                                         <button class="btn btn-light" id="team2FilterOk">Подтвердить</button>
                                         <div class="container-fluid">
                                             <div class="row">
@@ -214,7 +245,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="d-grid mx-auto">
                             <button id="team2_choose" class="btn btn-light" data-bs-toggle="modal"
                                     data-bs-target="#team2Modal">Выбрать команду
                             </button>
@@ -229,35 +260,67 @@
                             <img src="" alt="" class="predict__team2-logo predict__team-logo">
                             <p id="predict__team2-name"></p>
                         </div>
-                        <div id="team2_squad" style="display: none" class="team_squad">
-                            <div class="team_member" id="team2_member1">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member2">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member3">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member4">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member5">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
+                        <div id="team2_squad" style="display: none" class="team_squad container-fluid">
+                            <div class="row">
+                                <div class="team_member col-md-6 col-6 container-fluid" id="team2_member1">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member col-md-6 col-6 container-fluid" id="team2_member2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member col-md-6 col-6 container-fluid" id="team2_member3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member col-md-6 col-6 container-fluid" id="team2_member4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team_member col-12 container-fluid" id="team2_member5">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="../static/imgs/temp.png" alt="">
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="team_member-name">test</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!--SUBMIT-->
-                    <div>
-                        <input type="submit" class="predict__submit">
+                    <div class="col-4 d-grid mx-auto">
+                        <input type="submit" id="predict__submit" class="btn btn-primary">
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -268,26 +331,45 @@
             <img src="../static/imgs/sword-left.png" alt="">
         </div>
 
-        <div class="result__container container">
-            <div class="result__content clearfix">
-                <div class="result__entered-data clearfix">
-                    <div class="result__entered-data-teams">
-                        <div class="result__team1 result__block">
-                            <img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}" class="result__team-logo">
-                            <h3>{{team1}}</h3>
-                            {%if team1==winner%}
-                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
-                            {%endif%}
-                        </div>
-                        <div class="result__team2 result__block">
-                            <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}" class="result__team-logo">
-                            <h3>{{team2}}</h3>
-                            {%if team2==winner%}
-                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
-                            {%endif%}
+        <div class="result__container container-fluid">
+            <div class="result__content clearfix row">
+                <!--                <div class="result__entered-data clearfix">-->
+                <div class="col-2"></div>
+
+
+                <div class="result__entered-data-teams col-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="result__team1 result__block col-6">
+                                {%if teams_winner[team1]['teamLogo'][0] == '/'%}
+                                <img src="https://www.hltv.org{{teams_winner[team1]['teamLogo']}}" alt="">
+                                {%else%}
+                                <img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
+                                     class="result__team-logo">
+                                {%endif%}
+
+                                <h3>{{team1}}</h3>
+                                {%if team1==winner%}
+                                <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
+                                {%endif%}
+                            </div>
+                            <div class="result__team2 result__block col-6">
+                                 {%if teams_winner[team2]['teamLogo'][0] == '/'%}
+                                <img src="https://www.hltv.org{{teams_winner[team2]['teamLogo']}}" alt="">
+                                {%else%}
+                                <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team1}}"
+                                     class="result__team-logo">
+                                {%endif%}
+                                <h3>{{team2}}</h3>
+                                {%if team2==winner%}
+                                <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
+                                {%endif%}
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-2"></div>
+                <!--                </div>-->
             </div>
         </div>
     </div>
@@ -596,7 +678,7 @@
             }
         });
 
-        $(".predict__submit").on('click', function (e) {
+        $("#predict__submit").on('click', function (e) {
             e.preventDefault();
             $('#predict__form').submit();
         });
