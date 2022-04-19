@@ -192,7 +192,11 @@ if __name__ == "__main__":
     # print(rf.predict([X_test.iloc[0, :]]))
 
     gbr = ensemble.GradientBoostingRegressor(n_estimators=5000, random_state=11, )
-    train_predict(gbr, X_train, y_train, X_test, y_test)
+    # train_predict(gbr, X_train, y_train, X_test, y_test)
+    start1 = time()
+    gbr.fit(X_train, y_train)
+    end1 = time()
+    print("Trained in {:.4f} seconds.".format(end1 - start1))
 
     # clf_A = LogisticRegression(random_state=42, penalty='l2')
     # clf_B = SVC(random_state=912, kernel='rbf')
