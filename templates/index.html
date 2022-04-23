@@ -379,6 +379,7 @@
     </div>
     <div class="slide last abs section">
         <div class="stick3">
+            {#
             <div class="choose-graph-style">
                 <div class="choose-graph-style__container container">
                     <h2>Выберите вид гистограммы:</h2>
@@ -391,14 +392,17 @@
                     </div>
                 </div>
             </div>
-
+            #}
             <div class="graphs">
                 <div class="graphs__container container">
-                    <div class="graphs__content">
-                        <div class="graphs__team1">
+                    <div class=" row">
+                        <div class="col-12">
+                            <h2 style="text-align: center">Статистические данные</h2>
+                        </div>
+                        <div class="graphs__team1 col-12 w-75">
                             <canvas id="team1__graph"></canvas>
                         </div>
-                        <div class="graphs__team2">
+                        <div class="graphs__team2 col-12 w-75">
                             <canvas id="team2__graph"></canvas>
                         </div>
                     </div>
@@ -415,7 +419,7 @@
 
             let matches = Object.values(matchesJSON[0]);
             let wins = Object.values(winsJSON[0]);
-            let stacked = document.getElementById('stacked').checked
+            let stacked = false;
 
             var ctx = document.getElementById(canvasID).getContext('2d');
             const myChart = new Chart(ctx, {

@@ -304,9 +304,9 @@ body {
 }
 
 .result__team1 {
-   /* float: left;
-    margin-left: -65px;
-    margin-right: 65px;*/
+    /* float: left;
+     margin-left: -65px;
+     margin-right: 65px;*/
 }
 
 .result__line {
@@ -319,8 +319,8 @@ body {
 
 .result__team2 {
     padding-top: 50px;
-   /* float: right;
-    /*margin-left: 65px;*/
+    /* float: right;
+     /*margin-left: 65px;*/
 }
 
 .result__block h3 {
@@ -927,6 +927,12 @@ body {
 .team_member-name {
     text-align: center;
 }
+
 .start-39 {
-    left: 39%!important;
+    left: 39% !important;
+}
+
+.graphs__team1, .graphs__team2 {
+    max-width: 50%;
+    margin: auto;
 }
