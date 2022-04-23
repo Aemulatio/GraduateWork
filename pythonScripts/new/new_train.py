@@ -187,7 +187,7 @@ if __name__ == "__main__":
 
     rf = ensemble.RandomForestClassifier(n_estimators=5000, random_state=11, n_jobs=-1)
     # print(rf.max_depth)
-    # train_predict(rf, X_train, y_train, X_test, y_test)
+    train_predict(rf, X_train, y_train, X_test, y_test)
     # print(pred_prob(rf, X_test.iloc[0, :]), rf.classes_)
     # print(rf.predict([X_test.iloc[0, :]]))
 
@@ -196,18 +196,18 @@ if __name__ == "__main__":
     start1 = time()
     gbr.fit(X_train, y_train)
     end1 = time()
-    print("Trained in {:.4f} seconds.".format(end1 - start1))
+    print("GBR Trained in {:.4f} seconds.".format(end1 - start1))
 
-    # clf_A = LogisticRegression(random_state=42, penalty='l2')
-    # clf_B = SVC(random_state=912, kernel='rbf')
+    clf_A = LogisticRegression(random_state=42, penalty='l2')
+    clf_B = SVC(random_state=912, kernel='rbf')
     # clf_C = SVR()
     # clf_C.fit(X_train, y_train)
     # print(clf_C.predict([X_test.iloc[0, :]]))
     # print([X_test.iloc[0, :]])
     #
-    # train_predict(clf_A, X_train, y_train, X_test, y_test)
-    # print("")
-    # train_predict(clf_B, X_train, y_train, X_test, y_test)
+    train_predict(clf_A, X_train, y_train, X_test, y_test)
+    print("")
+    train_predict(clf_B, X_train, y_train, X_test, y_test)
     print("")
     # train_predict(clf_C, X_train, y_train, X_test, y_test)
     print("")
