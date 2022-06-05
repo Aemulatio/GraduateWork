@@ -281,14 +281,11 @@ def train_forest():
 @app.route('/', methods=['post', 'get'])
 @app.route('/index.html', methods=['post', 'get'])
 def main():
-    data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
-    #     logos = os.listdir("static/imgs/logos")
-    #     teams =
+
     print(request)
     if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
         train_forest()
     if request.method == 'POST':
-        # print(str(request.form.get('team1')))
         t1 = request.form.get('team1')
         t2 = request.form.get('team2')
         game_map = request.form.get('map')
