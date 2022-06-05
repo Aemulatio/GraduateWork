@@ -140,4 +140,5 @@ temp.html
 Models/
 
 !Data/results6_wo_garbage_NTN.csv
+!GBR.pickle
 
