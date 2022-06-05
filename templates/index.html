@@ -170,11 +170,11 @@
 
                                         <div class="container-fluid">
                                             <div class="elements">
-                                                {%for map in maps%}
-                                                <div data-name="{{map}}" class="element col-lg-3 col-6">
-                                                    <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}"
+                                                {%for map in new_maps%}
+                                                <div data-name="{{map['mapName']}}" class="element col-lg-3 col-6">
+                                                    <img src="../static/imgs/map_logos/{{map['mapName']}}.png" data-name="{{map['mapName']}}"
                                                          alt="">
-                                                    <h3 style="text-align: center">{{map}}</h3>
+                                                    <h3 style="text-align: center">{{map['mapName']}}</h3>
                                                 </div>
                                                 {%endfor%}
                                             </div>
@@ -517,6 +517,7 @@
 <script type="text/javascript" src="../static/js/jquery-migrate-1.2.1.min.js"></script>
 <script>
     $(document).ready(() => {
+
         setTimeout(() => {
             $(".result__team1").attr("style", "display:block");
             $(".result__team2").attr("style", "display:block");

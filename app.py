@@ -312,6 +312,7 @@ def main():
                                teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
                                maps=np.unique(data['Map'].unique()),
                                new_teams=getTeams(),
+                               new_maps=getMaps(),
                                )
 
 
