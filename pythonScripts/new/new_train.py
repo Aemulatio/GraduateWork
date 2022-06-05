@@ -198,7 +198,7 @@ if __name__ == "__main__":
     end1 = time()
     print("GBR Trained in {:.4f} seconds.".format(end1 - start1))
 
-    pickle.dump(gbr, open("../Models/GBR.pickle", 'wb'))
+    pickle.dump(gbr, open("../../Models/GBR.pickle", 'wb'))
 
     # clf_A = LogisticRegression(random_state=42, penalty='l2')
     # clf_B = SVC(random_state=912, kernel='rbf')
