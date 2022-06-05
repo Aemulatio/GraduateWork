@@ -211,6 +211,18 @@ def getTeams():
     return data
 
 
+def getMaps():
+    collection = db.Maps
+    data = []
+    for obj in collection.find({"pool": True}).sort('mapName'):
+        object = {
+            'mapName': obj['mapName'],
+            'mimiMap': obj["mimiMap"],
+        }
+        data.append(object)
+    return data
+
+
 def getCurrentTeams(t1, t2):
     collection = db.Teams
     data = {}
@@ -293,10 +305,7 @@ def main():
                                teams_winner=getCurrentTeams(t1, t2),
                                playedMaps={t1: getAllMatches(t1), t2: getAllMatches(t2)},
                                winnedMaps={t1: getWinsMatches(t1), t2: getWinsMatches(t2)},
-                               # team1_played=getAllMatches(t1),
-                               # team1_wins=getWinsMatches(t1),
-                               # team2_played=getAllMatches(t2),
-                               # team2_wins=getWinsMatches(t2),
+                               new_maps=getMaps(),
                                )
     else:
         return render_template('index.html',
