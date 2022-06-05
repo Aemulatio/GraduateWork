@@ -296,8 +296,6 @@ def main():
         print(t1, t2, game_map)
         return render_template('index.html',
                                winner="1",  # predict(t1, t2, game_map),
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
-                               maps=np.unique(data['Map'].unique()),
                                team1=t1,
                                team2=t2,
                                map=game_map,
@@ -309,8 +307,6 @@ def main():
                                )
     else:
         return render_template('index.html',
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
-                               maps=np.unique(data['Map'].unique()),
                                new_teams=getTeams(),
                                new_maps=getMaps(),
                                )
