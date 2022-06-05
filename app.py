@@ -96,7 +96,7 @@ def getTeamStats(teamname: str, mapname: str):
         impact /= 5
         adr /= 5
         kpr /= 5
-        return teamname + " " + str(round(rating, 3)) + " " + str(round(dpr, 3)) + " " + \
+        return str(round(rating, 3)) + " " + str(round(dpr, 3)) + " " + \
                str(round(kast, 3)) + " " + str(round(impact, 3)) + " " + str(round(adr, 3)) + " " + str(round(kpr, 3))
 
 
@@ -128,15 +128,29 @@ def predict(t1, t2, game_map):
 
 
 def new_predict(t1, t2, map):
-    team1 = getTeamStats(t1, map)
-    team2 = getTeamStats(t2, map)
-    print(team1)
-    print(team2)
+    team1 = getTeamStats(t1, map).split(" ")
+    team2 = getTeamStats(t2, map).split(" ")
+    print(team1, t1)
+    print(team2, t2)
 
-    # data = pd.DataFrame({
-    #     'Team1': team1,
-    #     'Team2': team2,
-    # }, index=[0])
+    data = pd.DataFrame({
+        'team1_p1': team1[0],
+        'team1_p2': team1[1],
+        'team1_p3': team1[2],
+        'team1_p4': team1[3],
+        'team1_p5': team1[4],
+        'team1_p6': team1[5],
+        'team2_p1': team2[0],
+        'team2_p2': team2[1],
+        'team2_p3': team2[2],
+        'team2_p4': team2[3],
+        'team2_p5': team2[4],
+        'team2_p6': team2[5],
+    }, index=[0])
+
+    model = pickle.load(open("Models/GBR.pickle", 'rb'))
+    res = model.predict(data)
+    return t1 if res < 0.5 else t2
 
 
 def getAllMatches(teamname):
@@ -281,18 +295,15 @@ def train_forest():
 @app.route('/', methods=['post', 'get'])
 @app.route('/index.html', methods=['post', 'get'])
 def main():
-
     print(request)
-    if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
-        train_forest()
     if request.method == 'POST':
         t1 = request.form.get('team1')
         t2 = request.form.get('team2')
         game_map = request.form.get('map')
-
-        print(t1, t2, game_map)
+        res = new_predict(t1, t2, game_map)
+        print(t1, t2, game_map, res)
         return render_template('index.html',
-                               winner="1",  # predict(t1, t2, game_map),
+                               winner=res,  # predict(t1, t2, game_map),
                                team1=t1,
                                team2=t2,
                                map=game_map,
