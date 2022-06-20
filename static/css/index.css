@@ -936,3 +936,7 @@ body {
     max-width: 50%;
     margin: auto;
 }
+
+#team1Filter, #team2Filter{
+    background-color: aliceblue;
+}
