@@ -96,7 +96,7 @@ def getTeamStats(teamname: str, mapname: str):
         impact /= 5
         adr /= 5
         kpr /= 5
-        return teamname + " " + str(round(rating, 3)) + " " + str(round(dpr, 3)) + " " + \
+        return str(round(rating, 3)) + " " + str(round(dpr, 3)) + " " + \
                str(round(kast, 3)) + " " + str(round(impact, 3)) + " " + str(round(adr, 3)) + " " + str(round(kpr, 3))
 
 
@@ -128,15 +128,29 @@ def predict(t1, t2, game_map):
 
 
 def new_predict(t1, t2, map):
-    team1 = getTeamStats(t1, map)
-    team2 = getTeamStats(t2, map)
-    print(team1)
-    print(team2)
+    team1 = getTeamStats(t1, map).split(" ")
+    team2 = getTeamStats(t2, map).split(" ")
+    print(team1, t1)
+    print(team2, t2)
 
-    # data = pd.DataFrame({
-    #     'Team1': team1,
-    #     'Team2': team2,
-    # }, index=[0])
+    data = pd.DataFrame({
+        'team1_p1': team1[0],
+        'team1_p2': team1[1],
+        'team1_p3': team1[2],
+        'team1_p4': team1[3],
+        'team1_p5': team1[4],
+        'team1_p6': team1[5],
+        'team2_p1': team2[0],
+        'team2_p2': team2[1],
+        'team2_p3': team2[2],
+        'team2_p4': team2[3],
+        'team2_p5': team2[4],
+        'team2_p6': team2[5],
+    }, index=[0])
+
+    model = pickle.load(open("Models/GBR.pickle", 'rb'))
+    res = model.predict(data)
+    return t1 if res < 0.5 else t2
 
 
 def getAllMatches(teamname):
@@ -211,6 +225,18 @@ def getTeams():
     return data
 
 
+def getMaps():
+    collection = db.Maps
+    data = []
+    for obj in collection.find({"pool": True}).sort('mapName'):
+        object = {
+            'mapName': obj['mapName'],
+            'mimiMap': obj["mimiMap"],
+        }
+        data.append(object)
+    return data
+
+
 def getCurrentTeams(t1, t2):
     collection = db.Teams
     data = {}
@@ -269,23 +295,15 @@ def train_forest():
 @app.route('/', methods=['post', 'get'])
 @app.route('/index.html', methods=['post', 'get'])
 def main():
-    data = pd.read_csv("Data/results6_wo_garbage_NTN.csv")
-    #     logos = os.listdir("static/imgs/logos")
-    #     teams =
     print(request)
-    if "RANDOM_FOREST.pickle" not in os.listdir("Models/"):
-        train_forest()
     if request.method == 'POST':
-        # print(str(request.form.get('team1')))
         t1 = request.form.get('team1')
         t2 = request.form.get('team2')
         game_map = request.form.get('map')
-
-        print(t1, t2, game_map)
+        res = new_predict(t1, t2, game_map)
+        print(t1, t2, game_map, res)
         return render_template('index.html',
-                               winner="1",  # predict(t1, t2, game_map),
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
-                               maps=np.unique(data['Map'].unique()),
+                               winner=res,  # predict(t1, t2, game_map),
                                team1=t1,
                                team2=t2,
                                map=game_map,
@@ -293,16 +311,12 @@ def main():
                                teams_winner=getCurrentTeams(t1, t2),
                                playedMaps={t1: getAllMatches(t1), t2: getAllMatches(t2)},
                                winnedMaps={t1: getWinsMatches(t1), t2: getWinsMatches(t2)},
-                               # team1_played=getAllMatches(t1),
-                               # team1_wins=getWinsMatches(t1),
-                               # team2_played=getAllMatches(t2),
-                               # team2_wins=getWinsMatches(t2),
+                               new_maps=getMaps(),
                                )
     else:
         return render_template('index.html',
-                               teams=np.unique(np.concatenate((data['Team1'].unique(), data['Team2'].unique()))),
-                               maps=np.unique(data['Map'].unique()),
                                new_teams=getTeams(),
+                               new_maps=getMaps(),
                                )
 
 

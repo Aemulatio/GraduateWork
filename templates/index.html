@@ -1,569 +1,715 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>ВКР</title>
-    <link rel="stylesheet" href="../static/css/index.css">
-    <link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
+	<meta charset="UTF-8">
+	<title>ВКР</title>
+	<link rel="stylesheet" href="../static/css/index.css">
+	<link rel="icon" type="image/x-icon" href="../static/imgs/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/semantic.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../static/fullpage/fullpage.min.css">
+	<link rel="stylesheet" href="../static/fullpage/fullpage.min.css">
 
 </head>
 <body>
-<div class="banner off">
-    <div class="banner__container">
-        <div class="banner__content">
-            <h2 class="banner__title">ВНИМАНИЕ!</h2>
-            <p class="banner__body">Названия команд должны отличаться!</p>
-            <button class="banner__button">ОК</button>
-        </div>
-    </div>
+<div class="banner off" id="error">
+	<div class="banner__container">
+		<div class="banner__content">
+			<h2 class="banner__title">ВНИМАНИЕ!</h2>
+			<p class="banner__body">Названия команд должны отличаться!</p>
+			<button class="banner__button">ОК</button>
+		</div>
+	</div>
+</div>
+<div class="banner off" id="loader">
+	<div class="banner__container">
+		<!--		<div class="banner__content">-->
+		<div class="d-flex justify-content-center" style="background: transparent;">
+			<div class="spinner-border" role="status" style="background: transparent;"></div>
+			<!--			</div>-->
+		</div>
+	</div>
 </div>
 <div id="fullpage">
-    <div class="predict clearfix section">
-        <div class="predict__container stick1 container clearfix">
-            <div class="predict__content ">
-                <form action="/" method="post" class="predict__form clearfix" id="predict__form"
-                      name="prediction__form">
-                    <!--КОМАНДА-1-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Команда 1</span>
-                        </h2>
-                        <div class="ui modal" id="team1Modal">
-                            <div class="header" style="text-align: center">Команда 1</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="team1Filter">
-                                <button class="ui button" id="team1FilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for team in new_teams%}
-                                    <div data-name="{{team['teamName']}}" class="element"
-                                         data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['imgURI']}}"
-                                         data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['imgURI']}}"
-                                         data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['imgURI']}}"
-                                         data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['imgURI']}}"
-                                         data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['imgURI']}}">
-                                        {%if team['teamLogo'][0] == '/'%}
-                                        <img src="https://www.hltv.org{{team['teamLogo']}}"
-                                             data-name="{{team['teamName']}}" alt="">
-                                        {%else%}
-                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}" alt="">
-                                        {%endif%}
-                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
-                                    </div>
-                                    {%endfor%}
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button id="team1_choose" class="ui button">Выбрать команду</button>
-                        </div>
-                        <input type="text" name="team1" id="team1" hidden required>
-                        <input type="text" name="team1p1" id="team1p1" hidden required>
-                        <input type="text" name="team1p2" id="team1p2" hidden required>
-                        <input type="text" name="team1p3" id="team1p3" hidden required>
-                        <input type="text" name="team1p4" id="team1p4" hidden required>
-                        <input type="text" name="team1p5" id="team1p5" hidden required>
-                        <div class="predict__selected-team-logo">
-                            <img src="" alt="" class="predict__team1-logo predict__team-logo">
-                            <p id="predict__team1-name"></p>
-                        </div>
-                        <div id="team1_squad" style="display: none" class="team_squad">
-                            <div class="team_member" id="team1_member1">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member2">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member3">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member4">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team1_member5">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--КАРТА-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Карта</span>
-                        </h2>
-                        <div class="ui modal" id="mapModal">
-                            <div class="header" style="text-align: center">Карта</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="mapFilter">
-                                <button class="ui button" id="mapFilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for map in maps%}
-                                    <div data-name="{{map}}" class="element">
-                                        <img src="../static/imgs/map_logos/{{map}}.png" data-name="{{map}}" alt="">
-                                        <h3 style="text-align: center">{{map}}</h3>
-                                    </div>
-                                    {%endfor%}
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button id="map_choose" class="ui button">Выбрать карту</button>
-                        </div>
-                        <input type="text" name="map" id="map" hidden required>
-                        <div class="predict__selected-map-logo">
-                            <img src="" alt="" id="predict__map-logo" class="predict__map-logo">
-                            <p id="predict__map-name"></p>
-                        </div>
-                    </div>
-                    <!--КОМАНДА-2-->
-                    <div class="predict__element clearfix">
-                        <h2 class="clearfix">
-                            <span>Команда 2</span>
-                        </h2>
+	<div class="predict clearfix section">
+		<div class=" stick1 container clearfix">
+			<form action="/" method="post" class="container-fluid clearfix" id="predict__form"
+				  name="prediction__form">
+				<div class="row position-relative">
+					<!--КОМАНДА-1-->
+					<div class="predict__element clearfix col-md-4 col-12">
+						<h2 class="clearfix">
+							<span>Команда 1</span>
+						</h2>
+						<div id="team1Modal" class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header" style="text-align: center">
+										<h3 class="modal-title">
+											Команда 1
+										</h3>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<input type="text" class="form-label" id="team1Filter">
+										<button class="btn btn-light" id="team1FilterOk">Подтвердить</button>
+										<div class="container-fluid">
+											<div class="row">
+												{%for team in new_teams%}
+												<div data-name="{{team['teamName']}}" class="element col-lg-3 col-6"
+													 data-player1Name="{{team['player1']['name']}}"
+													 data-player1img="{{team['player1']['imgURI']}}"
+													 data-player2Name="{{team['player2']['name']}}"
+													 data-player2img="{{team['player2']['imgURI']}}"
+													 data-player3Name="{{team['player3']['name']}}"
+													 data-player3img="{{team['player3']['imgURI']}}"
+													 data-player4Name="{{team['player4']['name']}}"
+													 data-player4img="{{team['player4']['imgURI']}}"
+													 data-player5Name="{{team['player5']['name']}}"
+													 data-player5img="{{team['player5']['imgURI']}}">
+													{%if team['teamLogo'][0] == '/'%}
+													<img src="https://www.hltv.org{{team['teamLogo']}}"
+														 data-name="{{team['teamName']}}" alt="">
+													{%else%}
+													<img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}"
+														 alt="">
+													{%endif%}
+													<h3 style="text-align: center">{{team['teamName']}}</h3>
+												</div>
+												{%endfor%}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-grid mx-auto">
+							<button id="team1_choose" class="btn btn-light" data-bs-toggle="modal"
+									data-bs-target="#team1Modal">
+								Выбрать команду
+							</button>
+						</div>
 
-                        <div class="ui modal" id="team2Modal">
-                            <div class="header" style="text-align: center">Команда 2</div>
-                            <div class="content">
-                                <input type="text" class="ui input" id="team2Filter">
-                                <button class="ui button" id="team2FilterOk">Подтвердить</button>
-                            </div>
-                            <div class="scrolling content">
-                                <div class="elements">
-                                    {%for team in new_teams%}
-                                    <div data-name="{{team['teamName']}}" class="element"
-                                         data-player1Name="{{team['player1']['name']}}"
-                                         data-player1img="{{team['player1']['imgURI']}}"
-                                         data-player2Name="{{team['player2']['name']}}"
-                                         data-player2img="{{team['player2']['imgURI']}}"
-                                         data-player3Name="{{team['player3']['name']}}"
-                                         data-player3img="{{team['player3']['imgURI']}}"
-                                         data-player4Name="{{team['player4']['name']}}"
-                                         data-player4img="{{team['player4']['imgURI']}}"
-                                         data-player5Name="{{team['player5']['name']}}"
-                                         data-player5img="{{team['player5']['imgURI']}}">
-                                        {%if team['teamLogo'][0] == '/'%}
-                                        <img src="https://www.hltv.org{{team['teamLogo']}}"
-                                             data-name="{{team['teamName']}}" alt="">
-                                        {%else%}
-                                        <img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}" alt="">
-                                        {%endif%}
-                                        <h3 style="text-align: center">{{team['teamName']}}</h3>
-                                    </div>
-                                    {%endfor%}
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button id="team2_choose" class="ui button">Выбрать команду</button>
-                        </div>
-                        <input type="text" name="team2" id="team2" hidden required>
-                        <input type="text" name="team2p1" id="team2p1" hidden required>
-                        <input type="text" name="team2p2" id="team2p2" hidden required>
-                        <input type="text" name="team2p3" id="team2p3" hidden required>
-                        <input type="text" name="team2p4" id="team2p4" hidden required>
-                        <input type="text" name="team2p5" id="team2p5" hidden required>
-                        <div class="predict__selected-team-logo">
-                            <img src="" alt="" class="predict__team2-logo predict__team-logo">
-                            <p id="predict__team2-name"></p>
-                        </div>
-                        <div id="team2_squad" style="display: none" class="team_squad">
-                            <div class="team_member" id="team2_member1">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member2">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member3">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member4">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                            <div class="team_member" id="team2_member5">
-                                <img src="../static/imgs/temp.png" alt="">
-                                <p class="team_member-name">test</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--SUBMIT-->
-                    <div>
-                        <input type="submit" class="predict__submit">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+						<input type="text" name="team1" id="team1" hidden required>
+						<input type="text" name="team1p1" id="team1p1" hidden required>
+						<input type="text" name="team1p2" id="team1p2" hidden required>
+						<input type="text" name="team1p3" id="team1p3" hidden required>
+						<input type="text" name="team1p4" id="team1p4" hidden required>
+						<input type="text" name="team1p5" id="team1p5" hidden required>
+						<div class="predict__selected-team-logo">
+							<img src="" alt="" class="predict__team1-logo predict__team-logo">
+							<p id="predict__team1-name"></p>
+						</div>
+						<div id="team1_squad" style="display: none" class="team_squad container-fluid">
+							<div class="row">
+								<div class="team_member col-md-6 col-6 container-fluid" id="team1_member1">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member  col-md-6 col-6 container-fluid" id="team1_member2">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member  col-md-6 col-6 container-fluid" id="team1_member3">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member  col-md-6 col-6 container-fluid" id="team1_member4">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member  col-12 container-fluid" id="team1_member5">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--КАРТА-->
+					<div class="predict__element clearfix col-md-4 col-12">
+						<h2 class="clearfix">
+							<span>Локация</span>
+						</h2>
+						<div class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true" id="mapModal">
+							<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header" style="text-align: center">
+										<h3 class="modal-title">
+											Локация
+										</h3>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<input type="text" class="form-label" id="mapFilter">
+										<button class="btn btn-light" id="mapFilterOk">Подтвердить</button>
 
-    {%if winner%}
-    <div class="result slide abs section" id="res">
-        <div class="result__background-versus">
-            <img src="../static/imgs/sword.png" alt="">
-            <img src="../static/imgs/sword-left.png" alt="">
-        </div>
+										<div class="container-fluid">
+											<div class="elements">
+												{%for map in new_maps%}
+												<div data-name="{{map['mapName']}}" class="element col-lg-3 col-6">
+													<img src="../static/imgs/map_logos/{{map['mapName']}}.png"
+														 data-name="{{map['mapName']}}"
+														 alt="">
+													<h3 style="text-align: center">{{map['mapName']}}</h3>
+												</div>
+												{%endfor%}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-grid mx-auto">
+							<button id="map_choose" class="btn btn-light" data-bs-toggle="modal"
+									data-bs-target="#mapModal">Выбрать локацию
+							</button>
+						</div>
+						<input type="text" name="map" id="map" hidden required>
+						<div class="predict__selected-map-logo">
+							<img src="" alt="" id="predict__map-logo" class="predict__map-logo">
+							<p id="predict__map-name"></p>
+						</div>
+					</div>
+					<!--КОМАНДА-2-->
+					<div class="predict__element clearfix col-md-4 col-12">
+						<h2 class="clearfix">
+							<span>Команда 2</span>
+						</h2>
 
-        <div class="result__container container">
-            <div class="result__content clearfix">
-                <div class="result__entered-data clearfix">
-                    <div class="result__entered-data-teams">
-                        <div class="result__team1 result__block">
-                            <img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}" class="result__team-logo">
-                            <h3>{{team1}}</h3>
-                            {%if team1==winner%}
-                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy left-trophy">
-                            {%endif%}
-                        </div>
-                        <div class="result__team2 result__block">
-                            <img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}" class="result__team-logo">
-                            <h3>{{team2}}</h3>
-                            {%if team2==winner%}
-                            <img src="../static/imgs/trophy.png" alt="" class="result__trophy right-trophy">
-                            {%endif%}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="slide last abs section">
-        <div class="stick3">
-            <div class="choose-graph-style">
-                <div class="choose-graph-style__container container">
-                    <h2>Выберите вид гистограммы:</h2>
-                    <div class="choose-graph-style__box">
-                        <input type="radio" id="common" name="radio" checked onchange="change()">
-                        <label for="common">Гистограмма с группировкой</label>
+						<div class="modal fade" data-bs-backdrop="false" data-bs-keyboard="true" id="team2Modal">
+							<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+								<div class="modal-content">
+									<div class="modal-header" style="text-align: center">
+										<h3 class="modal-title">
+											Команда 2
+										</h3>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<input type="text" class="form-label" id="team2Filter">
+										<button class="btn btn-light" id="team2FilterOk">Подтвердить</button>
+										<div class="container-fluid">
+											<div class="row">
+												<div class="elements">
+													{%for team in new_teams%}
+													<div data-name="{{team['teamName']}}" class="element col-lg-3 col-6"
+														 data-player1Name="{{team['player1']['name']}}"
+														 data-player1img="{{team['player1']['imgURI']}}"
+														 data-player2Name="{{team['player2']['name']}}"
+														 data-player2img="{{team['player2']['imgURI']}}"
+														 data-player3Name="{{team['player3']['name']}}"
+														 data-player3img="{{team['player3']['imgURI']}}"
+														 data-player4Name="{{team['player4']['name']}}"
+														 data-player4img="{{team['player4']['imgURI']}}"
+														 data-player5Name="{{team['player5']['name']}}"
+														 data-player5img="{{team['player5']['imgURI']}}">
+														{%if team['teamLogo'][0] == '/'%}
+														<img src="https://www.hltv.org{{team['teamLogo']}}"
+															 data-name="{{team['teamName']}}" alt="">
+														{%else%}
+														<img src="{{team['teamLogo']}}" data-name="{{team['teamName']}}"
+															 alt="">
+														{%endif%}
+														<h3 style="text-align: center">{{team['teamName']}}</h3>
+													</div>
+													{%endfor%}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-grid mx-auto">
+							<button id="team2_choose" class="btn btn-light" data-bs-toggle="modal"
+									data-bs-target="#team2Modal">Выбрать команду
+							</button>
+						</div>
+						<input type="text" name="team2" id="team2" hidden required>
+						<input type="text" name="team2p1" id="team2p1" hidden required>
+						<input type="text" name="team2p2" id="team2p2" hidden required>
+						<input type="text" name="team2p3" id="team2p3" hidden required>
+						<input type="text" name="team2p4" id="team2p4" hidden required>
+						<input type="text" name="team2p5" id="team2p5" hidden required>
+						<div class="predict__selected-team-logo">
+							<img src="" alt="" class="predict__team2-logo predict__team-logo">
+							<p id="predict__team2-name"></p>
+						</div>
+						<div id="team2_squad" style="display: none" class="team_squad container-fluid">
+							<div class="row">
+								<div class="team_member col-md-6 col-6 container-fluid" id="team2_member1">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member col-md-6 col-6 container-fluid" id="team2_member2">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member col-md-6 col-6 container-fluid" id="team2_member3">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member col-md-6 col-6 container-fluid" id="team2_member4">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+								<div class="team_member col-12 container-fluid" id="team2_member5">
+									<div class="row">
+										<div class="col-12">
+											<img src="../static/imgs/temp.png" alt="">
+										</div>
+										<div class="col-12">
+											<p class="team_member-name">test</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--SUBMIT-->
+					<div class="col-4 d-grid mx-auto">
+						<input type="submit" id="predict__submit" class="btn btn-primary">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
-                        <input type="radio" id="stacked" name="radio" onchange="change()">
-                        <label for="stacked">Вложеная гистограмма</label>
-                    </div>
-                </div>
-            </div>
+	{%if winner%}
+	<div class="result slide abs section" id="res">
+		<div class="result__background-versus">
+			<img src="../static/imgs/sword.png" alt="">
+			<img src="../static/imgs/sword-left.png" alt="">
+		</div>
 
-            <div class="graphs">
-                <div class="graphs__container container">
-                    <div class="graphs__content">
-                        <div class="graphs__team1">
-                            <canvas id="team1__graph"></canvas>
-                        </div>
-                        <div class="graphs__team2">
-                            <canvas id="team2__graph"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="../static/js/chart.min.js"></script>
+		<div class="result__container container-fluid">
+			<div class="result__content clearfix row">
+				<!--                <div class="result__entered-data clearfix">-->
+				<div class="col-2"></div>
 
-    <script title="Graphs" type="text/javascript">
-        function buildFromDB(team, canvasID) {
-            let matchesJSON = JSON.parse('{{playedMaps|tojson|safe}}')[team];
-            let winsJSON = JSON.parse('{{winnedMaps|tojson|safe}}')[team];
 
-            let matches = Object.values(matchesJSON[0]);
-            let wins = Object.values(winsJSON[0]);
-            let stacked = document.getElementById('stacked').checked
+				<div class="result__entered-data-teams col-8">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="result__team1 result__block col-xs-12 col-md-6 position-relative">
+								{%if teams_winner[team1]['teamLogo'][0] == '/'%}
+								<img src="https://www.hltv.org{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
+									 class="result__team-logo">
+								{%else%}
+								<img src="{{teams_winner[team1]['teamLogo']}}" alt="{{team1}}"
+									 class="result__team-logo">
+								{%endif%}
 
-            var ctx = document.getElementById(canvasID).getContext('2d');
-            const myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: Object.keys(matchesJSON[0]),
-                    datasets: [
-                        {
-                            label: 'Количество побед команды ' + team,
-                            backgroundColor: 'rgba(65, 105, 225, 1)',
-                            data: wins,
-                        },
-                        {
-                            label: 'Количество матчей команды ' + team,
-                            backgroundColor: 'rgba(255, 99, 132, 1)',
-                            data: matches,
-                        },]
-                },
-                options: {
-                    scales: {
-                        x: {
-                            stacked: stacked,
-                            gridLines: {
-                                color: '#fffff0',
-                            },
-                            ticks: {
-                                color: '#ffffff'
-                            },
-                            grid: {
-                                color: "rgba(255, 255,255, 1)",
-                            }
+								<h3>{{team1}}</h3>
+								{%if team1==winner%}
+								<img src="../static/imgs/trophy.png" alt=""
+									 class="result__trophy left-trophy position-absolute top-0 start-0">
+								{%endif%}
+							</div>
+							<div class="result__team2 result__block col-xs-12 col-md-6 position-relative">
+								{%if teams_winner[team2]['teamLogo'][0] == '/'%}
+								<img src="https://www.hltv.org{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}"
+									 class="result__team-logo">
+								{%else%}
+								<img src="{{teams_winner[team2]['teamLogo']}}" alt="{{team2}}"
+									 class="result__team-logo">
+								{%endif%}
+								<h3>{{team2}}</h3>
+								{%if team2==winner%}
+								<img src="../static/imgs/trophy.png" alt=""
+									 class="result__trophy right-trophy position-absolute bottom-0 end-0">
+								{%endif%}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-2"></div>
+				<!--                </div>-->
+			</div>
+		</div>
+	</div>
+	<div class="slide last abs section">
+		<div class="stick3">
+			{#
+			<div class="choose-graph-style">
+				<div class="choose-graph-style__container container">
+					<h2>Выберите вид гистограммы:</h2>
+					<div class="choose-graph-style__box">
+						<input type="radio" id="common" name="radio" checked onchange="change()">
+						<label for="common">Гистограмма с группировкой</label>
 
-                        },
-                        y: {
-                            stacked: false,
-                            ticks: {
-                                // stepSize: 1,
-                                color: '#ffffff'
-                            },
-                            gridLines: {
-                                color: '#fffff0',
-                            },
-                            grid: {
-                                color: "rgba(255, 255,255, 1)",
-                            }
-                        },
+						<input type="radio" id="stacked" name="radio" onchange="change()">
+						<label for="stacked">Вложеная гистограмма</label>
+					</div>
+				</div>
+			</div>
+			#}
+			<div class="graphs">
+				<div class="graphs__container container">
+					<div class=" row">
+						<div class="col-12">
+							<h2 style="text-align: center">Статистические данные</h2>
+						</div>
+						<div class="graphs__team1 col-12 w-75" style="width: 55% !important;">
+							<canvas id="team1__graph"></canvas>
+						</div>
+						<div class="graphs__team2 col-12 w-75" style="width: 55% !important;">
+							<canvas id="team2__graph"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/js/chart.min.js"></script>
 
-                    },
-                    plugins: {
-                        legend: {
-                            labels: {
-                                color: '#ffffff'
-                            }
-                        }
-                    },
-                },
-            });
-        }
+	<script title="Graphs" type="text/javascript">
+		function buildFromDB(team, canvasID) {
+			let matchesJSON = JSON.parse('{{playedMaps|tojson|safe}}')[team];
+			let winsJSON = JSON.parse('{{winnedMaps|tojson|safe}}')[team];
 
-        function change() {
-            $('#team1__graph').remove();
-            $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+			let matches = Object.values(matchesJSON[0]);
+			let wins = Object.values(winsJSON[0]);
+			let stacked = false;
 
-            $('#team2__graph').remove();
-            $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+			var ctx = document.getElementById(canvasID).getContext('2d');
+			const myChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: Object.keys(matchesJSON[0]),
+					datasets: [
+						{
+							label: 'Количество побед команды ' + team,
+							backgroundColor: 'rgba(65, 105, 225, 1)',
+							data: wins,
+						},
+						{
+							label: 'Количество матчей команды ' + team,
+							backgroundColor: 'rgba(255, 99, 132, 1)',
+							data: matches,
+						},]
+				},
+				options: {
+					scales: {
+						x: {
+							stacked: stacked,
+							gridLines: {
+								color: '#fffff0',
+							},
+							ticks: {
+								color: '#ffffff'
+							},
+							grid: {
+								color: "rgba(255, 255,255, 1)",
+							}
 
-            buildFromDB('{{team1}}', 'team1__graph');
-            buildFromDB('{{team2}}', 'team2__graph');
-        }
+						},
+						y: {
+							stacked: false,
+							ticks: {
+								// stepSize: 1,
+								color: '#ffffff',
+								precision: 0
+							},
+							gridLines: {
+								color: '#fffff0',
+							},
+							grid: {
+								color: "rgba(255, 255,255, 1)",
+							}
+						},
 
-        window.onresize = function (event) {
-            $('#team1__graph').remove();
-            $('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+					},
+					plugins: {
+						legend: {
+							labels: {
+								color: '#ffffff'
+							}
+						}
+					},
+				},
+			});
+		}
 
-            $('#team2__graph').remove();
-            $('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+		function change() {
+			$('#team1__graph').remove();
+			$('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
 
-            buildFromDB('{{team1}}', 'team1__graph');
-            buildFromDB('{{team2}}', 'team2__graph');
-        };
+			$('#team2__graph').remove();
+			$('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
 
-        buildFromDB('{{team1}}', 'team1__graph');
-        buildFromDB('{{team2}}', 'team2__graph');
-    </script>
-    {%endif%}
+			buildFromDB('{{team1}}', 'team1__graph');
+			buildFromDB('{{team2}}', 'team2__graph');
+		}
+
+		window.onresize = function (event) {
+			$('#team1__graph').remove();
+			$('.graphs__team1').append('<canvas id="team1__graph"><canvas>');
+
+			$('#team2__graph').remove();
+			$('.graphs__team2').append('<canvas id="team2__graph"><canvas>');
+
+			buildFromDB('{{team1}}', 'team1__graph');
+			buildFromDB('{{team2}}', 'team2__graph');
+		};
+
+		buildFromDB('{{team1}}', 'team1__graph');
+		buildFromDB('{{team2}}', 'team2__graph');
+	</script>
+	{%endif%}
 </div>
 
 <script type="text/javascript" src="../static/js/jquery-3.5.1.min.js"></script>
 <!--<script type="text/javascript" src="../static/pagepilling/jquery.pagepiling.min.js"></script>-->
 <script type="text/javascript" src="../static/fullpage/fullpage.min.js"></script>
 
-<script type="text/javascript" src="../static/js/semantic.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="../static/js/jquery-migrate-1.2.1.min.js"></script>
 <script>
-    $(document).ready(() => {
-        setTimeout(() => {
-            $(".result__team1").attr("style", "display:block");
-            $(".result__team2").attr("style", "display:block");
-        }, 4500)
+	$(document).ready(() => {
 
-        setTimeout(() => {
-            $(".result__trophy").attr("style", "display:block");
-        }, 5200)
+		setTimeout(() => {
+			$(".result__team1").attr("style", "display:block");
+			$(".result__team2").attr("style", "display:block");
+		}, 4500)
 
-        $('.ui.dropdown').dropdown({fullTextSearch: true});
+		setTimeout(() => {
+			$(".result__trophy").attr("style", "display:block");
+		}, 5200)
 
-        $("#fullpage").fullpage({
-            // anchors: ['Предсказание', "Результат", "Графики"],
-        });
+		$("#fullpage").fullpage({
+			// anchors: ['Предсказание', "Результат", "Графики"],
+		});
 
-        $("#team1_choose").on('click', function (e) {
-            e.preventDefault();
-            $("#team1Modal.ui.modal").modal('show');
-        });
+		$("#team1_choose").on('click', function (e) {
+			e.preventDefault();
+			// $("#team1Modal.ui.modal").modal('show');
+		});
 
-        $("#team2_choose").on('click', function (e) {
-            e.preventDefault();
-            $("#team2Modal.ui.modal").modal('show');
-        });
+		$("#team2_choose").on('click', function (e) {
+			e.preventDefault();
+			// $("#team2Modal.ui.modal").modal('show');
+		});
 
-        $("#map_choose").on('click', function (e) {
-            e.preventDefault();
-            $("#mapModal.ui.modal").modal('show');
-        });
+		$("#map_choose").on('click', function (e) {
+			e.preventDefault();
+			// $("#mapModal.ui.modal").modal('show');
+		});
 
-        $("#team1Filter").keyup(function () {
-            let input_val = $("#team1Filter").val().toLowerCase();
-            $("#team1Modal.ui.modal .element").removeClass('hide');
-            $("#team1Modal.ui.modal .element").each(function (index) {
-                let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) === -1) {
-                    // console.log(team + " net")
-                    $(this).addClass("hide").removeClass('vis');
-                } else {
-                    $(this).removeClass('hide').addClass('vis');
-                }
-            });
-        });
+		$("#team1Filter").keyup(function () {
+			let input_val = $("#team1Filter").val().toLowerCase();
+			$("#team1Modal.modal .element").removeClass('hide');
+			$("#team1Modal.modal .element").each(function (index) {
+				let team = $(this).data("name").toString().toLowerCase();
+				if (team.indexOf(input_val) === -1) {
+					// console.log(team + " net")
+					$(this).addClass("hide").removeClass('vis');
+				} else {
+					$(this).removeClass('hide').addClass('vis');
+				}
+			});
+		});
 
-        $("#team1FilterOk").on('click', function (e) {
-            e.preventDefault();
+		$("#team1FilterOk").on('click', function (e) {
+			e.preventDefault();
 
-            if ($("#team1Modal.ui.modal .element.choosen").length === 1) {
-                $('.predict__team1-logo').attr('src', $("#team1Modal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#team1").val($("#team1Modal.ui.modal .element.choosen").data('name'));
-                $("#team1_choose").addClass("modalSelected");
-                $("#predict__team1-name").text($("#team1Modal.ui.modal .element.choosen").data('name'));
-                $("#team1_squad").show();
+			if ($("#team1Modal.modal .element.choosen").length === 1) {
+				$('.predict__team1-logo').attr('src', $("#team1Modal.modal .element.choosen img")[0].src)
+				$(".modal").hide()
+				$("#team1").val($("#team1Modal.modal .element.choosen").data('name'));
+				// $("#team1_choose").addClass("modalSelected");
+				$("#predict__team1-name").text($("#team1Modal.modal .element.choosen").data('name'));
+				$("#team1_squad").show();
 
-                $("#team1_member1 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player1img');
-                $("#team1_member1 p").text($("#team1Modal.ui.modal .element.choosen").data('player1name'));
-                $("#team1p1").val($("#team1Modal.ui.modal .element.choosen").data('player1name'));
+				$("#team1_member1 img")[0].src = $("#team1Modal.modal .element.choosen").data('player1img');
+				$("#team1_member1 p").text($("#team1Modal.modal .element.choosen").data('player1name'));
+				$("#team1p1").val($("#team1Modal.modal .element.choosen").data('player1name'));
 
-                $("#team1_member2 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player2img');
-                $("#team1_member2 p").text($("#team1Modal.ui.modal .element.choosen").data('player2name'));
-                $("#team1p2").val($("#team1Modal.ui.modal .element.choosen").data('player2name'));
+				$("#team1_member2 img")[0].src = $("#team1Modal.modal .element.choosen").data('player2img');
+				$("#team1_member2 p").text($("#team1Modal.modal .element.choosen").data('player2name'));
+				$("#team1p2").val($("#team1Modal.modal .element.choosen").data('player2name'));
 
-                $("#team1_member3 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player3img');
-                $("#team1_member3 p").text($("#team1Modal.ui.modal .element.choosen").data('player3name'));
-                $("#team1p3").val($("#team1Modal.ui.modal .element.choosen").data('player3name'));
+				$("#team1_member3 img")[0].src = $("#team1Modal.modal .element.choosen").data('player3img');
+				$("#team1_member3 p").text($("#team1Modal.modal .element.choosen").data('player3name'));
+				$("#team1p3").val($("#team1Modal.modal .element.choosen").data('player3name'));
 
-                $("#team1_member4 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player4img');
-                $("#team1_member4 p").text($("#team1Modal.ui.modal .element.choosen").data('player4name'));
-                $("#team1p4").val($("#team1Modal.ui.modal .element.choosen").data('player4name'));
+				$("#team1_member4 img")[0].src = $("#team1Modal.modal .element.choosen").data('player4img');
+				$("#team1_member4 p").text($("#team1Modal.modal .element.choosen").data('player4name'));
+				$("#team1p4").val($("#team1Modal.modal .element.choosen").data('player4name'));
 
-                $("#team1_member5 img")[0].src = $("#team1Modal.ui.modal .element.choosen").data('player5img');
-                $("#team1_member5 p").text($("#team1Modal.ui.modal .element.choosen").data('player5name'));
-                $("#team1p5").val($("#team1Modal.ui.modal .element.choosen").data('player5name'));
-            } else {
-                alert("Команда не выбрана");
-            }
-        });
+				$("#team1_member5 img")[0].src = $("#team1Modal.modal .element.choosen").data('player5img');
+				$("#team1_member5 p").text($("#team1Modal.modal .element.choosen").data('player5name'));
+				$("#team1p5").val($("#team1Modal.modal .element.choosen").data('player5name'));
+			} else {
+				alert("Команда не выбрана");
+			}
+		});
 
-        $("#team2Filter").keyup(function () {
-            let input_val = $("#team2Filter").val().toLowerCase();
-            $("#team2Modal.ui.modal .element").removeClass('hide');
-            $("#team2Modal.ui.modal .element").each(function (index) {
-                let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) === -1) {
-                    $(this).addClass("hide").removeClass('vis');
-                } else {
-                    $(this).removeClass('hide').addClass('vis');
-                }
-            });
-        });
+		$("#team2Filter").keyup(function () {
+			let input_val = $("#team2Filter").val().toLowerCase();
+			$("#team2Modal.modal .element").removeClass('hide');
+			$("#team2Modal.modal .element").each(function (index) {
+				let team = $(this).data("name").toString().toLowerCase();
+				if (team.indexOf(input_val) === -1) {
+					$(this).addClass("hide").removeClass('vis');
+				} else {
+					$(this).removeClass('hide').addClass('vis');
+				}
+			});
+		});
 
-        $("#team2FilterOk").on('click', function (e) {
-            e.preventDefault();
+		$("#team2FilterOk").on('click', function (e) {
+			e.preventDefault();
 
-            if ($("#team2Modal.ui.modal .element.choosen").length === 1) {
-                $('.predict__team2-logo').attr('src', $("#team2Modal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#team2").val($("#team2Modal.ui.modal .element.choosen").data('name'));
-                $("#team2_choose").addClass("modalSelected");
-                $("#predict__team2-name").text($("#team2Modal.ui.modal .element.choosen").data('name'));
-                $("#team2_squad").show();
+			if ($("#team2Modal.modal .element.choosen").length === 1) {
+				$('.predict__team2-logo').attr('src', $("#team2Modal.modal .element.choosen img")[0].src)
+				$(".modal").hide()
+				$("#team2").val($("#team2Modal.modal .element.choosen").data('name'));
+				$("#team2_choose").addClass("modalSelected");
+				$("#predict__team2-name").text($("#team2Modal.modal .element.choosen").data('name'));
+				$("#team2_squad").show();
 
-                $("#team2_member1 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player1img');
-                $("#team2_member1 p").text($("#team2Modal.ui.modal .element.choosen").data('player1name'));
-                $("#team2p1").val($("#team2Modal.ui.modal .element.choosen").data('player1name'));
+				$("#team2_member1 img")[0].src = $("#team2Modal.modal .element.choosen").data('player1img');
+				$("#team2_member1 p").text($("#team2Modal.modal .element.choosen").data('player1name'));
+				$("#team2p1").val($("#team2Modal.modal .element.choosen").data('player1name'));
 
-                $("#team2_member2 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player2img');
-                $("#team2_member2 p").text($("#team2Modal.ui.modal .element.choosen").data('player2name'));
-                $("#team2p2").val($("#team2Modal.ui.modal .element.choosen").data('player2name'));
+				$("#team2_member2 img")[0].src = $("#team2Modal.modal .element.choosen").data('player2img');
+				$("#team2_member2 p").text($("#team2Modal.modal .element.choosen").data('player2name'));
+				$("#team2p2").val($("#team2Modal.modal .element.choosen").data('player2name'));
 
-                $("#team2_member3 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player3img');
-                $("#team2_member3 p").text($("#team2Modal.ui.modal .element.choosen").data('player3name'));
-                $("#team2p3").val($("#team2Modal.ui.modal .element.choosen").data('player3name'));
+				$("#team2_member3 img")[0].src = $("#team2Modal.modal .element.choosen").data('player3img');
+				$("#team2_member3 p").text($("#team2Modal.modal .element.choosen").data('player3name'));
+				$("#team2p3").val($("#team2Modal.modal .element.choosen").data('player3name'));
 
-                $("#team2_member4 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player4img');
-                $("#team2_member4 p").text($("#team2Modal.ui.modal .element.choosen").data('player4name'));
-                $("#team2p4").val($("#team2Modal.ui.modal .element.choosen").data('player4name'));
+				$("#team2_member4 img")[0].src = $("#team2Modal.modal .element.choosen").data('player4img');
+				$("#team2_member4 p").text($("#team2Modal.modal .element.choosen").data('player4name'));
+				$("#team2p4").val($("#team2Modal.modal .element.choosen").data('player4name'));
 
-                $("#team2_member5 img")[0].src = $("#team2Modal.ui.modal .element.choosen").data('player5img');
-                $("#team2_member5 p").text($("#team2Modal.ui.modal .element.choosen").data('player5name'));
-                $("#team2p5").val($("#team2Modal.ui.modal .element.choosen").data('player5name'));
-            } else {
-                alert("Команда не выбрана");
-            }
-        });
+				$("#team2_member5 img")[0].src = $("#team2Modal.modal .element.choosen").data('player5img');
+				$("#team2_member5 p").text($("#team2Modal.modal .element.choosen").data('player5name'));
+				$("#team2p5").val($("#team2Modal.modal .element.choosen").data('player5name'));
+			} else {
+				alert("Команда не выбрана");
+			}
+		});
 
-        $("#mapFilter").keyup(function () {
-            let input_val = $("#mapFilter").val().toLowerCase();
-            $("#mapModal.ui.modal .element").removeClass('hide');
-            $("#mapModal.ui.modal .element").each(function (index) {
-                let team = $(this).data("name").toString().toLowerCase();
-                if (team.indexOf(input_val) === -1) {
-                    $(this).addClass("hide").removeClass('vis');
-                } else {
-                    $(this).removeClass('hide').addClass('vis');
-                }
-            });
-        });
+		$("#mapFilter").keyup(function () {
+			let input_val = $("#mapFilter").val().toLowerCase();
+			$("#mapModal.modal .element").removeClass('hide');
+			$("#mapModal.modal .element").each(function (index) {
+				let team = $(this).data("name").toString().toLowerCase();
+				if (team.indexOf(input_val) === -1) {
+					$(this).addClass("hide").removeClass('vis');
+				} else {
+					$(this).removeClass('hide').addClass('vis');
+				}
+			});
+		});
 
-        $("#mapFilterOk").on('click', function (e) {
-            e.preventDefault();
+		$("#mapFilterOk").on('click', function (e) {
+			e.preventDefault();
 
-            if ($("#mapModal.ui.modal .element.choosen").length === 1) {
-                $('.predict__map-logo').attr('src', $("#mapModal.ui.modal .element.choosen img")[0].src)
-                $(".ui.modal").modal('hide');
-                $("#map").val($("#mapModal.ui.modal .element.choosen").data('name'));
-                $("#map_choose").addClass("modalSelected");
-                $("#predict__map-name").text($("#mapModal.ui.modal .element.choosen").data('name'));
-            } else {
-                alert("Команда не выбрана");
-            }
-        });
+			if ($("#mapModal.modal .element.choosen").length === 1) {
+				$('.predict__map-logo').attr('src', $("#mapModal.modal .element.choosen img")[0].src)
+				$(".modal").hide()
+				$("#map").val($("#mapModal.modal .element.choosen").data('name'));
+				$("#map_choose").addClass("modalSelected");
+				$("#predict__map-name").text($("#mapModal.modal .element.choosen").data('name'));
+			} else {
+				alert("Команда не выбрана");
+			}
+		});
 
-        $(".element").on('click', function () {
-            if (!$(this).hasClass('choosen')) $('.element').removeClass('choosen');
-            // console.log($(this))
-            $(this).toggleClass('choosen');
-        })
+		$(".element").on('click', function () {
+			if (!$(this).hasClass('choosen')) $('.element').removeClass('choosen');
+			// console.log($(this))
+			$(this).toggleClass('choosen');
+		})
 
-        $('#predict__form').submit(function (e) {
-            let team1 = $("#team1").val();
-            let team2 = $("#team2").val();
+		$('#predict__form').submit(function (e) {
+			let team1 = $("#team1").val();
+			let team2 = $("#team2").val();
 
-            if (team1 !== team2) {
-                return true;
-            } else {
-                $(".banner").toggleClass('on').toggleClass('off');
-                return false;
-            }
-        });
+			if (team1 !== team2) {
+				$("#loader").toggleClass('on').toggleClass('off');
+				return true;
+			} else {
+				$("#error").toggleClass('on').toggleClass('off');
+				return false;
+			}
+		});
 
-        $(".predict__submit").on('click', function (e) {
-            e.preventDefault();
-            $('#predict__form').submit();
-        });
+		$("#predict__submit").on('click', function (e) {
+			e.preventDefault();
+			$('#predict__form').submit();
+		});
 
-        $(".banner__button").on('click', function (e) {
-            e.preventDefault();
-            $(".banner").toggleClass('on').toggleClass('off');
-        });
+		$(".banner__button").on('click', function (e) {
+			e.preventDefault();
+			$("#error").toggleClass('on').toggleClass('off');
+		});
 
-    });
+	});
 </script>
 </body>
 </html>
